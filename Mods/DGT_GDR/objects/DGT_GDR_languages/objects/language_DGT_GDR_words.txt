@@ -1,0 +1,14 @@
+language_DGT_GDR_words
+
+[OBJECT:LANGUAGE]
+
+[WORD:REPUBLIC]
+	[NOUN:republic:republics]
+		[REAR_COMPOUND_NOUN_SING]
+		[THE_NOUN_SING]
+		[THE_NOUN_PLUR]
+		[REAR_COMPOUND_NOUN_PLUR]
+		[OF_NOUN_PLUR]
+	[ADJ:republical]
+		[ADJ_DIST:2]
+		[REAR_COMPOUND_ADJ]

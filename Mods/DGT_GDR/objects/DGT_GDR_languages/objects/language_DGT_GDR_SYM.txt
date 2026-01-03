@@ -1,0 +1,48 @@
+language_DGT_GDR_SYM
+
+[OBJECT:LANGUAGE]
+
+[SYMBOL:NAME_REPUBLIC]
+	[S_WORD:REPUBLIC]
+	[S_WORD:GRAND]
+
+TODO:
+
+GRAND
+GRAND
+most serene
+benevolend
+awe-inspiring
+dignified
+glorious
+grandiose
+imposing
+magnificent
+marvelous
+opulent
+palatial
+splendid
+sumptuous
+
+TODO: ass NAME_TOWN_SITE for these
+tradepost, market, 
+trading ... (adj)
+mercantile
+bazar
+mart
+marketplace
+Outpost/Settlement/Post
+
+
+TODO: check or create these words
+[SYMBOL:NAME_ENTITY_REPUBLICAN_MERCHANT_COMPANY]
+	[S_WORD:HOUSE]
+	[S_WORD:HALL]
+	[S_WORD:COMPANY]
+	[S_WORD:BUSINESS]
+	[S_WORD:ENTERPRISE]
+	[S_WORD:UNDERTAKING]
+	[S_WORD:ASSOCIATION]
+	[S_WORD:TRADE]
+	[S_WORD:PROJECT]
+	[S_WORD:OPERATION]

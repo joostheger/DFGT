@@ -1,0 +1,6 @@
+language_ELF
+
+[OBJECT:LANGUAGE]
+
+[SELECT_TRANSLATION:ELF]
+	[T_WORD:REPUBLIC:famashta]
