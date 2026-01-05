@@ -15,7 +15,7 @@ TEST	LIKES_SITE:CAVE_DETAILED -Is dit nodig om migranten te krijgen? eventueel t
 	[TOLERATES_SITE:CITY]
 	[TOLERATES_SITE:CAVE_DETAILED]
 
-	[START_BIOME:ANY_RIVER] - Settles only at rivers for easy trade.
+	[START_BIOME:ANY_RIVER] 			- Settles only at rivers for easy trade.
 
 	[BIOME_SUPPORT:ANY_OCEAN:3]
 	[BIOME_SUPPORT:ANY_LAKE:3]
@@ -24,14 +24,15 @@ TEST	LIKES_SITE:CAVE_DETAILED -Is dit nodig om migranten te krijgen? eventueel t
 	[BIOME_SUPPORT:ANY_SHRUBLAND:1]
 	[BIOME_SUPPORT:ANY_RIVER:3]
 	[BIOME_SUPPORT:ANY_FOREST:1]
-	[BIOME_SUPPORT:MOUNTAIN:12] - It easily spreads via mountains and settles around the edges.
+	[BIOME_SUPPORT:MOUNTAIN:12] 		- It easily spreads around mountains and settles around the edges.
 
 TODO: consider
+TEST: worden tunnels gebruikt om onder landschappen heen te gaan, waar je geen toegang toe hebt?
 	no: WORLD_CONSTRUCTION:TUNNEL
 	[WORLD_CONSTRUCTION:BRIDGE]
 	[WORLD_CONSTRUCTION:ROAD]
 
-	[MAX_STARTING_CIV_NUMBER:1] -- This is a unique civilization.
+	[MAX_STARTING_CIV_NUMBER:1] 		- This is a unique civilization.
 	[MAX_POP_NUMBER:10000]
 	[MAX_SITE_POP_NUMBER:120]
 
@@ -230,24 +231,26 @@ TODO: consider
 	[PERMITTED_REACTION:WILD_CARROT_ROOT_DYE]
 
 	[CURRENCY_BY_YEAR]
-
-TODO:
-OVERWEEG: -interessantere currencies toevoegen? zoals bismuth, sterling silver, etc?
 	[CURRENCY:COPPER:1]
+	[CURRENCY:PEWTER_LAY:2] 			- the material value should be 3/2, but because of the used alloy, its harder to counterfeit, so we set it to 2.
 	[CURRENCY:SILVER:5]
+	[CURRENCY:BLACK_BRONZE:7] 			- harder to counterfeit, so we give it a bit more value than 11/2
 	[CURRENCY:GOLD:15]
-	[CURRENCY:PLATINUM:20]
+	[CURRENCY:ROSE_GOLD:15] 			- harder to counterfeit, so we give it a bit more value than 23/2
+	[CURRENCY:PLATINUM:20] 				- mainly used for large transactions and storing wealth.
 
 	[SELECT_SYMBOL:CIV:NAME_REPUBLIC]
-	[SUBSELECT_SYMBOL:CIV:WEALTH]
-	[SUBSELECT_SYMBOL:CIV:TRADE]
-
-TODO: voor naam site, vormen zoals: tradepost, market, etc.
+		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND]
+		[SUBSELECT_SYMBOL:CIV:REPUBLIC_ADDITIONAL]
 	[SELECT_SYMBOL:SITE:NAME_ENTITY_TOWN_FOUNDER]
+		[SUBSELECT_SYMBOL:SITE:REPUBLIC_ADDITIONAL]
 	[SELECT_SYMBOL:MERCHANT_COMPANY:NAME_ENTITY_REPUBLICAN_MERCHANT_COMPANY]
+	[SELECT_SYMBOL:FESTIVAL:NAME_REPUBLIC_FESTIVAL]
 
 	[SELECT_SYMBOL:REMAINING:ARTIFICE]
 	[SELECT_SYMBOL:REMAINING:EARTH]
+	[SELECT_SYMBOL:REMAINING:WEALTH]
+	[SELECT_SYMBOL:REMAINING:TRADE]
 
 	[SELECT_SYMBOL:WAR:NAME_WAR]
 	[SUBSELECT_SYMBOL:WAR:VIOLENT]
@@ -276,7 +279,7 @@ TODO: voor naam site, vormen zoals: tradepost, market, etc.
 	[ITEM_IMPROVEMENT_MODIFIER:GLAZED:384]
 	[ITEM_IMPROVEMENT_MODIFIER:ART_IMAGE:384]
 
-	[FRIENDLY_COLOR:4:3:1] red on cyan
+	[FRIENDLY_COLOR:4:3:1] 				- red on cyan
 
 	[RELIGION:PANTHEON]
 	[RELIGION_SPHERE:TRADE]
@@ -288,62 +291,62 @@ TODO: voor naam site, vormen zoals: tradepost, market, etc.
 	[SPHERE_ALIGNMENT:WEALTH:384]
 	[SPHERE_ALIGNMENT:TRADE:512]
 
-	[ETHIC:KILL_ENTITY_MEMBER:JUSTIFIED_IF_GOOD_REASON] 	as humans
-	[ETHIC:KILL_NEUTRAL:ONLY_IF_SANCTIONED]		as dwarves
-	[ETHIC:KILL_ENEMY:ACCEPTABLE] 			as dwarves
-	[ETHIC:KILL_ANIMAL:ACCEPTABLE] 			as dwarves
-	[ETHIC:KILL_PLANT:ACCEPTABLE] 			as dwarves
-	[ETHIC:TORTURE_AS_EXAMPLE:UNTHINKABLE] 		as dwarves
-	[ETHIC:TORTURE_FOR_INFORMATION:ONLY_IF_SANCTIONED]	-- if neccesary for keeping order
-	[ETHIC:TORTURE_FOR_FUN:APPALLING]	 	as humans
-	[ETHIC:TORTURE_ANIMALS:SHUN]	 		as humans
-	[ETHIC:TREASON:PUNISH_CAPITAL]		 	as dwarves
-	[ETHIC:OATH_BREAKING:EXILE]				-- just go away if you dont want to work with us
-	[ETHIC:LYING:PUNISH_SERIOUS]				-- neccesary for keeping order
-	[ETHIC:VANDALISM:PUNISH_SERIOUS]		as dwarves
-	[ETHIC:TRESPASSING:PUNISH_REPRIMAND]			-- not as strict as dwarves.
-	[ETHIC:THEFT:PUNISH_SERIOUS]		 	as dwarves
-	[ETHIC:ASSAULT:PUNISH_SERIOUS]		 	as dwarves
-	[ETHIC:SLAVERY:PERSONAL_MATTER] 			-- well, I dont want to trade people, but if you want to.. go ahead..
-	[ETHIC:EAT_SAPIENT_OTHER:UNTHINKABLE]	 	as dwarves
-	[ETHIC:EAT_SAPIENT_KILL:UNTHINKABLE]	 	as dwarves
-	[ETHIC:MAKE_TROPHY_SAME_RACE:APPALLING]	 	as dwarves
-	[ETHIC:MAKE_TROPHY_SAPIENT:SHUN]	 	as dwarves
-	[ETHIC:MAKE_TROPHY_ANIMAL:ACCEPTABLE]	 	as dwarves
+	[ETHIC:KILL_ENTITY_MEMBER:JUSTIFIED_IF_GOOD_REASON] 	- as humans
+	[ETHIC:KILL_NEUTRAL:ONLY_IF_SANCTIONED]	- as dwarves
+	[ETHIC:KILL_ENEMY:ACCEPTABLE] 			- as dwarves
+	[ETHIC:KILL_ANIMAL:ACCEPTABLE] 			- as dwarves
+	[ETHIC:KILL_PLANT:ACCEPTABLE] 			- as dwarves
+	[ETHIC:TORTURE_AS_EXAMPLE:UNTHINKABLE] 	- as dwarves
+	[ETHIC:TORTURE_FOR_INFORMATION:ONLY_IF_SANCTIONED]	- if neccesary for keeping order
+	[ETHIC:TORTURE_FOR_FUN:APPALLING]	 	- as humans
+	[ETHIC:TORTURE_ANIMALS:SHUN]	 		- as humans
+	[ETHIC:TREASON:PUNISH_CAPITAL]		 	- as dwarves
+	[ETHIC:OATH_BREAKING:EXILE]					- leave if you dont want to work with us
+	[ETHIC:LYING:PUNISH_SERIOUS]				- neccesary for keeping order
+	[ETHIC:VANDALISM:PUNISH_SERIOUS]		- as dwarves
+	[ETHIC:TRESPASSING:PUNISH_REPRIMAND]		- not as strict as dwarves.
+	[ETHIC:THEFT:PUNISH_SERIOUS]		 	- as dwarves
+	[ETHIC:ASSAULT:PUNISH_SERIOUS]		 	- as dwarves
+	[ETHIC:SLAVERY:PERSONAL_MATTER] 			- well, I dont want to trade people, but if you want to.. go ahead..
+	[ETHIC:EAT_SAPIENT_OTHER:UNTHINKABLE]	- as dwarves
+	[ETHIC:EAT_SAPIENT_KILL:UNTHINKABLE]	- as dwarves
+	[ETHIC:MAKE_TROPHY_SAME_RACE:APPALLING]	- as dwarves
+	[ETHIC:MAKE_TROPHY_SAPIENT:SHUN]	 	- as dwarves
+	[ETHIC:MAKE_TROPHY_ANIMAL:ACCEPTABLE]	- as dwarves
 
-	[VARIABLE_VALUE:LAW:25:35]	 		as dwarves
-	[VARIABLE_VALUE:LOYALTY:25:35]	 		as dwarves
-	[VARIABLE_VALUE:FAMILY:25:35]	 		as dwarves
-	[VARIABLE_VALUE:FRIENDSHIP:25:35]	 	as dwarves
-	[VARIABLE_VALUE:POWER:-5:5]		 	as dwarves
-	[VARIABLE_VALUE:TRUTH:15:25]		 		somewhat lower
-	[VARIABLE_VALUE:CUNNING:0:10]				a bit higher
-	[VARIABLE_VALUE:ELOQUENCE:0:10]				a bit higher
-	[VARIABLE_VALUE:FAIRNESS:10:20]		 	as dwarves
-	[VARIABLE_VALUE:DECORUM:10:20]				somewhat higher
-	[VARIABLE_VALUE:TRADITION:-5:5]	 		as dwarves
-	[VARIABLE_VALUE:ARTWORK:15:25]				somewhat lower
-	[VARIABLE_VALUE:COOPERATION:30:40]			much higher
-	[VARIABLE_VALUE:INDEPENDENCE:-10:0]			somewhat lower
-	[VARIABLE_VALUE:STOICISM:0:10]	 		as dwarves
-	[VARIABLE_VALUE:KNOWLEDGE:10:20]	 	as dwarves
-	[VARIABLE_VALUE:INTROSPECTION:-5:5]	 	as dwarves
-	[VARIABLE_VALUE:SELF_CONTROL:-5:5]	 	as dwarves
-	[VARIABLE_VALUE:TRANQUILITY:-5:5]	 	as dwarves
-	[VARIABLE_VALUE:HARMONY:-5:5]	 		as dwarves
-	[VARIABLE_VALUE:MERRIMENT:0:10]	 			somewhat lower
-	[VARIABLE_VALUE:CRAFTSMANSHIP:15:25]			much lower
-	[VARIABLE_VALUE:MARTIAL_PROWESS:-5:5]			lower
-	[VARIABLE_VALUE:SKILL:15:25]	 			somewhat lower
-	[VARIABLE_VALUE:HARD_WORK:25:35]	 	as dwarves
-	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	as dwarves
-	[VARIABLE_VALUE:COMPETITION:10:20]			higher
-	[VARIABLE_VALUE:PERSEVERANCE:-5:5]			somewhat lower
-	[VARIABLE_VALUE:LEISURE_TIME:15:15]	 	as dwarves
-	[VARIABLE_VALUE:COMMERCE:50:50]				very high
-	[VARIABLE_VALUE:ROMANCE:0:0]	 		as dwarves
-	[VARIABLE_VALUE:NATURE:-15:-15]	 		as dwarves
-	[VARIABLE_VALUE:PEACE:15:25]				higher
+	[VARIABLE_VALUE:LAW:25:35]	 			- as dwarves
+	[VARIABLE_VALUE:LOYALTY:25:35]	 		- as dwarves
+	[VARIABLE_VALUE:FAMILY:25:35]	 		- as dwarves
+	[VARIABLE_VALUE:FRIENDSHIP:25:35]	 	- as dwarves
+	[VARIABLE_VALUE:POWER:-5:5]		 		- as dwarves
+	[VARIABLE_VALUE:TRUTH:15:25]		 		- somewhat lower
+	[VARIABLE_VALUE:CUNNING:0:10]				- a bit higher
+	[VARIABLE_VALUE:ELOQUENCE:0:10]				- a bit higher
+	[VARIABLE_VALUE:FAIRNESS:10:20]		 	- as dwarves
+	[VARIABLE_VALUE:DECORUM:10:20]				- somewhat higher
+	[VARIABLE_VALUE:TRADITION:-5:5]	 		- as dwarves
+	[VARIABLE_VALUE:ARTWORK:15:25]				- somewhat lower
+	[VARIABLE_VALUE:COOPERATION:30:40]			- much higher
+	[VARIABLE_VALUE:INDEPENDENCE:-10:0]			- somewhat lower
+	[VARIABLE_VALUE:STOICISM:0:10]	 		- as dwarves
+	[VARIABLE_VALUE:KNOWLEDGE:10:20]	 	- as dwarves
+	[VARIABLE_VALUE:INTROSPECTION:-5:5]	 	- as dwarves
+	[VARIABLE_VALUE:SELF_CONTROL:-5:5]	 	- as dwarves
+	[VARIABLE_VALUE:TRANQUILITY:-5:5]	 	- as dwarves
+	[VARIABLE_VALUE:HARMONY:-5:5]	 		- as dwarves
+	[VARIABLE_VALUE:MERRIMENT:0:10]	 			- somewhat lower
+	[VARIABLE_VALUE:CRAFTSMANSHIP:15:25]		- much lower
+	[VARIABLE_VALUE:MARTIAL_PROWESS:-5:5]		- lower
+	[VARIABLE_VALUE:SKILL:15:25]	 			- somewhat lower
+	[VARIABLE_VALUE:HARD_WORK:25:35]	 	- as dwarves
+	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	- as dwarves
+	[VARIABLE_VALUE:COMPETITION:10:20]			- higher
+	[VARIABLE_VALUE:PERSEVERANCE:-5:5]			- somewhat lower
+	[VARIABLE_VALUE:LEISURE_TIME:15:15]	 	- as dwarves
+	[VARIABLE_VALUE:COMMERCE:50:50]				- very high
+	[VARIABLE_VALUE:ROMANCE:0:0]	 		- as dwarves
+	[VARIABLE_VALUE:NATURE:-15:-15]	 		- as dwarves
+	[VARIABLE_VALUE:PEACE:15:25]				- higher
 
 	[WILL_ACCEPT_TRIBUTE]
 
@@ -353,10 +356,7 @@ TODO: voor naam site, vormen zoals: tradepost, market, etc.
 	[ACTIVE_SEASON:SUMMER]
 	[ACTIVE_SEASON:AUTUMN]
 
-TODO: consider
-	[BUILDS_OUTDOOR_TOMBS]
-
-	[BANDITRY:10]					as humans
+	[BANDITRY:10]							- as humans
 
 	[MERCHANT_NOBILITY]
 	[DIPLOMAT_BODYGUARDS]
@@ -367,7 +367,7 @@ TODO: consider
 	[PROGRESS_TRIGGER_TRADE:1]
 	[PROGRESS_TRIGGER_POP_SIEGE:0]
 	[PROGRESS_TRIGGER_PROD_SIEGE:0]
-	[PROGRESS_TRIGGER_TRADE_SIEGE:3]		They wont really be that agressive, but if they have to, than this would be the factor.
+	[PROGRESS_TRIGGER_TRADE_SIEGE:3]		- They wont really be that agressive, but if they have to, than this would be the factor.
 
 	[SIEGER]
 
@@ -393,7 +393,7 @@ TODO: consider
 	[WEAPON:ITEM_WEAPON_SWORD_SHORT_TRAINING]
 	[WEAPON:ITEM_WEAPON_SPEAR_TRAINING]
 
-TODO: special 
+TODO: make special 
 	[ARMOR:ITEM_ARMOR_BREASTPLATE:COMMON]
 	[ARMOR:ITEM_ARMOR_MAIL_SHIRT:COMMON]
 	[ARMOR:ITEM_ARMOR_LEATHER:COMMON]
@@ -456,11 +456,18 @@ TODO: special
 	[METAL_PREF]
 	[GEM_PREF]
 	[STONE_PREF]
+	[RIVER_PRODUCTS]
+	[OCEAN_PRODUCTS]
+
+TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 	[OUTDOOR_WOOD]
 	[INDOOR_WOOD]
 	[INDOOR_FARMING]
+	[OUTDOOR_FARMING]
 	[OUTDOOR_GARDENS]
 	[INDOOR_GARDENS]
+	[INDOOR_ORCHARDS]
+	[OUTDOOR_ORCHARDS]
 	[USE_ANIMAL_PRODUCTS]
 	[COMMON_DOMESTIC_PACK]
 	[COMMON_DOMESTIC_PULL]
