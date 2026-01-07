@@ -10,7 +10,7 @@ entity_DGT_GDR
 
 	[DEFAULT_SITE_TYPE:CITY]
 	[LIKES_SITE:CITY]
-TODO:
+
 TEST	LIKES_SITE:CAVE_DETAILED -Is dit nodig om migranten te krijgen? eventueel testen of dit te vervangen is door PLAYER_FORTRESS
 	[TOLERATES_SITE:CITY]
 	[TOLERATES_SITE:CAVE_DETAILED]
@@ -26,9 +26,6 @@ TEST	LIKES_SITE:CAVE_DETAILED -Is dit nodig om migranten te krijgen? eventueel t
 	[BIOME_SUPPORT:ANY_FOREST:1]
 	[BIOME_SUPPORT:MOUNTAIN:12] 		- It easily spreads around mountains and settles around the edges.
 
-TODO: consider
-TEST: worden tunnels gebruikt om onder landschappen heen te gaan, waar je geen toegang toe hebt?
-	no: WORLD_CONSTRUCTION:TUNNEL
 	[WORLD_CONSTRUCTION:BRIDGE]
 	[WORLD_CONSTRUCTION:ROAD]
 
@@ -291,7 +288,7 @@ TEST: worden tunnels gebruikt om onder landschappen heen te gaan, waar je geen t
 	[SPHERE_ALIGNMENT:WEALTH:384]
 	[SPHERE_ALIGNMENT:TRADE:512]
 
-	[ETHIC:KILL_ENTITY_MEMBER:JUSTIFIED_IF_GOOD_REASON] 	- as humans
+	[ETHIC:KILL_ENTITY_MEMBER:JUSTIFIED_IF_EXTREME_REASON] 	
 	[ETHIC:KILL_NEUTRAL:ONLY_IF_SANCTIONED]	- as dwarves
 	[ETHIC:KILL_ENEMY:ACCEPTABLE] 			- as dwarves
 	[ETHIC:KILL_ANIMAL:ACCEPTABLE] 			- as dwarves
@@ -517,23 +514,42 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 	[GEM_SHAPE:SQUARE_CUT_GEM]
 	
 
-	[POSITION:CONSUL]
+Honorary Grand Master
+ Merchant Master Magistrate
+ - ?
+ Merchant Master Councillor
+- LAWMAKiNG
+ Merchant Master Alderman
+ - ?
+ Merchant Master Custodian
+ - APPOINT CAPTAIN-GENERAL?
+ Merchant Journeyman
+ Merchant Aprentice
+
+MAAK ZE ALLEMAAL ELECTED, TROUWENS, net als de druid. testen: is er dan dus wel opvolging? 
+
+
+	Alderman
+	Burger -> Patrician
+
+
+	[POSITION:HOF]
 		[NAME:consul:consuls]
 		[NUMBER:1]
-		[SUCCESSION:BY_POSITION:MERCHANT_COUNCILLOR]
+		[SUCCESSION:BY_POSITION:MERC_COUNC]
 
-	[POSITION:ARISTOCRAT]
+	[POSITION:ARIST]
 		[NAME:aristocrat:aristocrats]
 		[NUMBER:1]
-		[SUCCESSION:BY_POSITION:CONSUL]
+		[SUCCESSION:BY_POSITION:HOF]
 
-	[POSITION:MERCHANT_COUNCILLOR]
+	[POSITION:MERC_COUNC]
 		[NAME:merchant councillor:merchant councillors]
 		[NUMBER:2]
 		[RESPONSIBILITY:LAW_MAKING]
-		[SUCCESSION:BY_POSITION:MERCHANT_GUILD_MASTER]
+		[SUCCESSION:BY_POSITION:MERC_DEL]
 
-	[POSITION:MERCHANT_GUILD_MASTER]
-		[NAME:merchant guild master:merchant guild masters]
+	[POSITION:MERC_DEL]
+		[NAME:merchant delegate:merchant delegates]
 		[NUMBER:4]
 		[RESPONSIBILITY:DIPLOMACY]
