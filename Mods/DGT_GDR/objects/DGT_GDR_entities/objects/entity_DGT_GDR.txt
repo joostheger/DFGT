@@ -521,6 +521,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[SUCCESSION:BY_POSITION:MM_MAG]
 		[ELECTED]
+		[PRECEDENCE:1]
 
 	[POSITION:MM_COUNC]
 		[NAME:merchant master councillor:merchant master councillors]
@@ -533,6 +534,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[SUCCESSION:BY_POSITION:MM_MAG]
 		[ELECTED]
+		[PRECEDENCE:15]
 
 	[POSITION:MM_MAG]
 		[NAME:merchant master magistrate:merchant master magistrates]
@@ -546,6 +548,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[SUCCESSION:BY_POSITION:MM_AMBAS]
 		[ELECTED]
+		[PRECEDENCE:15]
 
 	[POSITION:MM_AMBAS]
 		[NAME:merchant master ambassador:merchant master ambassadors]
@@ -555,6 +558,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:M_JM]
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[ELECTED]
+		[PRECEDENCE:15]
 
 	[POSITION:MM_STEW]
 		[NAME:merchant master steward:merchant master steward]
@@ -566,6 +570,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:OVERSEE_LEADER_HOUSEHOLD]
 		[SUCCESSION:BY_POSITION:M_JM]
 		[ELECTED]
+		[PRECEDENCE:15]
 
 	[POSITION:M_JM]
 		[NAME:merchant journeyman:merchant journeymen]
@@ -580,6 +585,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:MAINTAIN_TUNNELS]
 		[SUCCESSION:BY_POSITION:M_AP]
 		[ELECTED]
+		[PRECEDENCE:30]
 
 	[POSITION:M_AP]
 		[NAME:merchant apprentice:merchant apprentices]
@@ -590,6 +596,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_FOOD]
 		[RESPONSIBILITY:PREPARE_LEADER_MEALS]
 		[ELECTED]
+		[PRECEDENCE:45]
 
 	[POSITION:CAPTAINGENERAL]
 		[NAME:captain-general:captain-general]
@@ -599,6 +606,8 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:MM_MAG]
 		[RESPONSIBILITY:MILITARY_STRATEGY]
 		[COMMANDER:CAPTAIN:ALL]
+		[COMMANDER:MARSHAL:ALL]
+		[PRECEDENCE:20]
 		
 	[POSITION:CAPTAIN]
 		[NAME:captain:captains]
@@ -607,15 +616,24 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:PATROL_TERRITORY]
 		[RESPONSIBILITY:TAME_EXOTICS]
 		[RESPONSIBILITY:ATTACK_ENEMIES]
-		[SQUAD:10:soldier:soldiers]
+		[SQUAD:8:soldier:soldiers]
 		[APPOINTED_BY:CAPTAINGENERAL]
+		[PRECEDENCE:35]
 
 	[POSITION:FREE_MERCHANT1]
 		[NAME:free merchant:free merchants]
-		[NUMBER:5]
+		[NUMBER:5] / 4 / 3
 		[RESPONSIBILITY:BUILD_MORALE]
 		[MENIAL_WORK_EXEMPTION]
-		variation? demands etc?
+		[PRECEDENCE:45]
+TODO: variation? demands etc?
+
+ 5 - pop = 40, reqpo = 200
+ 4 - pop = 100, req pop = 400
+ 3 - pop = 140, req pop = 600
+ 1600 -> 10
+
+
 
 	[POSITION:LH1]
 		[NAME:trade agent:trade agents]
@@ -624,8 +642,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
 		[REPLACED_BY:LH2]
-		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:TRADE] 			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
+		[PRECEDENCE:40]
 	
 	[POSITION:LH2]
 		[NAME:trade administrator:trade administrators]
@@ -634,9 +653,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
 		[REPLACED_BY:LH3]
-		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[PRECEDENCE:35]
 
 	[POSITION:LH3]
 		[NAME:trade director:trade directors]
@@ -645,9 +665,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[REPLACED_BY:LH4]
-		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:30]
 
 	[POSITION:LH4]
 		[NAME:chief commissioner:chief commissioners]
@@ -658,6 +679,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[REPLACED_BY:LH5]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:25]
 
 	[POSITION:LH5]
 		[NAME:grand commissioner:grand commissioners]
@@ -667,40 +689,199 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:MM_COUNC]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]
+		[PRECEDENCE:20]
 
 	[POSITION:B0]
 		[NAME:settler:settlers]
 		[SITE]
 		[NUMBER:7]
 		[ALLOWED_CREATURE:DWARF:ALL]
-		[SUCCESSION:BY_POSITION:REPL1] 	- non filled position, but this succesionrule prevents re-assignment by the player.
+		[SUCCESSION:BY_HEIR] 			- these succesion rules prevents re-assignment by the player.
 		[REPLACED_BY:REPL1]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECIEVE_DIPLOMATS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:60]
 
 	[POSITION:B1]
-		[NAME:burgher 1:burghers]
+		[NAME:free burgher:burghers]
+		[NAME_MALE:free burgher:burghers]
+		[NAME_FEMALE:free burghess:burghers]
+		[SPOUSE_FEMALE:free burghess:burghers]
+		[SPOUSE_MALE:free burghess:burghers]
 		[SITE]
 		[NUMBER:7]
 		[SUCCESSION:BY_POSITION:B0]
+		[SUCCESSION:BY_HEIR] 			
 		[APPOINTED_BY:B0]				- when 9 dwarves have arrived, position B0 is replaced and appointmend of this position and higher is no longer possible. 
-		[REPLACED_BY:REPL2]
+		[REPLACED_BY:B3]				- cleanup
 		[REQUIRES_POPULATION:8] 		- immediatly after the first migrant arrives.
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECIEVE_DIPLOMATS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[COLOR:4:0:1]
+		[PRECEDENCE:50]
 
 	[POSITION:B2]
-		[NAME:burgher 2:burghers]
+		[NAME:established burgher:burghers]
+		[NAME_MALE:established burgher:burghers]
+		[NAME_FEMALE:established burghess:burghers]
+		[SPOUSE_FEMALE:established burghess:burghers]
+		[SPOUSE_MALE:established burghess:burghers]
 		[SITE]
 		[NUMBER:7]
 		[SUCCESSION:BY_POSITION:B1]
+		[SUCCESSION:BY_HEIR] 			
 		[APPOINTED_BY:B1]
-		[REQUIRES_POPULATION:18] 		- at least not after the first migrant wave. 
+		[REPLACED_BY:B4]				- cleanup
+		[REQUIRES_POPULATION:18] 		- at least not after the first migrant wave. it then cleans up REPL1
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECIEVE_DIPLOMATS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:45]
+
+	[POSITION:B3]
+		[NAME:respectable burgher:burghers]
+		[NAME_MALE:respectable burgher:burghers]
+		[NAME_FEMALE:respectable burghess:burghers]
+		[SPOUSE_FEMALE:respectable burghess:burghers]
+		[SPOUSE_MALE:respectable burghess:burghers]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B2]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B2]
+		[REPLACED_BY:B5]				- cleanup
+		[REQUIRES_POPULATION:30] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:40]
+
+	[POSITION:B4]
+		[NAME:notable burgher:burghers]
+		[NAME_MALE:notable burgher:burghers]
+		[NAME_FEMALE:notable burghess:burghers]
+		[SPOUSE_FEMALE:notable burghess:burghers]
+		[SPOUSE_MALE:notable burghess:burghers]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B3]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B3]
+		[REPLACED_BY:B6]				- cleanup
+		[REQUIRES_POPULATION:44] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:35]
+
+	[POSITION:B5]
+		[NAME:great burgher:burghers]
+		[NAME_MALE:great burgher:burghers]
+		[NAME_FEMALE:great burghess:burghers]
+		[SPOUSE_FEMALE:great burghess:burghers]
+		[SPOUSE_MALE:great burghess:burghers]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B4]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B4]
+		[REPLACED_BY:B7]				- cleanup
+		[REQUIRES_POPULATION:60] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:30]
+
+	[POSITION:B6]
+		[NAME:patrician:patricians]
+		[NAME_MALE:patrician:patricians]
+		[NAME_FEMALE:matrícia:patricians]
+		[SPOUSE_FEMALE:matrícia:patricians]
+		[SPOUSE_MALE:patrician:patricians]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B5]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B5]
+		[REPLACED_BY:B8]				- cleanup
+		[REQUIRES_POPULATION:78] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:25]
+
+	[POSITION:B7]
+		[NAME:esteemed patrician:patricians]
+		[NAME_MALE:esteemed patrician:patricians]
+		[NAME_FEMALE:esteemed matrícia:patricians]
+		[SPOUSE_FEMALE:esteemed matrícia:patricians]
+		[SPOUSE_MALE:esteemed patrician:patricians]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B6]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B6]
+		[REPLACED_BY:B9]				- cleanup
+		[REQUIRES_POPULATION:98] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:20]
+
+	[POSITION:B8]
+		[NAME:magnate patrician:patricians]
+		[NAME_MALE:magnate patrician:patricians]
+		[NAME_FEMALE:magnate matrícia:patricians]
+		[SPOUSE_FEMALE:magnate matrícia:patricians]
+		[SPOUSE_MALE:magnate patrician:patricians]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B7]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B7]
+		[REPLACED_BY:B10]				- cleanup
+		[REQUIRES_POPULATION:120] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:15]
+
+	[POSITION:B9]
+		[NAME:grand patrician:patricians]
+		[NAME_MALE:grand patrician:patricians]
+		[NAME_FEMALE:grand matrícia:patricians]
+		[SPOUSE_FEMALE:grand matrícia:patricians]
+		[SPOUSE_MALE:grand patrician:patricians]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B8]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B8]
+		[REPLACED_BY:REPL2]				- cleanup
+		[REQUIRES_POPULATION:144] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:10]
+
+	[POSITION:B10]
+		[NAME:most serene patrician:patricians]
+		[NAME_MALE:most serene patrician:patricians]
+		[NAME_FEMALE:most serene matrícia:patricians]
+		[SPOUSE_FEMALE:most serene matrícia:patricians]
+		[SPOUSE_MALE:most serene patrician:patricians]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B9]
+		[SUCCESSION:BY_HEIR] 			
+		[APPOINTED_BY:B9]
+		[REQUIRES_POPULATION:170] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:5]
 
 	[POSITION:REPL1]
 			The replacer is used to prevent the creation of more than 7 burger dwarves. 
@@ -710,7 +891,20 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
 		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
 		[APPOINTED_BY:REPL1]			- appointed only by himself, so: never.
-		[REQUIRES_POPULATION:9] 		- immediatly after the second migrant arrives.
+		[REQUIRES_POPULATION:9] 		- quickly after the second migrant arrives.
+		[REPLACED_BY:B2]				- cleanup
+		[PRECEDENCE:200]
+
+	[POSITION:REPL2]
+			The replacer is used for cleaning up the B9 position
+		[NAME:replacer 2 (SHOULD NOT BE FILLED):replacer]
+		[SITE]
+		[NUMBER:1]
+		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
+		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
+		[APPOINTED_BY:REPL2]			- appointed only by himself, so: never.
+		[REQUIRES_POPULATION:175] 		- shortly after the last burger elevation has happened
+		[PRECEDENCE:200]
 
 	[POSITION:INQUIS1]
 		[NAME:inquisitor:inquisitors]
@@ -720,20 +914,24 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:INQUIS1]			- self re-appoint, to counter LH loss						
 		[RESPONSIBILITY:ESPIONAGE]			
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
+		[PRECEDENCE:40]
 
 	[POSITION:INQUIS2]
 		[NAME:inquisitor:inquisitors]
 		[SITE]
 		[NUMBER:1]
-		[SQUAD:2:guard:guards]
+		[SQUAD:2:watchman:watchmen]
 		[APPOINTED_BY:LH2]		
 		[APPOINTED_BY:LH3]	
 		[APPOINTED_BY:LH4]	
+		[APPOINTED_BY:LH5]	
+		[APPOINTED_BY:B10]				- can also be appointed once the city has 170 population,
+		[APPOINTED_BY:HGM]				- or when it becomes the capital
 		[APPOINTED_BY:INQUIS2]			- self re-appoint, to counter LH loss. TEST: does dit work, because of SUCC?		
 		[RESPONSIBILITY:ESPIONAGE]			
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[SUCCESSION:BY_POSITION:INQUIS1] 
-	variatie, meer eisen, meer soldaten, betere titel, meer vereisten. 
+		[PRECEDENCE:35]
 
 	[POSITION:CLERK0]
 		[NAME:clerk:clerks]
@@ -746,6 +944,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:DELIVER_MESSAGES]	
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]	
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		[PRECEDENCE:60]
 		
 	[POSITION:CLERK1]
 		[NAME:clerk:clerks]
@@ -758,6 +957,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		[PRECEDENCE:60]
 
 	[POSITION:CLERK2]
 		[NAME:clerk:clerks]
@@ -772,6 +972,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		[PRECEDENCE:60]
 
 	[POSITION:CLERK3]
 		[NAME:clerk:clerks]
@@ -787,6 +988,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		[PRECEDENCE:60]
 
 	[POSITION:CLERK4]
 		[NAME:clerk:clerks]
@@ -802,6 +1004,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		[PRECEDENCE:60]
 
 	[POSITION:CLERK5]
 		[NAME:clerk:clerks]
@@ -817,6 +1020,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		[PRECEDENCE:60]
 
 	[POSITION:CLERK5_EXTRA]
 		[NAME:clerk:clerks]
@@ -824,22 +1028,24 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SITE]
 		[NUMBER:AS_NEEDED]				- If you would ever need more level-5 clerks
 		[APPOINTED_BY:LH5]				- you can do so whith your level-5 LH,
-		[APPOINTED_BY:MM_COUNC]			- when your fortress has become the capital,		
-		[APPOINTED_BY:B10]				- or if your fortress has at least 180 population, then a burgher can appoint them.
+		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
+		[APPOINTED_BY:B10]				- or if your fortress has at least 170 population, then a burgher can appoint them.
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		[PRECEDENCE:60]
 
 	[POSITION:EXECUTIONER]
 		[NAME:executioner:executioners]
 		[SITE]
 		[NUMBER:1]				
-		[APPOINTED_BY:MM_COUNC]			- when your fortress has become the capital,		
+		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:HAMMER]
+		[PRECEDENCE:60]
 
 	[POSITION:DOCTOR]
 		[NAME:doctor:doctor]
@@ -857,6 +1063,52 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:B9]	
 		[APPOINTED_BY:B10]			
 		[RESPONSIBILITY:HEALTH_MANAGEMENT]
+		[PRECEDENCE:50]
+
+	[POSITION:MARSHAL]
+		[NAME:marshal:marshals]
+		[SITE]
+		[NUMBER:1]
+		[APPOINTED_BY:LH5]
+		[RESPONSIBILITY:MILITARY_STRATEGY]
+		[COMMANDER:MG_CAPTAIN:ALL]
+		[COMMANDER:RG_CAPTAIN:ALL]
+		[COMMANDER:CG_CAPTAIN:ALL]
+		[RESPONSIBILITY:UPGRADE_SQUAD]
+		[PRECEDENCE:20]
+
+	[POSITION:RG_CAPTAIN]
+		[NAME:republican guard captain:republican guard captains]
+		[SITE]
+		[NUMBER:3]
+		[SQUAD:8:republican guard:republican guards]
+		[APPOINTED_BY:HGM]
+		[MILITARY_SCREEN_ONLY]
+		[RESPONSIBILITY:ATTACK_ENEMIES]
+		[RESPONSIBILITY:PATROL_TERRITORY]
+		[PRECEDENCE:35]
+
+	[POSITION:MG_CAPTAIN]
+		[NAME:municipal guard captain:municipal guard captains]
+		[SITE]
+		[NUMBER:1]
+		[SQUAD:8:municipal guard:municipal guards]
+		[APPOINTED_BY:LH5]
+		[MILITARY_SCREEN_ONLY]
+		[RESPONSIBILITY:SORT_AMMUNITION]
+		[PRECEDENCE:35]
+
+	[POSITION:CG_CAPTAIN]
+		[NAME:civic guard captain:civic guard captains]
+		[SITE]
+		[NUMBER:1]
+		[SQUAD:8:civic guard:civic guards]
+		[APPOINTED_BY:B10]
+		[MILITARY_SCREEN_ONLY]
+		[RESPONSIBILITY:SORT_AMMUNITION]
+		[PRECEDENCE:35]
+
+
 
 
 
