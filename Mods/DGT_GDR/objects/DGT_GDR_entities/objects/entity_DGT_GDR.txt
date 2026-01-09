@@ -610,6 +610,13 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SQUAD:10:soldier:soldiers]
 		[APPOINTED_BY:CAPTAINGENERAL]
 
+	[POSITION:FREE_MERCHANT1]
+		[NAME:free merchant:free merchants]
+		[NUMBER:5]
+		[RESPONSIBILITY:BUILD_MORALE]
+		[MENIAL_WORK_EXEMPTION]
+		variation? demands etc?
+
 	[POSITION:LH1]
 		[NAME:trade agent:trade agents]
 		[LAND_HOLDER:1]
@@ -617,6 +624,8 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
 		[REPLACED_BY:LH2]
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:ACCOUNTING]
 	
 	[POSITION:LH2]
 		[NAME:trade administrator:trade administrators]
@@ -625,6 +634,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
 		[REPLACED_BY:LH3]
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:ACCOUNTING]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
 
 	[POSITION:LH3]
 		[NAME:trade director:trade directors]
@@ -633,6 +645,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[REPLACED_BY:LH4]
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 
 	[POSITION:LH4]
 		[NAME:chief commissioner:chief commissioners]
@@ -641,6 +656,8 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[REPLACED_BY:LH5]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 
 	[POSITION:LH5]
 		[NAME:grand commissioner:grand commissioners]
@@ -648,6 +665,208 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[LAND_NAME:citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:MILITARY_GOALS]
+
+	[POSITION:B0]
+		[NAME:settler:settlers]
+		[SITE]
+		[NUMBER:7]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[SUCCESSION:BY_POSITION:REPL1] 	- non filled position, but this succesionrule prevents re-assignment by the player.
+		[REPLACED_BY:REPL1]
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECIEVE_DIPLOMATS]
+
+	[POSITION:B1]
+		[NAME:burgher 1:burghers]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B0]
+		[APPOINTED_BY:B0]				- when 9 dwarves have arrived, position B0 is replaced and appointmend of this position and higher is no longer possible. 
+		[REPLACED_BY:REPL2]
+		[REQUIRES_POPULATION:8] 		- immediatly after the first migrant arrives.
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECIEVE_DIPLOMATS]
+
+	[POSITION:B2]
+		[NAME:burgher 2:burghers]
+		[SITE]
+		[NUMBER:7]
+		[SUCCESSION:BY_POSITION:B1]
+		[APPOINTED_BY:B1]
+		[REQUIRES_POPULATION:18] 		- at least not after the first migrant wave. 
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECIEVE_DIPLOMATS]
+
+	[POSITION:REPL1]
+			The replacer is used to prevent the creation of more than 7 burger dwarves. 
+		[NAME:replacer 1 (SHOULD NOT BE FILLED):replacer]
+		[SITE]
+		[NUMBER:1]
+		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
+		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
+		[APPOINTED_BY:REPL1]			- appointed only by himself, so: never.
+		[REQUIRES_POPULATION:9] 		- immediatly after the second migrant arrives.
+
+	[POSITION:INQUIS1]
+		[NAME:inquisitor:inquisitors]
+		[SITE]
+		[NUMBER:1]
+		[APPOINTED_BY:LH1]	
+		[APPOINTED_BY:INQUIS1]			- self re-appoint, to counter LH loss						
+		[RESPONSIBILITY:ESPIONAGE]			
+		[RESPONSIBILITY:LAW_ENFORCEMENT]
+
+	[POSITION:INQUIS2]
+		[NAME:inquisitor:inquisitors]
+		[SITE]
+		[NUMBER:1]
+		[SQUAD:2:guard:guards]
+		[APPOINTED_BY:LH2]		
+		[APPOINTED_BY:LH3]	
+		[APPOINTED_BY:LH4]	
+		[APPOINTED_BY:INQUIS2]			- self re-appoint, to counter LH loss. TEST: does dit work, because of SUCC?		
+		[RESPONSIBILITY:ESPIONAGE]			
+		[RESPONSIBILITY:LAW_ENFORCEMENT]
+		[SUCCESSION:BY_POSITION:INQUIS1] 
+	variatie, meer eisen, meer soldaten, betere titel, meer vereisten. 
+
+	[POSITION:CLERK0]
+		[NAME:clerk:clerks]
+		[SITE]
+		[NUMBER:1]
+		[APPOINTED_BY:B0]				- initially appointable
+		[APPOINTED_BY:B1]				- and until 17 dwarves re-appointable
+		[APPOINTED_BY:CLERK0]			- afther that, only re-appointable by itself, untill it is succeeded by CLERK2
+		[RESPONSIBILITY:TRADE]			- neccesary for exporting goods, until the landholder arrives. 
+		[RESPONSIBILITY:DELIVER_MESSAGES]	
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]	
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+		
+	[POSITION:CLERK1]
+		[NAME:clerk:clerks]
+		'for life, protected rights
+		[SITE]
+		[NUMBER:1]
+		[APPOINTED_BY:LH1]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
+		[SUCCESSION:BY_POSITION:CLERK0] - if you had a CLERK0, it succeedes as CLERK2
+		[RESPONSIBILITY:ACCOUNTING]
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+
+	[POSITION:CLERK2]
+		[NAME:clerk:clerks]
+		'for life, protected rights
+		[SITE]
+		[NUMBER:2]
+		[APPOINTED_BY:LH2]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
+		[APPOINTED_BY:CLERK2]			- self re-appoint, to counter LH loss	
+		[SUCCESSION:BY_POSITION:CLERK1] 
+		[RESPONSIBILITY:ACCOUNTING]	
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+
+	[POSITION:CLERK3]
+		[NAME:clerk:clerks]
+		'for life, protected rights
+		[SITE]
+		[NUMBER:2]
+		[APPOINTED_BY:LH3]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
+		[APPOINTED_BY:CLERK3]			- self re-appoint, to counter LH loss			
+		[SUCCESSION:BY_POSITION:CLERK2] 
+		[RESPONSIBILITY:ACCOUNTING]
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+
+	[POSITION:CLERK4]
+		[NAME:clerk:clerks]
+		'for life, protected rights
+		[SITE]
+		[NUMBER:3]
+		[APPOINTED_BY:LH4]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
+		[APPOINTED_BY:CLERK4]			- self re-appoint, to counter LH loss			
+		[SUCCESSION:BY_POSITION:CLERK3] 
+		[RESPONSIBILITY:ACCOUNTING]
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+
+	[POSITION:CLERK5]
+		[NAME:clerk:clerks]
+		'for life, protected rights
+		[SITE]
+		[NUMBER:3]
+		[APPOINTED_BY:LH5]				
+		[APPOINTED_BY:CLERK5]			- self re-appoint, to counter LH loss			
+		[SUCCESSION:BY_POSITION:CLERK4] 
+		[RESPONSIBILITY:ACCOUNTING]
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+
+	[POSITION:CLERK5_EXTRA]
+		[NAME:clerk:clerks]
+		'for life, protected rights
+		[SITE]
+		[NUMBER:AS_NEEDED]				- If you would ever need more level-5 clerks
+		[APPOINTED_BY:LH5]				- you can do so whith your level-5 LH,
+		[APPOINTED_BY:MM_COUNC]			- when your fortress has become the capital,		
+		[APPOINTED_BY:B10]				- or if your fortress has at least 180 population, then a burgher can appoint them.
+		[RESPONSIBILITY:ACCOUNTING]
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
+
+	[POSITION:EXECUTIONER]
+		[NAME:executioner:executioners]
+		[SITE]
+		[NUMBER:1]				
+		[APPOINTED_BY:MM_COUNC]			- when your fortress has become the capital,		
+		[RESPONSIBILITY:EXECUTIONS]
+			[EXECUTION_SKILL:HAMMER]
+
+	[POSITION:DOCTOR]
+		[NAME:doctor:doctor]
+		[SITE]
+		[NUMBER:1]				
+		[APPOINTED_BY:B0]		
+		[APPOINTED_BY:B1]	
+		[APPOINTED_BY:B2]	
+		[APPOINTED_BY:B3]	
+		[APPOINTED_BY:B4]	
+		[APPOINTED_BY:B5]	
+		[APPOINTED_BY:B6]	
+		[APPOINTED_BY:B7]	
+		[APPOINTED_BY:B8]	
+		[APPOINTED_BY:B9]	
+		[APPOINTED_BY:B10]			
+		[RESPONSIBILITY:HEALTH_MANAGEMENT]
+
+
+
+
+
+
+
+
+
+
 
 	
 
