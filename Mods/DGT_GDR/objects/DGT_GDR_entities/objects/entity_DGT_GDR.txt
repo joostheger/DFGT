@@ -536,6 +536,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
+		[REQUIRED_BEDROOM:2500]
+		[REQUIRED_DINING:2500]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:2500]
+		[REQUIRED_CABINETS:2]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:MM_COUNC]
 		[NAME:merchant master councillor:merchant master councillors]
@@ -564,6 +570,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
+		[REQUIRED_BEDROOM:1000]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:1000]
+		[REQUIRED_CABINETS:2]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:MM_MAG]
 		[NAME:merchant master magistrate:merchant master magistrates]
@@ -594,6 +606,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
+		[REQUIRED_BEDROOM:1000]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:1000]
+		[REQUIRED_CABINETS:2]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:MM_AMBAS]
 		[NAME:merchant master ambassador:merchant master ambassadors]
@@ -619,6 +637,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
+		[REQUIRED_BEDROOM:1000]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:1000]
+		[REQUIRED_CABINETS:2]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:MM_STEW]
 		[NAME:merchant master steward:merchant master steward]
@@ -646,6 +670,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
+		[REQUIRED_BEDROOM:1000]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:1000]
+		[REQUIRED_CABINETS:2]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:M_JM]
 		[NAME:merchant journeyman:merchant journeymen]
@@ -670,6 +700,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[EXPORTED_IN_LEGENDS]
 		[MENIAL_WORK_EXEMPTION]
 		[QUEST_GIVER]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:M_AP]
 		[NAME:merchant apprentice:merchant apprentices]
@@ -684,6 +720,8 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[PRECEDENCE:45]
 		[COLOR:2:0:0] 
 		[DO_NOT_CULL]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
 
 	[POSITION:CAPTAIN_GENERAL]
 		[NAME:captain-general:captain-general]
@@ -706,6 +744,13 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[KILL_QUEST]
 		[MENIAL_WORK_EXEMPTION]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:1000]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:1000]
+		[REQUIRED_RACKS:2]
+		[REQUIRED_STANDS:2]
+		[REQUIRED_BOXES:2]
 		
 	[POSITION:CAPTAIN]
 		[NAME:captain:captains]
@@ -720,6 +765,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[COLOR:0:0:1]
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREE_MERCHANT1]
 		[NAME:free merchant:free merchants]
@@ -797,6 +848,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[LAND_NAME:chartered trade post]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
+		[SUCCESSION:BY_POSITION:CLERK1]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH2]
 		[RESPONSIBILITY:TRADE] 			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
@@ -809,6 +861,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MENIAL_WORK_EXEMPTION]
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 	
 	[POSITION:LH2]
 		[NAME:trade administrator:trade administrators]
@@ -816,6 +872,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[LAND_NAME:chartered market town]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
+		[SUCCESSION:BY_POSITION:CLERK2]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH3]
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
@@ -829,6 +886,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MENIAL_WORK_EXEMPTION]
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_CABINETS:2]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:LH3]
 		[NAME:trade director:trade directors]
@@ -836,6 +897,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[LAND_NAME:chartered merchant city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
+		[SUCCESSION:BY_POSITION:CLERK3]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH4]
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
@@ -849,6 +911,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MENIAL_WORK_EXEMPTION]
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_CABINETS:3]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:LH4]
 		[NAME:chief commissioner:chief commissioners]
@@ -858,6 +924,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[LAND_NAME:principal mercantile city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
+		[SUCCESSION:BY_POSITION:CLERK4]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH5]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -872,6 +939,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MENIAL_WORK_EXEMPTION]
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:4]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:LH5]
 		[NAME:grand commissioner:grand commissioners]
@@ -881,6 +954,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[LAND_NAME:citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
+		[SUCCESSION:BY_POSITION:CLERK5]	- not sure if this works, but its better than nothing.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[PRECEDENCE:20]
@@ -894,6 +968,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MENIAL_WORK_EXEMPTION]
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:5]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FORCED_ADMINISTRATOR]
 		[NAME:chief commissioner:chief commissioners]
@@ -902,7 +982,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:MM_COUNC]
 		[APPOINTED_BY:CAPTAIN_GENERAL]
 		[APPOINTED_BY:MARSHAL]
-		[LAND_NAME:commissioned exploitation site]
+		[LAND_NAME:commissioned reclamation site]
 		[CONQUERED_SITE]
 		[BRAG_ON_KILL]
 		[CHAT_WORTHY]
@@ -934,6 +1014,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[PRECEDENCE:60]
 		[COLOR:4:0:1] 
 		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:0]
+		[REQUIRED_DINING:0]
+		[REQUIRED_OFFICE:0]
 
 	[POSITION:B1]
 		[NAME:free burgher:burghers]
@@ -954,6 +1037,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[PRECEDENCE:50]
 		[COLOR:4:0:0] 
 		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_DINING:100]
+		[REQUIRED_OFFICE:0]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:B2]
 		[NAME:established burgher:burghers]
@@ -977,6 +1064,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SLEEP_PRETENSION] 				- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]				- from here and higher
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_DINING:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:B3]
 		[NAME:respectable burgher:burghers]
@@ -1003,6 +1094,11 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DEMAND_MAX:1] 					- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_DINING:250]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_TOMB:0]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:B4]
 		[NAME:notable burgher:burghers]
@@ -1030,6 +1126,11 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MENIAL_WORK_EXEMPTION_SPOUSE]	- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_DINING:250]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_TOMB:100]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:B5]
 		[NAME:great burgher:burghers]
@@ -1058,6 +1159,11 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[EXPORTED_IN_LEGENDS] 			- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:1000]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_TOMB:250]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:B6]
 		[NAME:patrician:patricians]
@@ -1087,6 +1193,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[QUEST_GIVER]					- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:1500]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:B7]
 		[NAME:esteemed patrician:patricians]
@@ -1117,6 +1229,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[CHAT_WORTHY]					- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:1500]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:1000]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:B8]
 		[NAME:magnate patrician:patricians]
@@ -1147,6 +1265,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[CHAT_WORTHY]
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:2500]
+		[REQUIRED_DINING:1500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:1500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:3]
 
 	[POSITION:B9]
 		[NAME:grand patrician:patricians]
@@ -1178,6 +1302,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[BRAG_ON_KILL]				- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:2500]
+		[REQUIRED_DINING:1500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:2500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:3]
 
 	[POSITION:B10]
 		[NAME:most serene patrician:patricians]
@@ -1209,6 +1339,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[KILL_QUEST]			- from here and higher
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:2500]
+		[REQUIRED_DINING:2500]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:2500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:3]
 
 	[POSITION:REPL1]
 			The replacer is used to prevent the creation of more than 7 burger dwarves. 
@@ -1239,8 +1375,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NAME:inquisitor:inquisitors]
 		[SITE]
 		[NUMBER:1]
-		[APPOINTED_BY:LH1]	
-		[APPOINTED_BY:INQUIS1]			- self re-appoint, to counter LH loss						
+		[APPOINTED_BY:LH1]						
 		[RESPONSIBILITY:ESPIONAGE]			
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[PRECEDENCE:40]
@@ -1249,6 +1384,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_CABINETS:1]
 
 	[POSITION:INQUIS2]
 		[NAME:inquisitor:inquisitors]
@@ -1260,8 +1398,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:LH4]	
 		[APPOINTED_BY:LH5]	
 		[APPOINTED_BY:B10]				- can also be appointed once the city has 170 population,
-		[APPOINTED_BY:HGM]				- or when it becomes the capital
-		[APPOINTED_BY:INQUIS2]			- self re-appoint, to counter LH loss. TEST: does dit work, because of SUCC?		
+		[APPOINTED_BY:HGM]				- or when it becomes the capital	
 		[RESPONSIBILITY:ESPIONAGE]			
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[SUCCESSION:BY_POSITION:INQUIS1] 
@@ -1272,14 +1409,19 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:CLERK0]
 		[NAME:clerk:clerks]
 		[SITE]
 		[NUMBER:1]
 		[APPOINTED_BY:B0]				- initially appointable
-		[APPOINTED_BY:B1]				- and until 17 dwarves re-appointable
-		[APPOINTED_BY:CLERK0]			- afther that, only re-appointable by itself, untill it is succeeded by CLERK2
+		[APPOINTED_BY:B1]				- and until 17 dwarves re-appointable, untill it is succeeded by CLERK1
 		[RESPONSIBILITY:TRADE]			- neccesary for exporting goods, until the landholder arrives. 
 		[RESPONSIBILITY:DELIVER_MESSAGES]	
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]	
@@ -1287,13 +1429,16 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[PRECEDENCE:60]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
 		
 	[POSITION:CLERK1]
 		[NAME:clerk:clerks]
 		'for life, protected rights
 		[SITE]
 		[NUMBER:1]
-		[APPOINTED_BY:LH1]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
+		[APPOINTED_BY:LH1]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
 		[SUCCESSION:BY_POSITION:CLERK0] - if you had a CLERK0, it succeedes as CLERK2
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
@@ -1303,14 +1448,16 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK2]
 		[NAME:clerk:clerks]
 		'for life, protected rights
 		[SITE]
 		[NUMBER:2]
-		[APPOINTED_BY:LH2]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
-		[APPOINTED_BY:CLERK2]			- self re-appoint, to counter LH loss	
+		[APPOINTED_BY:LH2]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
 		[SUCCESSION:BY_POSITION:CLERK1] 
 		[RESPONSIBILITY:ACCOUNTING]	
 		[RESPONSIBILITY:TRADE]
@@ -1322,14 +1469,16 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK3]
 		[NAME:clerk:clerks]
 		'for life, protected rights
 		[SITE]
 		[NUMBER:2]
-		[APPOINTED_BY:LH3]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
-		[APPOINTED_BY:CLERK3]			- self re-appoint, to counter LH loss			
+		[APPOINTED_BY:LH3]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
 		[SUCCESSION:BY_POSITION:CLERK2] 
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:TRADE]
@@ -1342,14 +1491,16 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK4]
 		[NAME:clerk:clerks]
 		'for life, protected rights
 		[SITE]
 		[NUMBER:3]
-		[APPOINTED_BY:LH4]				- if any landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
-		[APPOINTED_BY:CLERK4]			- self re-appoint, to counter LH loss			
+		[APPOINTED_BY:LH4]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
 		[SUCCESSION:BY_POSITION:CLERK3] 
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:TRADE]
@@ -1362,6 +1513,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK5]
 		[NAME:clerk:clerks]
@@ -1369,7 +1523,6 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SITE]
 		[NUMBER:3]
 		[APPOINTED_BY:LH5]				
-		[APPOINTED_BY:CLERK5]			- self re-appoint, to counter LH loss			
 		[SUCCESSION:BY_POSITION:CLERK4] 
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:TRADE]
@@ -1382,6 +1535,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK5_EXTRA]
 		[NAME:clerk:clerks]
@@ -1391,6 +1547,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:LH5]				- you can do so whith your level-5 LH,
 		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
 		[APPOINTED_BY:B10]				- or if your fortress has at least 170 population, then a burgher can appoint them.
+		[SUCCESSION:BY_POSITION:CLERK5] - not really needed, but to make this position the same as the other clerks.
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
@@ -1402,6 +1559,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
 
 	[POSITION:EXECUTIONER]
 		[NAME:executioner:executioners]
@@ -1414,6 +1574,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[COLOR:3:0:0] 
 		[BRAG_ON_KILL]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
 
 	[POSITION:DOCTOR]
 		[NAME:doctor:doctor]
@@ -1433,6 +1597,9 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:HEALTH_MANAGEMENT]
 		[PRECEDENCE:50]
 		[COLOR:7:0:1] 
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:MARSHAL]
 		[NAME:marshal:marshals]
@@ -1457,6 +1624,13 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MENIAL_WORK_EXEMPTION]
 		[REQUIRES_MARKET]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_RACKS:2]
+		[REQUIRED_STANDS:2]
+		[REQUIRED_BOXES:2]
 
 	[POSITION:RG_CAPTAIN]
 		[NAME:republican guard captain:republican guard captains]
@@ -1471,6 +1645,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:MG_CAPTAIN]
 		[NAME:municipal guard captain:municipal guard captains]
@@ -1484,6 +1664,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:CG_CAPTAIN]
 		[NAME:civic guard captain:civic guard captains]
@@ -1497,6 +1683,12 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+		[REQUIRED_BOXES:1]
 
 
 
