@@ -1,6 +1,7 @@
 reaction_DGT_GDR
 
-[OBJECT:REACTION]
+TODO:
+OBJECT:REACTION]
 
 //How to start a new cronicle
 //How to add pages to a cronicle
