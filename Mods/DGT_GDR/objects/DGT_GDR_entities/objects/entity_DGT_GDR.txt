@@ -10,8 +10,8 @@ entity_DGT_GDR
 
 	[DEFAULT_SITE_TYPE:CITY]
 	[LIKES_SITE:CITY]
+	[LIKES_SITE:PLAYER_FORTRESS]
 
-TEST	LIKES_SITE:CAVE_DETAILED -Is dit nodig om migranten te krijgen? eventueel testen of dit te vervangen is door PLAYER_FORTRESS
 	[TOLERATES_SITE:CITY]
 	[TOLERATES_SITE:CAVE_DETAILED]
 
@@ -241,14 +241,21 @@ TEST	LIKES_SITE:CAVE_DETAILED -Is dit nodig om migranten te krijgen? eventueel t
 
 	[SELECT_SYMBOL:CIV:NAME_REPUBLIC]
 		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND]
-		[SUBSELECT_SYMBOL:CIV:REPUBLIC_ADDITIONAL]
+		[SUBSELECT_SYMBOL:CIV:ARTIFICE]
+		[SUBSELECT_SYMBOL:CIV:WEALTH]
+		[SUBSELECT_SYMBOL:CIV:TRADE]
 	[SELECT_SYMBOL:SITE:NAME_ENTITY_TOWN_FOUNDER]
 		[SUBSELECT_SYMBOL:SITE:REPUBLIC_ADDITIONAL]
+		[SUBSELECT_SYMBOL:SITE:ARTIFICE]
+		[SUBSELECT_SYMBOL:SITE:WEALTH]
+		[SUBSELECT_SYMBOL:SITE:TRADE]
 	[SELECT_SYMBOL:MERCHANT_COMPANY:NAME_ENTITY_REPUBLICAN_MERCHANT_COMPANY]
+		[SUBSELECT_SYMBOL:MERCHANT_COMPANY:ARTIFICE]
+		[SUBSELECT_SYMBOL:MERCHANT_COMPANY:WEALTH]
+		[SUBSELECT_SYMBOL:MERCHANT_COMPANY:TRADE]
 	[SELECT_SYMBOL:FESTIVAL:NAME_REPUBLIC_FESTIVAL]
 
 	[SELECT_SYMBOL:REMAINING:ARTIFICE]
-	[SELECT_SYMBOL:REMAINING:EARTH]
 	[SELECT_SYMBOL:REMAINING:WEALTH]
 	[SELECT_SYMBOL:REMAINING:TRADE]
 
@@ -459,8 +466,6 @@ TEST	LIKES_SITE:CAVE_DETAILED -Is dit nodig om migranten te krijgen? eventueel t
 	[RIVER_PRODUCTS]
 	[OCEAN_PRODUCTS]
 
-TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
-
 	[OUTDOOR_WOOD]
 	[INDOOR_WOOD]
 	[INDOOR_FARMING]
@@ -560,7 +565,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[SUCCESSION:BY_POSITION:MM_MAG]
 		[ELECTED]
-		[PRECEDENCE:15]
+		[PRECEDENCE:12]
 		[COLOR:2:0:0] 
 		[DEMAND_MAX:1]
 		[MANDATE_MAX:1]
@@ -595,7 +600,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[SUCCESSION:BY_POSITION:MM_AMBAS]
 		[ELECTED]
-		[PRECEDENCE:15]
+		[PRECEDENCE:13]
 		[COLOR:2:0:0] 
 		[DEMAND_MAX:1]
 		[MANDATE_MAX:1]
@@ -627,7 +632,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:M_JM]
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[ELECTED]
-		[PRECEDENCE:15]
+		[PRECEDENCE:14]
 		[COLOR:2:0:0] 
 		[DEMAND_MAX:1]
 		[MANDATE_MAX:1]
@@ -696,7 +701,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:MAINTAIN_TUNNELS]
 		[SUCCESSION:BY_POSITION:M_AP]
 		[ELECTED]
-		[PRECEDENCE:30]
+		[PRECEDENCE:32]
 		[COLOR:2:0:0] 
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
@@ -720,7 +725,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_FOOD]
 		[RESPONSIBILITY:PREPARE_LEADER_MEALS]
 		[ELECTED]
-		[PRECEDENCE:45]
+		[PRECEDENCE:44]
 		[COLOR:2:0:0] 
 		[DO_NOT_CULL]
 		[REQUIRED_BEDROOM:100]
@@ -736,7 +741,8 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:MM_MAG]
 		[RESPONSIBILITY:MILITARY_STRATEGY]
 		[COMMANDER:CAPTAIN:ALL]
-		[COMMANDER:MARSHAL:ALL]
+		[COMMANDER:RG_CAPTAIN:ALL]
+		[COMMANDER:CG_CAPTAIN:ALL]
 		[PRECEDENCE:20]
 		[COLOR:0:0:1] 
 		[BRAG_ON_KILL]
@@ -764,7 +770,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:ATTACK_ENEMIES]
 		[SQUAD:8:soldier:soldiers]
 		[APPOINTED_BY:CAPTAIN_GENERAL]
-		[PRECEDENCE:35]
+		[PRECEDENCE:37]
 		[COLOR:0:0:1]
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
@@ -855,7 +861,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[REPLACED_BY:LH2]
 		[RESPONSIBILITY:TRADE] 			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
-		[PRECEDENCE:40]
+		[PRECEDENCE:41]
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:1]
 		[DO_NOT_CULL]
@@ -880,7 +886,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
-		[PRECEDENCE:35]
+		[PRECEDENCE:34]
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:2]
 		[DO_NOT_CULL]
@@ -905,7 +911,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[PRECEDENCE:30]
+		[PRECEDENCE:31]
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:3]
 		[DO_NOT_CULL]
@@ -931,7 +937,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[REPLACED_BY:LH5]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[PRECEDENCE:25]
+		[PRECEDENCE:26]
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:4]
 		[BRAG_ON_KILL]
@@ -960,7 +966,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SUCCESSION:BY_POSITION:CLERK5]	- not sure if this works, but its better than nothing.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]
-		[PRECEDENCE:20]
+		[PRECEDENCE:22]
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:5]
 		[BRAG_ON_KILL]
@@ -1010,11 +1016,29 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NUMBER:7]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[SUCCESSION:BY_HEIR] 			- these succesion rules prevents re-assignment by the player.
-		[REPLACED_BY:REPL1]
+		[REPLACED_BY:REPL1]				- because a town it settled with more than 7 dwarves, this position is immediatly replaced when the new settlement is created.
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[PRECEDENCE:60]
+		[PRECEDENCE:59]
+		[COLOR:4:0:1] 
+		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:0]
+		[REQUIRED_DINING:0]
+		[REQUIRED_OFFICE:0]
+
+	[POSITION:B0_TOWN]
+		[NAME:settler:settlers]
+		[SITE]
+		[NUMBER:7]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REPLACED_BY:B2]				- cleanup after town is establised
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[ELECTED]						- this combination prevents usage by the player
+		[APPOINTED_BY:B0_TOWN]			- but in world-gen, this position will be filled
+		[PRECEDENCE:59]
 		[COLOR:4:0:1] 
 		[DUTY_BOUND]
 		[REQUIRED_BEDROOM:0]
@@ -1030,8 +1054,10 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SITE]
 		[NUMBER:7]
 		[SUCCESSION:BY_POSITION:B0]
+		[SUCCESSION:BY_POSITION:B0_TOWN]
 		[SUCCESSION:BY_HEIR] 			
 		[APPOINTED_BY:B0]				- when 9 dwarves have arrived, position B0 is replaced and appointmend of this position and higher is no longer possible. 
+		[APPOINTED_BY:B0_TOWN]
 		[REPLACED_BY:B3]				- cleanup
 		[REQUIRES_POPULATION:8] 		- immediatly after the first migrant arrives.
 		[RESPONSIBILITY:LAW_MAKING]
@@ -1061,7 +1087,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[PRECEDENCE:45]
+		[PRECEDENCE:46]
 		[COLOR:4:0:0] 
 		[FLASHES] 						- from here and higher
 		[SLEEP_PRETENSION] 				- from here and higher
@@ -1119,7 +1145,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[PRECEDENCE:35]
+		[PRECEDENCE:33]
 		[COLOR:4:0:0] 
 		[FLASHES]
 		[SLEEP_PRETENSION]
@@ -1219,7 +1245,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[PRECEDENCE:20]
+		[PRECEDENCE:18]
 		[COLOR:4:0:0] 
 		[FLASHES]
 		[SLEEP_PRETENSION]
@@ -1255,7 +1281,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[PRECEDENCE:15]
+		[PRECEDENCE:16]
 		[COLOR:4:0:0] 
 		[FLASHES]
 		[SLEEP_PRETENSION]
@@ -1354,8 +1380,8 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NAME:replacer 1 (SHOULD NOT BE FILLED):replacer]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
-		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
+		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
+		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
 		[APPOINTED_BY:REPL1]			- appointed only by himself, so: never.
 		[REQUIRES_POPULATION:9] 		- quickly after the second migrant arrives.
 		[REPLACED_BY:B2]				- cleanup
@@ -1367,31 +1393,14 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NAME:replacer 2 (SHOULD NOT BE FILLED):replacer]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
-		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. Test: no crashes?
+		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
+		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
 		[APPOINTED_BY:REPL2]			- appointed only by himself, so: never.
 		[REQUIRES_POPULATION:175] 		- shortly after the last burger elevation has happened
 		[PRECEDENCE:200]
 		[REQUIRES_MARKET]
 
-	[POSITION:INQUIS1]
-		[NAME:inquisitor:inquisitors]
-		[SITE]
-		[NUMBER:1]
-		[APPOINTED_BY:LH1]						
-		[RESPONSIBILITY:ESPIONAGE]			
-		[RESPONSIBILITY:LAW_ENFORCEMENT]
-		[PRECEDENCE:40]
-		[COLOR:3:0:0] 
-		[DO_NOT_CULL]
-		[DUTY_BOUND]
-		[EXPORTED_IN_LEGENDS]
-		[REQUIRES_MARKET]
-		[REQUIRED_BEDROOM:100]
-		[REQUIRED_OFFICE:250]
-		[REQUIRED_CABINETS:1]
-
-	[POSITION:INQUIS2]
+	[POSITION:INQUIS]
 		[NAME:inquisitor:inquisitors]
 		[SITE]
 		[NUMBER:1]
@@ -1424,6 +1433,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[SITE]
 		[NUMBER:1]
 		[APPOINTED_BY:B0]				- initially appointable
+		[APPOINTED_BY:B0_TOWN]
 		[APPOINTED_BY:B1]				- and until 17 dwarves re-appointable, untill it is succeeded by CLERK1
 		[RESPONSIBILITY:TRADE]			- neccesary for exporting goods, until the landholder arrives. 
 		[RESPONSIBILITY:DELIVER_MESSAGES]	
@@ -1557,7 +1567,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:60]
+		[PRECEDENCE:61]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
@@ -1573,7 +1583,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:HAMMER]
-		[PRECEDENCE:60]
+		[PRECEDENCE:62]
 		[COLOR:3:0:0] 
 		[BRAG_ON_KILL]
 		[REQUIRES_MARKET]
@@ -1586,7 +1596,8 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[NAME:doctor:doctor]
 		[SITE]
 		[NUMBER:1]				
-		[APPOINTED_BY:B0]		
+		[APPOINTED_BY:B0]	
+		[APPOINTED_BY:B0_TOWN]	
 		[APPOINTED_BY:B1]	
 		[APPOINTED_BY:B2]	
 		[APPOINTED_BY:B3]	
@@ -1598,7 +1609,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:B9]	
 		[APPOINTED_BY:B10]			
 		[RESPONSIBILITY:HEALTH_MANAGEMENT]
-		[PRECEDENCE:50]
+		[PRECEDENCE:51]
 		[COLOR:7:0:1] 
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
@@ -1616,7 +1627,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[COMMANDER:RG_CAPTAIN:ALL]
 		[COMMANDER:CG_CAPTAIN:ALL]
 		[RESPONSIBILITY:UPGRADE_SQUAD_EQUIPMENT]
-		[PRECEDENCE:20]
+		[PRECEDENCE:21]
 		[COLOR:0:0:1] 
 		[BRAG_ON_KILL]
 		[CHAT_WORTHY]
@@ -1644,7 +1655,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:ATTACK_ENEMIES]
 		[RESPONSIBILITY:PATROL_TERRITORY]
-		[PRECEDENCE:35]
+		[PRECEDENCE:36]
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
@@ -1663,7 +1674,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:LH5]
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:SORT_AMMUNITION]
-		[PRECEDENCE:35]
+		[PRECEDENCE:38]
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
@@ -1682,7 +1693,7 @@ TODO: TEST: bied starting biome RIVER voldoende van onderstaande?
 		[APPOINTED_BY:B10]
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:SORT_AMMUNITION]
-		[PRECEDENCE:35]
+		[PRECEDENCE:39]
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
