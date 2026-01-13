@@ -661,8 +661,7 @@ entity_DGT_GDR
 		[NAME:merchant master ambassador:merchant master ambassadors]
 
 		[DESCRIPTION:The merchant master ambassador holds the highest diplomatic office within the merchants’ guild and is responsible for receiving and hosting diplomatic guests. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
-	
+		
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -696,7 +695,6 @@ entity_DGT_GDR
 		[NAME:merchant master steward:merchant master steward]
 
 		[DESCRIPTION:The merchant master steward holds the highest administrative office of the republic, entrusted with the careful management of its resources. He oversees tax collection, secures the food supply, directs construction, and manages the guilds housekeeping. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
 	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
@@ -732,7 +730,7 @@ entity_DGT_GDR
 	[POSITION:M_JM]
 		[NAME:merchant journeyman:merchant journeymen]
 
-		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for maintaining the trade routes between settlements. While conducting business as a merchant, he mandates the flow of goods and communication across the republic. His position entails clear but modest living requirements, emphasizing practicality over aristocratic excess]
+		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for maintaining the trade routes between settlements. While conducting business as a merchant, he mandates the flow of goods and communication across the republic. His position entails clear but modest and practical living requirements.]
 
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
@@ -765,7 +763,7 @@ entity_DGT_GDR
 	[POSITION:M_AP]
 		[NAME:merchant apprentice:merchant apprentices]
 
-		[DESCRIPTION:The merchant apprentice serves the guild by delivering messages and attending to the needs of its masters. Through diligent service and reliability, he supports the daily workings of the guild while striving to prove his worth and rise through its ranks.]
+		[DESCRIPTION:The merchant guild apprentice serves the guild by delivering messages and attending to the needs of its masters. Through diligent service and reliability, he supports the daily workings of the guild while striving to prove his worth and rise through its ranks.]
 
 		[LAND_NAME:merchants' guild]
 		[NUMBER:2]
