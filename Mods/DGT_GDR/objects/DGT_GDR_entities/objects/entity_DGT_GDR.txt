@@ -406,7 +406,14 @@ entity_DGT_GDR
 	[WEAPON:ITEM_WEAPON_AXE_TRAINING]
 	[WEAPON:ITEM_WEAPON_SWORD_SHORT_TRAINING]
 	[WEAPON:ITEM_WEAPON_SPEAR_TRAINING]
-
+	[WEAPON:ITEM_WEAPON_WHIP]
+	[WEAPON:ITEM_WEAPON_BOW]
+		[AMMO:ITEM_AMMO_ARROWS]
+	[WEAPON:ITEM_WEAPON_PIKE]
+	[WEAPON:ITEM_WEAPON_SWORD_LONG]
+	[WEAPON:ITEM_WEAPON_MAUL]
+	[WEAPON:ITEM_WEAPON_DAGGER_LARGE]
+	[WEAPON:ITEM_WEAPON_MORNINGSTAR]
 	[ARMOR:ITEM_ARMOR_BREASTPLATE:UNCOMMON]
 	[ARMOR:ITEM_ARMOR_MAIL_SHIRT:COMMON]
 	[ARMOR:ITEM_ARMOR_LEATHER:UNCOMMON]
@@ -419,6 +426,10 @@ entity_DGT_GDR
 	[ARMOR:ITEM_ARMOR_DRESS:UNCOMMON]
 	[ARMOR:ITEM_ARMOR_ROBE:RARE]
 	[HELM:ITEM_HELM_HELM:COMMON]
+	[HELM:ITEM_HELM_CAP:RARE]
+	[HELM:ITEM_HELM_HOOD:RARE]
+	[HELM:ITEM_HELM_MASK:RARE]
+	[HELM:ITEM_HELM_SCARF_HEAD:RARE]
 	[HELM:ITEM_HELM_TURBAN:FORCED]
 	[HELM:ITEM_HELM_VEIL_FACE:UNCOMMON]
 	[HELM:ITEM_HELM_VEIL_HEAD:COMMON]
@@ -428,13 +439,18 @@ entity_DGT_GDR
 	[SHOES:ITEM_SHOES_SANDAL:COMMON]
 	[SHOES:ITEM_SHOES_BOOTS_LOW:UNCOMMON]
 	[SHOES:ITEM_SHOES_SOCKS:RARE]
+	[SHOES:ITEM_SHOES_SHOES:UNCOMMON]
+	[SHOES:ITEM_SHOES_BOOTS:RARE]
+	[SHOES:ITEM_SHOES_CHAUSSE:RARE]
 	[PANTS:ITEM_PANTS_PANTS:RARE]
 	[PANTS:ITEM_PANTS_GREAVES:RARE]
 	[PANTS:ITEM_PANTS_LEGGINGS:RARE]
+	[PANTS:ITEM_PANTS_LOINCLOTH:RARE]
+	[PANTS:ITEM_PANTS_THONG:RARE]
 	[PANTS:ITEM_PANTS_BRAIES:COMMON]
+	[PANTS:ITEM_PANTS_SKIRT_SHORT:RARE]
 	[PANTS:ITEM_PANTS_SKIRT:COMMON]
 	[PANTS:ITEM_PANTS_SKIRT_LONG:COMMON]
-	
 	[SHIELD:ITEM_SHIELD_SHIELD]
 	[SHIELD:ITEM_SHIELD_BUCKLER]
 	[SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA]
@@ -472,7 +488,6 @@ entity_DGT_GDR
 	[STONE_PREF]
 	[RIVER_PRODUCTS]
 	[OCEAN_PRODUCTS]
-
 	[OUTDOOR_WOOD]
 	[INDOOR_WOOD]
 	[INDOOR_FARMING]
@@ -530,10 +545,16 @@ entity_DGT_GDR
 
 	[POSITION:HGM]
 		[NAME:honorary grand master:honorary grand masters]
+
+		//Title, role in civ and guild, responsibilies, character, way of succession, election or appointment
+		[DESCRIPTION:This is the symbolic head of the republic, an honorary title given to the leader of the merchants' guild. They have no real power within the guild or the civilization, but are often called upon for advice and guidance. They expect the best treatment possible, as befits their status as the figurehead of the republic. He serves the capital of the civilization by appointing the executioner and republican guard captains.]
+		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
+		
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
 		[NUMBER:1]
+		[RESPONSIBILITY:ADVISE_LEADERS]
 		[SUCCESSION:BY_POSITION:MM_COUNC]
 		[SUCCESSION:BY_POSITION:MM_AMBAS]
 		[SUCCESSION:BY_POSITION:MM_STEW]
@@ -560,6 +581,10 @@ entity_DGT_GDR
 
 	[POSITION:MM_COUNC]
 		[NAME:merchant master councillor:merchant master councillors]
+
+		[DESCRIPTION:The merchant master councillor is one of two guildmasters who act as the chief decision-makers of both the republic and the merchants’ guild. They oversee guild operations, decide on trade policy and warfare. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
+		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
+	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -594,6 +619,10 @@ entity_DGT_GDR
 
 	[POSITION:MM_MAG]
 		[NAME:merchant master magistrate:merchant master magistrates]
+
+		[DESCRIPTION:The merchant master magistrate holds the highest office of justice in the republic, charged with upholding the law and ensuring the safety and protection of the people. It appoints the Captain-General. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
+		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
+	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -630,6 +659,10 @@ entity_DGT_GDR
 
 	[POSITION:MM_AMBAS]
 		[NAME:merchant master ambassador:merchant master ambassadors]
+
+		[DESCRIPTION:The merchant master ambassador holds the highest diplomatic office within the merchants’ guild and is responsible for receiving and hosting diplomatic guests. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
+		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
+	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -661,6 +694,10 @@ entity_DGT_GDR
 
 	[POSITION:MM_STEW]
 		[NAME:merchant master steward:merchant master steward]
+
+		[DESCRIPTION:The merchant master steward holds the highest administrative office of the republic, entrusted with the careful management of its resources. He oversees tax collection, secures the food supply, directs construction, and manages the guilds housekeeping. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
+		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
+	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -694,6 +731,9 @@ entity_DGT_GDR
 
 	[POSITION:M_JM]
 		[NAME:merchant journeyman:merchant journeymen]
+
+		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for maintaining the trade routes between settlements. While conducting business as a merchant, he mandates the flow of goods and communication across the republic. His position entails clear but modest living requirements, emphasizing practicality over aristocratic excess]
+
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -724,6 +764,9 @@ entity_DGT_GDR
 
 	[POSITION:M_AP]
 		[NAME:merchant apprentice:merchant apprentices]
+
+		[DESCRIPTION:The merchant apprentice serves the guild by delivering messages and attending to the needs of its masters. Through diligent service and reliability, he supports the daily workings of the guild while striving to prove his worth and rise through its ranks.]
+
 		[LAND_NAME:merchants' guild]
 		[NUMBER:2]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
@@ -1623,21 +1666,52 @@ entity_DGT_GDR
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_CABINETS:1]
 
-	[POSITION:EXECUTIONER]
-		[NAME:executioner:executioners]
+	[POSITION:EXECUTIONER_HAMMER]
+		[NAME:executioner (hammer):executioners]
 		[SITE]
-		[NUMBER:1]				
+		[NUMBER:1]						- as player, you can choose which type of executioner you want, but world gen chooses always the hammer.
 		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:HAMMER]
 		[PRECEDENCE:62]
 		[COLOR:3:0:0] 
-		[BRAG_ON_KILL]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_RACKS:1]
 		[REQUIRED_STANDS:1]
+
+	[POSITION:EXECUTIONER_AXE]
+		[NAME:executioner (axe):executioners]
+		[SITE]
+		[NUMBER:AS_NEEDED]				- as player, you can choose which type of executioner you want, but world gen chooses always the hammer.			
+		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
+		[RESPONSIBILITY:EXECUTIONS]
+			[EXECUTION_SKILL:AXE]
+		[PRECEDENCE:62]
+		[COLOR:3:0:0] 
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+
+	[POSITION:EXECUTIONER_SPEAR]
+		[NAME:executioner (spear):executioners]
+		[SITE]
+		[NUMBER:AS_NEEDED]				- as player, you can choose which type of executioner you want, but world gen chooses always the hammer.		
+		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
+		[RESPONSIBILITY:EXECUTIONS]
+			[EXECUTION_SKILL:SPEAR]
+		[PRECEDENCE:62]
+		[COLOR:3:0:0]
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+
+		SPEAR
 
 	[POSITION:DOCTOR]
 		[NAME:doctor:doctor]

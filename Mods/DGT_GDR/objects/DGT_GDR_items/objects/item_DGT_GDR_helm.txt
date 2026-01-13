@@ -3,4 +3,4 @@ item_DGT_GDR_helm
 [OBJECT:ITEM]
 
 [SELECT_ITEM:ITEM_HELM_TURBAN]
-[LAYER:UNDER]
+[LAYER:UNDER]           - needed for being available at embark.

@@ -1,0 +1,82 @@
+creature_DGT_GDR
+
+[SELECT_CREATURE:DWARF]
+
+	[CAN_DO_INTERACTION:HANDSHAKE] TEST
+		[CDI:ADV_NAME:Shake hands]
+		[CDI:USAGE_HINT:GREETING]
+		[CDI:BP_REQUIRED:BY_TYPE:GRASP]
+		[CDI:VERB:shake hand:shake hands:shake hands]
+		[CDI:CAN_BE_MUTUAL]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:TARGET:B:TOUCHABLE]
+		[CDI:TARGET_RANGE:B:1]
+		[CDI:MAX_TARGET_NUMBER:B:1]
+		[CDI:WAIT_PERIOD:100]
+
+	[CAN_DO_INTERACTION:COMPLIMENT] TEST
+		[CDI:ADV_NAME:compliment]
+		[CDI:USAGE_HINT:GREETING]
+		[CDI:VERB:compliment:compliments:compliments]
+		[CDI:VERBAL]
+		TODO: create this file
+		[CDI:VERBAL_SPEECH:compliment_DGT_GDR.txt]
+		[CDI:TARGET:B:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:B:1]
+		[CDI:MAX_TARGET_NUMBER:B:1]
+		[CDI:WAIT_PERIOD:100]
+
+	[CAN_DO_INTERACTION:WAVE] TEST
+		[CDI:ADV_NAME:Wave]
+		[CDI:USAGE_HINT:GREETING]
+		[CDI:BP_REQUIRED:BY_TYPE:GRASP]
+		[CDI:VERB:wave:waves:waves]
+		[CDI:CAN_BE_MUTUAL]
+		[CDI:TARGET:A:SELF_ONLY]
+		[CDI:TARGET:B:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:B:10]
+		[CDI:MAX_TARGET_NUMBER:B:1]
+		[CDI:WAIT_PERIOD:50]
+
+
+	
+
+TODO add more interactions
+
+
+	GREET after meeting after a long time:
+		A: Geen CAVE_ADAPT: 
+		B: lange CAVE_ADAPT: 
+		See: https://www.dwarffortresswiki.org/index.php/Syndrome_examples
+	
+	NEGATIVE_SOCIAL_RESPONSE
+		LINE_OF_SIGHT: flip the bird
+		Push softley
+		VERBAL: mild Insult
+		Give nickname: CE_DISPLAY_NAME + shame
+		Motivate good behaviour: Adds tag to prevent negative interactins. needs syndrome: negative behaviour
+	TORMENT 
+		Push awai(propel force)
+		VERBAL: dark Insult
+		Give nickname: CE_DISPLAY_NAME
+		Motivate good behaviour: Adds tag to prevent negative interactins. needs syndrome: negative behaviour
+
+
+
+	ATTACK
+	FLEEING
+	DEFEND
+
+negatieve Secrets om te leren:
+sectet handshakes:
+- make temporary MISCHIEVOUS (CE_ADD_TAG)
+- go on! temporary NO_SLEEP
+- temporary CE_ERRATIC_BEHAVIOR
+- very short CRAZED
+- secret of the deal: value of commerce higher, better skiils in appraiser etc. 
+- secret of double bookkeeping
+
+The best joke ever
+- tell a very funny joke. person is temporary parallized with laughter (CE_ADD_TAG). once recovered, they can tell it themselfs, but only if noone has heard that before. 
+
+
