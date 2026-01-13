@@ -55,6 +55,7 @@ interaction_DGT_GDR
 	[I_TARGET:A:CREATURE]
 		[IT_LOCATION:CONTEXT_BP]        <- TEST
         [IT_REQUIRES:CAN_LEARN]       <- TEST
+		[IT_REQUIRES:CAN_SPEAK]
 	[I_TARGET:B:CREATURE]
 		[IT_LOCATION:CONTEXT_BP]         <- TEST
         [IT_REQUIRES:CAN_LEARN]       <- TEST
@@ -72,33 +73,143 @@ interaction_DGT_GDR
 			[CE_FEEL_EMOTION:EMOTION:ENTHUSIASM:SEV:25:PROB:20:SIZE_DILUTES:START:0:PEAK:1:END:25:DWF_STRETCH:144]
 			[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:200:DWF_STRETCH:144] - Dummy effect to let the syndrome apply for four hours
 
-[INTERACTION:GREET_CAVE_ADAPT]
+[INTERACTION:GREET_FROM_OUTSIDE]
 	[I_SOURCE:CREATURE_ACTION]
 	[I_TARGET:A:CREATURE]
 		[IT_LOCATION:CONTEXT_BP]        <- TEST
         [IT_REQUIRES:CAN_LEARN]       <- TEST
+		[IT_REQUIRES:CAN_SPEAK]
 	[I_TARGET:B:CREATURE]
 		[IT_LOCATION:CONTEXT_BP]         <- TEST
         [IT_REQUIRES:CAN_LEARN]       <- TEST
 		[IT_MANUAL_INPUT:creature]       <- TEST
-		[IT_CANNOT_HAVE_SYNDROME_CLASS:GREETED_AFTER_LONG_TIME]  <- TEST
-		[IT_CANNOT_HAVE_SYNDROME_CLASS:CAVE_ADAPTED]  <- TEST
+		[IT_CANNOT_HAVE_SYNDROME_CLASS:GREETED_FROM_OUTSIDE]  <- TEST
+		[IT_CANNOT_HAVE_SYNDROME_CLASS:NORMAL_CAVE_ADAPTED]  <- TODO: niet iemand groeten die niet lang buiten is geweest. TEST
+		[IT_CANNOT_HAVE_SYNDROME_CLASS:BEEN_OUTSIDE]
 	[I_EFFECT:ADD_SYNDROME]
 		[IE_TARGET:B]
 		[IE_IMMEDIATE]
 		[SYNDROME]
-			[SYN_CLASS:GREETED_AFTER_LONG_TIME]
+			[SYN_CLASS:GREETED_FROM_OUTSIDE]
 			[CE_FEEL_EMOTION:EMOTION:NOSTALGIA:SEV:500:PROB:20:SIZE_DILUTES:START:0:PEAK:1:END:100:DWF_STRETCH:144]
 			[CE_FEEL_EMOTION:EMOTION:CARING:SEV:400:PROB:20:SIZE_DILUTES:START:0:PEAK:1:END:100:DWF_STRETCH:144]
 			[CE_FEEL_EMOTION:EMOTION:FONDNESS:SEV:500:PROB:20:SIZE_DILUTES:START:0:PEAK:1:END:100:DWF_STRETCH:144]
 			[CE_FEEL_EMOTION:EMOTION:GRATITUDE:SEV:100:PROB:20:SIZE_DILUTES:START:0:PEAK:1:END:100:DWF_STRETCH:144]
 			[CE_FEEL_EMOTION:EMOTION:AFFECTION:SEV:100:PROB:20:SIZE_DILUTES:START:0:PEAK:1:END:100:DWF_STRETCH:144]
-			[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:100:DWF_STRETCH:144] - Dummy effect to let the syndrome apply for two hours
+			[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:8400:DWF_STRETCH:144] - Dummy effect to let the syndrome apply for a week.
 
-		
+		todo: only apply to dwarves.
 	Todo: give syndrome to dwarves that makes them cave adapt
 	
-		[CDI:VERBAL]
-		[CDI:VERBAL_SPEECH:GREET_CAVE_ADAPT_DGT_GDR.txt]
-		TODO: create this file
+	TODO: apply these syndromes to the dwarven fysique. 
 
+[SYNDROME]
+	[SYN_NAME:been outside]
+		[SYN_CLASS:BEEN_OUTSIDE]
+		todo: zichtbaar maken!
+		[CE_CAN_DO_INTERACTIONL]
+				[CDI:ADV_NAME:greet from outside]
+ 				[CDI:INTERACTION:GREET_FROM_OUTSIDE]
+				[CDI:USAGE_HINT:GREETING]
+				[CDI:VERB:greet:greets:greets]
+				[CDI:VERBAL]
+				[CDI:VERBAL_SPEECH:GREET_CAVE_ADAPT_DGT_GDR.txt] TODO: create this file
+ 				[CDI:TARGET:B:LINE_OF_SIGHT]
+ 				[CDI:TARGET_RANGE:B:2]
+ 				[CDI:WAIT_PERIOD:30]
+		[CE:COUNTER_TRIGGER:CAVE_ADAPT:NONE:1200:REQUIRED] //Having been outside for no longer than a day
+
+[SYNDROME]
+	[SYN_NAME:normal adaptation]
+	[SYN_CLASS:NORMAL_CAVE_ADAPTED]
+	todo: zichtbaar maken!
+	[CE_SPEED_CHANGE:SPEED_PERC:100:START:0:END:50:DWF_STRETCH:144] -applied for one hour. TEST: will it be reapplied?
+		[CE:COUNTER_TRIGGER:CAVE_ADAPT:1200:100800:REQUIRED] //Having been inside for longer than a three months
+
+[SYNDROME]
+	[SYN_NAME:been inside for long]
+	[SYN_CLASS:BEEN_INSIDE]
+	todo: zichtbaar maken!
+		[CE:COUNTER_TRIGGER:CAVE_ADAPT:100800:NONE:REQUIRED] //Having been inside for longer than a three months
+
+
+secrets:
+CE_MENT_ATT_CHANGE
+- bookkeeping
+	- increate of analytic ability
+	 increases PERFECTIONIST
+- political beast:
+	- increase of Linguistic Ability
+	- increate of Social Awareness
+- 
+CE_CHANGE_PERSONALITY
+- equal distribution of wealth: 
+	- Lowers ENVY_PROPENSITY
+	- increases GRATITUDE
+- temper
+	- increases IMMODERATION
+- orderlyness
+	- decreases WASTEFULNESS
+	- increases POLITENESS
+	- decreases IMMODESTY
+	- increases ORDERLINESS
+- the benefits of wealth:
+	- increases ENVY_PROPENSITY
+	- increases GREED
+	- increases VANITY
+	- insreases PRIDE
+	- decreases ALTRUISM
+- how to coop with political chaos:
+	- lowers ANXIETY_PROPENSITY and STRESS_VULNERABILITY
+	- increases ASSERTIVENESS
+- harmony
+	- lowers DISCORD
+	- increases FRIENDLINESS
+- being a good citizen:
+	- increases DUTIFULNESS
+- cooperation
+	- lowers DISDAIN_ADVICE
+	- oncreases TRUST
+	- increase ALTRUISM
+	- increase GREGARIOUSNESS
+	- can do interaction: give compliments
+- how to make it in live:
+	- increases CONFIDENCE
+	- increases AMBITION
+- loves other races
+	- increases CURIOSITY, increases TOLERANT
+
+goals:
+- ATTAIN_RANK_IN_SOCIETY
+- MAINTAIN_ENTITY_STATUS
+- BRING_PEACE_TO_THE_WORLD
+- RULE_THE_WORLD
+- MAKE_A_GREAT_DISCOVERY
+
+
+[INTERACTION:GDR_SECRET]
+	[I_SOURCE:SECRET]
+		[IS_NAME:the secrets of life and death]
+		[IS_SPHERE:DEATH]
+		[IS_SECRET_GOAL:IMMORTALITY]
+		[IS_SECRET:SUPERNATURAL_LEARNING_POSSIBLE]
+		[IS_SECRET:MUNDANE_RESEARCH_POSSIBLE]
+		[IS_SECRET:MUNDANE_TEACHING_POSSIBLE]
+		[IS_SECRET:MUNDANE_RECORDING_POSSIBLE:BOOK_INSTRUCTION:SECRET_DEATH]
+	[I_TARGET:A:CREATURE]
+		[IT_LOCATION:CONTEXT_CREATURE]
+		[IT_REQUIRES:MORTAL]
+		[IT_REQUIRES:CAN_LEARN]
+		[IT_REQUIRES:CAN_SPEAK]
+	[I_EFFECT:ADD_SYNDROME]
+		[IE_TARGET:A]
+		[IE_IMMEDIATE]
+		[SYNDROME]
+			[CE_DISPLAY_TILE:TILE:165:5:0:1:START:0]
+			[CE_DISPLAY_NAME:NAME:necromancer:necromancers:necromantic:START:0]
+			[CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0]
+			[CE_CAN_DO_INTERACTION:START:0]
+				[CDI:ADV_NAME:Animate corpse]
+				[CDI:INTERACTION:EXAMPLE RAISE]
+	
+		
