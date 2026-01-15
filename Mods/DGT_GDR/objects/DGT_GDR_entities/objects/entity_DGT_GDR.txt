@@ -619,10 +619,8 @@ entity_DGT_GDR
 
 	[POSITION:MM_MAG]
 		[NAME:merchant master magistrate:merchant master magistrates]
-
 		[DESCRIPTION:The merchant master magistrate holds the highest office of justice in the republic, charged with upholding the law and ensuring the safety and protection of the people. It appoints the Captain-General. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
 		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
-	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -659,9 +657,7 @@ entity_DGT_GDR
 
 	[POSITION:MM_AMBAS]
 		[NAME:merchant master ambassador:merchant master ambassadors]
-
 		[DESCRIPTION:The merchant master ambassador holds the highest diplomatic office within the merchants’ guild and is responsible for receiving and hosting diplomatic guests. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -693,9 +689,7 @@ entity_DGT_GDR
 
 	[POSITION:MM_STEW]
 		[NAME:merchant master steward:merchant master steward]
-
 		[DESCRIPTION:The merchant master steward holds the highest administrative office of the republic, entrusted with the careful management of its resources. He oversees tax collection, secures the food supply, directs construction, and manages the guilds housekeeping. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -729,9 +723,7 @@ entity_DGT_GDR
 
 	[POSITION:M_JM]
 		[NAME:merchant journeyman:merchant journeymen]
-
 		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for maintaining the trade routes between settlements. While conducting business as a merchant, he mandates the flow of goods and communication across the republic. His position entails clear but modest and practical living requirements.]
-
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -762,9 +754,7 @@ entity_DGT_GDR
 
 	[POSITION:M_AP]
 		[NAME:merchant apprentice:merchant apprentices]
-
 		[DESCRIPTION:The merchant guild apprentice serves the guild by delivering messages and attending to the needs of its masters. Through diligent service and reliability, he supports the daily workings of the guild while striving to prove his worth and rise through its ranks.]
-
 		[LAND_NAME:merchants' guild]
 		[NUMBER:2]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
@@ -781,13 +771,13 @@ entity_DGT_GDR
 
 	[POSITION:CAPTAIN_GENERAL]
 		[NAME:captain-general:captain-general]
+		[DESCRIPTION:The Captain-general is the highest-ranking officer of the republican military. He commands the captains. Due to their high status, they demand lavish living quarters.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[NUMBER:1]
 		[RESPONSIBILITY:MILITARY_STRATEGY]
 		[RESPONSIBILITY:ADVISE_LEADERS]
 		[APPOINTED_BY:MM_MAG]
-		[RESPONSIBILITY:MILITARY_STRATEGY]
 		[COMMANDER:CAPTAIN:ALL]
 		[COMMANDER:RG_CAPTAIN:ALL]
 		[COMMANDER:CG_CAPTAIN:ALL]
@@ -811,6 +801,7 @@ entity_DGT_GDR
 		
 	[POSITION:CAPTAIN]
 		[NAME:captain:captains]
+		[DESCRIPTION:The captain is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their esteemed position, they require comfortable living quarters befitting their status.]
 		[NUMBER:AS_NEEDED]
 		[RESPONSIBILITY:ESCORT_TAX_COLLECTOR]
 		[RESPONSIBILITY:PATROL_TERRITORY]
@@ -831,11 +822,11 @@ entity_DGT_GDR
 
 	[POSITION:FREE_MERCHANT1]
 		[NAME:free merchant:free merchants]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
 		[NUMBER:5]
 		[REQUIRES_POPULATION:250] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION]
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
@@ -844,11 +835,11 @@ entity_DGT_GDR
 
 	[POSITION:FREE_MERCHANT2]
 		[NAME:free merchant:free merchants]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
 		[NUMBER:5]
 		[REQUIRES_POPULATION:500] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION]
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
@@ -857,44 +848,46 @@ entity_DGT_GDR
 
 	[POSITION:FREE_MERCHANT3]
 		[NAME:free merchant:free merchants]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
 		[NUMBER:10]
 		[REQUIRES_POPULATION:1000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION]
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT4]
 		[NAME:free merchant:free merchants]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
 		[NUMBER:20]
 		[REQUIRES_POPULATION:2000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION]
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT5]
 		[NAME:free merchant:free merchants]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
 		[NUMBER:40]
 		[REQUIRES_POPULATION:4000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION]
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT6]
 		[NAME:free merchant:free merchants]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[NUMBER:80]
 		[REQUIRES_POPULATION:8000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION]
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
@@ -1736,6 +1729,7 @@ entity_DGT_GDR
 
 	[POSITION:MARSHAL]
 		[NAME:marshal:marshals]
+		[DESCRIPTION:The Marshal is the second highest-ranking officer of the republican military. He commands the local guard regiments. Due to their high status, they demand lavish living quarters. When the city becomes the citadel of commerce , the marshal can be appointed by the grand commissioner]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[SITE]
@@ -1767,6 +1761,7 @@ entity_DGT_GDR
 
 	[POSITION:RG_CAPTAIN]
 		[NAME:republican guard captain:republican guard captains]
+		[DESCRIPTION:The captain of the republican guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The republican guard consist of 24 guards, divided into three squads of 8 soldiers each. Only the capital is allowed to deploy a republican guard.]
 		[SITE]
 		[NUMBER:3]
 		[SQUAD:8:republican guard:republican guards]
@@ -1787,9 +1782,11 @@ entity_DGT_GDR
 
 	[POSITION:MG_CAPTAIN]
 		[NAME:municipal guard captain:municipal guard captains]
+		[DESCRIPTION:The captain of the municipal guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the municipality. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The municipal guard consist of 8 guards. Only the mercantile cities are allowed to deploy a municipal guard.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:8:municipal guard:municipal guards]
+		[APPOINTED_BY:LH4]
 		[APPOINTED_BY:LH5]
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:SORT_AMMUNITION]
@@ -1806,6 +1803,7 @@ entity_DGT_GDR
 
 	[POSITION:CG_CAPTAIN]
 		[NAME:civic guard captain:civic guard captains]
+		[DESCRIPTION:The captain of the civic guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the citizens. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The civic guard consist of 8 guards. Only the settlements with a minimum population of 170 are allowed to deploy a civic guard.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:8:civic guard:civic guards]
