@@ -894,6 +894,7 @@ entity_DGT_GDR
 
 	[POSITION:LH1]
 		[NAME:trade agent:trade agents]
+		[DESCRIPTION:The trade agent is an administrator assigned to the fortress by the Merchants’ Guild. His appointment designates the site as a chartered trade post. He oversees trade, keeps the books, and may appoint clerks to assist him. He is empowered to issue trade mandates, defining which goods may be produced or exchanged. A modest office is required.]
 		[LAND_HOLDER:1]
 		[LAND_NAME:chartered trade post]
 		[NUMBER:AS_NEEDED]
@@ -918,6 +919,7 @@ entity_DGT_GDR
 	
 	[POSITION:LH2]
 		[NAME:trade administrator:trade administrators]
+		[DESCRIPTION:The trade administrator is an official appointed by the Merchants’ Guild. His presence elevates the fortress to a chartered market town. In addition to overseeing trade and keeping the accounts, he manages site production. He is empowered to issue expanded trade and production mandates. He may appoint clerks to assist him. Office improvements are required.]
 		[LAND_HOLDER:2]
 		[LAND_NAME:chartered market town]
 		[NUMBER:AS_NEEDED]
@@ -926,7 +928,7 @@ entity_DGT_GDR
 		[REPLACED_BY:LH3]
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
-		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]	TEST - does he manages production?
 		[PRECEDENCE:34]
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:2]
@@ -943,6 +945,7 @@ entity_DGT_GDR
 
 	[POSITION:LH3]
 		[NAME:trade director:trade directors]
+		[DESCRIPTION:The trade director is a senior official appointed by the Merchants’ Guild. His presence elevates the fortress to a chartered merchant city. He oversees trade, manages site production, and receives diplomats. He is empowered to issue expanded trade and production mandates. Bookkeeping is delegated to appointed clerks. A modest office is required.]
 		[LAND_HOLDER:3]
 		[LAND_NAME:chartered merchant city]
 		[NUMBER:AS_NEEDED]
@@ -968,6 +971,7 @@ entity_DGT_GDR
 
 	[POSITION:LH4]
 		[NAME:chief commissioner:chief commissioners]
+		[DESCRIPTION:The chief commissioner is a principal official appointed by the Merchants’ Guild. His presence elevates the fortress to a principal mercantile city. He directs production and receives diplomats, while trade and bookkeeping are delegated to clerks. His mandates broadly determine permitted production and commerce. Decent living quarters are required.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:4]
@@ -998,6 +1002,7 @@ entity_DGT_GDR
 
 	[POSITION:LH5]
 		[NAME:grand commissioner:grand commissioners]
+		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. His presence elevates the site to the supreme 'citadel of commerce'. He directs production and diplomacy, while trade and administration are fully delegated to subordinate officials. He holds the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:5]
