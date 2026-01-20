@@ -257,7 +257,7 @@ entity_DGT_GDR
 		[SUBSELECT_SYMBOL:MERCHANT_COMPANY:ARTIFICE]
 		[SUBSELECT_SYMBOL:MERCHANT_COMPANY:WEALTH]
 		[SUBSELECT_SYMBOL:MERCHANT_COMPANY:TRADE]
-	[SELECT_SYMBOL:FESTIVAL:NAME_REPUBLIC_FESTIVAL]
+	[SELECT_SYMBOL:FESTIVAL:NAME_REPUBLIC_FESTIVAL] - This does not work, but in case it's fixed someday..
 		[SUBSELECT_SYMBOL:FESTIVAL:ARTIFICE]
 		[SUBSELECT_SYMBOL:FESTIVAL:WEALTH]
 		[SUBSELECT_SYMBOL:FESTIVAL:TRADE]
@@ -1036,39 +1036,46 @@ entity_DGT_GDR
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[APPOINTED_BY:MM_COUNC]
 		[LAND_NAME:reclamation site]
-		[CONQUERED_SITE]
-		[BRAG_ON_KILL]
-		[CHAT_WORTHY]
-		[DO_NOT_CULL]
-		[KILL_QUEST]
-		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
-		[DUTY_BOUND]
-		[COLOR:1:0:0]
-		[MANDATE_MAX:4]
 		[PRECEDENCE:25]
+			- as as vanilla FORCED_ADMINISTRATOR
 		[NUMBER:1]
+		[CONQUERED_SITE]
+		[KILL_QUEST]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[RESPONSIBILITY:MEET_WORKERS]
+			- Same as LH4
+		[COLOR:1:0:0] 
+		[MANDATE_MAX:4]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
+		[DO_NOT_CULL]
+		[DUTY_BOUND]
+		[EXPORTED_IN_LEGENDS]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:4]
+		[REQUIRED_BOXES:1]
 
-[POSITION:TOWN_FOUNDER]
+Other sites than your fortress
+
+	[POSITION:TOWN_FOUNDER]
 		[NAME:founder:founders]
 		[SITE]
 		[NUMBER:1]
 		[PRECEDENCE:200]
 		[COLOR:4:0:1] 
 		[DUTY_BOUND]
-		[REPLACED_BY:REPL3]		- because this position wil be replaced with a population of 7, it will never be available in fortressmode.
+		[REPLACED_BY:REPL_7]		- because this position wil be replaced with a population of 7, it will never be available in fortressmode.
 
-	[POSITION:B0_TOWN]
-		[NAME:burgher:burghers]
-		[NAME_MALE:burgher:burghers]
-		[NAME_FEMALE:burghess:burghers]
-		[SPOUSE_FEMALE:burghess:burghers]
-		[SPOUSE_MALE:burghess:burghers]
+	[POSITION:TOWN_CITIZEN_0]
+		[NAME:full citizen:citizens]
 		[SITE]
 		[NUMBER:5]
 		[RESPONSIBILITY:LAW_MAKING]
@@ -1079,20 +1086,56 @@ entity_DGT_GDR
 		[PRECEDENCE:59]
 		[COLOR:4:0:1] 
 		[DUTY_BOUND]
-		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS] 
 
-	[POSITION:REPL3]
-			The replacer is used to prevent the creation the Town founder in fortress mode
-		[NAME:replacer 3 (SHOULD NOT BE FILLED):replacer]
+	[POSITION:TOWN_CITIZEN_1]
+		[NAME:patrician:patricians]
+		[NAME_MALE:patrician:patricians]
+		[NAME_FEMALE:matrícia:patricians]
+		[SPOUSE_FEMALE:matrícia:patricians]
+		[SPOUSE_MALE:patrician:patricians]
+		[SITE]
+		[NUMBER:5]
+		[ELECTED]						    - this combination prevents usage by the player
+		[APPOINTED_BY:TOWN_FOUNDER]			- but in world-gen, this position will be filled
+		[REQUIRES_POPULATION:78] 		
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[PRECEDENCE:25]
+		[COLOR:4:0:0] 
+		[FLASHES]
+		[SLEEP_PRETENSION]
+		[DO_NOT_CULL]
+		[DEMAND_MAX:1]
+		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION_SPOUSE]
+		[EXPORTED_IN_LEGENDS]
+		[QUEST_GIVER]
+		[DUTY_BOUND]
+		[REQUIRES_POPULATION:78] 
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:1500]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:2]
+
+	[POSITION:REPL_7]
+		The replacer is used to prevent the creation the Town founder in fortress mode
+		[NAME:replacer (SHOULD NOT BE FILLED):replacer]
 		[SITE]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
 		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL1]			- appointed only by himself, so: never.
+		[APPOINTED_BY:REPL_7]			- appointed only by himself, so: never.
 		[REQUIRES_POPULATION:7] 		- before fortress mode.
 		[PRECEDENCE:200]
-		[DUTY_BOUND]
+
+Your fortress
+
+
 
 	[POSITION:B0]
 		[NAME:settler:settlers]
@@ -1100,7 +1143,7 @@ entity_DGT_GDR
 		[NUMBER:7]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[SUCCESSION:BY_HEIR] 			- these succesion rules prevents re-assignment by the player.
-		[REPLACED_BY:REPL1]				- because a town it settled with more than 7 dwarves, this position is immediatly replaced when the new settlement is created.
+		[REPLACED_BY:REPL_18]				- because a town it settled with more than 7 dwarves, this position is immediatly replaced when the new settlement is created.
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -1167,7 +1210,7 @@ entity_DGT_GDR
 		[SUCCESSION:BY_HEIR] 			
 		[APPOINTED_BY:B1]
 		[REPLACED_BY:B4]				- cleanup
-		[REQUIRES_POPULATION:18] 		- at least not after the first migrant wave. it then cleans up REPL1
+		[REQUIRES_POPULATION:18] 		- at least not after the first migrant wave. 
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -1233,7 +1276,6 @@ entity_DGT_GDR
 		[COLOR:4:0:0] 
 		[FLASHES]
 		[SLEEP_PRETENSION]
-		[DO_NOT_CULL]
 		[DEMAND_MAX:1]
 		[MENIAL_WORK_EXEMPTION]
 		[MENIAL_WORK_EXEMPTION_SPOUSE]	- from here and higher
@@ -1396,7 +1438,7 @@ entity_DGT_GDR
 		[SUCCESSION:BY_POSITION:B8]
 		[SUCCESSION:BY_HEIR] 			
 		[APPOINTED_BY:B8]
-		[REPLACED_BY:REPL2]				- cleanup
+		[REPLACED_BY:REPL_175]				- cleanup
 		[REQUIRES_POPULATION:144] 		
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -1459,27 +1501,26 @@ entity_DGT_GDR
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
 
-	[POSITION:REPL1]
+	[POSITION:REPL_18]
 			The replacer is used to prevent the creation of more than 7 burger dwarves. 
 		[NAME:replacer 1 (SHOULD NOT BE FILLED):replacer]
 		[SITE]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
 		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL1]			- appointed only by himself, so: never.
-		[REQUIRES_POPULATION:9] 		- quickly after the second migrant arrives.
-		[REPLACED_BY:B2]				- cleanup
+		[APPOINTED_BY:REPL_18]			- appointed only by himself, so: never.
+		[REQUIRES_POPULATION:18] 		- quickly after the second migrant arrives.
 		[PRECEDENCE:200]
 		[DUTY_BOUND]
 
-	[POSITION:REPL2]
+	[POSITION:REPL_175]
 			The replacer is used for cleaning up the B9 position
 		[NAME:replacer 2 (SHOULD NOT BE FILLED):replacer]
 		[SITE]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
 		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL2]			- appointed only by himself, so: never.
+		[APPOINTED_BY:REPL_175]			- appointed only by himself, so: never.
 		[REQUIRES_POPULATION:175] 		- shortly after the last burger elevation has happened
 		[PRECEDENCE:200]
 		[REQUIRES_MARKET]
