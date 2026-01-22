@@ -1146,7 +1146,7 @@ Your fortress
 		[REJECTED_CREATURE:DWARF:ALL] 			- will only be filled at embark, but not assumable later.
 		[SQUAD:1:member:members] 				- prevents assumption by SETTLER_BASE2
 		[SUCCESSION:BY_HEIR] 					- precents unassigning by the player
-		[REPLACED_BY:REPL_8]					- cleared up after 50 pop
+		[REPLACED_BY:REPL_8]					- cleared up after 50 pop, also not available in other sites.
 		[PRECEDENCE:199] 
 
 	[POSITION:SETTLER_BASE1]
@@ -1175,7 +1175,7 @@ Your fortress
 		[LAND_NAME:full citizen] 				- does not display the units position name, but only in the nobles screen.
 		[SITE]
 		[NUMBER:7]
-		[APPOINTED_BY:SETTLER_BASE2] 			- unavailable for appointment by later settlers.
+		[APPOINTED_BY:SETTLER_BASE2] 			- unavailable for appointment by later settlers, also not for other sites
 		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 
 		[SUCCESSION:BY_POSITION:SETTLER_BASE2]	- this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2.
 		[SUCCESSION:BY_HEIR] 					- from here on, this position is inherrited by the units heir. 
