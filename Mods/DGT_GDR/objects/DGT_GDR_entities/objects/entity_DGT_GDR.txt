@@ -1139,7 +1139,7 @@ TEST
 Your fortress
 
 	[POSITION:SETTLER_APPOINTER]
-		[NAME:settler:settlers] 
+		[LAND_NAME:settler] 					- does not display the units position name, but only in the nobles screen.
 		[SITE]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:DWARF:ALL]
@@ -1151,7 +1151,7 @@ Your fortress
 
 	[POSITION:SETTLER_BASE1]
 	- If no noble position trigger happens, new migrants will also not assume this position. and when it happens, the succession has already taken place, preventing others for promotion
-		[NAME:settler:settlers]
+		[LAND_NAME:settler] 					- does not display the units position name, but only in the nobles screen.
 		[SITE]
 		[NUMBER:7] 								- more than neccesary
 		[REJECTED_CREATURE:ELF:ALL] 			- forces spread by the units. 
@@ -1161,7 +1161,7 @@ Your fortress
 		[PRECEDENCE:199] 
 
 	[POSITION:SETTLER_BASE2]
-		[NAME:settler:settlers]
+		[LAND_NAME:settler] 					- does not display the units position name, but only in the nobles screen.
 		[SITE]
 		[NUMBER:7] 								- more than neccesary
 		[APPOINTED_BY:SETTLER_APPOINTER] 		- available, but not automatic assumed. also, only usable by the first embarked dwarfs
@@ -1172,7 +1172,7 @@ Your fortress
 		[PRECEDENCE:199] 
 
 	[POSITION:CITIZEN_1] 						- Will contain guaranteed only the first 7 dwarves. 
-		[NAME:full citizen:full citizens]
+		[LAND_NAME:full citizen] 				- does not display the units position name, but only in the nobles screen.
 		[SITE]
 		[NUMBER:7]
 		[APPOINTED_BY:SETTLER_BASE2] 			- unavailable for appointment by later settlers.
