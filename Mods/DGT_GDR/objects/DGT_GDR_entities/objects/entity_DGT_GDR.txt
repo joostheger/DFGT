@@ -1065,6 +1065,7 @@ entity_DGT_GDR
 
 Other sites than your fortress
 
+TEST
 	[POSITION:TOWN_FOUNDER]
 		[NAME:founder:founders]
 		[SITE]
@@ -1086,7 +1087,9 @@ Other sites than your fortress
 		[PRECEDENCE:59]
 		[COLOR:4:0:1] 
 		[DUTY_BOUND]
-		[EXPORTED_IN_LEGENDS] 
+		[REQUIRED_BEDROOM:0]
+		[REQUIRED_DINING:0]
+		[REQUIRED_OFFICE:0]	
 
 	[POSITION:TOWN_CITIZEN_1]
 		[NAME:patrician:patricians]
@@ -1135,7 +1138,77 @@ Other sites than your fortress
 
 Your fortress
 
+	[POSITION:SETTLER_APPOINTER]
+		[NAME:settler:settlers] 
+		[SITE]
+		[NUMBER:1]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CREATURE:DWARF:ALL] 			- will only be filled at embark, but not assumable later.
+		[SQUAD:1:member:members] 				- prevents assumption by SETTLER_BASE2
+		[SUCCESSION:BY_HEIR] 					- precents unassigning by the player
+		[REPLACED_BY:REPL_8]					- cleared up after 50 pop
+		[PRECEDENCE:199] 
 
+	[POSITION:SETTLER_BASE1]
+	- If no noble position trigger happens, new migrants will also not assume this position. and when it happens, the succession has already taken place, preventing others for promotion
+		[NAME:settler:settlers]
+		[SITE]
+		[NUMBER:7] 								- more than neccesary
+		[REJECTED_CREATURE:ELF:ALL] 			- forces spread by the units. 
+		[SQUAD:1:member:members] 				- prevents re-assumption by SETTLER_BASE2
+		[SUCCESSION:BY_HEIR] 					- precents unassigning by the player
+		[REPLACED_BY:REPL_50] 					- cleared up after 50 pop
+		[PRECEDENCE:199] 
+
+	[POSITION:SETTLER_BASE2]
+		[NAME:settler:settlers]
+		[SITE]
+		[NUMBER:7] 								- more than neccesary
+		[APPOINTED_BY:SETTLER_APPOINTER] 		- available, but not automatic assumed. also, only usable by the first embarked dwarfs
+		[SUCCESSION:BY_POSITION:SETTLER_APPOINTER]
+		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 	- this takes all current holders of SETTLER, making it available again for well-spreaded assumption
+		[REQUIRES_POPULATION:7] 				- immediatly after embark
+		[REPLACED_BY:REPL_50]					- cleared up after 50 pop
+		[PRECEDENCE:199] 
+
+	[POSITION:CITIZEN_1] 						- Will contain guaranteed only the first 7 dwarves. 
+		[NAME:full citizen:full citizens]
+		[SITE]
+		[NUMBER:7]
+		[APPOINTED_BY:SETTLER_BASE2] 			- unavailable for appointment by later settlers.
+		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 
+		[SUCCESSION:BY_POSITION:SETTLER_BASE2]	- this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2.
+		[SUCCESSION:BY_HEIR] 					- from here on, this position is inherrited by the units heir. 
+		[REQUIRES_POPULATION:8] 				- immediatly after the second migrant arrives.
+		[PRECEDENCE:10]	
+
+	[POSITION:REPL_8]
+		[NUMBER:1]
+		[NAME:replacer 175 (SHOULD NOT BE FILLED):a]
+		[SITE]
+		[REJECTED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
+		[ACCEPTED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
+		[REQUIRES_POPULATION:8] 				- immediatly after the second migrant arrives.
+		[PRECEDENCE:200]
+
+	[POSITION:REPL_50]
+		[NAME:replacer 50 (SHOULD NOT BE FILLED):replacer]
+		[SITE]
+		[NUMBER:1]
+		[ALLOWED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
+		[REJECTED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
+		[REQUIRES_POPULATION:50] 				- quickly after the second migrant arrives.
+		[PRECEDENCE:200]
+
+TEST: should not exist in world-gen sites
+	[POSITION:REPL_175]
+		[NAME:replacer 175 (SHOULD NOT BE FILLED):replacer]
+		[SITE]
+		[NUMBER:1]
+		[ALLOWED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
+		[REJECTED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
+		[REQUIRES_POPULATION:175] 				- shortly after the last burger elevation has happened
+		[PRECEDENCE:200]
 
 	[POSITION:B0]
 		[NAME:settler:settlers]
@@ -1154,23 +1227,6 @@ Your fortress
 		[REQUIRED_DINING:0]
 		[REQUIRED_OFFICE:0]
 
-	[POSITION:B0_TOWN]
-		[NAME:settler:settlers]
-		[SITE]
-		[NUMBER:7]
-		[ALLOWED_CREATURE:DWARF:ALL]
-		[REPLACED_BY:B2]				- cleanup after town is establised
-		[RESPONSIBILITY:LAW_MAKING]
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[ELECTED]						- this combination prevents usage by the player
-		[APPOINTED_BY:B0_TOWN]			- but in world-gen, this position will be filled
-		[PRECEDENCE:59]
-		[COLOR:4:0:1] 
-		[DUTY_BOUND]
-		[REQUIRED_BEDROOM:0]
-		[REQUIRED_DINING:0]
-		[REQUIRED_OFFICE:0]
 
 	[POSITION:B1]
 		[NAME:free burgher:burghers]
@@ -1501,29 +1557,7 @@ Your fortress
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
 
-	[POSITION:REPL_18]
-			The replacer is used to prevent the creation of more than 7 burger dwarves. 
-		[NAME:replacer 1 (SHOULD NOT BE FILLED):replacer]
-		[SITE]
-		[NUMBER:1]
-		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL_18]			- appointed only by himself, so: never.
-		[REQUIRES_POPULATION:18] 		- quickly after the second migrant arrives.
-		[PRECEDENCE:200]
-		[DUTY_BOUND]
 
-	[POSITION:REPL_175]
-			The replacer is used for cleaning up the B9 position
-		[NAME:replacer 2 (SHOULD NOT BE FILLED):replacer]
-		[SITE]
-		[NUMBER:1]
-		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL_175]			- appointed only by himself, so: never.
-		[REQUIRES_POPULATION:175] 		- shortly after the last burger elevation has happened
-		[PRECEDENCE:200]
-		[REQUIRES_MARKET]
 
 	[POSITION:CLERK0]
 		[NAME:clerk:clerks]
