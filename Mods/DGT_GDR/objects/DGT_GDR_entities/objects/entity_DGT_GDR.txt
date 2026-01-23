@@ -568,7 +568,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION]  			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -606,7 +606,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -644,7 +644,7 @@ entity_DGT_GDR
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[KILL_QUEST]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -676,7 +676,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -710,7 +710,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -743,7 +743,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[REQUIRED_BEDROOM:500]
 		[REQUIRED_DINING:500]
@@ -789,7 +789,7 @@ entity_DGT_GDR
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[KILL_QUEST]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:1000]
 		[REQUIRED_DINING:1000]
@@ -827,7 +827,7 @@ entity_DGT_GDR
 		[REQUIRES_POPULATION:250] 
 		[RESPONSIBILITY:BUILD_MORALE]
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
@@ -840,7 +840,7 @@ entity_DGT_GDR
 		[REQUIRES_POPULATION:500] 
 		[RESPONSIBILITY:BUILD_MORALE]
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
@@ -853,7 +853,7 @@ entity_DGT_GDR
 		[REQUIRES_POPULATION:1000] 
 		[RESPONSIBILITY:BUILD_MORALE]
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 
@@ -864,7 +864,7 @@ entity_DGT_GDR
 		[REQUIRES_POPULATION:2000] 
 		[RESPONSIBILITY:BUILD_MORALE]
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 
@@ -875,7 +875,7 @@ entity_DGT_GDR
 		[REQUIRES_POPULATION:4000] 
 		[RESPONSIBILITY:BUILD_MORALE]
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 
@@ -888,7 +888,7 @@ entity_DGT_GDR
 		[REQUIRES_POPULATION:8000] 
 		[RESPONSIBILITY:BUILD_MORALE]
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[PRECEDENCE:45]
 		[COLOR:2:0:1] 
 
@@ -909,7 +909,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
@@ -935,7 +935,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
@@ -961,7 +961,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
@@ -990,7 +990,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:500]
@@ -1020,7 +1020,7 @@ entity_DGT_GDR
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:500]
