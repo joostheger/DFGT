@@ -1026,11 +1026,11 @@ entity_DGT_GDR
 		[LAND_NAME:chartered trade post]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:CLERK1]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH2]
 		[RESPONSIBILITY:TRADE] 			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
-		[PRECEDENCE:41]
+		[PRECEDENCE:100]				- Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be drafted as LH
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:1]
 		[DO_NOT_CULL]
@@ -1051,7 +1051,7 @@ entity_DGT_GDR
 		[LAND_NAME:chartered market town]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:CLERK2]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH3]
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
@@ -1077,7 +1077,7 @@ entity_DGT_GDR
 		[LAND_NAME:chartered merchant city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:CLERK3]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH4]
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
@@ -1105,7 +1105,7 @@ entity_DGT_GDR
 		[LAND_NAME:principal mercantile city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:CLERK4]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH5]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -1136,7 +1136,7 @@ entity_DGT_GDR
 		[LAND_NAME:citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:CLERK5]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[PRECEDENCE:22]
