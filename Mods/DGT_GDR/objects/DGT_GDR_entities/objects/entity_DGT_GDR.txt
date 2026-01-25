@@ -797,9 +797,10 @@ entity_DGT_GDR
 		[NUMBER:5]
 		[REQUIRES_POPULATION:250] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -810,9 +811,10 @@ entity_DGT_GDR
 		[NUMBER:5]
 		[REQUIRES_POPULATION:500] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -823,9 +825,10 @@ entity_DGT_GDR
 		[NUMBER:10]
 		[REQUIRES_POPULATION:1000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT4]
@@ -834,9 +837,10 @@ entity_DGT_GDR
 		[NUMBER:20]
 		[REQUIRES_POPULATION:2000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT5]
@@ -845,9 +849,10 @@ entity_DGT_GDR
 		[NUMBER:40]
 		[REQUIRES_POPULATION:4000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT6]
@@ -858,9 +863,10 @@ entity_DGT_GDR
 		[NUMBER:80]
 		[REQUIRES_POPULATION:8000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]					TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 
@@ -1030,7 +1036,7 @@ entity_DGT_GDR
 		[REPLACED_BY:LH2]
 		[RESPONSIBILITY:TRADE] 			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
-		[PRECEDENCE:100]				- Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be drafted as LH
+		[PRECEDENCE:100]				- Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be selectable for LH by the player
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:1]
 		[DO_NOT_CULL]
@@ -1326,7 +1332,7 @@ Your fortress
 		[APPOINTED_BY:SETTLER_APPOINTER] 		- available, but not automatic assumed. also, only usable by the first embarked dwarfs
 		[SUCCESSION:BY_POSITION:SETTLER_APPOINTER]
 		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 	- this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7] 				- immediatly after embark
+		REQUIRES_POPULATION:7				- I dont believe that this is neccesary
 		[REPLACED_BY:REPL_50]					- cleared up after 50 pop
 		[PRECEDENCE:199] 
 
