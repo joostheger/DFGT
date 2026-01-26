@@ -797,9 +797,10 @@ entity_DGT_GDR
 		[NUMBER:5]
 		[REQUIRES_POPULATION:250] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -810,9 +811,10 @@ entity_DGT_GDR
 		[NUMBER:5]
 		[REQUIRES_POPULATION:500] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -823,9 +825,10 @@ entity_DGT_GDR
 		[NUMBER:10]
 		[REQUIRES_POPULATION:1000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT4]
@@ -834,9 +837,10 @@ entity_DGT_GDR
 		[NUMBER:20]
 		[REQUIRES_POPULATION:2000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT5]
@@ -845,9 +849,10 @@ entity_DGT_GDR
 		[NUMBER:40]
 		[REQUIRES_POPULATION:4000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]				TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT6]
@@ -858,9 +863,10 @@ entity_DGT_GDR
 		[NUMBER:80]
 		[REQUIRES_POPULATION:8000] 
 		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]
+		[PRECEDENCE:45]					TODO: - must be lower than LH1
 		[COLOR:2:0:1] 
 
 
@@ -1026,11 +1032,11 @@ entity_DGT_GDR
 		[LAND_NAME:chartered trade post]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:CLERK1]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH2]
 		[RESPONSIBILITY:TRADE] 			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
-		[PRECEDENCE:41]
+		[PRECEDENCE:100]				- Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be selectable for LH by the player
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:1]
 		[DO_NOT_CULL]
@@ -1051,7 +1057,7 @@ entity_DGT_GDR
 		[LAND_NAME:chartered market town]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:CLERK2]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH3]
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:ACCOUNTING]
@@ -1077,7 +1083,7 @@ entity_DGT_GDR
 		[LAND_NAME:chartered merchant city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:CLERK3]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH4]
 		[RESPONSIBILITY:TRADE]			TEST: should not be appointed in the first days, wihtout land, for the purpose of diplomacy
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
@@ -1105,7 +1111,7 @@ entity_DGT_GDR
 		[LAND_NAME:principal mercantile city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:CLERK4]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH5]
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -1136,7 +1142,7 @@ entity_DGT_GDR
 		[LAND_NAME:citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:CLERK5]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[PRECEDENCE:22]
@@ -1298,7 +1304,7 @@ TEST
 Your fortress
 
 	[POSITION:SETTLER_APPOINTER]
-		[LAND_NAME:settler] 					- does not display the units position name, but only in the nobles screen.
+		[NAME:settler:settlers] 	
 		[SITE]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:DWARF:ALL]
@@ -1310,7 +1316,7 @@ Your fortress
 
 	[POSITION:SETTLER_BASE1]
 	- If no noble position trigger happens, new migrants will also not assume this position. and when it happens, the succession has already taken place, preventing others for promotion
-		[LAND_NAME:settler] 					- does not display the units position name, but only in the nobles screen.
+		[NAME:settler:settlers] 	
 		[SITE]
 		[NUMBER:7] 								- more than neccesary
 		[REJECTED_CREATURE:ELF:ALL] 			- this forces an even spreading of this position over the units. 
@@ -1320,19 +1326,18 @@ Your fortress
 		[PRECEDENCE:199] 
 
 	[POSITION:SETTLER_BASE2]
-		[LAND_NAME:settler] 					- does not display the units position name, but only in the nobles screen.
+		[NAME:settler:settlers] 
 		[SITE]
 		[NUMBER:7] 								- more than neccesary
 		[APPOINTED_BY:SETTLER_APPOINTER] 		- available, but not automatic assumed. also, only usable by the first embarked dwarfs
 		[SUCCESSION:BY_POSITION:SETTLER_APPOINTER]
 		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 	- this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7] 				- immediatly after embark
+		REQUIRES_POPULATION:7				- I dont believe that this is neccesary
 		[REPLACED_BY:REPL_50]					- cleared up after 50 pop
 		[PRECEDENCE:199] 
 
 	[POSITION:CITIZEN_1] 						- Will contain guaranteed only the first 7 dwarves. 
-		[NAME:full citizen:citizens] 	
-		[LAND_NAME:citizen council] 			
+		[NAME:free citizen:citizens] 	
 		[SITE]
 		[NUMBER:7]
 		[APPOINTED_BY:SETTLER_BASE2] 			- unavailable for appointment by later settlers, also not for other sites
