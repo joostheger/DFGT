@@ -1313,7 +1313,7 @@ Your fortress
 		[LAND_NAME:settler] 					- does not display the units position name, but only in the nobles screen.
 		[SITE]
 		[NUMBER:7] 								- more than neccesary
-		[REJECTED_CREATURE:ELF:ALL] 			- forces spread by the units. 
+		[REJECTED_CREATURE:ELF:ALL] 			- this forces an even spreading of this position over the units. 
 		[SQUAD:1:member:members] 				- prevents re-assumption by SETTLER_BASE2
 		[SUCCESSION:BY_HEIR] 					- precents unassigning by the player
 		[REPLACED_BY:REPL_50] 					- cleared up after 50 pop
@@ -1331,7 +1331,8 @@ Your fortress
 		[PRECEDENCE:199] 
 
 	[POSITION:CITIZEN_1] 						- Will contain guaranteed only the first 7 dwarves. 
-		[LAND_NAME:full citizen] 				- does not display the units position name, but only in the nobles screen.
+		[NAME:full citizen:citizens] 	
+		[LAND_NAME:citizen council] 			
 		[SITE]
 		[NUMBER:7]
 		[APPOINTED_BY:SETTLER_BASE2] 			- unavailable for appointment by later settlers, also not for other sites
