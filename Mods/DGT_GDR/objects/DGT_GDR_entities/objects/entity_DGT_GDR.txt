@@ -800,7 +800,7 @@ entity_DGT_GDR
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]				TODO: - must be lower than LH1
+		[PRECEDENCE:45]				- must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -814,7 +814,7 @@ entity_DGT_GDR
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]				TODO: - must be lower than LH1
+		[PRECEDENCE:45]				- must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -828,7 +828,7 @@ entity_DGT_GDR
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]				TODO: - must be lower than LH1
+		[PRECEDENCE:45]				- must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT4]
@@ -840,7 +840,7 @@ entity_DGT_GDR
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]				TODO: - must be lower than LH1
+		[PRECEDENCE:45]				T must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT5]
@@ -852,7 +852,7 @@ entity_DGT_GDR
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]				TODO: - must be lower than LH1
+		[PRECEDENCE:45]				 - must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
 	[POSITION:FREE_MERCHANT6]
@@ -866,7 +866,7 @@ entity_DGT_GDR
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
-		[PRECEDENCE:45]					TODO: - must be lower than LH1
+		[PRECEDENCE:45]					- must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
 
@@ -1506,7 +1506,7 @@ Your fortress
 		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 
 		[SUCCESSION:BY_POSITION:SETTLER_BASE2]	- this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2.
 		[SUCCESSION:BY_HEIR] 					- from here on, this position is inherrited by the units heir. 
-		[REQUIRES_POPULATION:8] 				- immediatly after the second migrant arrives.
+		[REQUIRES_POPULATION:8] 				- immediatly when the first migrantwave arrives.
 		[REPLACED_BY:REPL_50]					- cleared up after 50 pop
 	
 	[POSITION:CITIZEN_1] 						
