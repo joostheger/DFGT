@@ -869,162 +869,219 @@ entity_DGT_GR
 		[PRECEDENCE:45]					- must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
-
-	[POSITION:CLERK0]
-		- Clerks need to be defined above landholders, so the landholder will be named as broker, but the clerk actually doing the trading.
-		[NAME:clerk:clerks]
+Clerks
+	- Clerks need to be defined above citizens, so the landholder will be named as broker, but the clerk actually doing the trading.
+	- clerks ASNEEDED to no replace or succeed from clerk single. When the next fortress status is reached, the ASNEEDED position is simply added as option for the player, while the SINGLE just stays available. 
+	[POSITION:CLERK_OF_STORES_SINGLE]
+		[NAME:clerk of stores:clerks]
 		[SITE]
 		[NUMBER:1]
-		[APPOINTED_BY:B0]				- initially appointable
-		[APPOINTED_BY:B0_TOWN]
-		[APPOINTED_BY:B1]				- and until 17 dwarves re-appointable, untill it is succeeded by CLERK1
-		[RESPONSIBILITY:TRADE]			- neccesary for exporting goods, until the landholder arrives. 
-		[RESPONSIBILITY:DELIVER_MESSAGES]	
-		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]	
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:61]
+		[APPOINTED_BY:CITIZEN_6]
+		[APPOINTED_BY:CITIZEN_7]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:132]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
+		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_CABINETS:1]
-		
-	[POSITION:CLERK1]
-		- Clerks need to be defined above landholders, so the landholder will be named as broker, but the clerk actually doing the trading.
-		[NAME:clerk:clerks]
-		'for life, protected rights
+
+	[POSITION:CLERK_OF_STORES_ASNEEDED]
+		[NAME:clerk of stores:clerks]
+		[SITE]
+		[NUMBER:AS_NEEDED]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:133]
+		[COLOR:7:0:1] 
+		[DUTY_BOUND]
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
+
+	[POSITION:CLERK_OF_WORKS_SINGLE]
+		[NAME:clerk of works:clerks]
 		[SITE]
 		[NUMBER:1]
-		[APPOINTED_BY:LH1]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
-		[SUCCESSION:BY_POSITION:CLERK0] - if you had a CLERK0, it succeedes as CLERK2
-		[RESPONSIBILITY:ACCOUNTING]
-		[RESPONSIBILITY:DELIVER_MESSAGES]
-		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:61]
-		[COLOR:7:0:1] 
-		[DUTY_BOUND]
-		[REQUIRES_MARKET]
-		[REQUIRED_BEDROOM:100]
-		[REQUIRED_OFFICE:100]
-		[REQUIRED_CABINETS:1]
-
-	[POSITION:CLERK2]
-		- Clerks need to be defined above landholders, so the landholder will be named as broker, but the clerk actually doing the trading.
-		[NAME:clerk:clerks]
-		'for life, protected rights
-		[SITE]
-		[NUMBER:2]
-		[APPOINTED_BY:LH2]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
-		[SUCCESSION:BY_POSITION:CLERK1] 
-		[RESPONSIBILITY:ACCOUNTING]	
-		[RESPONSIBILITY:TRADE]
-		[RESPONSIBILITY:DELIVER_MESSAGES]
-		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:61]
-		[COLOR:7:0:1] 
-		[DUTY_BOUND]
-		[REQUIRES_MARKET]
-		[RULES_FROM_LOCATION]
-		[REQUIRED_BEDROOM:100]
-		[REQUIRED_OFFICE:100]
-		[REQUIRED_CABINETS:1]
-
-	[POSITION:CLERK3]
-		- Clerks need to be defined above landholders, so the landholder will be named as broker, but the clerk actually doing the trading.
-		[NAME:clerk:clerks]
-		'for life, protected rights
-		[SITE]
-		[NUMBER:2]
-		[APPOINTED_BY:LH3]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
-		[SUCCESSION:BY_POSITION:CLERK2] 
-		[RESPONSIBILITY:ACCOUNTING]
-		[RESPONSIBILITY:TRADE]
+		[APPOINTED_BY:CITIZEN_3]
+		[APPOINTED_BY:CITIZEN_4]
+		[APPOINTED_BY:CITIZEN_5]
+		[APPOINTED_BY:CITIZEN_6]
+		[APPOINTED_BY:CITIZEN_7]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
-		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:61]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:134]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
-		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_CABINETS:1]
 
-	[POSITION:CLERK4]
-		- Clerks need to be defined above landholders, so the landholder will be named as broker, but the clerk actually doing the trading.
-		[NAME:clerk:clerks]
-		'for life, protected rights
+	[POSITION:CLERK_OF_WORKS_ASNEEDED]
+		[NAME:clerk of works:clerks]
 		[SITE]
-		[NUMBER:3]
-		[APPOINTED_BY:LH4]				- if any other landholder becomes citizen of your fortress, you'll be able to appoint more clerks, extending your admistrative workforce
-		[SUCCESSION:BY_POSITION:CLERK3] 
-		[RESPONSIBILITY:ACCOUNTING]
-		[RESPONSIBILITY:TRADE]
+		[NUMBER:AS_NEEDED]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
-		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:61]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:135]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
-		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_CABINETS:1]
 
-	[POSITION:CLERK5]
-		- Clerks need to be defined above landholders, so the landholder will be named as broker, but the clerk actually doing the trading.
-		[NAME:clerk:clerks]
-		'for life, protected rights
+	[POSITION:CLERK_OF_ACCOUNTS_SINGLE]
+		[NAME:clerk of accounts:clerks]
 		[SITE]
-		[NUMBER:3]
-		[APPOINTED_BY:LH5]				
-		[SUCCESSION:BY_POSITION:CLERK4] 
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_3]
+		[APPOINTED_BY:CITIZEN_4]
+		[APPOINTED_BY:CITIZEN_5]
+		[APPOINTED_BY:CITIZEN_6]
+		[APPOINTED_BY:CITIZEN_7]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:ACCOUNTING]
-		[RESPONSIBILITY:TRADE]
-		[RESPONSIBILITY:MANAGE_PRODUCTION]
-		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:61]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:136]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
-		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_CABINETS:1]
 
-	[POSITION:CLERK5_EXTRA]
-		- Clerks need to be defined above landholders, so the landholder will be named as broker, but the clerk actually doing the trading.
-		[NAME:clerk:clerks]
-		'for life, protected rights
+	[POSITION:CLERK_OF_ACCOUNTS_ASNEEDED]
+		[NAME:clerk of accounts:clerks]
 		[SITE]
-		[NUMBER:AS_NEEDED]				- If you would ever need more level-5 clerks
-		[APPOINTED_BY:LH5]				- you can do so whith your level-5 LH,
-		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
-		[APPOINTED_BY:B10]				- or if your fortress has at least 170 population, then a burgher can appoint them.
-		[SUCCESSION:BY_POSITION:CLERK5] - not really needed, but to make this position the same as the other clerks.
+		[NUMBER:AS_NEEDED]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:ACCOUNTING]
-		[RESPONSIBILITY:TRADE]
-		[RESPONSIBILITY:MANAGE_PRODUCTION]
-		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
-		[PRECEDENCE:62]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:137]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
-		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_CABINETS:1]
 
+	[POSITION:CLERK_OF_LETTERS_SINGLE]
+		[NAME:clerk of letters:clerks]
+		[SITE]
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_3]
+		[APPOINTED_BY:CITIZEN_4]
+		[APPOINTED_BY:CITIZEN_5]
+		[APPOINTED_BY:CITIZEN_6]
+		[APPOINTED_BY:CITIZEN_7]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:138]
+		[COLOR:7:0:1] 
+		[DUTY_BOUND]
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
+
+	[POSITION:CLERK_OF_LETTERS_ASNEEDED]
+		[NAME:clerk of letters:clerks]
+		[SITE]
+		[NUMBER:AS_NEEDED]
+		[APPOINTED_BY:BURGER_0]	 - from Landholder 1 and up. To let this be assinged by the burger is safer, because landholders may disappear.
+		[APPOINTED_BY:BURGER_1]	
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[RESPONSIBILITY:DELIVER_MESSAGES]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[PRECEDENCE:139]
+		[COLOR:7:0:1] 
+		[DUTY_BOUND]
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_CABINETS:1]
+	
+Landholders
 	[POSITION:LH1]
 		- landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
 		- landholders need to be defined above the Merchant Journeyman
@@ -1334,7 +1391,8 @@ entity_DGT_GR
 		[LAND_NAME:merchants' guild]
 		[NUMBER:4]
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
-		[RESPONSIBILITY:TRADE] (ESTABLISH_COLONY_TRADE_AGREEMENTS)
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS]
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[RESPONSIBILITY:MAINTAIN_BRIDGES]
@@ -2240,6 +2298,7 @@ Your fortress
 		[APPOINTED_BY:LH5]
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:SORT_AMMUNITION]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[PRECEDENCE:38]
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
@@ -2260,6 +2319,7 @@ Your fortress
 		[APPOINTED_BY:B10]
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:SORT_AMMUNITION]
+		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[PRECEDENCE:39]
 		[COLOR:0:0:1] 
 		[DUTY_BOUND]
@@ -2271,7 +2331,8 @@ Your fortress
 		[REQUIRED_STANDS:1]
 		[REQUIRED_BOXES:1]
 
-	[POSITION:MARSHAL] - This position and the constable are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
+	[POSITION:MARSHAL] 
+	- This position and the constable are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
 		[NAME:marshal:marshals]
 		[DESCRIPTION:The Marshal is the second highest-ranking officer of the republican military. He commands the local guard regiments. Due to their high status, they demand lavish living quarters. When the city becomes the citadel of commerce , the marshal can be appointed by the grand commissioner]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
