@@ -1,4 +1,4 @@
-item_DGT_GDR_helm
+item_DGT_GR_helm
 
 [OBJECT:ITEM]
 

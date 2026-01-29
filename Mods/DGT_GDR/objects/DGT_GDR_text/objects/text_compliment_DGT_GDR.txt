@@ -1,4 +1,4 @@
-text_compliment_DGT_GDR
+text_compliment_DGT_GR
 
 TEST all of the below. how does this work in regular greetings? which one is used when? also.
 TODO: finisch

@@ -1,4 +1,4 @@
-language_DGT_GDR_SYM
+language_DGT_GR_SYM
 
 [OBJECT:LANGUAGE]
 

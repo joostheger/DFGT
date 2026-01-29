@@ -1,4 +1,4 @@
-entity_DGT_GDR
+entity_DGT_GR
 
 [OBJECT:ENTITY]
 

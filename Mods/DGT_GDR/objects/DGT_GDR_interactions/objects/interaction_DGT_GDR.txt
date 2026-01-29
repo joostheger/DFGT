@@ -1,4 +1,4 @@
-interaction_DGT_GDR
+interaction_DGT_GR
 
 [OBJECT:INTERACTION]
 
@@ -115,7 +115,7 @@ interaction_DGT_GDR
 				[CDI:USAGE_HINT:GREETING]
 				[CDI:VERB:greet:greets:greets]
 				[CDI:VERBAL]
-				[CDI:VERBAL_SPEECH:GREET_CAVE_ADAPT_DGT_GDR.txt] TODO: create this file
+				[CDI:VERBAL_SPEECH:GREET_CAVE_ADAPT_DGT_GR.txt] TODO: create this file
  				[CDI:TARGET:B:LINE_OF_SIGHT]
  				[CDI:TARGET_RANGE:B:2]
  				[CDI:WAIT_PERIOD:30]
@@ -191,7 +191,7 @@ goals:
 - IMMORTALITY 
 
 
-[INTERACTION:GDR_ANARCHY_SECRET]
+[INTERACTION:GR_ANARCHY_SECRET]
 	[I_SOURCE:SECRET]
 		[IS_NAME:the secret of anarchy]
 		[IS_SPHERE:FREEDOM]
@@ -220,7 +220,7 @@ goals:
 				[CDI:VERB:calls out:calls out:NA]
 				[CDI:WAIT_PERIOD:10]
 				[CDI:VERBAL]
-				[CDI:VERBAL_SPEECH:RECRUIT_FOLLOWER_DGT_GDR.txt] TODO: create this file
+				[CDI:VERBAL_SPEECH:RECRUIT_FOLLOWER_DGT_GR.txt] TODO: create this file
 
 				TODO:
 				overtuig om positie neer te leggen

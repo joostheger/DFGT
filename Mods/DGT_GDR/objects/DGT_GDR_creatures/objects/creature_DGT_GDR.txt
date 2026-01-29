@@ -1,4 +1,4 @@
-creature_DGT_GDR
+creature_DGT_GR
 
 [SELECT_CREATURE:DWARF]
 
@@ -20,7 +20,7 @@ creature_DGT_GDR
 		[CDI:VERB:compliment:compliments:compliments]
 		[CDI:VERBAL]
 		TODO: create this file
-		[CDI:VERBAL_SPEECH:compliment_DGT_GDR.txt]
+		[CDI:VERBAL_SPEECH:compliment_DGT_GR.txt]
 		[CDI:TARGET:B:LINE_OF_SIGHT]
 		[CDI:TARGET_RANGE:B:1]
 		[CDI:MAX_TARGET_NUMBER:B:1]

@@ -1,4 +1,4 @@
-reaction_DGT_GDR
+reaction_DGT_GR
 
 TODO:
 OBJECT:REACTION]
