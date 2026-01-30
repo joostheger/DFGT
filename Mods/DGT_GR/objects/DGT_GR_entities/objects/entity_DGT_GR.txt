@@ -552,9 +552,8 @@ Ruler
 		[NAME:honorary grand master:honorary grand masters]
 
 		//Title, role in civ and guild, responsibilies, character, way of succession, election or appointment
-		[DESCRIPTION:This is the symbolic head of the republic, an honorary title given to the leader of the merchants' guild. They have no real power within the guild or the civilization, but are often called upon for advice and guidance. They expect the best treatment possible, as befits their status as the figurehead of the republic. He serves the capital of the civilization by appointing the executioner and republican guard captains.]
+		[DESCRIPTION:This is the symbolic head of the republic, an honorary title given to the leader of the merchants' guild. They have no real power within the guild or the civilization, but are often called upon for advice and guidance. They expect almost royal treatment, as befits their status as the figurehead of the republic.]
 		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
-		
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -588,10 +587,7 @@ Merchants' guild
 
 	[POSITION:MM_COUNC]
 		[NAME:merchant master councillor:merchant master councillors]
-
 		[DESCRIPTION:The merchant master councillor is one of two guildmasters who act as the chief decision-makers of both the republic and the merchants’ guild. They oversee guild operations, decide on trade policy and warfare. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
-	
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -627,7 +623,6 @@ Merchants' guild
 	[POSITION:MM_MAG]
 		[NAME:merchant master magistrate:merchant master magistrates]
 		[DESCRIPTION:The merchant master magistrate holds the highest office of justice in the republic, charged with upholding the law and ensuring the safety and protection of the people. It appoints the Captain-General. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -670,6 +665,7 @@ Merchants' guild
 		[LAND_NAME:merchants' guild]
 		[NUMBER:1]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[RESPONSIBILITY:ADVISE_LEADERS]
 		[SUCCESSION:BY_POSITION:M_JM]
 		[SUCCESSION:BY_POSITION:MM_STEW]
@@ -696,7 +692,7 @@ Merchants' guild
 
 	[POSITION:MM_STEW]
 		[NAME:merchant master steward:merchant master steward]
-		[DESCRIPTION:The merchant master steward holds the highest administrative office of the republic, entrusted with the careful management of its resources. He oversees tax collection, secures the food supply, directs construction, and manages the guilds housekeeping. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
+		[DESCRIPTION:The merchant master steward holds the highest administrative office of the republic, entrusted with the careful management of its resources. They oversee tax collection, secure the food supply, direct construction, and manage the guilds housekeeping. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -729,16 +725,18 @@ Merchants' guild
 		[REQUIRED_BOXES:2]
 
 	[POSITION:M_AP]
+		- non duty bound = auto spread. 
+		- also: assumable but with squad. this means that the whole merchants guild chain cannot have citizenry.
 		[NAME:merchant apprentice:merchant apprentices]
-		[DESCRIPTION:The merchant guild apprentice serves the guild by delivering messages and attending to the needs of its masters. Through diligent service and reliability, he supports the daily workings of the guild while striving to prove his worth and rise through its ranks.]
+		[DESCRIPTION:The merchant guild apprentice serves the guild by delivering messages and attending to the needs of its masters. Through diligent service and reliability, they support the daily workings of the guild while striving to prove their worth and rise through its ranks.]
 		[LAND_NAME:merchants' guild]
-		[NUMBER:2]
+		[NUMBER:4]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_CLEANLINESS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_FOOD]
 		[RESPONSIBILITY:PREPARE_LEADER_MEALS]
-		[ELECTED]
+		[SQUAD:1:member:members] 	- this prevents the position to be assumed by syuccession positions.
 		[PRECEDENCE:105]
 		[COLOR:2:0:0] 
 		[DO_NOT_CULL]
@@ -749,7 +747,7 @@ Civ military
 
 	[POSITION:CAPTAIN_GENERAL]
 		[NAME:captain-general:captain-general]
-		[DESCRIPTION:The Captain-general is the highest-ranking officer of the republican military. He commands the captains. Due to their high status, they demand lavish living quarters.]
+		[DESCRIPTION:The Captain-general is the highest-ranking officer of the republican military, commanding their subordinate captains. Due to their high status, they demand lavish living quarters.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[NUMBER:1]
@@ -779,7 +777,7 @@ Civ military
 		
 	[POSITION:CAPTAIN]
 		[NAME:captain:captains]
-		[DESCRIPTION:The captain is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their esteemed position, they require comfortable living quarters befitting their status.]
+		[DESCRIPTION:The captain is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their position, they require comfortable living quarters befitting their status.]
 		[NUMBER:AS_NEEDED]
 		[RESPONSIBILITY:ESCORT_TAX_COLLECTOR]
 		[RESPONSIBILITY:PATROL_TERRITORY]
@@ -802,7 +800,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT1_SITE]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
 		[NUMBER:1]
 		[REQUIRES_POPULATION:90] 
@@ -816,7 +814,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT2_SITE]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
 		[NUMBER:1]
 		[REQUIRES_POPULATION:190] 
@@ -830,7 +828,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT1]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:2]
 		[REQUIRES_POPULATION:200] 
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
@@ -842,7 +840,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT2]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:2]
 		[REQUIRES_POPULATION:400] 
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
@@ -854,7 +852,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT3]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:4]
 		[REQUIRES_POPULATION:800] 
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
@@ -864,7 +862,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT4]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:8]
 		[REQUIRES_POPULATION:1600] 
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
@@ -874,7 +872,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT5]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:16]
 		[REQUIRES_POPULATION:3200] 
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
@@ -884,7 +882,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT6]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group. A citizen who assumes the status of free merchant is exempt from regular labor, but has no right to mandate trade transactions.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:32]
 		[REQUIRES_POPULATION:6400] 
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
@@ -895,8 +893,10 @@ Free merchants
 Clerks
 	- Clerks need to be defined above citizens, so the landholder will be named as broker, but the clerk actually doing the trading.
 	- clerks ASNEEDED to no replace or succeed from clerk single. When the next fortress status is reached, the ASNEEDED position is simply added as option for the player, while the SINGLE just stays available. 
+	
 	[POSITION:CLERK_OF_STORES_SINGLE]
 		[NAME:clerk of stores:clerks]
+		[DESCRIPTION:The clerk of stores is responsible for the procurement, storage, and distribution of goods, ensuring that the guild's operations run smoothly and efficiently. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Broker)]
 		[SITE]
 		[NUMBER:1]
 		[CONQUERED_SITE]
@@ -924,6 +924,7 @@ Clerks
 
 	[POSITION:CLERK_OF_STORES_ASNEEDED]
 		[NAME:clerk of stores:clerks]
+		[DESCRIPTION:The clerk of stores is responsible for the procurement, storage, and distribution of goods, ensuring that the guild's operations run smoothly and efficiently. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Broker)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:BURGER_1]	
@@ -947,6 +948,7 @@ Clerks
 
 	[POSITION:CLERK_OF_WORKS_SINGLE]
 		[NAME:clerk of works:clerks]
+		[DESCRIPTION:The clerk of works is responsible for overseeing the production of crafts, trade goods, and essential commodities, ensuring that all work is completed to high standards and on schedule. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Manager)]
 		[SITE]
 		[NUMBER:1]
 		[CONQUERED_SITE]
@@ -977,6 +979,7 @@ Clerks
 
 	[POSITION:CLERK_OF_WORKS_ASNEEDED]
 		[NAME:clerk of works:clerks]
+		[DESCRIPTION:The clerk of works is responsible for overseeing the production of crafts, trade goods, and essential commodities, ensuring that all work is completed to high standards and on schedule. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Manager)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:BURGER_1]	
@@ -1000,6 +1003,7 @@ Clerks
 
 	[POSITION:CLERK_OF_ACCOUNTS_SINGLE]
 		[NAME:clerk of accounts:clerks]
+		[DESCRIPTION:The clerk of accounts is responsible for managing financial records, overseeing budgets, and ensuring accurate accounting practices. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Bookkeeper)]
 		[SITE]
 		[NUMBER:1]
 		[CONQUERED_SITE]
@@ -1030,6 +1034,7 @@ Clerks
 
 	[POSITION:CLERK_OF_ACCOUNTS_ASNEEDED]
 		[NAME:clerk of accounts:clerks]
+		[DESCRIPTION:The clerk of accounts is responsible for managing financial records, overseeing budgets, and ensuring accurate accounting practices. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Bookkeeper)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:BURGER_1]	
@@ -1053,6 +1058,7 @@ Clerks
 
 	[POSITION:CLERK_OF_LETTERS_SINGLE]
 		[NAME:clerk of letters:clerks]
+		[DESCRIPTION:The clerk of letters is responsible for delivering messages between sites, maintaining correspondence, and ensuring timely communication across the republic. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Messenger)]
 		[SITE]
 		[NUMBER:1]
 		[CONQUERED_SITE]
@@ -1083,6 +1089,7 @@ Clerks
 
 	[POSITION:CLERK_OF_LETTERS_ASNEEDED]
 		[NAME:clerk of letters:clerks]
+		[DESCRIPTION:The clerk of letters is responsible for delivering messages between sites, maintaining correspondence, and ensuring timely communication across the republic. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Messenger)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:BURGER_1]	
@@ -1109,7 +1116,7 @@ Landholders
 		- landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
 		- landholders need to be defined above the Merchant Journeyman
 		[NAME:trade agent:trade agents]
-		[DESCRIPTION:The trade agent is an administrator assigned to the fortress by the Merchants’ Guild. His appointment designates the site as a chartered trade post. He oversees trade, keeps the books, and may appoint clerks to assist him. He is empowered to issue trade mandates, defining which goods may be produced or exchanged. A modest office is required.]
+		[DESCRIPTION:The trade agent is an administrator assigned to the fortress by the Merchants’ Guild. Their appointment designates the site as a chartered trade post. They appoints clerks to assist them with their tasks. They are empowered to issue trade mandates, defining which goods may be produced or exchanged. A modest office is required.]
 		[LAND_HOLDER:1]
 		[LAND_NAME:chartered trade post]
 		[NUMBER:AS_NEEDED]
@@ -1135,7 +1142,7 @@ Landholders
 	
 	[POSITION:LH2]
 		[NAME:trade administrator:trade administrators]
-		[DESCRIPTION:The trade administrator is an official appointed by the Merchants’ Guild. His presence elevates the fortress to a chartered market town. In addition to overseeing trade and keeping the accounts, he manages site production. He is empowered to issue expanded trade and production mandates. He may appoint clerks to assist him. Office improvements are required.]
+		[DESCRIPTION:The trade administrator is an official appointed by the Merchants’ Guild. Their presence elevates the fortress to a chartered market town. They appoints clerks to assist them with their tasks. They are empowered to issue expanded trade and production mandates. They may appoint clerks to assist them. Office improvements are required.]
 		[LAND_HOLDER:2]
 		[LAND_NAME:chartered market town]
 		[NUMBER:AS_NEEDED]
@@ -1161,7 +1168,7 @@ Landholders
 
 	[POSITION:LH3]
 		[NAME:trade director:trade directors]
-		[DESCRIPTION:The trade director is a senior official appointed by the Merchants’ Guild. His presence elevates the fortress to a chartered merchant city. He oversees trade, manages site production, and receives diplomats. He is empowered to issue expanded trade and production mandates. Bookkeeping is delegated to appointed clerks. A modest office is required.]
+		[DESCRIPTION:The trade director is a senior official appointed by the Merchants’ Guild. Their presence elevates the fortress to a chartered merchant city. They appoints clerks to assist them with their tasks. They are empowered to issue expanded trade and production mandates. Bookkeeping is delegated to appointed clerks. A modest office is required.]
 		[LAND_HOLDER:3]
 		[LAND_NAME:chartered merchant city]
 		[NUMBER:AS_NEEDED]
@@ -1187,7 +1194,7 @@ Landholders
 
 	[POSITION:LH4]
 		[NAME:chief commissioner:chief commissioners]
-		[DESCRIPTION:The chief commissioner is a principal official appointed by the Merchants’ Guild. His presence elevates the fortress to a principal mercantile city. He directs production and receives diplomats, while trade and bookkeeping are delegated to clerks. His mandates broadly determine permitted production and commerce. Decent living quarters are required.]
+		[DESCRIPTION:The chief commissioner is a principal official appointed by the Merchants’ Guild. Their presence elevates the fortress to a principal mercantile city. They appoint clerks to assist with administrative tasks and, when required, can dispatch military forces to protect the republic’s interests. Their mandates broadly determine permitted production and commerce. Decent living quarters are required.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:4]
@@ -1220,7 +1227,7 @@ Landholders
 
 	[POSITION:LH5]
 		[NAME:grand commissioner:grand commissioners]
-		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. His presence elevates the site to the supreme 'citadel of commerce'. He directs production and diplomacy, while trade and administration are fully delegated to subordinate officials. He holds the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (1/6)]
+		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (1/6)]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:5]
@@ -1231,7 +1238,6 @@ Landholders
 		[REPLACED_BY:LH6]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]			TEST. werkt dit bij landholdeR?
-		[RESPONSIBILITY:MILITARY_STRATEGY]		TEST. werkt dit bij landholdeR?
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]	
 		[PRECEDENCE:43]
@@ -1256,7 +1262,7 @@ Landholders
 	[POSITION:LH6]
 	- just the position, nothing changes internally
 		[NAME:grand commissioner:grand commissioners]
-		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. His presence elevates the site to the supreme 'citadel of commerce'. He directs production and diplomacy, while trade and administration are fully delegated to subordinate officials. He holds the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (2/6)]
+		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (2/6)]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:6]
@@ -1267,7 +1273,6 @@ Landholders
 		[REPLACED_BY:LH7]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
-		[RESPONSIBILITY:MILITARY_STRATEGY]	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]		
 		[PRECEDENCE:44]
@@ -1292,7 +1297,7 @@ Landholders
 	[POSITION:LH7]
 	- just the position, nothing changes internally
 		[NAME:grand commissioner:grand commissioners]
-		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. His presence elevates the site to the supreme 'citadel of commerce'. He directs production and diplomacy, while trade and administration are fully delegated to subordinate officials. He holds the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (3/6)]
+		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (3/6)]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:7]
@@ -1303,7 +1308,6 @@ Landholders
 		[REPLACED_BY:LH8]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
-		[RESPONSIBILITY:MILITARY_STRATEGY]	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]	
 		[PRECEDENCE:45]
@@ -1328,7 +1332,7 @@ Landholders
 	[POSITION:LH8]
 	- just the position, nothing changes internally
 		[NAME:grand commissioner:grand commissioners]
-		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. His presence elevates the site to the supreme 'citadel of commerce'. He directs production and diplomacy, while trade and administration are fully delegated to subordinate officials. He holds the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (4/6)]
+		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (4/6)]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:8]
@@ -1338,8 +1342,7 @@ Landholders
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH9]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 
-		[RESPONSIBILITY:MILITARY_GOALS]		
-		[RESPONSIBILITY:MILITARY_STRATEGY]		
+		[RESPONSIBILITY:MILITARY_GOALS]			
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]	
 		[PRECEDENCE:46]
@@ -1364,7 +1367,7 @@ Landholders
 	[POSITION:LH9]
 	- just the position, nothing changes internally
 		[NAME:grand commissioner:grand commissioners]
-		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. His presence elevates the site to the supreme 'citadel of commerce'. He directs production and diplomacy, while trade and administration are fully delegated to subordinate officials. He holds the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (5/6)]
+		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (5/6)]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:9]
@@ -1375,7 +1378,6 @@ Landholders
 		[REPLACED_BY:LH10]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
-		[RESPONSIBILITY:MILITARY_STRATEGY]	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]	
 		[PRECEDENCE:47]
@@ -1400,7 +1402,7 @@ Landholders
 	[POSITION:LH10]
 	- just the position, nothing changes internally
 		[NAME:grand commissioner:grand commissioners]
-		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. His presence elevates the site to the supreme 'citadel of commerce'. He directs production and diplomacy, while trade and administration are fully delegated to subordinate officials. He holds the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (6/6)]
+		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (6/6)]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_HOLDER:10]
@@ -1410,7 +1412,6 @@ Landholders
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]		
-		[RESPONSIBILITY:MILITARY_STRATEGY]	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]	
 		[PRECEDENCE:48]
@@ -1437,7 +1438,7 @@ Merchants
 	[POSITION:M_JM]
 		- This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
 		[NAME:merchant journeyman:merchant journeymen]
-		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for maintaining the trade routes between settlements. While conducting business as a merchant, he mandates the flow of goods and communication across the republic. His position entails clear but modest and practical living requirements.]
+		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for overseeing the trade routes between settlements. While conducting business as a merchant, they mandate the flow of goods and communication across the republic. Their position entails clear but modest and practical living requirements.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[LAND_NAME:merchants' guild]
@@ -1445,7 +1446,6 @@ Merchants
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS]
-		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[RESPONSIBILITY:MAINTAIN_BRIDGES]
 		[RESPONSIBILITY:MAINTAIN_ROADS]
@@ -1511,8 +1511,6 @@ Town Appointer for non-fortresses TEST
 		[REPLACED_BY:REPL_50]
 		[PRECEDENCE:200]
 		[DUTY_BOUND]
-
-
 
 Settlers
 
@@ -2614,6 +2612,7 @@ Doctor
 
 	[POSITION:DOCTOR]
 		[NAME:doctor:doctor]
+		[DESCRIPTION:The doctor is responsible for the health and well-being of the settlement's inhabitants. They require adequate facilities and resources to perform their duties effectively.]
 		[SITE]
 		[NUMBER:1]	
 		[CONQUERED_SITE]
@@ -2727,7 +2726,7 @@ Site Military
 	[POSITION:MARSHAL] 
 	- This position of marshal and the constable are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
 		[NAME:marshal:marshals]
-		[DESCRIPTION:The Marshal is the second highest-ranking officer of the republican military. He commands the local guard regiments. Due to their high status, they demand lavish living quarters. When the city becomes the citadel of commerce , the marshal can be appointed by the grand commissioner]
+		[DESCRIPTION:The Marshal is the second highest-ranking officer of the republican military. Due to their high status, they demand lavish living quarters. -- The marshal commands all military forces of the settlement, including the municipal, civic, and republican guards.]
 		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
 		[SPOUSE_MALE:gentleman:gentlemen]
 		[SITE]
@@ -2769,6 +2768,7 @@ Law enforcement
 
 	[POSITION:EXECUTIONER_HAMMER]
 		[NAME:executioner (hammer):executioners]
+		[DESCRIPTION:The executioner is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[CONQUERED_SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
@@ -2786,6 +2786,7 @@ Law enforcement
 
 	[POSITION:EXECUTIONER_AXE]
 		[NAME:executioner (axe):executioners]
+		[DESCRIPTION:The executioner is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[CONQUERED_SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
@@ -2803,10 +2804,11 @@ Law enforcement
 
 	[POSITION:EXECUTIONER_SPEAR]
 		[NAME:executioner (spear):executioners]
+		[DESCRIPTION:The executioner is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[CONQUERED_SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
-		[NUMBER:1				- as player, you can choose which type of executioner you want.	
+		[NUMBER:1]				- as player, you can choose which type of executioner you want.	
 		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:SPEAR]
@@ -2818,8 +2820,9 @@ Law enforcement
 		[REQUIRED_RACKS:1]
 		[REQUIRED_STANDS:1]
 
-	[POSITION:INQUISITOR] - This position and the marshal are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
+	[POSITION:INQUISITOR] 
 		[NAME:inquisitor:inquisitors]
+		[DESCRIPTION:The inquisitor is responsible for investigating and rooting out heresy and dissent within the settlement. Inquisitors are only appointable for conquered settlements.]
 		[CONQUERED_SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
 		[NUMBER:1]
@@ -2833,8 +2836,10 @@ Law enforcement
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 
-	[POSITION:BAILIFF] - This position and the marshal are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
+	[POSITION:BAILIFF] 
+		- This position and the marshal are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
 		[NAME:bailiff:bailiffs]
+		[DESCRIPTION:The bailiff is the chief law enforcement officer of the settlement, responsible for maintaining order and overseeing the constables. Due to their high status, they demand comfortable living quarters. The bailiff commands two constables who assist in law enforcement duties throughout the settlement.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:2:constable:constables]
@@ -2867,19 +2872,3 @@ Law enforcement
 		[REQUIRED_STANDS:1]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:1]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
