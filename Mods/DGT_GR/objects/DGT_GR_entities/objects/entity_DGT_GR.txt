@@ -1515,7 +1515,8 @@ Town Appointer for non-fortresses TEST
 Settlers
 
 	[POSITION:SETTLER_TRADER1]
-		[NAME:settler TRADER1TODO:settlers] 	
+		[NAME:settler TRADER1TODO:settlers] 
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
 		[NUMBER:1]
 		[ALLOWED_CREATURE:DWARF:ALL]
@@ -1532,6 +1533,7 @@ Settlers
 	[POSITION:SETTLER_BASE1]
 	- If no noble position trigger happens, new migrants will also not assume this position. And when that eventually happens, the succession has already taken place, preventing others for promotion
 		[NAME:settler BASE1TODO:settlers] 	
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
 		[NUMBER:7] 								- more than neccesary
 		[REJECTED_CREATURE:ELF:ALL] 			- this forces an even spreading of this position over the units. 
@@ -1544,7 +1546,8 @@ Settlers
 		[COLOR:4:0:1]
 
 	[POSITION:SETTLER_TRADER2]
-		[NAME:settler TRADER2TODO:settlers] 	
+		[NAME:settler TRADER2TODO:settlers] 
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]		
 		[SITE]
 		[NUMBER:1] 								- more than neccesary
 		[APPOINTED_BY:SETTLER_TRADER1] 			- available, but not automatic assumed. also, only usable by the first embarked dwarfs
@@ -1559,6 +1562,7 @@ Settlers
 
 	[POSITION:SETTLER_BASE2]
 		[NAME:settler BASE2TODO:settlers] 
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
 		[NUMBER:6] 								- more than neccesary
 		[APPOINTED_BY:SETTLER_TRADER2] 			- available, but not automatic assumed. We need the trader to be the first one going from 1 to 2, to prevent our best trader to get an unimportant position and not be able to switch back.
@@ -1574,7 +1578,8 @@ Settlers
 Citizens
 
 	[POSITION:CITIZEN_0_TRADER] 						- Will contain guaranteed only the first 7 dwarves. 
-		[NAME:citizen TRADETODO:citizens] 	
+		[NAME:citizen TRADETODO:citizens] 
+		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]	
 		[SITE]
 		[PRECEDENCE:87]
 		[NUMBER:6]
@@ -1595,6 +1600,7 @@ Citizens
 
 	[POSITION:CITIZEN_0] 						- Will contain guaranteed only the first 7 dwarves. 
 		[NAME:citizen:citizens] 	
+		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
 		[SITE]
 		[PRECEDENCE:87]
 		[NUMBER:6]
@@ -1614,7 +1620,8 @@ Citizens
 		[COLOR:4:0:1]
 	
 	[POSITION:CITIZEN_1_TRADER] 						
-		[NAME:free citizen:citizens] 	
+		[NAME:free citizen:citizens] 
+		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]	
 		[SITE]
 		[PRECEDENCE:86]
 		[NUMBER:1]
@@ -1640,7 +1647,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_1] 						
-		[NAME:free citizen:citizens] 	
+		[NAME:free citizen:citizens]
+		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]
 		[SITE]
 		[PRECEDENCE:86]
 		[NUMBER:6]
@@ -1666,6 +1674,8 @@ Citizens
 
 	[POSITION:CITIZEN_2_TRADER] 						
 		[NAME:recognized citizen:citizens] 	
+		[DESCRIPTION:Recognized now not only for labor but for judgment, they shoulder the quiet weight of order. From among them emerges the first keeper of justice—appointed so that fairness may take root before law is written.]
+		[DESCRIPTION:]
 		[SITE]
 		[PRECEDENCE:85]
 		[NUMBER:1]
@@ -1695,6 +1705,7 @@ Citizens
 
 	[POSITION:CITIZEN_2] 						
 		[NAME:recognized citizen:citizens] 	
+		[DESCRIPTION:Recognized now not only for labor but for judgment, they shoulder the quiet weight of order. From among them emerges the first keeper of justice—appointed so that fairness may take root before law is written.]
 		[SITE]
 		[PRECEDENCE:85]
 		[NUMBER:6]
@@ -1722,7 +1733,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_3_TRADER] 						
-		[NAME:notable citizen:citizens] 	
+		[NAME:notable citizen:citizens] 
+		[DESCRIPTION:Notable in standing, their hands turn from toil to governance. Freed from menial burdens, they begin to entrust tasks to clerks so that their attention may rest wholly on guiding the young settlement’s path.]	
 		[SITE]
 		[PRECEDENCE:84]
 		[NUMBER:1]
@@ -1754,6 +1766,7 @@ Citizens
 
 	[POSITION:CITIZEN_3] 						
 		[NAME:notable citizen:citizens] 	
+		[DESCRIPTION:Notable in standing, their hands turn from toil to governance. Freed from menial burdens, they begin to entrust tasks to clerks so that their attention may rest wholly on guiding the young settlement’s path.]	
 		[SITE]
 		[PRECEDENCE:84]
 		[NUMBER:6]
@@ -1783,7 +1796,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_4_TRADER] 						
-		[NAME:distinguished citizen:citizens] 	
+		[NAME:distinguished citizen:citizens] 
+		[DESCRIPTION:Distinguished by responsibility, they extend their concern to the safety of all. Under their authority, a civic guard is named—steel drawn not for conquest, but for the well‑being of the city that depends on them.]	
 		[SITE]
 		[PRECEDENCE:83]
 		[NUMBER:6]
@@ -1815,6 +1829,7 @@ Citizens
 
 	[POSITION:CITIZEN_4] 						
 		[NAME:distinguished citizen:citizens] 	
+		[DESCRIPTION:Distinguished by responsibility, they extend their concern to the safety of all. Under their authority, a civic guard is named—steel drawn not for conquest, but for the well‑being of the city that depends on them.]	
 		[SITE]
 		[PRECEDENCE:83]
 		[NUMBER:6]
@@ -1846,6 +1861,7 @@ Citizens
 	[POSITION:CITIZEN_5_TRADER] 						
 		[NAME:esteemed citizen:citizens] 	
 		[SPOUSE:esteemed citizen:citizens]	
+		[DESCRIPTION:Esteemed and firmly rooted in duty, their households rise with them. Even their spouses are released from the humble labors of the common day, and their quarters expand in comfort and refinement—an acknowledgment that their stature now stands far beyond the tools of survival.]
 		[SITE]
 		[PRECEDENCE:82]
 		[NUMBER:1]
@@ -1880,6 +1896,7 @@ Citizens
 	[POSITION:CITIZEN_5] 						
 		[NAME:esteemed citizen:citizens] 	
 		[SPOUSE:esteemed citizen:citizens]
+		[DESCRIPTION:Esteemed and firmly rooted in duty, their households rise with them. Even their spouses are released from the humble labors of the common day, and their quarters expand in comfort and refinement—an acknowledgment that their stature now stands far beyond the tools of survival.]
 		[SITE]
 		[PRECEDENCE:82]
 		[NUMBER:6]
@@ -1912,7 +1929,8 @@ Citizens
 
 	[POSITION:CITIZEN_6_TRADER] 						
 		[NAME:honored citizen:citizens] 
-		[SPOUSE:honored citizen:citizens]		
+		[SPOUSE:honored citizen:citizens]	
+		[DESCRIPTION:Honored among their peers, they tighten the weave of civic function. At their behest a clerk of stores is appointed, ensuring that supplies and lifeblood flow with order rather than chance. Their dwellings, too, grow richer in finish and provision, echoing the authority they quietly accumulate.]	
 		[SITE]
 		[PRECEDENCE:81]
 		[NUMBER:1]
@@ -1946,7 +1964,8 @@ Citizens
 
 	[POSITION:CITIZEN_6] 						
 		[NAME:honored citizen:citizens] 
-		[SPOUSE:honored citizen:citizens]		
+		[SPOUSE:honored citizen:citizens]	
+		[DESCRIPTION:Honored among their peers, they tighten the weave of civic function. At their behest a clerk of stores is appointed, ensuring that supplies and lifeblood flow with order rather than chance. Their dwellings, too, grow richer in finish and provision, echoing the authority they quietly accumulate.]		
 		[SITE]
 		[PRECEDENCE:81]
 		[NUMBER:6]
@@ -1980,6 +1999,7 @@ Citizens
 	[POSITION:CITIZEN_7_TRADER] 						
 		[NAME:grand citizen:citizens] 
 		[SPOUSE:grand citizen:citizens]		
+		[DESCRIPTION:Grand in mandate, they stand at the summit of what a free city can bestow. Their names carry beyond mountain roads and river borders, spoken with regard in distant halls. As they consider sending forces outward to guard the metropolis’s widening interests, their quarters—finest a free people can grant—reflect the renown of those who shape not only the city, but its place in the world.]
 		[SITE]
 		[PRECEDENCE:80]
 		[NUMBER:1]
@@ -2018,6 +2038,7 @@ Citizens
 	[POSITION:CITIZEN_7] 						
 		[NAME:grand citizen:citizens] 
 		[SPOUSE:grand citizen:citizens]	
+		[DESCRIPTION:Grand in mandate, they stand at the summit of what a free city can bestow. Their names carry beyond mountain roads and river borders, spoken with regard in distant halls. As they consider sending forces outward to guard the metropolis’s widening interests, their quarters—finest a free people can grant—reflect the renown of those who shape not only the city, but its place in the world.]
 		[SITE]
 		[PRECEDENCE:80]
 		[NUMBER:6]
@@ -2057,6 +2078,7 @@ Burgers
 		[NAME:free burgher:burghers] 	
 		[NAME_MALE:free burgher:burghers]
 		[NAME_FEMALE:free burghess:burghers]
+		[DESCRIPTION:Newly elevated in the wake of the city’s hard‑won charter, they stand among the first to taste the privileges of the republic. Their duties are lighter than as citizens, yet their accommodations rise to the level of comfort reserved for the notable. They bear their new status with visible satisfaction, as is their right.]
 		[SITE]
 		[PRECEDENCE:66]
 		[NUMBER:7]
@@ -2075,6 +2097,7 @@ Burgers
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION_SPOUSE]
 		[CHAT_WORTHY]
 		[QUEST_GIVER]
 		[SLEEP_PRETENSION]
@@ -2096,6 +2119,7 @@ Burgers
 		[NAME_FEMALE:recognized burghess:burghers]
 		[SPOUSE_FEMALE:recognized burghess:burghers]
 		[SPOUSE_MALE:recognized burgher:burghers]	
+		[DESCRIPTION:Further settled into the life of a free republic, they shoulder little beyond the obligations of decency, their responsibilities far gentler than in their citizen days. Their quarters grow correspondingly refined, and they make no secret of expecting such comforts now that the Merchants’ Guild has placed its seal upon the city.]
 		[SITE]
 		[PRECEDENCE:65]
 		[NUMBER:7]
@@ -2138,6 +2162,7 @@ Burgers
 		[NAME_FEMALE:notable burghess:burghers]
 		[SPOUSE_FEMALE:notable burghess:burghers]
 		[SPOUSE_MALE:notable burgher:burghers]	
+		[DESCRIPTION:At this standing they have become figures of notable prosperity within the chartered city, beholden to few tasks beyond maintaining its good repute. Their living spaces expand with polished stone, crafted timber and shiny artifacts, not so subtle signs that they now dwell on the easier side of the republic’s labor.]
 		[SITE]
 		[NUMBER:7]
 		[PRECEDENCE:64]
@@ -2180,7 +2205,8 @@ Burgers
 		[NAME_MALE:distinguished burgher:burghers]
 		[NAME_FEMALE:distinguished burghess:burghers]
 		[SPOUSE_FEMALE:distinguished burghess:burghers]
-		[SPOUSE_MALE:distinguished burgher:burghers]		
+		[SPOUSE_MALE:distinguished burgher:burghers]	
+		[DESCRIPTION:Marked by steady rise rather than burden, they move through the republic with the quiet assurance of those who no longer answer to the harsher demands of governance. Their comforts deepen—well‑lit halls, ample storage, and furnishings chosen for pleasure rather than necessity—small honors they now accept as ordinary.]	
 		[SITE]
 		[NUMBER:7]
 		[PRECEDENCE:63]
@@ -2224,6 +2250,7 @@ Burgers
 		[NAME_FEMALE:esteemed burghess:burghers]
 		[SPOUSE_FEMALE:esteemed burghess:burghers]
 		[SPOUSE_MALE:esteemed burgher:burghers]	
+		[DESCRIPTION:Here they reach the upper ease of republican life, their role largely ceremonial, their obligations light as hammered silver. Their households mirror this privilege, adorned with luxuries that once belonged only to governors and clerks. They carry themselves as esteemed figures who know the charter did more than enriching the city —it elevated them.]	
 		[SITE]
 		[NUMBER:7]
 		[PRECEDENCE:62]
@@ -2266,7 +2293,8 @@ Burgers
 		[NAME_MALE:honored burgher:burghers]
 		[NAME_FEMALE:honored burghess:burghers]
 		[SPOUSE_FEMALE:honored burghess:burghers]
-		[SPOUSE_MALE:honored burgher:burghers]		
+		[SPOUSE_MALE:honored burgher:burghers]	
+		[DESCRIPTION:Highly honored within the walls, they stand among the most secure beneficiaries of the city’s newly recognized freedom. Though their responsibilities scarcely exceed those of any other citizen, their name commands courtesy, and their dwellings—rich in craft and quiet indulgence—signal a status that needs no proclamation.]	
 		[SITE]
 		[PRECEDENCE:61]
 		[NUMBER:7]
@@ -2308,7 +2336,8 @@ Burgers
 		[NAME_MALE:grand burgher:burghers]
 		[NAME_FEMALE:grand burghess:burghers]
 		[SPOUSE_FEMALE:grand burghess:burghers]
-		[SPOUSE_MALE:grand burgher:burghers]	
+		[SPOUSE_MALE:grand burgher:burghers]
+		[DESCRIPTION:At the grand summit of the republic’s burgher society, they form the proud crest of the metropolis. Their names travel along trade‑roads, spoken with respect in distant markets. Their halls are the finest a free people grant, symbols of renown gained not by duty, but by the standing the republic bestows.]	
 		[SITE]
 		[PRECEDENCE:60]
 		[NUMBER:7]
