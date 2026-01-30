@@ -1,6 +1,73 @@
 language_ELF
 
+instructions:
+Use 4-6 characters, up to 8
+Alternate consonant-vowel smoothly
+End predominantly in vowels (-a, -e, -i)
+Use soft consonants (th, f, l, r, m)
+Include á, í diacritics sparingly
+make it sound melodic and flowing
+their should be no relation to the original word, maybe only a similar 'feel' 
+if you detect any relations between original words, you may apply similar relations in the translations.
+
 [OBJECT:LANGUAGE]
 
 [SELECT_TRANSLATION:ELF]
 	[T_WORD:REPUBLIC:famashta]
+	[T_WORD:FAIR FESTIVAL:limari]
+	[T_WORD:CARNIVAL:velathae]
+	[T_WORD:STREET MARKET:famiso]
+	[T_WORD:CONVENTION:thareni]
+	[T_WORD:MAJESTIC:línari]
+	[T_WORD:MOST SERENE:valethi]
+	[T_WORD:BENEVOLENT:mirathae]
+	[T_WORD:DIGNIFIED:therumi]
+	[T_WORD:IMPOSING:solathra]
+	[T_WORD:MAGNIFICENT:reláthefi]
+	[T_WORD:OPULENT:nomira]
+	[T_WORD:PALATIAL:talithera]
+	[T_WORD:SPLENDID:fareni]
+	[T_WORD:SUMPTUOUS:lomathae]
+	[T_WORD:ILLUSTRIOUS:thirelafi]
+	[T_WORD:VENERABLE:anemora]
+	[T_WORD:EMINENT:vethali]
+	[T_WORD:PREEMINENT:varáthemi]
+	[T_WORD:PROSPEROUS:lithanoe]
+	[T_WORD:AFFLUENT:melirafi]
+	[T_WORD:THRIVING:somari]
+	[T_WORD:FLOURISHING:larifena]
+	[T_WORD:ESTABLISHED:tholemi]
+	[T_WORD:MONUMENTAL:varothela]
+	[T_WORD:STORIED:refinara]
+	[T_WORD:CIVIC:limora]
+	[T_WORD:COMMUNAL:thalemae]
+	[T_WORD:PUBLIC:valomi]
+	[T_WORD:INDEPENDENT:nerithala]
+	[T_WORD:CONSTITUTIONAL:falamithoe]
+	[T_WORD:LAWFUL:moreni]
+	[T_WORD:DISCIPLINED:thelami]
+	[T_WORD:FRUGAL:velathi]
+	[T_WORD:RESOLUTE:filamore]
+	[T_WORD:COLLECTIVE:theralofi]
+	[T_WORD:CONSENSUAL:lomatheri]
+	[T_WORD:FEDERATED:rathemali]
+	[T_WORD:MERCANTILE:silafeno]
+	[T_WORD:COMMERCIAL:varimae]
+	[T_WORD:DEMOCRATIC:thalenori]
+	[T_WORD:EGALITARIAN:miralethae]
+	[T_WORD:POPULAR:limathoe]
+	[T_WORD:ENTERPRISE:velanari]
+	[T_WORD:ENDEAVOR:tholimae]
+	[T_WORD:UNDERTAKING:farithelae]
+	[T_WORD:ASSOCIATION:neralofi]
+	[T_WORD:PROJECT:lemora]
+	[T_WORD:OPERATION:valethiri]
+	[T_WORD:CONSORTIUM:silathorae]
+	[T_WORD:TOLL TUNNEL:mirathíaás]
+	[T_WORD:TOLL ROAD:mirathiáfel]
+	[T_WORD:TOLL BRIDGE:mirathiálome]
+	[T_WORD:ARCHIVE:lafinora]
+	[T_WORD:ACCOUNT:relemi]
+	[T_WORD:RECORD:thalemori]
+	[T_WORD:FILE:venali]
+	[T_WORD:REGISTER:farimathi]

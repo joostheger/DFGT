@@ -1,7 +1,73 @@
 language_HUMAN
 
+instructions:
+Use 4-6 characters, up to 10
+Balance consonants and vowels
+Mix smooth (like th, m, n) and hard (like k, st) sounds
+Include qu- patterns
+Varied endings
+make it sound pleasant, familiar and versatile
+their should be no relation to the original word, maybe only a similar 'feel' 
+if you detect any relations between original words, you may apply similar relations in the translations.
+
 [OBJECT:LANGUAGE]
 
 [SELECT_TRANSLATION:HUMAN]
-	[T_WORD:REPUBLIC:ergor]
-	
+	[T_WORD:REPUBLIC:ergor]	
+	[T_WORD:FAIR FESTIVAL:quilomar]
+	[T_WORD:CARNIVAL:banthek]
+	[T_WORD:STREET MARKET:nostram]
+	[T_WORD:CONVENTION:kurthain]
+	[T_WORD:MAJESTIC:valdron]
+	[T_WORD:MOST SERENE:quimalth]
+	[T_WORD:BENEVOLENT:merithas]
+	[T_WORD:DIGNIFIED:stalmoren]
+	[T_WORD:IMPOSING:kalthrun]
+	[T_WORD:MAGNIFICENT:noquildar]
+	[T_WORD:OPULENT:bresmath]
+	[T_WORD:PALATIAL:thalmikon]
+	[T_WORD:SPLENDID:verloth]
+	[T_WORD:SUMPTUOUS:quenthar]
+	[T_WORD:ILLUSTRIOUS:maltherion]
+	[T_WORD:VENERABLE:durneka]
+	[T_WORD:EMINENT:kolath]
+	[T_WORD:PREEMINENT:quorkalath]
+	[T_WORD:PROSPEROUS:nesthorun]
+	[T_WORD:AFFLUENT:brimalth]
+	[T_WORD:THRIVING:thekuron]
+	[T_WORD:FLOURISHING:mestavol]
+	[T_WORD:ESTABLISHED:kurmadon]
+	[T_WORD:MONUMENTAL:valthremon]
+	[T_WORD:STORIED:rinethak]
+	[T_WORD:CIVIC:quelmon]
+	[T_WORD:COMMUNAL:balthren]
+	[T_WORD:PUBLIC:nosthal]
+	[T_WORD:INDEPENDENT:qurenthalos]
+	[T_WORD:CONSTITUTIONAL:malthorenik]
+	[T_WORD:LAWFUL:karsten]
+	[T_WORD:DISCIPLINED:thulmaron]
+	[T_WORD:FRUGAL:brethan]
+	[T_WORD:RESOLUTE:kalmidor]
+	[T_WORD:COLLECTIVE:quenthalon]
+	[T_WORD:CONSENSUAL:morthalen]
+	[T_WORD:FEDERATED:valthrenik]
+	[T_WORD:MERCANTILE:quilkaben]
+	[T_WORD:COMMERCIAL:bresthol]
+	[T_WORD:DEMOCRATIC:quimaldon]
+	[T_WORD:EGALITARIAN:nestharonil]
+	[T_WORD:POPULAR:lothmar]
+	[T_WORD:ENTERPRISE:kurmath]
+	[T_WORD:ENDEAVOR:velquan]
+	[T_WORD:UNDERTAKING:morthekun]
+	[T_WORD:ASSOCIATION:qurenthal]
+	[T_WORD:PROJECT:stalmon]
+	[T_WORD:OPERATION:bralmeko]
+	[T_WORD:CONSORTIUM:thalkurion]
+	[T_WORD:TOLL TUNNEL:viruquénas]
+	[T_WORD:TOLL ROAD:viruquéthal]
+	[T_WORD:TOLL BRIDGE:viruquékam]
+	[T_WORD:ARCHIVE:neskuron]
+	[T_WORD:ACCOUNT:malther]
+	[T_WORD:RECORD:brenthak]
+	[T_WORD:FILE:queldan]
+	[T_WORD:REGISTER:stalvorim]
