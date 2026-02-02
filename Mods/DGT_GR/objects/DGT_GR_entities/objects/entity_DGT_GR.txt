@@ -562,14 +562,14 @@ TODO: remove.
 Ruler
 
 	[POSITION:HGM]
-		[NAME:honorary grand master:honorary grand masters]
+		[NAME:Honorary grand master:Honorary grand masters]
 
 		//Title, role in civ and guild, responsibilies, character, way of succession, election or appointment
 		[DESCRIPTION:This is the symbolic head of the republic, an honorary title given to the leader of the merchants' guild. They have no real power within the guild or the civilization, but are often called upon for advice and guidance. They expect almost royal treatment, as befits their status as the figurehead of the republic.]
 		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
-		[LAND_NAME:merchants' guild]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
+		[LAND_NAME:Merchants' guild]
 		[NUMBER:1]
 		[RESPONSIBILITY:ADVISE_LEADERS]
 		[SUCCESSION:BY_POSITION:MM_COUNC]
@@ -599,11 +599,11 @@ Ruler
 Merchants' guild
 
 	[POSITION:MM_COUNC]
-		[NAME:merchant master councillor:merchant master councillors]
+		[NAME:Merchant master councillor:Merchant master councillors]
 		[DESCRIPTION:The merchant master councillor is one of two guildmasters who act as the chief decision-makers of both the republic and the merchants’ guild. They oversee guild operations, decide on trade policy and warfare. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
-		[LAND_NAME:merchants' guild]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
+		[LAND_NAME:Merchants' guild]
 		[NUMBER:2]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MILITARY_GOALS]
@@ -634,11 +634,11 @@ Merchants' guild
 		[REQUIRED_BOXES:2]
 
 	[POSITION:MM_MAG]
-		[NAME:merchant master magistrate:merchant master magistrates]
+		[NAME:Merchant master magistrate:Merchant master magistrates]
 		[DESCRIPTION:The merchant master magistrate holds the highest office of justice in the republic, charged with upholding the law and ensuring the safety and protection of the people. It appoints the Captain-General. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
-		[LAND_NAME:merchants' guild]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
+		[LAND_NAME:Merchants' guild]
 		[NUMBER:1]
 		[RESPONSIBILITY:JUDGE]
 		[RESPONSIBILITY:ESPIONAGE]
@@ -671,11 +671,11 @@ Merchants' guild
 		[REQUIRED_BOXES:2]
 
 	[POSITION:MM_AMBAS]
-		[NAME:merchant master ambassador:merchant master ambassadors]
+		[NAME:Merchant master ambassador:Merchant master ambassadors]
 		[DESCRIPTION:The merchant master ambassador holds the highest diplomatic office within the merchants’ guild and is responsible for receiving and hosting diplomatic guests. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
-		[LAND_NAME:merchants' guild]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
+		[LAND_NAME:Merchants' guild]
 		[NUMBER:1]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
@@ -704,11 +704,11 @@ Merchants' guild
 		[REQUIRED_BOXES:2]
 
 	[POSITION:MM_STEW]
-		[NAME:merchant master steward:merchant master steward]
+		[NAME:Merchant master steward:Merchant master steward]
 		[DESCRIPTION:The merchant master steward holds the highest administrative office of the republic, entrusted with the careful management of its resources. They oversee tax collection, secure the food supply, direct construction, and manage the guilds housekeeping. While running their own businesses as merchants, they mandate trade operations. Due to their aristocratic status, they demand lavish living quarters.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
-		[LAND_NAME:merchants' guild]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
+		[LAND_NAME:Merchants' guild]
 		[NUMBER:1]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[RESPONSIBILITY:FOOD_SUPPLY]
@@ -738,9 +738,9 @@ Merchants' guild
 		[REQUIRED_BOXES:2]
 
 	[POSITION:M_AP]
-		[NAME:merchant apprentice:merchant apprentices]
+		[NAME:Merchant apprentice:Merchant apprentices]
 		[DESCRIPTION:The merchant guild apprentice serves the guild by delivering messages and attending to the needs of its masters. Through diligent service and reliability, they support the daily workings of the guild while striving to prove their worth and rise through its ranks.]
-		[LAND_NAME:merchants' guild]
+		[LAND_NAME:Merchants' guild]
 		[NUMBER:4]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_CLEANLINESS]
@@ -758,10 +758,10 @@ Merchants' guild
 Civ military
 
 	[POSITION:CAPTAIN_GENERAL]
-		[NAME:captain-general:captain-general]
+		[NAME:Captain-general:Captain-general]
 		[DESCRIPTION:The Captain-general is the highest-ranking officer of the republican military, commanding their subordinate captains. Due to their high status, they demand lavish living quarters.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[NUMBER:1]
 		[RESPONSIBILITY:MILITARY_STRATEGY]
 		[RESPONSIBILITY:ADVISE_LEADERS]
@@ -787,7 +787,7 @@ Civ military
 		[REQUIRED_BOXES:2]
 		
 	[POSITION:CAPTAIN]
-		[NAME:captain:captains]
+		[NAME:Captain:Captains]
 		[DESCRIPTION:The captain is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their position, they require comfortable living quarters befitting their status.]
 		[NUMBER:AS_NEEDED]
 		[RESPONSIBILITY:ESCORT_TAX_COLLECTOR]
@@ -809,36 +809,36 @@ Civ military
 
 Free merchants
 
-	[POSITION:FREE_MERCHANT1_SITE]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT1_SITE]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
 		[NUMBER:1]
 		[REQUIRES_POPULATION:90] 
 		[RESPONSIBILITY:BUILD_MORALE]
-		[SUCCESSION:BY_POSITION:FREE_MERCHANT1] - not really successable, just to prevent re-assignent by the player.
+		[SUCCESSION:BY_POSITION:Free_MERCHANT1] - not really successable, just to prevent re-assignent by the player.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[PRECEDENCE:100]				
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
-	[POSITION:FREE_MERCHANT2_SITE]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT2_SITE]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
 		[NUMBER:1]
 		[REQUIRES_POPULATION:190] 
 		[RESPONSIBILITY:BUILD_MORALE]
-		[SUCCESSION:BY_POSITION:FREE_MERCHANT1] - not really successable, just to prevent re-assignent by the player.
+		[SUCCESSION:BY_POSITION:Free_MERCHANT1] - not really successable, just to prevent re-assignent by the player.
 		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
 		[PRECEDENCE:100]				
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
-	[POSITION:FREE_MERCHANT1]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT1]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:2]
 		[REQUIRES_POPULATION:200] 
@@ -849,8 +849,8 @@ Free merchants
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
-	[POSITION:FREE_MERCHANT2]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT2]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:2]
 		[REQUIRES_POPULATION:400] 
@@ -861,8 +861,8 @@ Free merchants
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
-	[POSITION:FREE_MERCHANT3]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT3]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:4]
 		[REQUIRES_POPULATION:800] 
@@ -871,8 +871,8 @@ Free merchants
 		[PRECEDENCE:100]				- must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
-	[POSITION:FREE_MERCHANT4]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT4]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:8]
 		[REQUIRES_POPULATION:1600] 
@@ -881,8 +881,8 @@ Free merchants
 		[PRECEDENCE:100]				T must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
-	[POSITION:FREE_MERCHANT5]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT5]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:16]
 		[REQUIRES_POPULATION:3200] 
@@ -891,8 +891,8 @@ Free merchants
 		[PRECEDENCE:100]				 - must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
-	[POSITION:FREE_MERCHANT6]
-		[NAME:free merchant:free merchants]
+	[POSITION:Free_MERCHANT6]
+		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:32]
 		[REQUIRES_POPULATION:6400] 
@@ -906,11 +906,12 @@ Clerks
 	- clerks ASNEEDED to no replace or succeed from clerk single. When the next fortress status is reached, the ASNEEDED position is simply added as option for the player, while the SINGLE just stays available. 
 	
 	[POSITION:CLERK_OF_STORES_SINGLE]
-		[NAME:clerk of stores:clerks]
+		[NAME:Clerk of stores:Clerks]
 		[DESCRIPTION:The clerk of stores is responsible for the procurement, storage, and distribution of goods, ensuring that the guild's operations run smoothly and efficiently. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Broker)]
 		[SITE]
 		[NUMBER:1]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
+		[APPOINTED_BY:CITIZEN_NONFORT]
 		[APPOINTED_BY:CITIZEN_6]
 		[APPOINTED_BY:CITIZEN_7]
 		[APPOINTED_BY:BURGER_1]	
@@ -933,7 +934,7 @@ Clerks
 		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK_OF_STORES_ASNEEDED]
-		[NAME:clerk of stores:clerks]
+		[NAME:Clerk of stores:Clerks]
 		[DESCRIPTION:The clerk of stores is responsible for the procurement, storage, and distribution of goods, ensuring that the guild's operations run smoothly and efficiently. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Broker)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
@@ -957,11 +958,12 @@ Clerks
 		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK_OF_WORKS_SINGLE]
-		[NAME:clerk of works:clerks]
+		[NAME:Clerk of works:Clerks]
 		[DESCRIPTION:The clerk of works is responsible for overseeing the production of crafts, trade goods, and essential commodities, ensuring that all work is completed to high standards and on schedule. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Manager)]
 		[SITE]
 		[NUMBER:1]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
+		[APPOINTED_BY:CITIZEN_NONFORT]
 		[APPOINTED_BY:CITIZEN_3]
 		[APPOINTED_BY:CITIZEN_4]
 		[APPOINTED_BY:CITIZEN_5]
@@ -987,7 +989,7 @@ Clerks
 		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK_OF_WORKS_ASNEEDED]
-		[NAME:clerk of works:clerks]
+		[NAME:Clerk of works:Clerks]
 		[DESCRIPTION:The clerk of works is responsible for overseeing the production of crafts, trade goods, and essential commodities, ensuring that all work is completed to high standards and on schedule. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Manager)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
@@ -1011,11 +1013,12 @@ Clerks
 		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK_OF_ACCOUNTS_SINGLE]
-		[NAME:clerk of accounts:clerks]
+		[NAME:Clerk of accounts:Clerks]
 		[DESCRIPTION:The clerk of accounts is responsible for managing financial records, overseeing budgets, and ensuring accurate accounting practices. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Bookkeeper)]
 		[SITE]
 		[NUMBER:1]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
+		[APPOINTED_BY:CITIZEN_NONFORT]
 		[APPOINTED_BY:CITIZEN_3]
 		[APPOINTED_BY:CITIZEN_4]
 		[APPOINTED_BY:CITIZEN_5]
@@ -1041,7 +1044,7 @@ Clerks
 		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK_OF_ACCOUNTS_ASNEEDED]
-		[NAME:clerk of accounts:clerks]
+		[NAME:Clerk of accounts:Clerks]
 		[DESCRIPTION:The clerk of accounts is responsible for managing financial records, overseeing budgets, and ensuring accurate accounting practices. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Bookkeeper)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
@@ -1065,11 +1068,12 @@ Clerks
 		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK_OF_LETTERS_SINGLE]
-		[NAME:clerk of letters:clerks]
+		[NAME:Clerk of letters:Clerks]
 		[DESCRIPTION:The clerk of letters is responsible for delivering messages between sites, maintaining correspondence, and ensuring timely communication across the republic. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Messenger)]
 		[SITE]
 		[NUMBER:1]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
+		[APPOINTED_BY:CITIZEN_NONFORT]
 		[APPOINTED_BY:CITIZEN_3]
 		[APPOINTED_BY:CITIZEN_4]
 		[APPOINTED_BY:CITIZEN_5]
@@ -1095,7 +1099,7 @@ Clerks
 		[REQUIRED_CABINETS:1]
 
 	[POSITION:CLERK_OF_LETTERS_ASNEEDED]
-		[NAME:clerk of letters:clerks]
+		[NAME:Clerk of letters:Clerks]
 		[DESCRIPTION:The clerk of letters is responsible for delivering messages between sites, maintaining correspondence, and ensuring timely communication across the republic. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Messenger)]
 		[SITE]
 		[NUMBER:AS_NEEDED]
@@ -1122,10 +1126,10 @@ Landholders
 	[POSITION:LH1]
 		- landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
 		- landholders need to be defined above the Merchant Journeyman
-		[NAME:trade agent:trade agents]
+		[NAME:Trade agent:Trade agents]
 		[DESCRIPTION:The trade agent is an administrator assigned to the fortress by the Merchants’ Guild. Their appointment designates the site as a chartered trade post. They appoints clerks to assist them with their tasks. They are empowered to issue trade mandates, defining which goods may be produced or exchanged. A modest office is required.]
 		[LAND_HOLDER:1]
-		[LAND_NAME:chartered trade post]
+		[LAND_NAME:Chartered trade post]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1148,10 +1152,10 @@ Landholders
 		[REQUIRED_BOXES:1]
 	
 	[POSITION:LH2]
-		[NAME:trade administrator:trade administrators]
+		[NAME:Trade administrator:Trade administrators]
 		[DESCRIPTION:The trade administrator is an official appointed by the Merchants’ Guild. Their presence elevates the fortress to a chartered market town. They appoints clerks to assist them with their tasks. They are empowered to issue expanded trade and production mandates. They may appoint clerks to assist them. Office improvements are required.]
 		[LAND_HOLDER:2]
-		[LAND_NAME:chartered market town]
+		[LAND_NAME:Chartered market town]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1174,10 +1178,10 @@ Landholders
 		[REQUIRED_BOXES:1]
 
 	[POSITION:LH3]
-		[NAME:trade director:trade directors]
+		[NAME:Trade director:Trade directors]
 		[DESCRIPTION:The trade director is a senior official appointed by the Merchants’ Guild. Their presence elevates the fortress to a chartered merchant city. They appoints clerks to assist them with their tasks. They are empowered to issue expanded trade and production mandates. Bookkeeping is delegated to appointed clerks. A modest office is required.]
 		[LAND_HOLDER:3]
-		[LAND_NAME:chartered merchant city]
+		[LAND_NAME:Chartered merchant city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1200,12 +1204,12 @@ Landholders
 		[REQUIRED_BOXES:1]
 
 	[POSITION:LH4]
-		[NAME:chief commissioner:chief commissioners]
+		[NAME:Chief commissioner:Chief commissioners]
 		[DESCRIPTION:The chief commissioner is a principal official appointed by the Merchants’ Guild. Their presence elevates the fortress to a principal mercantile city. They appoint clerks to assist with administrative tasks and, when required, can dispatch military forces to protect the republic’s interests. Their mandates broadly determine permitted production and commerce. Decent living quarters are required.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_HOLDER:4]
-		[LAND_NAME:principal mercantile city]
+		[LAND_NAME:Principal mercantile city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1233,12 +1237,12 @@ Landholders
 		[REQUIRED_BOXES:1]
 
 	[POSITION:LH5]
-		[NAME:grand commissioner:grand commissioners]
+		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (1/6)]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_HOLDER:5]
-		[LAND_NAME:citadel of commerce]
+		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1268,12 +1272,12 @@ Landholders
 
 	[POSITION:LH6]
 	- just the position, nothing changes internally
-		[NAME:grand commissioner:grand commissioners]
+		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (2/6)]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_HOLDER:6]
-		[LAND_NAME:citadel of commerce]
+		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1303,12 +1307,12 @@ Landholders
 	
 	[POSITION:LH7]
 	- just the position, nothing changes internally
-		[NAME:grand commissioner:grand commissioners]
+		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (3/6)]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_HOLDER:7]
-		[LAND_NAME:citadel of commerce]
+		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1338,12 +1342,12 @@ Landholders
 
 	[POSITION:LH8]
 	- just the position, nothing changes internally
-		[NAME:grand commissioner:grand commissioners]
+		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (4/6)]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_HOLDER:8]
-		[LAND_NAME:citadel of commerce]
+		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1373,12 +1377,12 @@ Landholders
 
 	[POSITION:LH9]
 	- just the position, nothing changes internally
-		[NAME:grand commissioner:grand commissioners]
+		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (5/6)]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_HOLDER:9]
-		[LAND_NAME:citadel of commerce]
+		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1408,12 +1412,12 @@ Landholders
 
 	[POSITION:LH10]
 	- just the position, nothing changes internally
-		[NAME:grand commissioner:grand commissioners]
+		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (6/6)]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_HOLDER:10]
-		[LAND_NAME:citadel of commerce]
+		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
 		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
@@ -1444,11 +1448,11 @@ Merchants
 
 	[POSITION:M_JM]
 		- This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
-		[NAME:merchant journeyman:merchant journeymen]
+		[NAME:Merchant journeyman:Merchant journeymen]
 		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for overseeing the trade routes between settlements. While conducting business as a merchant, they mandate the flow of goods and communication across the republic. Their position entails clear but modest and practical living requirements.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
-		[LAND_NAME:merchants' guild]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
+		[LAND_NAME:Merchants' guild]
 		[NUMBER:4]
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[RESPONSIBILITY:TRADE]
@@ -1475,11 +1479,11 @@ Merchants
 		[REQUIRED_BOXES:1]
 
 	[POSITION:FORCED_ADMINISTRATOR]
-		[NAME:chief commissioner:chief commissioners]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[NAME:Chief commissioner:Chief commissioners]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[APPOINTED_BY:MM_COUNC]
-		[LAND_NAME:reclamation site]
+		[LAND_NAME:Reclamation site]
 		[PRECEDENCE:25]
 			- as as vanilla FORCED_ADMINISTRATOR
 		[NUMBER:1]
@@ -1507,10 +1511,10 @@ Merchants
 		[REQUIRED_CABINETS:4]
 		[REQUIRED_BOXES:1]
 
-Town Appointer for non-fortresses TEST
+Non-fortresses TEST
 
-	[POSITION:TOWN_APPOINTER]
-		[NAME:Citizen:citizens]
+	[POSITION:APPOINTER_NONFORT]
+		[NAME:Citizen:Citizens]
 		[SITE]
 		[NUMBER:1]
 		[ELECTED]						 - this combination prevents usage by the player
@@ -1519,15 +1523,135 @@ Town Appointer for non-fortresses TEST
 		[PRECEDENCE:200]
 		[DUTY_BOUND]
 
+	[POSITION:SETTLER_NONFORT]
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 		
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]		
+		[SITE]
+		[PRECEDENCE:100]				
+		[NUMBER:3] 							
+		[APPOINTED_BY:APPOINTER_NONFORT] 		
+		[REPLACED_BY:CITIZEN_NONFORT]			
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]	
+
+	[POSITION:CITIZEN_NONFORT] 						
+		[NAME:Citizen:Citizens] 
+		[SPOUSE:Citizen:Citizens]		
+		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]	
+		[SITE]
+		[PRECEDENCE:80]
+		[NUMBER:2]
+		[APPOINTED_BY:APPOINTER_NONFORT] 
+		[SUCCESSION:BY_HEIR] 					
+		[REQUIRES_POPULATION:50] 
+		[RESPONSIBILITY:TRADE]	
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[RESPONSIBILITY:MILITARY_GOALS]
+		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION_SPOUSE]
+		[CHAT_WORTHY]
+		[QUEST_GIVER]
+		[SLEEP_PRETENSION]
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+		[DUTY_BOUND]
+		[REQUIRES_MARKET]
+		[DEMAND_MAX:1]
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:2500]
+		[REQUIRED_DINING:1500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:1500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:3]
+		[COLOR:4:0:1]
+
+	[POSITION:BURGER_NONFORT] 						
+		[NAME:Notable burgher:Burghers] 	
+		[NAME_MALE:Notable burgher:Burghers]
+		[NAME_FEMALE:Notable burghess:Burghers]
+		[SPOUSE_FEMALE:Notable burghess:Burghers]
+		[SPOUSE_MALE:Notable burgher:Burghers]	
+		[DESCRIPTION:At this standing they have become figures of notable prosperity within the chartered city, beholden to few tasks beyond maintaining its good repute. Their living spaces expand with polished stone, crafted timber and shiny artifacts, not so subtle signs that they now dwell on the easier side of the republic’s labor.]
+		[SITE]
+		[NUMBER:2]
+		[PRECEDENCE:64]
+		[APPOINTED_BY:APPOINTER_NONFORT] 			
+		[SUCCESSION:BY_HEIR] 					
+		[REQUIRES_POPULATION:120] 
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION_SPOUSE]
+		[CHAT_WORTHY]
+		[QUEST_GIVER]
+		[SLEEP_PRETENSION]
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+		[DUTY_BOUND]
+		[REQUIRES_MARKET]	
+		[DEMAND_MAX:1]
+		[REQUIRED_BEDROOM:1500]
+		[REQUIRED_DINING:1000]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:2]
+		[COLOR:4:0:0]
+
+	[POSITION:PATRICIAN_NONFORT] 						
+		[NAME:Patrician:Patricians]
+		[NAME_MALE:Patrician:Patricians]
+		[NAME_FEMALE:Matrician:Patricians]
+		[SPOUSE_FEMALE:Matrician:Patricians]
+		[SPOUSE_MALE:Patrician:Patricians]
+		[DESCRIPTION:They are recognized as aristocrats of the capital, wealthy by position rather than office. Their lives unfold in cultivated comfort, shaped by the city’s centrality and its steady abundance. They expect deference as a matter of course, though still observe the outward forms of civic restraint.]
+		[SITE]
+		[NUMBER:2]
+		[PRECEDENCE:7]
+		[APPOINTED_BY:APPOINTER_NONFORT]
+		[SUCCESSION:BY_HEIR] 					
+		[REQUIRES_POPULATION:200] 
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]	
+		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION_SPOUSE]
+		[CHAT_WORTHY]
+		[QUEST_GIVER]
+		[SLEEP_PRETENSION]
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+		[DUTY_BOUND]
+		[REQUIRES_MARKET]
+		[DETERMINES_COIN_DESIGN]
+		[KILL_QUEST]
+		[FLASHES]		
+		[DEMAND_MAX:2]
+		[REQUIRED_BEDROOM:2500]
+		[REQUIRED_DINING:2500]
+		[REQUIRED_OFFICE:1000]
+		[REQUIRED_TOMB:2500]
+		[REQUIRED_CABINETS:2]
+		[REQUIRED_BOXES:4]
+		[COLOR:5:0:0]
+
 Settlers
-
-
 
 
 	[POSITION:SETTLER_BASE1]
 	- If no noble position trigger happens, new migrants will also not assume this position. And when that eventually happens, the succession has already taken place, preventing others for promotion
-		[LAND_NAME:settler] 
-		[NAME:settler:settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages	
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages	
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
 		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1543,8 +1667,8 @@ Settlers
 		[RESPONSIBILITY:COLLECT_TAXES]
 
 	[POSITION:SETTLER_BASE2]
-		[LAND_NAME:settler] 
-		[NAME:settler:settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
 		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1560,8 +1684,8 @@ Settlers
 		[RESPONSIBILITY:COLLECT_TAXES]
 
 	[POSITION:SETTLER_TRADER1]
-		[LAND_NAME:settler] 
-		[NAME:settler:settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
 		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1573,13 +1697,12 @@ Settlers
 		[RESPONSIBILITY:TRADE]				- best suited unit should take this position.
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 
 	[POSITION:SETTLER_TRADER2]
-		[LAND_NAME:settler] 
-		[NAME:settler:settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]		
 		[SITE]
 		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1591,13 +1714,12 @@ Settlers
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]	
 
 	[POSITION:SETTLER_TRADER1b]
 		[LAND_NAME:(select broker)] 
-		[NAME:settler (and broker):settlers] 
+		[NAME:Settler (and broker):Settlers] 
 		[DESCRIPTION:This is your only opportunity for a long time to select a broker. Once you unpause, the broker will be appointed automatically until a higher site level is reached.]	
 		[SITE]
 		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1609,7 +1731,6 @@ Settlers
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]	
 
@@ -1618,6 +1739,7 @@ Settlers
 		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
 		[SITE]
 		[PRECEDENCE:NONE]
+		[SQUAD:1:member:members]	- prevent assignment of settlers or citizens.
 		[NUMBER:1] 								
 		[APPOINTED_BY:SETTLER_TRADER2] 	
 		[APPOINTED_BY:CITIZEN_0] 
@@ -1628,28 +1750,15 @@ Settlers
 		[APPOINTED_BY:CITIZEN_5] 
 		[APPOINTED_BY:CITIZEN_6] 
 		[APPOINTED_BY:CITIZEN_7]
-		[APPOINTED_BY:BURGER_1] 
-		[APPOINTED_BY:BURGER_2] 
-		[APPOINTED_BY:BURGER_3]  
-		[APPOINTED_BY:BURGER_4] 
-		[APPOINTED_BY:BURGER_5] 
-		[APPOINTED_BY:BURGER_6] 
-		[APPOINTED_BY:BURGER_7]
-		[APPOINTED_BY:HGM]
-
-		 		
-			
-
 
 Citizens
 
 	[POSITION:CITIZEN_0_TRADER] 						- Will contain guaranteed only the first 7 dwarves. 
-		[NAME:citizen:citizens] 
+		[NAME:Citizen:Citizens] 
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]	
 		[SITE]
 		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6]
-		[APPOINTED_BY:TOWN_APPOINTER]			- for non fortress sites.
+		[NUMBER:1mes]
 		[APPOINTED_BY:SETTLER_TRADER2] 			- unavailable for appointment by later settlers, also not for other sites
 		[SUCCESSION:BY_POSITION:SETTLER_TRADER2]
 		[SUCCESSION:BY_HEIR] 					- from here on, this position is inherrited by the units heir. 
@@ -1657,7 +1766,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[QUEST_GIVER]
@@ -1670,12 +1778,11 @@ Citizens
 		// to CITIZEN_1. This is not premature, but regular succession, and cannot be steered by removing an appointer.
 		// Thats why this gatekeeper is used: it works for premature succession, but after that it stays empty.
 		// On promotion, this position is just quickly used.
-		[NAME:citizen:citizens] 	
+		[NAME:Citizen_gate:Citizens] 	
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
 		[SITE]
 		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:6]
-		[APPOINTED_BY:TOWN_APPOINTER]			// for non fortress sites.
 		[APPOINTED_BY:SETTLER_TRADER2] 			// unavailable for appointment by later settlers, also not for other sites
 		[SUCCESSION:BY_POSITION:SETTLER_BASE1]  
 		[SUCCESSION:BY_POSITION:SETTLER_BASE2]	
@@ -1690,12 +1797,12 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
-		[NAME:citizen:citizens] 	
+		[NAME:Citizen:Citizens] 	
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
 		[SITE]
 		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:6]
-		[APPOINTED_BY:TOWN_APPOINTER]			// for non fortress sites.
+		[APPOINTED_BY:CITIZEN_0_GATEKEEPER] 
 		[APPOINTED_BY:SETTLER_TRADER2] 			//	unavailable for appointment by later settlers, also not for other sites 
 		[SUCCESSION:BY_POSITION:CITIZEN_0_GATEKEEPER]
 		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
@@ -1710,7 +1817,7 @@ Citizens
 		[COLOR:4:0:1]
 	
 	[POSITION:CITIZEN_1_TRADER] 						
-		[NAME:free citizen:citizens] 
+		[NAME:Free citizen:Citizens] 
 		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]	
 		[SITE]
 		[PRECEDENCE:NONE]						- no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1723,7 +1830,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]	
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[QUEST_GIVER]
@@ -1736,7 +1842,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_1] 						
-		[NAME:free citizen:citizens]
+		[NAME:Free citizen:Citizens]
 		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]
 		[SITE]
 		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1760,7 +1866,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_2_TRADER] 						
-		[NAME:recognized citizen:citizens] 	
+		[NAME:Recognized citizen:Citizens] 	
 		[DESCRIPTION:Recognized now not only for labor but for judgment, they shoulder the quiet weight of order. From among them emerges the first keeper of justice—appointed so that fairness may take root before law is written.]
 		[DESCRIPTION:]
 		[SITE]
@@ -1774,7 +1880,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]	
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[QUEST_GIVER]
@@ -1790,7 +1895,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_2] 						
-		[NAME:recognized citizen:citizens] 	
+		[NAME:Recognized citizen:Citizens] 	
 		[DESCRIPTION:Recognized now not only for labor but for judgment, they shoulder the quiet weight of order. From among them emerges the first keeper of justice—appointed so that fairness may take root before law is written.]
 		[SITE]
 		[PRECEDENCE:85]					
@@ -1818,7 +1923,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_3_TRADER] 						
-		[NAME:notable citizen:citizens] 
+		[NAME:Notable citizen:Citizens] 
 		[DESCRIPTION:Notable in standing, their hands turn from toil to governance. Freed from menial burdens, they begin to entrust tasks to clerks so that their attention may rest wholly on guiding the young settlement’s path.]	
 		[SITE]
 		[PRECEDENCE:84]
@@ -1831,7 +1936,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]	
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[MENIAL_WORK_EXEMPTION]
@@ -1849,7 +1953,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_3] 						
-		[NAME:notable citizen:citizens] 	
+		[NAME:Notable citizen:Citizens] 	
 		[DESCRIPTION:Notable in standing, their hands turn from toil to governance. Freed from menial burdens, they begin to entrust tasks to clerks so that their attention may rest wholly on guiding the young settlement’s path.]	
 		[SITE]
 		[PRECEDENCE:84]
@@ -1879,7 +1983,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_4_TRADER] 						
-		[NAME:distinguished citizen:citizens] 
+		[NAME:Distinguished citizen:Citizens] 
 		[DESCRIPTION:Distinguished by responsibility, they extend their concern to the safety of all. Under their authority, a civic guard is named—steel drawn not for conquest, but for the well‑being of the city that depends on them.]	
 		[SITE]
 		[PRECEDENCE:83]
@@ -1892,7 +1996,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]	
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[MENIAL_WORK_EXEMPTION]
@@ -1910,7 +2013,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_4] 						
-		[NAME:distinguished citizen:citizens] 	
+		[NAME:Distinguished citizen:Citizens] 	
 		[DESCRIPTION:Distinguished by responsibility, they extend their concern to the safety of all. Under their authority, a civic guard is named—steel drawn not for conquest, but for the well‑being of the city that depends on them.]	
 		[SITE]
 		[PRECEDENCE:83]
@@ -1940,8 +2043,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_5_TRADER] 						
-		[NAME:esteemed citizen:citizens] 	
-		[SPOUSE:esteemed citizen:citizens]	
+		[NAME:Esteemed citizen:Citizens] 	
+		[SPOUSE:Esteemed citizen:Citizens]	
 		[DESCRIPTION:Esteemed and firmly rooted in duty, their households rise with them. Even their spouses are released from the humble labors of the common day, and their quarters expand in comfort and refinement—an acknowledgment that their stature now stands far beyond the tools of survival.]
 		[SITE]
 		[PRECEDENCE:82]
@@ -1954,7 +2057,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]	
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[MENIAL_WORK_EXEMPTION]
@@ -1974,8 +2076,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_5] 						
-		[NAME:esteemed citizen:citizens] 	
-		[SPOUSE:esteemed citizen:citizens]
+		[NAME:Esteemed citizen:Citizens] 	
+		[SPOUSE:Esteemed citizen:Citizens]
 		[DESCRIPTION:Esteemed and firmly rooted in duty, their households rise with them. Even their spouses are released from the humble labors of the common day, and their quarters expand in comfort and refinement—an acknowledgment that their stature now stands far beyond the tools of survival.]
 		[SITE]
 		[PRECEDENCE:82]
@@ -2007,8 +2109,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_6_TRADER] 						
-		[NAME:honored citizen:citizens] 
-		[SPOUSE:honored citizen:citizens]	
+		[NAME:Honored citizen:Citizens] 
+		[SPOUSE:Honored citizen:Citizens]	
 		[DESCRIPTION:Honored among their peers, they tighten the weave of civic function. At their behest a clerk of stores is appointed, ensuring that supplies and lifeblood flow with order rather than chance. Their dwellings, too, grow richer in finish and provision, echoing the authority they quietly accumulate.]	
 		[SITE]
 		[PRECEDENCE:81]
@@ -2021,7 +2123,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]		
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[MENIAL_WORK_EXEMPTION]
@@ -2042,8 +2143,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_6] 						
-		[NAME:honored citizen:citizens] 
-		[SPOUSE:honored citizen:citizens]	
+		[NAME:Honored citizen:Citizens] 
+		[SPOUSE:Honored citizen:Citizens]	
 		[DESCRIPTION:Honored among their peers, they tighten the weave of civic function. At their behest a clerk of stores is appointed, ensuring that supplies and lifeblood flow with order rather than chance. Their dwellings, too, grow richer in finish and provision, echoing the authority they quietly accumulate.]		
 		[SITE]
 		[PRECEDENCE:81]
@@ -2076,8 +2177,8 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_7_TRADER] 						
-		[NAME:grand citizen:citizens] 
-		[SPOUSE:grand citizen:citizens]		
+		[NAME:Grand citizen:Citizens] 
+		[SPOUSE:Grand citizen:Citizens]		
 		[DESCRIPTION:Grand in mandate, they stand at the summit of what a free city can bestow. Their names carry beyond mountain roads and river borders, spoken with regard in distant halls. As they consider sending forces outward to guard the metropolis’s widening interests, their quarters—finest a free people can grant—reflect the renown of those who shape not only the city, but its place in the world.]
 		[SITE]
 		[PRECEDENCE:80]
@@ -2090,7 +2191,6 @@ Citizens
 		[RESPONSIBILITY:TRADE]	
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[RESPONSIBILITY:MILITARY_GOALS]
@@ -2115,8 +2215,8 @@ Citizens
 		
 
 	[POSITION:CITIZEN_7] 						
-		[NAME:grand citizen:citizens] 
-		[SPOUSE:grand citizen:citizens]	
+		[NAME:Grand citizen:Citizens] 
+		[SPOUSE:Grand citizen:Citizens]	
 		[DESCRIPTION:Grand in mandate, they stand at the summit of what a free city can bestow. Their names carry beyond mountain roads and river borders, spoken with regard in distant halls. As they consider sending forces outward to guard the metropolis’s widening interests, their quarters—finest a free people can grant—reflect the renown of those who shape not only the city, but its place in the world.]
 		[SITE]
 		[PRECEDENCE:80]
@@ -2154,9 +2254,9 @@ Citizens
 Burgers
 
 	[POSITION:BURGER_1] 						
-		[NAME:free burgher:burghers] 	
-		[NAME_MALE:free burgher:burghers]
-		[NAME_FEMALE:free burghess:burghers]
+		[NAME:Free burgher:Burghers] 	
+		[NAME_MALE:Free burgher:Burghers]
+		[NAME_FEMALE:Free burghess:Burghers]
 		[DESCRIPTION:Newly elevated in the wake of the city’s hard‑won charter, they stand among the first to taste the privileges of the republic. Their duties are lighter than as citizens, yet their accommodations rise to the level of comfort reserved for the notable. They bear their new status with visible satisfaction, as is their right.]
 		[SITE]
 		[PRECEDENCE:66]
@@ -2192,11 +2292,11 @@ Burgers
 
 
 	[POSITION:BURGER_2] 						
-		[NAME:recognized burgher:burghers] 
-		[NAME_MALE:recognized burgher:burghers]
-		[NAME_FEMALE:recognized burghess:burghers]
-		[SPOUSE_FEMALE:recognized burghess:burghers]
-		[SPOUSE_MALE:recognized burgher:burghers]	
+		[NAME:Recognized burgher:Burghers] 
+		[NAME_MALE:Recognized burgher:Burghers]
+		[NAME_FEMALE:Recognized burghess:Burghers]
+		[SPOUSE_FEMALE:Recognized burghess:Burghers]
+		[SPOUSE_MALE:Recognized burgher:Burghers]	
 		[DESCRIPTION:Further settled into the life of a free republic, they shoulder little beyond the obligations of decency, their responsibilities far gentler than in their citizen days. Their quarters grow correspondingly refined, and they make no secret of expecting such comforts now that the Merchants’ Guild has placed its seal upon the city.]
 		[SITE]
 		[PRECEDENCE:65]
@@ -2234,11 +2334,11 @@ Burgers
 		[COLOR:4:0:0]
 
 	[POSITION:BURGER_3] 						
-		[NAME:notable burgher:burghers] 	
-		[NAME_MALE:notable burgher:burghers]
-		[NAME_FEMALE:notable burghess:burghers]
-		[SPOUSE_FEMALE:notable burghess:burghers]
-		[SPOUSE_MALE:notable burgher:burghers]	
+		[NAME:Notable burgher:Burghers] 	
+		[NAME_MALE:Notable burgher:Burghers]
+		[NAME_FEMALE:Notable burghess:Burghers]
+		[SPOUSE_FEMALE:Notable burghess:Burghers]
+		[SPOUSE_MALE:Notable burgher:Burghers]	
 		[DESCRIPTION:At this standing they have become figures of notable prosperity within the chartered city, beholden to few tasks beyond maintaining its good repute. Their living spaces expand with polished stone, crafted timber and shiny artifacts, not so subtle signs that they now dwell on the easier side of the republic’s labor.]
 		[SITE]
 		[NUMBER:7]
@@ -2277,11 +2377,11 @@ Burgers
 		[COLOR:4:0:0]
 		
 	[POSITION:BURGER_4] 						
-		[NAME:distinguished burgher:burghers] 
-		[NAME_MALE:distinguished burgher:burghers]
-		[NAME_FEMALE:distinguished burghess:burghers]
-		[SPOUSE_FEMALE:distinguished burghess:burghers]
-		[SPOUSE_MALE:distinguished burgher:burghers]	
+		[NAME:Distinguished burgher:Burghers] 
+		[NAME_MALE:Distinguished burgher:Burghers]
+		[NAME_FEMALE:Distinguished burghess:Burghers]
+		[SPOUSE_FEMALE:Distinguished burghess:Burghers]
+		[SPOUSE_MALE:Distinguished burgher:Burghers]	
 		[DESCRIPTION:Marked by steady rise rather than burden, they move through the republic with the quiet assurance of those who no longer answer to the harsher demands of governance. Their comforts deepen—well‑lit halls, ample storage, and furnishings chosen for pleasure rather than necessity—small honors they now accept as ordinary.]	
 		[SITE]
 		[NUMBER:7]
@@ -2320,11 +2420,11 @@ Burgers
 		[COLOR:4:0:0]
 
 	[POSITION:BURGER_5] 						
-		[NAME:esteemed burgher:burghers] 
-		[NAME_MALE:esteemed burgher:burghers]
-		[NAME_FEMALE:esteemed burghess:burghers]
-		[SPOUSE_FEMALE:esteemed burghess:burghers]
-		[SPOUSE_MALE:esteemed burgher:burghers]	
+		[NAME:Esteemed burgher:Burghers] 
+		[NAME_MALE:Esteemed burgher:Burghers]
+		[NAME_FEMALE:Esteemed burghess:Burghers]
+		[SPOUSE_FEMALE:Esteemed burghess:Burghers]
+		[SPOUSE_MALE:Esteemed burgher:Burghers]	
 		[DESCRIPTION:Here they reach the upper ease of republican life, their role largely ceremonial, their obligations light as hammered silver. Their households mirror this privilege, adorned with luxuries that once belonged only to governors and clerks. They carry themselves as esteemed figures who know the charter did more than enriching the city —it elevated them.]	
 		[SITE]
 		[NUMBER:7]
@@ -2363,11 +2463,11 @@ Burgers
 		[COLOR:4:0:0]
 
 	[POSITION:BURGER_6] 						
-		[NAME:honored burgher:burghers] 
-		[NAME_MALE:honored burgher:burghers]
-		[NAME_FEMALE:honored burghess:burghers]
-		[SPOUSE_FEMALE:honored burghess:burghers]
-		[SPOUSE_MALE:honored burgher:burghers]	
+		[NAME:Honored burgher:Burghers] 
+		[NAME_MALE:Honored burgher:Burghers]
+		[NAME_FEMALE:Honored burghess:Burghers]
+		[SPOUSE_FEMALE:Honored burghess:Burghers]
+		[SPOUSE_MALE:Honored burgher:Burghers]	
 		[DESCRIPTION:Highly honored within the walls, they stand among the most secure beneficiaries of the city’s newly recognized freedom. Though their responsibilities scarcely exceed those of any other citizen, their name commands courtesy, and their dwellings—rich in craft and quiet indulgence—signal a status that needs no proclamation.]	
 		[SITE]
 		[PRECEDENCE:61]
@@ -2406,11 +2506,11 @@ Burgers
 		[COLOR:4:0:0]
 
 	[POSITION:BURGER_7] 						
-		[NAME:grand burgher:burghers] 
-		[NAME_MALE:grand burgher:burghers]
-		[NAME_FEMALE:grand burghess:burghers]
-		[SPOUSE_FEMALE:grand burghess:burghers]
-		[SPOUSE_MALE:grand burgher:burghers]
+		[NAME:Grand burgher:Burghers] 
+		[NAME_MALE:Grand burgher:Burghers]
+		[NAME_FEMALE:Grand burghess:Burghers]
+		[SPOUSE_FEMALE:Grand burghess:Burghers]
+		[SPOUSE_MALE:Grand burgher:Burghers]
 		[DESCRIPTION:At the grand summit of the republic’s burgher society, they form the proud crest of the metropolis. Their names travel along trade‑roads, spoken with respect in distant markets. Their halls are the finest a free people grant, symbols of renown gained not by duty, but by the standing the republic bestows.]	
 		[SITE]
 		[PRECEDENCE:60]
@@ -2449,11 +2549,11 @@ Burgers
 Patricians
 
 	[POSITION:PATRICIAN_1] 						
-		[NAME:patrician:patricians]
-		[NAME_MALE:patrician:patricians]
-		[NAME_FEMALE:matrician:patricians]
-		[SPOUSE_FEMALE:matrician:patricians]
-		[SPOUSE_MALE:patrician:patricians]
+		[NAME:Patrician:Patricians]
+		[NAME_MALE:Patrician:Patricians]
+		[NAME_FEMALE:Matrician:Patricians]
+		[SPOUSE_FEMALE:Matrician:Patricians]
+		[SPOUSE_MALE:Patrician:Patricians]
 		[DESCRIPTION:They are recognized as aristocrats of the capital, wealthy by position rather than office. Their lives unfold in cultivated comfort, shaped by the city’s centrality and its steady abundance. They expect deference as a matter of course, though still observe the outward forms of civic restraint.]
 		[SITE]
 		[NUMBER:7]
@@ -2493,11 +2593,11 @@ Patricians
 		[COLOR:5:0:0]
 
 	[POSITION:PATRICIAN_2] 						
-		[NAME:esteemed patrician:patricians]
-		[NAME_MALE:esteemed patrician:patricians]
-		[NAME_FEMALE:esteemed matrician:patricians]
-		[SPOUSE_FEMALE:esteemed matrician:patricians]
-		[SPOUSE_MALE:esteemed patrician:patricians]
+		[NAME:Esteemed patrician:Patricians]
+		[NAME_MALE:Esteemed patrician:Patricians]
+		[NAME_FEMALE:Esteemed matrician:Patricians]
+		[SPOUSE_FEMALE:Esteemed matrician:Patricians]
+		[SPOUSE_MALE:Esteemed patrician:Patricians]
 		[DESCRIPTION:As aristocrats they grow openly rich, their households expanding in scale and refinement. Prosperity gathers around them with little explanation, and they begin to compare their standing not to citizens, but to lesser courts. Requests for exceptional lodging are made softly, framed as convenience.]
 		[SITE]
 		[PRECEDENCE:6]
@@ -2532,11 +2632,11 @@ Patricians
 
 
 	[POSITION:PATRICIAN_3] 						
-		[NAME:honored patrician:patricians]
-		[NAME_MALE:honored patrician:patricians]
-		[NAME_FEMALE:honored matrician:patricians]
-		[SPOUSE_FEMALE:honored matrician:patricians]
-		[SPOUSE_MALE:honored patrician:patricians]
+		[NAME:Honored patrician:Patricians]
+		[NAME_MALE:Honored patrician:Patricians]
+		[NAME_FEMALE:Honored matrician:Patricians]
+		[SPOUSE_FEMALE:Honored matrician:Patricians]
+		[SPOUSE_MALE:Honored patrician:Patricians]
 		[DESCRIPTION:Here they are, living in lavish surroundings that rival princely estates. Their presence reshapes protocol, and accommodations once reserved for visiting rulers are no longer unthinkable. Such expectations raise brows, yet are often granted to avoid offense.]
 		[SITE]
 		[PRECEDENCE:5]
@@ -2570,11 +2670,11 @@ Patricians
 		[COLOR:5:0:0]
 
 	[POSITION:PATRICIAN_4] 						
-		[NAME:magnate patrician:patricians]
-		[NAME_MALE:magnate patrician:patricians]
-		[NAME_FEMALE:magnate matrician:patricians]
-		[SPOUSE_FEMALE:magnate matrician:patricians]
-		[SPOUSE_MALE:magnate patrician:patricians]
+		[NAME:Magnate patrician:Patricians]
+		[NAME_MALE:Magnate patrician:Patricians]
+		[NAME_FEMALE:Magnate matrician:Patricians]
+		[SPOUSE_FEMALE:Magnate matrician:Patricians]
+		[SPOUSE_MALE:Magnate patrician:Patricians]
 		[DESCRIPTION:Their wealth turns extravagant, their conduct increasingly regal. They host with the confidence of sovereign households and speak of royal quarters as precedent rather than privilege. The capital adjusts itself around them, uneasy yet compliant.]
 		[SITE]
 		[PRECEDENCE:4]
@@ -2608,11 +2708,11 @@ Patricians
 		[COLOR:5:0:0]
 
 	[POSITION:PATRICIAN_5] 						
-		[NAME:grand patrician:patricians]
-		[NAME_MALE:grand patrician:patricians]
-		[NAME_FEMALE:grand matrician:patricians]
-		[SPOUSE_FEMALE:grand matrician:patricians]
-		[SPOUSE_MALE:grand patrician:patricians]
+		[NAME:Grand patrician:Patricians]
+		[NAME_MALE:Grand patrician:Patricians]
+		[NAME_FEMALE:Grand matrician:Patricians]
+		[SPOUSE_FEMALE:Grand matrician:Patricians]
+		[SPOUSE_MALE:Grand patrician:Patricians]
 		[DESCRIPTION:At this height, living in open splendor, their estates mirroring royal courts in scale and ceremony. They measure themselves against kings without irony, and treat monarchic honors as fitting recognition. Objections persist, but tradition bends under their abundance.]
 		[SITE]
 		[PRECEDENCE:3]
@@ -2647,11 +2747,11 @@ Patricians
 
 
 	[POSITION:PATRICIAN_6] 						
-		[NAME:most serene patrician:patricians]
-		[NAME_MALE:most serene patrician:patricians]
-		[NAME_FEMALE:most serene matrician:patricians]
-		[SPOUSE_FEMALE:most serene matrician:patricians]
-		[SPOUSE_MALE:most serene patrician:patricians]
+		[NAME:Most serene patrician:Patricians]
+		[NAME_MALE:Most serene patrician:Patricians]
+		[NAME_FEMALE:Most serene matrician:Patricians]
+		[SPOUSE_FEMALE:Most serene matrician:Patricians]
+		[SPOUSE_MALE:Most serene patrician:Patricians]
 		[DESCRIPTION:They stand like monarchs in all but crown, extravagantly secure and unchallenged. Royal quarters are assumed, their lifestyle indistinguishable from sovereign rule. The capital may deny them kingship, yet indulges them as though it had already conceded it.]
 		[SITE]
 		[PRECEDENCE:2]
@@ -2720,11 +2820,12 @@ Replacers
 Doctor
 
 	[POSITION:DOCTOR]
-		[NAME:doctor:doctor]
+		[NAME:Doctor:Doctors]
 		[DESCRIPTION:The doctor is responsible for the health and well-being of the settlement's inhabitants. They require adequate facilities and resources to perform their duties effectively.]
 		[SITE]
 		[NUMBER:1]	
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
+		[APPOINTED_BY:APPOINTER_NONFORT]
 		[APPOINTED_BY:CITIZEN_1]
 		[APPOINTED_BY:CITIZEN_2]
 		[APPOINTED_BY:CITIZEN_3]
@@ -2743,6 +2844,7 @@ Doctor
 		[RESPONSIBILITY:HEALTH_MANAGEMENT]
 		[PRECEDENCE:115]
 		[COLOR:7:0:1] 
+		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_BOXES:2]
@@ -2750,7 +2852,7 @@ Doctor
 Site Military
 
 	[POSITION:RG_CAPTAIN]
-		[NAME:republican guard captain:republican guard captains]
+		[NAME:Republican guard captain:Republican guard captains]
 		[DESCRIPTION:The captain of the republican guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The republican guard consist of 24 guards, divided into three squads of 8 soldiers each. Only the capital is allowed to deploy a republican guard.]
 		[SITE]
 		[NUMBER:3]
@@ -2771,11 +2873,12 @@ Site Military
 		[REQUIRED_BOXES:1]
 
 	[POSITION:MG_CAPTAIN]
-		[NAME:municipal guard captain:municipal guard captains]
+		[NAME:Municipal guard captain:Municipal guard captains]
 		[DESCRIPTION:The captain of the municipal guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the municipality. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The municipal guard consist of 8 guards. Only the mercantile cities are allowed to deploy a municipal guard.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:8:municipal guard:municipal guards]
+		[APPOINTED_BY:BURGER_NONFORT]
 		[APPOINTED_BY:BURGER_1]	
 		[APPOINTED_BY:BURGER_2]
 		[APPOINTED_BY:BURGER_3]	
@@ -2799,11 +2902,12 @@ Site Military
 		[REQUIRED_BOXES:1]
 
 	[POSITION:CG_CAPTAIN]
-		[NAME:civic guard captain:civic guard captains]
+		[NAME:Civic guard captain:Civic guard captains]
 		[DESCRIPTION:The captain of the civic guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the citizens. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The civic guard consist of 8 guards. Only the settlements with a minimum population of 170 are allowed to deploy a civic guard.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:8:civic guard:civic guards]
+		[APPOINTED_BY:CITIZEN_NONFORT]
 		[APPOINTED_BY:CITIZEN_3]
 		[APPOINTED_BY:CITIZEN_4]
 		[APPOINTED_BY:CITIZEN_5]
@@ -2833,12 +2937,13 @@ Site Military
 
 	[POSITION:MARSHAL] 
 	- This position of marshal and the constable are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
-		[NAME:marshal:marshals]
+		[NAME:Marshal:Marshals]
 		[DESCRIPTION:The Marshal is the second highest-ranking officer of the republican military. Due to their high status, they demand lavish living quarters. -- The marshal commands all military forces of the settlement, including the municipal, civic, and republican guards.]
-		[SPOUSE_FEMALE:gentlewoman:gentlewomen]
-		[SPOUSE_MALE:gentleman:gentlemen]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[SITE]
 		[NUMBER:1]
+		[APPOINTED_BY:BURGER_NONFORT]
 		[APPOINTED_BY:BURGER_1]	
 		[APPOINTED_BY:BURGER_2]
 		[APPOINTED_BY:BURGER_3]	
@@ -2874,9 +2979,9 @@ Site Military
 Law enforcement	
 
 	[POSITION:EXECUTIONER_HAMMER]
-		[NAME:executioner (hammer):executioners]
-		[NAME_MALE:executioner:executioners]
-		[NAME_FEMALE:executioner:executioners]
+		[NAME:Executioner (hammer):Executioners]
+		[NAME_MALE:Executioner:Executioners]
+		[NAME_FEMALE:Executioner:Executioners]
 		[DESCRIPTION:The executioner (hammer) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
@@ -2893,9 +2998,9 @@ Law enforcement
 		[REQUIRED_STANDS:1]
 
 	[POSITION:EXECUTIONER_AXE]
-		[NAME:executioner (axe):executioners]
-		[NAME_MALE:executioner:executioners]
-		[NAME_FEMALE:executioner:executioners]
+		[NAME:Executioner (axe):Executioners]
+		[NAME_MALE:Executioner:Executioners]
+		[NAME_FEMALE:Executioner:Executioners]
 		[DESCRIPTION:The executioner (axe) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
@@ -2912,9 +3017,9 @@ Law enforcement
 		[REQUIRED_STANDS:1]
 
 	[POSITION:EXECUTIONER_SPEAR]
-		[NAME:executioner (spear):executioners]
-		[NAME_MALE:executioner:executioners]
-		[NAME_FEMALE:executioner:executioners]
+		[NAME:Executioner (spear):Executioners]
+		[NAME_MALE:Executioner:Executioners]
+		[NAME_FEMALE:Executioner:Executioners]
 		[DESCRIPTION:The executioner (spear) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
@@ -2931,7 +3036,7 @@ Law enforcement
 		[REQUIRED_STANDS:1]
 
 	[POSITION:INQUISITOR] 
-		[NAME:inquisitor:inquisitors]
+		[NAME:Inquisitor:Inquisitors]
 		[DESCRIPTION:The inquisitor is responsible for investigating and rooting out heresy and dissent within the settlement. Inquisitors are only appointable for conquered settlements.]
 		[SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
@@ -2948,11 +3053,12 @@ Law enforcement
 
 	[POSITION:BAILIFF] 
 		- This position and the marshal are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
-		[NAME:bailiff:bailiffs]
+		[NAME:Bailiff:Bailiffs]
 		[DESCRIPTION:The bailiff is the chief law enforcement officer of the settlement, responsible for maintaining order and overseeing the constables. Due to their high status, they demand comfortable living quarters. The bailiff commands two constables who assist in law enforcement duties throughout the settlement.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:2:constable:constables]
+		[APPOINTED_BY:CITIZEN_NONFORT]
 		[APPOINTED_BY:CITIZEN_2]
 		[APPOINTED_BY:CITIZEN_3]
 		[APPOINTED_BY:CITIZEN_4]
@@ -2975,7 +3081,6 @@ Law enforcement
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_RACKS:1]
