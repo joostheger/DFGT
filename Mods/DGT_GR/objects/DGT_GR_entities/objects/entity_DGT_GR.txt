@@ -1665,20 +1665,21 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_0_GATEKEEPER]
-		- this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2, making it available to be promoted to citizen 0.
-		- without this position, the next generation settlers would inherrit CITIZEN_0, when their current holders are promoted
-		- to CITIZEN_1. This is not premature, but regular succession, and cannot be steered by removing an appointer.
-		- On promotion, this position is just quickly used.
+		// this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2, making it available to be promoted to citizen 0.
+		// without this position, the next generation settlers would inherrit CITIZEN_0, when their current holders are promoted
+		// to CITIZEN_1. This is not premature, but regular succession, and cannot be steered by removing an appointer.
+		// Thats why this gatekeeper is used: it works for premature succession, but after that it stays empty.
+		// On promotion, this position is just quickly used.
 		[NAME:citizen:citizens] 	
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:6]
-		[APPOINTED_BY:TOWN_APPOINTER]			- for non fortress sites.
-		[APPOINTED_BY:SETTLER_TRADER2] 			- unavailable for appointment by later settlers, also not for other sites
+		[APPOINTED_BY:TOWN_APPOINTER]			// for non fortress sites.
+		[APPOINTED_BY:SETTLER_TRADER2] 			// unavailable for appointment by later settlers, also not for other sites
 		[SUCCESSION:BY_POSITION:SETTLER_BASE1]  
 		[SUCCESSION:BY_POSITION:SETTLER_BASE2]	
-		[REQUIRES_POPULATION:8] 				- immediatly when the first migrantwave arrives.
+		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -1688,17 +1689,17 @@ Citizens
 		[REQUIRED_BEDROOM:1]
 		[COLOR:4:0:1]
 
-	[POSITION:CITIZEN_0] 						- Will contain guaranteed only the first 7 dwarves. 
+	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
 		[NAME:citizen:citizens] 	
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:6]
-		[APPOINTED_BY:TOWN_APPOINTER]			- for non fortress sites.
-		[APPOINTED_BY:SETTLER_TRADER2] 			- unavailable for appointment by later settlers, also not for other sites 
+		[APPOINTED_BY:TOWN_APPOINTER]			// for non fortress sites.
+		[APPOINTED_BY:SETTLER_TRADER2] 			//	unavailable for appointment by later settlers, also not for other sites 
 		[SUCCESSION:BY_POSITION:CITIZEN_0_GATEKEEPER]
-		[SUCCESSION:BY_HEIR] 					- from here on, this position is inherrited by the units heir. 
-		[REQUIRES_POPULATION:8] 				- immediatly when the first migrantwave arrives.
+		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
+		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
