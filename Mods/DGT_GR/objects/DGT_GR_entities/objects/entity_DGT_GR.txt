@@ -1754,7 +1754,7 @@ Settlers
 Citizens
 
 	[POSITION:CITIZEN_0_TRADER] 						// Will contain guaranteed only the first 7 dwarves. 
-		[NAME:Citizen:Citizens] 
+		[NAME:Citizen_TTODO:Citizens] 
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]	
 		[SITE]
 		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1773,7 +1773,7 @@ Citizens
 		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
-		[NAME:Citizen:Citizens] 	
+		[NAME:Citizen_0TODO:Citizens] 	
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
 		[SITE]
 		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -1798,7 +1798,7 @@ Citizens
 		// to CITIZEN_1. This is not premature, but regular succession, and cannot be steered by removing an appointer.
 		// Thats why this gatekeeper is used: it works for premature succession, but after that it stays empty.
 		// On promotion, this position is just quickly used.
-		[NAME:Citizen_gate:Citizens] 	
+		[NAME:Citizen_gateTODO:Citizens] 	
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
 		[SITE]
 		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
