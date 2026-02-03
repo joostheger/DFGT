@@ -155,7 +155,7 @@ CE_CHANGE_PERSONALITY
 	- increases POLITENESS
 	- decreases IMMODESTY
 	- increases ORDERLINESS
-- the benefits of wealth:
+- the benefits of wealth / decadency:
 	- increases ENVY_PROPENSITY
 	- increases GREED
 	- increases VANITY
@@ -179,7 +179,8 @@ CE_CHANGE_PERSONALITY
 	- increases CONFIDENCE
 	- increases AMBITION
 - loves other races
-	- increases CURIOSITY, increases TOLERANT
+	- increases CURIOSITY, 
+	- increases TOLERANT
 
 goals:
 - ATTAIN_RANK_IN_SOCIETY
