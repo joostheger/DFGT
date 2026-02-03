@@ -39,13 +39,13 @@ TODO: remove.
 	[BIOME_SUPPORT:ANY_SAVANNA:3]
 	[BIOME_SUPPORT:ANY_SHRUBLAND:3]
 	[BIOME_SUPPORT:ANY_RIVER:3]
-	[BIOME_SUPPORT:MOUNTAIN:20] 		- It easily spreads around mountains and settles around the edges.
-	[BIOME_SUPPORT:MOUNTAINS:20] 		- It easily spreads around mountains and settles around the edges.
+	[BIOME_SUPPORT:MOUNTAIN:20] 		// It easily spreads around mountains and settles around the edges.
+	[BIOME_SUPPORT:MOUNTAINS:20] 		// It easily spreads around mountains and settles around the edges.
 
 	[WORLD_CONSTRUCTION:BRIDGE]
 	[WORLD_CONSTRUCTION:ROAD]
 
-	[MAX_STARTING_CIV_NUMBER:10] 		- This is a pretty unique civilization.
+	[MAX_STARTING_CIV_NUMBER:10] 		// This is a pretty unique civilization.
 	[MAX_POP_NUMBER:10000]
 	[MAX_SITE_POP_NUMBER:120]		
 
@@ -245,18 +245,18 @@ TODO: remove.
 
 	[CURRENCY_BY_YEAR]
 	[CURRENCY:COPPER:1]
-	[CURRENCY:PEWTER_LAY:2] 			- the material value should be 3/2, but because of the used alloy, its harder to counterfeit, so we set it to 2.
+	[CURRENCY:PEWTER_LAY:2] 			// the material value should be 3/2, but because of the used alloy, its harder to counterfeit, so we set it to 2.
 	[CURRENCY:SILVER:5]
-	[CURRENCY:BLACK_BRONZE:7] 			- harder to counterfeit, so we give it a bit more value than 11/2
+	[CURRENCY:BLACK_BRONZE:7] 			// harder to counterfeit, so we give it a bit more value than 11/2
 	[CURRENCY:GOLD:15]
-	[CURRENCY:ROSE_GOLD:15] 			- harder to counterfeit, so we give it a bit more value than 23/2
-	[CURRENCY:PLATINUM:20] 				- mainly used for large transactions and storing wealth.
+	[CURRENCY:ROSE_GOLD:15] 			// harder to counterfeit, so we give it a bit more value than 23/2
+	[CURRENCY:PLATINUM:20] 				// mainly used for large transactions and storing wealth.
 
 	[SELECT_SYMBOL:CIV:NAME_REPUBLIC]
 		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND]
 		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND]
 		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND]
-		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND] 	- I dont know if this works, but I really want these words to be used enough. 
+		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND] 	// I dont know if this works, but I really want these words to be used enough. 
 		[SUBSELECT_SYMBOL:CIV:REPUBLIC_GRAND]
 		[SUBSELECT_SYMBOL:CIV:ARTIFICE]
 		[SUBSELECT_SYMBOL:CIV:WEALTH]
@@ -270,7 +270,7 @@ TODO: remove.
 		[SUBSELECT_SYMBOL:Merchant_COMPANY:ARTIFICE]
 		[SUBSELECT_SYMBOL:Merchant_COMPANY:WEALTH]
 		[SUBSELECT_SYMBOL:Merchant_COMPANY:TRADE]
-	[SELECT_SYMBOL:FESTIVAL:NAME_FESTIVAL_REPUBLIC] 			- This does not work, but in case it's fixed someday..
+	[SELECT_SYMBOL:FESTIVAL:NAME_FESTIVAL_REPUBLIC] 			// This does not work, but in case it's fixed someday..
 		[SUBSELECT_SYMBOL:FESTIVAL:ARTIFICE]
 		[SUBSELECT_SYMBOL:FESTIVAL:WEALTH]
 		[SUBSELECT_SYMBOL:FESTIVAL:TRADE]
@@ -308,7 +308,7 @@ TODO: remove.
 	[ITEM_IMPROVEMENT_MODIFIER:GLAZED:384]
 	[ITEM_IMPROVEMENT_MODIFIER:ART_IMAGE:384]
 
-	[FRIENDLY_COLOR:4:3:1] 				- red on cyan
+	[FRIENDLY_COLOR:4:3:1] 				// red on cyan
 
 	[RELIGION:PANTHEON]
 	[RELIGION_SPHERE:TRADE]
@@ -321,61 +321,61 @@ TODO: remove.
 	[SPHERE_ALIGNMENT:TRADE:512]
 
 	[ETHIC:KILL_ENTITY_MEMBER:JUSTIFIED_IF_EXTREME_REASON] 	
-	[ETHIC:KILL_NEUTRAL:ONLY_IF_SANCTIONED]	- as dwarves
-	[ETHIC:KILL_ENEMY:ACCEPTABLE] 			- as dwarves
-	[ETHIC:KILL_ANIMAL:ACCEPTABLE] 			- as dwarves
-	[ETHIC:KILL_PLANT:ACCEPTABLE] 			- as dwarves
-	[ETHIC:TORTURE_AS_EXAMPLE:UNTHINKABLE] 	- as dwarves
-	[ETHIC:TORTURE_FOR_INFORMATION:ONLY_IF_SANCTIONED]	- if neccesary for keeping order
-	[ETHIC:TORTURE_FOR_FUN:APPALLING]	 	- as humans
-	[ETHIC:TORTURE_ANIMALS:SHUN]	 		- as humans
-	[ETHIC:TREASON:PUNISH_CAPITAL]		 	- as dwarves
-	[ETHIC:OATH_BREAKING:PUNISH_EXILE]					- leave if you dont want to work with us
-	[ETHIC:LYING:PUNISH_SERIOUS]				- neccesary for keeping order
-	[ETHIC:VANDALISM:PUNISH_SERIOUS]		- as dwarves
-	[ETHIC:TRESPASSING:PUNISH_REPRIMAND]		- not as strict as dwarves.
-	[ETHIC:THEFT:PUNISH_SERIOUS]		 	- as dwarves
-	[ETHIC:ASSAULT:PUNISH_SERIOUS]		 	- as dwarves
-	[ETHIC:SLAVERY:PERSONAL_MATTER] 			- well, I dont want to trade people, but if you want to.. go ahead..
-	[ETHIC:EAT_SAPIENT_OTHER:UNTHINKABLE]	- as dwarves
-	[ETHIC:EAT_SAPIENT_KILL:UNTHINKABLE]	- as dwarves
-	[ETHIC:MAKE_TROPHY_SAME_RACE:APPALLING]	- as dwarves
-	[ETHIC:MAKE_TROPHY_SAPIENT:SHUN]	 	- as dwarves
-	[ETHIC:MAKE_TROPHY_ANIMAL:ACCEPTABLE]	- as dwarves
+	[ETHIC:KILL_NEUTRAL:ONLY_IF_SANCTIONED]	// as dwarves
+	[ETHIC:KILL_ENEMY:ACCEPTABLE] 			// as dwarves
+	[ETHIC:KILL_ANIMAL:ACCEPTABLE] 			// as dwarves
+	[ETHIC:KILL_PLANT:ACCEPTABLE] 			// as dwarves
+	[ETHIC:TORTURE_AS_EXAMPLE:UNTHINKABLE] 	// as dwarves
+	[ETHIC:TORTURE_FOR_INFORMATION:ONLY_IF_SANCTIONED]	// if neccesary for keeping order
+	[ETHIC:TORTURE_FOR_FUN:APPALLING]	 	// as humans
+	[ETHIC:TORTURE_ANIMALS:SHUN]	 		// as humans
+	[ETHIC:TREASON:PUNISH_CAPITAL]		 	// as dwarves
+	[ETHIC:OATH_BREAKING:PUNISH_EXILE]					// leave if you dont want to work with us
+	[ETHIC:LYING:PUNISH_SERIOUS]				// neccesary for keeping order
+	[ETHIC:VANDALISM:PUNISH_SERIOUS]		// as dwarves
+	[ETHIC:TRESPASSING:PUNISH_REPRIMAND]		// not as strict as dwarves.
+	[ETHIC:THEFT:PUNISH_SERIOUS]		 	// as dwarves
+	[ETHIC:ASSAULT:PUNISH_SERIOUS]		 	// as dwarves
+	[ETHIC:SLAVERY:PERSONAL_MATTER] 			// well, I dont want to trade people, but if you want to.. go ahead..
+	[ETHIC:EAT_SAPIENT_OTHER:UNTHINKABLE]	// as dwarves
+	[ETHIC:EAT_SAPIENT_KILL:UNTHINKABLE]	// as dwarves
+	[ETHIC:MAKE_TROPHY_SAME_RACE:APPALLING]	// as dwarves
+	[ETHIC:MAKE_TROPHY_SAPIENT:SHUN]	 	// as dwarves
+	[ETHIC:MAKE_TROPHY_ANIMAL:ACCEPTABLE]	// as dwarves
 
-	[VARIABLE_VALUE:LAW:25:35]	 			- as dwarves
-	[VARIABLE_VALUE:LOYALTY:25:35]	 		- as dwarves
-	[VARIABLE_VALUE:FAMILY:25:35]	 		- as dwarves
-	[VARIABLE_VALUE:FRIENDSHIP:25:35]	 	- as dwarves
-	[VARIABLE_VALUE:POWER:-5:5]		 		- as dwarves
-	[VARIABLE_VALUE:TRUTH:15:25]		 		- somewhat lower
-	[VARIABLE_VALUE:CUNNING:0:10]				- a bit higher
-	[VARIABLE_VALUE:ELOQUENCE:0:10]				- a bit higher
-	[VARIABLE_VALUE:FAIRNESS:10:20]		 	- as dwarves
-	[VARIABLE_VALUE:DECORUM:10:20]				- somewhat higher
-	[VARIABLE_VALUE:TRADITION:-5:5]	 		- as dwarves
-	[VARIABLE_VALUE:ARTWORK:15:25]				- somewhat lower
-	[VARIABLE_VALUE:COOPERATION:30:40]			- much higher
-	[VARIABLE_VALUE:INDEPENDENCE:-10:0]			- somewhat lower
-	[VARIABLE_VALUE:STOICISM:0:10]	 		- as dwarves
-	[VARIABLE_VALUE:KNOWLEDGE:10:20]	 	- as dwarves
-	[VARIABLE_VALUE:INTROSPECTION:-5:5]	 	- as dwarves
-	[VARIABLE_VALUE:SELF_CONTROL:-5:5]	 	- as dwarves
-	[VARIABLE_VALUE:TRANQUILITY:-5:5]	 	- as dwarves
-	[VARIABLE_VALUE:HARMONY:-5:5]	 		- as dwarves
-	[VARIABLE_VALUE:MERRIMENT:0:10]	 			- somewhat lower
-	[VARIABLE_VALUE:CRAFTSMANSHIP:15:25]		- much lower
-	[VARIABLE_VALUE:MARTIAL_PROWESS:-5:5]		- lower
-	[VARIABLE_VALUE:SKILL:15:25]	 			- somewhat lower
-	[VARIABLE_VALUE:HARD_WORK:25:35]	 	- as dwarves
-	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	- as dwarves
-	[VARIABLE_VALUE:COMPETITION:10:20]			- higher
-	[VARIABLE_VALUE:PERSEVERANCE:-5:5]			- somewhat lower
-	[VARIABLE_VALUE:LEISURE_TIME:15:15]	 	- as dwarves
-	[VARIABLE_VALUE:COMMERCE:50:50]				- very high
-	[VARIABLE_VALUE:ROMANCE:0:0]	 		- as dwarves
-	[VARIABLE_VALUE:NATURE:-15:-15]	 		- as dwarves
-	[VARIABLE_VALUE:PEACE:15:25]				- higher
+	[VARIABLE_VALUE:LAW:25:35]	 			// as dwarves
+	[VARIABLE_VALUE:LOYALTY:25:35]	 		// as dwarves
+	[VARIABLE_VALUE:FAMILY:25:35]	 		// as dwarves
+	[VARIABLE_VALUE:FRIENDSHIP:25:35]	 	// as dwarves
+	[VARIABLE_VALUE:POWER:-5:5]		 		// as dwarves
+	[VARIABLE_VALUE:TRUTH:15:25]		 		// somewhat lower
+	[VARIABLE_VALUE:CUNNING:0:10]				// a bit higher
+	[VARIABLE_VALUE:ELOQUENCE:0:10]				// a bit higher
+	[VARIABLE_VALUE:FAIRNESS:10:20]		 	// as dwarves
+	[VARIABLE_VALUE:DECORUM:10:20]				// somewhat higher
+	[VARIABLE_VALUE:TRADITION:-5:5]	 		// as dwarves
+	[VARIABLE_VALUE:ARTWORK:15:25]				// somewhat lower
+	[VARIABLE_VALUE:COOPERATION:30:40]			// much higher
+	[VARIABLE_VALUE:INDEPENDENCE:-10:0]			// somewhat lower
+	[VARIABLE_VALUE:STOICISM:0:10]	 		// as dwarves
+	[VARIABLE_VALUE:KNOWLEDGE:10:20]	 	// as dwarves
+	[VARIABLE_VALUE:INTROSPECTION:-5:5]	 	// as dwarves
+	[VARIABLE_VALUE:SELF_CONTROL:-5:5]	 	// as dwarves
+	[VARIABLE_VALUE:TRANQUILITY:-5:5]	 	// as dwarves
+	[VARIABLE_VALUE:HARMONY:-5:5]	 		// as dwarves
+	[VARIABLE_VALUE:MERRIMENT:0:10]	 			// somewhat lower
+	[VARIABLE_VALUE:CRAFTSMANSHIP:15:25]		// much lower
+	[VARIABLE_VALUE:MARTIAL_PROWESS:-5:5]		// lower
+	[VARIABLE_VALUE:SKILL:15:25]	 			// somewhat lower
+	[VARIABLE_VALUE:HARD_WORK:25:35]	 	// as dwarves
+	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	// as dwarves
+	[VARIABLE_VALUE:COMPETITION:10:20]			// higher
+	[VARIABLE_VALUE:PERSEVERANCE:-5:5]			// somewhat lower
+	[VARIABLE_VALUE:LEISURE_TIME:15:15]	 	// as dwarves
+	[VARIABLE_VALUE:COMMERCE:50:50]				// very high
+	[VARIABLE_VALUE:ROMANCE:0:0]	 		// as dwarves
+	[VARIABLE_VALUE:NATURE:-15:-15]	 		// as dwarves
+	[VARIABLE_VALUE:PEACE:15:25]				// higher
 
 	[WILL_ACCEPT_TRIBUTE]
 
@@ -385,7 +385,7 @@ TODO: remove.
 	[ACTIVE_SEASON:SUMMER]
 	[ACTIVE_SEASON:AUTUMN]
 
-	[BANDITRY:10]							- as humans
+	[BANDITRY:10]							// as humans
 
 	[MERCHANT_NOBILITY]
 	[DIPLOMAT_BODYGUARDS]
@@ -396,7 +396,7 @@ TODO: remove.
 	[PROGRESS_TRIGGER_TRADE:1]
 	[PROGRESS_TRIGGER_POP_SIEGE:0]
 	[PROGRESS_TRIGGER_PROD_SIEGE:0]
-	[PROGRESS_TRIGGER_TRADE_SIEGE:3]		- They wont really be that agressive, but if they have to, than this would be the factor.
+	[PROGRESS_TRIGGER_TRADE_SIEGE:3]		// They wont really be that agressive, but if they have to, than this would be the factor.
 
 	[SIEGER]
 
@@ -585,7 +585,7 @@ Ruler
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION]				- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION]				// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -622,7 +622,7 @@ Merchants' guild
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -659,7 +659,7 @@ Merchants' guild
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[KILL_QUEST]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -692,7 +692,7 @@ Merchants' guild
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -726,7 +726,7 @@ Merchants' guild
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
@@ -747,7 +747,7 @@ Merchants' guild
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_FOOD]
 		[RESPONSIBILITY:PREPARE_LEADER_MEALS]
-		[SQUAD:1:member:members] 	- this prevents the position to be assumed by syuccession positions.
+		[SQUAD:1:member:members] 	// this prevents the position to be assumed by syuccession positions.
 		[DUTY_BOUND]
 		[PRECEDENCE:105]
 		[COLOR:2:0:0] 
@@ -777,7 +777,7 @@ Civ military
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[KILL_QUEST]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[REQUIRED_BEDROOM:1000]
 		[REQUIRED_DINING:1000]
 		[REQUIRED_OFFICE:1000]
@@ -816,8 +816,8 @@ Free merchants
 		[NUMBER:1]
 		[REQUIRES_POPULATION:90] 
 		[RESPONSIBILITY:BUILD_MORALE]
-		[SUCCESSION:BY_POSITION:Free_MERCHANT1] - not really successable, just to prevent re-assignent by the player.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
+		[SUCCESSION:BY_POSITION:Free_MERCHANT1] // not really successable, just to prevent re-assignent by the player.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
 		[PRECEDENCE:100]				
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
@@ -830,8 +830,8 @@ Free merchants
 		[NUMBER:1]
 		[REQUIRES_POPULATION:190] 
 		[RESPONSIBILITY:BUILD_MORALE]
-		[SUCCESSION:BY_POSITION:Free_MERCHANT1] - not really successable, just to prevent re-assignent by the player.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
+		[SUCCESSION:BY_POSITION:Free_MERCHANT1] // not really successable, just to prevent re-assignent by the player.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
 		[PRECEDENCE:100]				
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
@@ -842,9 +842,9 @@ Free merchants
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:2]
 		[REQUIRES_POPULATION:200] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[PRECEDENCE:100]				- must be lower than LH1, te prevent unneccesary competition for receive diplomats
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
+		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -854,9 +854,9 @@ Free merchants
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:2]
 		[REQUIRES_POPULATION:400] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[PRECEDENCE:100]				- must be lower than LH1, te prevent unneccesary competition for receive diplomats
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
+		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
@@ -866,9 +866,9 @@ Free merchants
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:4]
 		[REQUIRES_POPULATION:800] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[PRECEDENCE:100]				- must be lower than LH1, te prevent unneccesary competition for receive diplomats
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
+		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
 	[POSITION:Free_MERCHANT4]
@@ -876,8 +876,8 @@ Free merchants
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:8]
 		[REQUIRES_POPULATION:1600] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
 		[PRECEDENCE:100]				T must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
@@ -886,9 +886,9 @@ Free merchants
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:16]
 		[REQUIRES_POPULATION:3200] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[PRECEDENCE:100]				 - must be lower than LH1, te prevent unneccesary competition for receive diplomats
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
+		[PRECEDENCE:100]				 // must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
 	[POSITION:Free_MERCHANT6]
@@ -896,14 +896,14 @@ Free merchants
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[NUMBER:32]
 		[REQUIRES_POPULATION:6400] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	- In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		- prevent assumption by succession-positions
-		[PRECEDENCE:100]					- must be lower than LH1, te prevent unneccesary competition for receive diplomats
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
+		[PRECEDENCE:100]					// must be lower than LH1, te prevent unneccesary competition for receive diplomats
 		[COLOR:2:0:1] 
 
 Clerks
-	- Clerks need to be defined above landholders and citizends, so the landholder will be named as broker, but the clerk actually doing the trading.
-	- clerks ASNEEDED to no replace or succeed from clerk single. When the next fortress status is reached, the ASNEEDED position is simply added as option for the player, while the SINGLE just stays available. 
+	// Clerks need to be defined above landholders and citizends, so the landholder will be named as broker, but the clerk actually doing the trading.
+	// clerks ASNEEDED to no replace or succeed from clerk single. When the next fortress status is reached, the ASNEEDED position is simply added as option for the player, while the SINGLE just stays available. 
 	
 	[POSITION:CLERK_OF_STORES_SINGLE]
 		[NAME:Clerk of stores:Clerks]
@@ -921,10 +921,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:160]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -945,10 +945,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:161]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -976,10 +976,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:162]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -1000,10 +1000,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:163]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -1031,10 +1031,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:164]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -1055,10 +1055,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:ACCOUNTING]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:165]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -1086,10 +1086,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:166]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -1110,10 +1110,10 @@ Clerks
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
-		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] - makes them susceptible to villain influece.
+		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:167]
 		[COLOR:7:0:1] 
 		[DUTY_BOUND]
@@ -1124,26 +1124,26 @@ Clerks
 	
 Landholders
 	[POSITION:LH1]
-		- landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
-		- landholders need to be defined above the Merchant Journeyman
+		// landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
+		// landholders need to be defined above the Merchant Journeyman
 		[NAME:Trade agent:Trade agents]
 		[DESCRIPTION:The trade agent is an administrator assigned to the fortress by the Merchants’ Guild. Their appointment designates the site as a chartered trade post. They appoints clerks to assist them with their tasks. They are empowered to issue trade mandates, defining which goods may be produced or exchanged. A modest office is required.]
 		[LAND_HOLDER:1]
 		[LAND_NAME:Chartered trade post]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH2]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]	
-		[PRECEDENCE:150]				- Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be selectable for LH by the player
+		[PRECEDENCE:150]				// Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be selectable for LH by the player
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:1]
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
@@ -1158,7 +1158,7 @@ Landholders
 		[LAND_NAME:Chartered market town]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH3]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
@@ -1169,7 +1169,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
@@ -1184,7 +1184,7 @@ Landholders
 		[LAND_NAME:Chartered merchant city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH4]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
@@ -1195,7 +1195,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:100]
@@ -1212,7 +1212,7 @@ Landholders
 		[LAND_NAME:Principal mercantile city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH5]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 
 		[RESPONSIBILITY:MILITARY_GOALS]	
@@ -1226,7 +1226,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[RULES_FROM_LOCATION]
 		[REQUIRED_BEDROOM:500]
@@ -1245,7 +1245,7 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH6]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]			TEST. werkt dit bij landholdeR?
@@ -1259,7 +1259,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[KILL_QUEST]
 		[RULES_FROM_LOCATION]
@@ -1271,7 +1271,7 @@ Landholders
 		[REQUIRED_BOXES:1]
 
 	[POSITION:LH6]
-	- just the position, nothing changes internally
+	// just the position, nothing changes internally
 		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (2/6)]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
@@ -1280,7 +1280,7 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH7]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
@@ -1294,7 +1294,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[KILL_QUEST]
 		[RULES_FROM_LOCATION]
@@ -1306,7 +1306,7 @@ Landholders
 		[REQUIRED_BOXES:1]
 	
 	[POSITION:LH7]
-	- just the position, nothing changes internally
+	// just the position, nothing changes internally
 		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (3/6)]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
@@ -1315,7 +1315,7 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH8]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
@@ -1329,7 +1329,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[KILL_QUEST]
 		[RULES_FROM_LOCATION]
@@ -1341,7 +1341,7 @@ Landholders
 		[REQUIRED_BOXES:1]
 
 	[POSITION:LH8]
-	- just the position, nothing changes internally
+	// just the position, nothing changes internally
 		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (4/6)]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
@@ -1350,7 +1350,7 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH9]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 
 		[RESPONSIBILITY:MILITARY_GOALS]			
@@ -1364,7 +1364,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[KILL_QUEST]
 		[RULES_FROM_LOCATION]
@@ -1376,7 +1376,7 @@ Landholders
 		[REQUIRED_BOXES:1]
 
 	[POSITION:LH9]
-	- just the position, nothing changes internally
+	// just the position, nothing changes internally
 		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (5/6)]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
@@ -1385,7 +1385,7 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH10]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
@@ -1399,7 +1399,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[KILL_QUEST]
 		[RULES_FROM_LOCATION]
@@ -1411,7 +1411,7 @@ Landholders
 		[REQUIRED_BOXES:1]
 
 	[POSITION:LH10]
-	- just the position, nothing changes internally
+	// just the position, nothing changes internally
 		[NAME:Grand commissioner:Grand commissioners]
 		[DESCRIPTION: The grand commissioner is the highest official appointed by the Merchants’ Guild. Their presence elevates the site to the supreme 'citadel of commerce'. They appoint clerks to assist them with their tasks. They hold the authority to issue supreme mandates governing commerce, production, and sanctioned military expeditions. Decent living quarters are required. (6/6)]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
@@ -1420,7 +1420,7 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	- not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]		
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
@@ -1433,7 +1433,7 @@ Landholders
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[KILL_QUEST]
 		[RULES_FROM_LOCATION]
@@ -1447,7 +1447,7 @@ Landholders
 Merchants
 
 	[POSITION:M_JM]
-		- This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
+		// This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
 		[NAME:Merchant journeyman:Merchant journeymen]
 		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for overseeing the trade routes between settlements. While conducting business as a merchant, they mandate the flow of goods and communication across the republic. Their position entails clear but modest and practical living requirements.]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
@@ -1469,7 +1469,7 @@ Merchants
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
-		[MENIAL_WORK_EXEMPTION] 			- does not work for civ-nobles, unfortunately
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
 		[QUEST_GIVER]
 		[REQUIRED_BEDROOM:500]
 		[REQUIRED_DINING:500]
@@ -1485,7 +1485,7 @@ Merchants
 		[APPOINTED_BY:MM_COUNC]
 		[LAND_NAME:Reclamation site]
 		[PRECEDENCE:25]
-			- as as vanilla FORCED_ADMINISTRATOR
+			// as as vanilla FORCED_ADMINISTRATOR
 		[NUMBER:1]
 		[CONQUERED_SITE]
 		[KILL_QUEST]
@@ -1493,7 +1493,7 @@ Merchants
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[RESPONSIBILITY:MEET_WORKERS]
-			- Same as LH4
+			// Same as LH4
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:4]
 		[BRAG_ON_KILL]
@@ -1517,8 +1517,8 @@ Non-fortresses TEST
 		[NAME:Citizen:Citizens]
 		[SITE]
 		[NUMBER:1]
-		[ELECTED]						 - this combination prevents usage by the player
-		[APPOINTED_BY:REPL_7]			- but in world-gen, this position will be filled. it isnt even visible.
+		[ELECTED]						 // this combination prevents usage by the player
+		[APPOINTED_BY:REPL_7]			// but in world-gen, this position will be filled. it isnt even visible.
 		[REPLACED_BY:REPL_50]
 		[PRECEDENCE:200]
 		[DUTY_BOUND]
@@ -1649,17 +1649,17 @@ Settlers
 
 
 	[POSITION:SETTLER_BASE1]
-	- If no noble position trigger happens, new migrants will also not assume this position. And when that eventually happens, the succession has already taken place, preventing others for promotion
+	// If no noble position trigger happens, new migrants will also not assume this position. And when that eventually happens, the succession has already taken place, preventing others for promotion
 		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages	
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages	
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:7] 								- more than neccesary
-		[REJECTED_CREATURE:ELF:ALL] 			- this forces an even spreading of this position over the units. 
-		[SQUAD:1:member:members] 				- prevents re-assumption by SETTLER_BASE2
-		[SUCCESSION:BY_HEIR] 					- precents unassigning by the player
-		[REPLACED_BY:REPL_50] 					- cleared up after 50 pop 
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:7] 								// more than neccesary
+		[REJECTED_CREATURE:ELF:ALL] 			// this forces an even spreading of this position over the units. 
+		[SQUAD:1:member:members] 				// prevents re-assumption by SETTLER_BASE2
+		[SUCCESSION:BY_HEIR] 					// precents unassigning by the player
+		[REPLACED_BY:REPL_50] 					// cleared up after 50 pop 
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -1668,15 +1668,15 @@ Settlers
 
 	[POSITION:SETTLER_BASE2]
 		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6] 								- more than neccesary
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:6] 								// more than neccesary
 		[APPOINTED_BY:SETTLER_TRADER1b]
-		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 	- this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7]					- I dont believe that this is neccesary
-		[REPLACED_BY:REPL_50]					- cleared up after 50 pop
+		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
+		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
+		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
@@ -1685,16 +1685,16 @@ Settlers
 
 	[POSITION:SETTLER_TRADER1]
 		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:1]
 		[ALLOWED_CREATURE:DWARF:ALL]
-		[REJECTED_CREATURE:DWARF:ALL] 			- will only be filled at embark, but not assumable later.
-		[SUCCESSION:BY_HEIR] 					- precents unassigning by the player
-		[REPLACED_BY:REPL_8]					- cleared up after 50 pop, also not available in other sites.
-		[RESPONSIBILITY:TRADE]				- best suited unit should take this position.
+		[REJECTED_CREATURE:DWARF:ALL] 			// will only be filled at embark, but not assumable later.
+		[SUCCESSION:BY_HEIR] 					// precents unassigning by the player
+		[REPLACED_BY:REPL_8]					// cleared up after 50 pop, also not available in other sites.
+		[RESPONSIBILITY:TRADE]				// best suited unit should take this position.
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
@@ -1702,15 +1702,15 @@ Settlers
 
 	[POSITION:SETTLER_TRADER2]
 		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			- though this name is mostly invissible, I wanted to show it at least in succession messages
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]		
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:1] 								- more than neccesary
-		[APPOINTED_BY:SETTLER_TRADER1b] 			- available, but not automatic assumed. also, only usable by the first embarked dwarfs
-		[SUCCESSION:BY_POSITION:SETTLER_TRADER1b] 	- this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7]					- I dont believe that this is neccesary
-		[REPLACED_BY:REPL_50]					- cleared up after 50 pop
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:1] 								// more than neccesary
+		[APPOINTED_BY:SETTLER_TRADER1b] 			// available, but not automatic assumed. also, only usable by the first embarked dwarfs
+		[SUCCESSION:BY_POSITION:SETTLER_TRADER1b] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
+		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
+		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -1722,12 +1722,12 @@ Settlers
 		[NAME:Settler (and broker):Settlers] 
 		[DESCRIPTION:This is your only opportunity for a long time to select a broker. Once you unpause, the broker will be appointed automatically until a higher site level is reached.]	
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:1] 								- more than neccesary
-		[APPOINTED_BY:SETTLER_TRADER1] 			- available, but not automatic assumed. also, only usable by the first embarked dwarfs
-		[SUCCESSION:BY_POSITION:SETTLER_TRADER1] 	- this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7]					- I dont believe that this is neccesary
-		[REPLACED_BY:REPL_50]					- cleared up after 50 pop
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:1] 								// more than neccesary
+		[APPOINTED_BY:SETTLER_TRADER1] 			// available, but not automatic assumed. also, only usable by the first embarked dwarfs
+		[SUCCESSION:BY_POSITION:SETTLER_TRADER1] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
+		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
+		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -1739,7 +1739,7 @@ Settlers
 		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
 		[SITE]
 		[PRECEDENCE:NONE]
-		[SQUAD:1:member:members]	- prevent assignment of settlers or citizens.
+		[SQUAD:1:member:members]	// prevent assignment of settlers or citizens.
 		[NUMBER:1] 								
 		[APPOINTED_BY:SETTLER_TRADER2] 	
 		[APPOINTED_BY:CITIZEN_0] 
@@ -1753,19 +1753,39 @@ Settlers
 
 Citizens
 
-	[POSITION:CITIZEN_0_TRADER] 						- Will contain guaranteed only the first 7 dwarves. 
+	[POSITION:CITIZEN_0_TRADER] 						// Will contain guaranteed only the first 7 dwarves. 
 		[NAME:Citizen:Citizens] 
 		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]	
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:1mes]
-		[APPOINTED_BY:SETTLER_TRADER2] 			- unavailable for appointment by later settlers, also not for other sites
+		[APPOINTED_BY:SETTLER_TRADER2] 			// unavailable for appointment by later settlers, also not for other sites
 		[SUCCESSION:BY_POSITION:SETTLER_TRADER2]
-		[SUCCESSION:BY_HEIR] 					- from here on, this position is inherrited by the units heir. 
-		[REQUIRES_POPULATION:8] 				- immediatly when the first migrantwave arrives.
+		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
+		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
 		[RESPONSIBILITY:TRADE]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[QUEST_GIVER]
+		[REQUIRED_BEDROOM:1]
+		[COLOR:4:0:1]
+
+	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
+		[NAME:Citizen:Citizens] 	
+		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
+		[SITE]
+		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:6]
+	APPOINTED_BY:CITIZEN_0_GATEKEEPER			// TODO: unneccesary?
+		[APPOINTED_BY:SETTLER_TRADER2] 			//	unavailable for appointment by later settlers, also not for other sites 
+		[SUCCESSION:BY_POSITION:CITIZEN_0_GATEKEEPER]
+		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
+		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[QUEST_GIVER]
@@ -1795,32 +1815,12 @@ Citizens
 		[QUEST_GIVER]
 		[REQUIRED_BEDROOM:1]
 		[COLOR:4:0:1]
-
-	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
-		[NAME:Citizen:Citizens] 	
-		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
-		[SITE]
-		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6]
-		[APPOINTED_BY:CITIZEN_0_GATEKEEPER] 
-		[APPOINTED_BY:SETTLER_TRADER2] 			//	unavailable for appointment by later settlers, also not for other sites 
-		[SUCCESSION:BY_POSITION:CITIZEN_0_GATEKEEPER]
-		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
-		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
-		[RESPONSIBILITY:LAW_MAKING]
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-		[QUEST_GIVER]
-		[REQUIRED_BEDROOM:1]
-		[COLOR:4:0:1]
 	
 	[POSITION:CITIZEN_1_TRADER] 						
 		[NAME:Free citizen:Citizens] 
 		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]	
 		[SITE]
-		[PRECEDENCE:NONE]						- no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:1]
 		[APPOINTED_BY:CITIZEN_0_TRADER] 			
 		[SUCCESSION:BY_POSITION:CITIZEN_0_TRADER] 
@@ -1845,7 +1845,7 @@ Citizens
 		[NAME:Free citizen:Citizens]
 		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]
 		[SITE]
-		[PRECEDENCE:NONE]					- no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_0] 			
 		[SUCCESSION:BY_POSITION:CITIZEN_0] 
@@ -1873,7 +1873,7 @@ Citizens
 		[PRECEDENCE:85]						
 		[NUMBER:1]
 		[APPOINTED_BY:CITIZEN_1_TRADER] 
-		[APPOINTED_BY:CITIZEN_2] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_2] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_1_TRADER] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:50] 
@@ -1901,7 +1901,7 @@ Citizens
 		[PRECEDENCE:85]					
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_1] 
-		[APPOINTED_BY:CITIZEN_2] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_2] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_1] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:50] 	
@@ -1929,7 +1929,7 @@ Citizens
 		[PRECEDENCE:84]
 		[NUMBER:1]
 		[APPOINTED_BY:CITIZEN_2_TRADER]
-		[APPOINTED_BY:CITIZEN_3] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_3] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_2_TRADER] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:80]
@@ -1945,7 +1945,7 @@ Citizens
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
-		[REQUIRED_BEDROOM:500]			- Same as burger 1
+		[REQUIRED_BEDROOM:500]			// Same as burger 1
 		[REQUIRED_DINING:250]
 		[REQUIRED_OFFICE:250]
 		[REQUIRED_TOMB:100]
@@ -1959,7 +1959,7 @@ Citizens
 		[PRECEDENCE:84]
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_2]
-		[APPOINTED_BY:CITIZEN_3] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_3] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_2] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:80] 	
@@ -1975,7 +1975,7 @@ Citizens
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
-		[REQUIRED_BEDROOM:500]			- Same as burger 1
+		[REQUIRED_BEDROOM:500]			// Same as burger 1
 		[REQUIRED_DINING:250]
 		[REQUIRED_OFFICE:250]
 		[REQUIRED_TOMB:100]
@@ -1989,7 +1989,7 @@ Citizens
 		[PRECEDENCE:83]
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_3_TRADER] 	
-		[APPOINTED_BY:CITIZEN_4] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_4] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_3_TRADER] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:110]
@@ -2019,7 +2019,7 @@ Citizens
 		[PRECEDENCE:83]
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_3] 	
-		[APPOINTED_BY:CITIZEN_4] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_4] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_3] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:110]	
@@ -2050,7 +2050,7 @@ Citizens
 		[PRECEDENCE:82]
 		[NUMBER:1]
 		[APPOINTED_BY:CITIZEN_4_TRADER]
-		[APPOINTED_BY:CITIZEN_5] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_5] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_4_TRADER] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:140] 
@@ -2083,7 +2083,7 @@ Citizens
 		[PRECEDENCE:82]
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_4]
-		[APPOINTED_BY:CITIZEN_5] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_5] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_4] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:140] 
@@ -2116,7 +2116,7 @@ Citizens
 		[PRECEDENCE:81]
 		[NUMBER:1]
 		[APPOINTED_BY:CITIZEN_5_TRADER] 
-		[APPOINTED_BY:CITIZEN_6] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_6] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_5_TRADER] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:170] 
@@ -2150,7 +2150,7 @@ Citizens
 		[PRECEDENCE:81]
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_5] 
-		[APPOINTED_BY:CITIZEN_6] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:CITIZEN_6] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:CITIZEN_5] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:170] 	
@@ -2184,8 +2184,8 @@ Citizens
 		[PRECEDENCE:80]
 		[NUMBER:1]
 		[APPOINTED_BY:CITIZEN_6_TRADER]  
-		[APPOINTED_BY:CITIZEN_7] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
-		[SUCCESSION:BY_POSITION:CITIZEN_6_TRADER] 		- inital 
+		[APPOINTED_BY:CITIZEN_7] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[SUCCESSION:BY_POSITION:CITIZEN_6_TRADER] 		// inital 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:200] 
 		[RESPONSIBILITY:TRADE]	
@@ -2222,8 +2222,8 @@ Citizens
 		[PRECEDENCE:80]
 		[NUMBER:6]
 		[APPOINTED_BY:CITIZEN_6]  
-		[APPOINTED_BY:CITIZEN_7] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
-		[SUCCESSION:BY_POSITION:CITIZEN_6] 		- inital 
+		[APPOINTED_BY:CITIZEN_7] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[SUCCESSION:BY_POSITION:CITIZEN_6] 		// inital 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:200] 	
 		[RESPONSIBILITY:LAW_MAKING]
@@ -2262,7 +2262,7 @@ Burgers
 		[PRECEDENCE:66]
 		[NUMBER:7]
 		[APPOINTED_BY:LH1] 	
-		[APPOINTED_BY:BURGER_1] 				- failsafe.
+		[APPOINTED_BY:BURGER_1] 				// failsafe.
 		[SUCCESSION:BY_POSITION:CITIZEN_0]		
 		[SUCCESSION:BY_POSITION:CITIZEN_1]
 		[SUCCESSION:BY_POSITION:CITIZEN_2]
@@ -2301,9 +2301,9 @@ Burgers
 		[SITE]
 		[PRECEDENCE:65]
 		[NUMBER:7]
-		[APPOINTED_BY:BURGER_1] 				- for regular succession by population
-		[APPOINTED_BY:BURGER_2] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[APPOINTED_BY:LH1] 						- for succession from a higher class of citizen
+		[APPOINTED_BY:BURGER_1] 				// for regular succession by population
+		[APPOINTED_BY:BURGER_2] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[APPOINTED_BY:LH1] 						// for succession from a higher class of citizen
 		[SUCCESSION:BY_POSITION:CITIZEN_1]		
 		[SUCCESSION:BY_POSITION:CITIZEN_2]
 		[SUCCESSION:BY_POSITION:CITIZEN_3]
@@ -2344,7 +2344,7 @@ Burgers
 		[NUMBER:7]
 		[PRECEDENCE:64]
 		[APPOINTED_BY:BURGER_2] 	
-		[APPOINTED_BY:BURGER_3] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[APPOINTED_BY:BURGER_3] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[APPOINTED_BY:LH1] 			
 		[SUCCESSION:BY_POSITION:CITIZEN_2]		
 		[SUCCESSION:BY_POSITION:CITIZEN_3]
@@ -2387,7 +2387,7 @@ Burgers
 		[NUMBER:7]
 		[PRECEDENCE:63]
 		[APPOINTED_BY:BURGER_3] 
-		[APPOINTED_BY:BURGER_4] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[APPOINTED_BY:BURGER_4] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[APPOINTED_BY:LH1] 		
 		[SUCCESSION:BY_POSITION:CITIZEN_3]		
 		[SUCCESSION:BY_POSITION:CITIZEN_4]
@@ -2430,7 +2430,7 @@ Burgers
 		[NUMBER:7]
 		[PRECEDENCE:62]
 		[APPOINTED_BY:BURGER_4] 
-		[APPOINTED_BY:BURGER_5] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[APPOINTED_BY:BURGER_5] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[APPOINTED_BY:LH1] 			
 		[SUCCESSION:BY_POSITION:CITIZEN_4]		
 		[SUCCESSION:BY_POSITION:CITIZEN_5]
@@ -2473,7 +2473,7 @@ Burgers
 		[PRECEDENCE:61]
 		[NUMBER:7]
 		[APPOINTED_BY:BURGER_5] 
-		[APPOINTED_BY:BURGER_6] 				- in case this position becomes empty, the player has the opportunity to appoint someone again. 
+		[APPOINTED_BY:BURGER_6] 				// in case this position becomes empty, the player has the opportunity to appoint someone again. 
 		[APPOINTED_BY:LH1] 		
 		[SUCCESSION:BY_POSITION:CITIZEN_5]		
 		[SUCCESSION:BY_POSITION:CITIZEN_6]
@@ -2516,7 +2516,7 @@ Burgers
 		[PRECEDENCE:60]
 		[NUMBER:7]
 		[APPOINTED_BY:BURGER_6] 
-		[APPOINTED_BY:BURGER_7] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[APPOINTED_BY:BURGER_7] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[APPOINTED_BY:LH1]  		
 		[SUCCESSION:BY_POSITION:CITIZEN_6]		
 		[SUCCESSION:BY_POSITION:CITIZEN_7]
@@ -2559,7 +2559,7 @@ Patricians
 		[NUMBER:7]
 		[PRECEDENCE:7]
 		[APPOINTED_BY:HGM] 
-		[APPOINTED_BY:PATRICIAN_1] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:PATRICIAN_1] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:BURGER_1]	
 		[SUCCESSION:BY_POSITION:BURGER_2]	
 		[SUCCESSION:BY_POSITION:BURGER_3]	
@@ -2603,7 +2603,7 @@ Patricians
 		[PRECEDENCE:6]
 		[NUMBER:7]
 		[APPOINTED_BY:LH6]   
-		[APPOINTED_BY:PATRICIAN_2] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:PATRICIAN_2] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:PATRICIAN_1]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:120] 
@@ -2642,7 +2642,7 @@ Patricians
 		[PRECEDENCE:5]
 		[NUMBER:7]
 		[APPOINTED_BY:LH7]   
-		[APPOINTED_BY:PATRICIAN_3] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:PATRICIAN_3] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:PATRICIAN_2]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:120] 
@@ -2680,7 +2680,7 @@ Patricians
 		[PRECEDENCE:4]
 		[NUMBER:7]
 		[APPOINTED_BY:LH8]  
-		[APPOINTED_BY:PATRICIAN_4] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:PATRICIAN_4] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:PATRICIAN_3] 
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:140] 
@@ -2718,7 +2718,7 @@ Patricians
 		[PRECEDENCE:3]
 		[NUMBER:7]
 		[APPOINTED_BY:LH9]  
-		[APPOINTED_BY:PATRICIAN_5] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:PATRICIAN_5] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:PATRICIAN_4]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:140] 
@@ -2757,7 +2757,7 @@ Patricians
 		[PRECEDENCE:2]
 		[NUMBER:7]
 		[APPOINTED_BY:LH10]   
-		[APPOINTED_BY:PATRICIAN_6] 				- in case this position becomes empty, the player has the opportunity to appoint someone again.  
+		[APPOINTED_BY:PATRICIAN_6] 				// in case this position becomes empty, the player has the opportunity to appoint someone again.  
 		[SUCCESSION:BY_POSITION:PATRICIAN_5]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:140] 
@@ -2791,30 +2791,30 @@ Replacers
 		[NAME:replacer 7 (SHOULD NOT BE FILLED):replacer]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[REJECTED_CREATURE:DWARF:ALL] 	- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL_7]			- appointed only by himself, so: never.
-		[REQUIRES_POPULATION:7] 		- before fortress mode.
+		[ALLOWED_CREATURE:DWARF:ALL] 	// This prevents this position ever to be filled. 
+		[REJECTED_CREATURE:DWARF:ALL] 	// This prevents this position ever to be filled. 
+		[APPOINTED_BY:REPL_7]			// appointed only by himself, so: never.
+		[REQUIRES_POPULATION:7] 		// before fortress mode.
 		[PRECEDENCE:200]
 
 	[POSITION:REPL_8]
 		[NUMBER:1]
 		[NAME:replacer 8 (SHOULD NOT BE FILLED):replacer]
 		[SITE]
-		[REJECTED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
-		[ALLOWED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL_8]					- appointed only by himself, so: never.
-		[REQUIRES_POPULATION:8] 				- immediatly after the second migrant arrives.
+		[REJECTED_CREATURE:DWARF:MALE] 			// This prevents this position ever to be filled. 
+		[ALLOWED_CREATURE:DWARF:MALE] 			// This prevents this position ever to be filled. 
+		[APPOINTED_BY:REPL_8]					// appointed only by himself, so: never.
+		[REQUIRES_POPULATION:8] 				// immediatly after the second migrant arrives.
 		[PRECEDENCE:200]
 
 	[POSITION:REPL_50]
 		[NAME:replacer 50 (SHOULD NOT BE FILLED):replacer]
 		[SITE]
 		[NUMBER:1]
-		[ALLOWED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
-		[REJECTED_CREATURE:DWARF:MALE] 			- This prevents this position ever to be filled. 
-		[APPOINTED_BY:REPL_50]					- appointed only by himself, so: never.
-		[REQUIRES_POPULATION:50] 				- after the second migrant arrives.
+		[ALLOWED_CREATURE:DWARF:MALE] 			// This prevents this position ever to be filled. 
+		[REJECTED_CREATURE:DWARF:MALE] 			// This prevents this position ever to be filled. 
+		[APPOINTED_BY:REPL_50]					// appointed only by himself, so: never.
+		[REQUIRES_POPULATION:50] 				// after the second migrant arrives.
 		[PRECEDENCE:200]
 
 Doctor
@@ -2840,7 +2840,7 @@ Doctor
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.		
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.		
 		[RESPONSIBILITY:HEALTH_MANAGEMENT]
 		[PRECEDENCE:115]
 		[COLOR:7:0:1] 
@@ -2853,7 +2853,7 @@ Site Military
 
 	[POSITION:RG_CAPTAIN]
 		[NAME:Republican guard captain:Republican guard captains]
-		[DESCRIPTION:The captain of the republican guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The republican guard consist of 24 guards, divided into three squads of 8 soldiers each. Only the capital is allowed to deploy a republican guard.]
+		[DESCRIPTION:The captain of the republican guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted with escorting tax collectors and patrolling the borders. Due to their esteemed position, they require comfortable living quarters befitting their status. - The republican guard consist of 24 guards, divided into three squads of 8 soldiers each. Only the capital is allowed to deploy a republican guard.]
 		[SITE]
 		[NUMBER:3]
 		[SQUAD:8:republican guard:republican guards]
@@ -2874,7 +2874,7 @@ Site Military
 
 	[POSITION:MG_CAPTAIN]
 		[NAME:Municipal guard captain:Municipal guard captains]
-		[DESCRIPTION:The captain of the municipal guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the municipality. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The municipal guard consist of 8 guards. Only the mercantile cities are allowed to deploy a municipal guard.]
+		[DESCRIPTION:The captain of the municipal guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the municipality. Due to their esteemed position, they require comfortable living quarters befitting their status. - The municipal guard consist of 8 guards. Only the mercantile cities are allowed to deploy a municipal guard.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:8:municipal guard:municipal guards]
@@ -2886,7 +2886,7 @@ Site Military
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:SORT_AMMUNITION]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
@@ -2903,7 +2903,7 @@ Site Military
 
 	[POSITION:CG_CAPTAIN]
 		[NAME:Civic guard captain:Civic guard captains]
-		[DESCRIPTION:The captain of the civic guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the citizens. Due to their esteemed position, they require comfortable living quarters befitting their status. -- The civic guard consist of 8 guards. Only the settlements with a minimum population of 170 are allowed to deploy a civic guard.]
+		[DESCRIPTION:The captain of the civic guard is an officer in the republican military, responsible for leading a squad of 8 soldiers and are entrusted the protection of the interests of the citizens. Due to their esteemed position, they require comfortable living quarters befitting their status. - The civic guard consist of 8 guards. Only the settlements with a minimum population of 170 are allowed to deploy a civic guard.]
 		[SITE]
 		[NUMBER:1]
 		[SQUAD:8:civic guard:civic guards]
@@ -2920,7 +2920,7 @@ Site Military
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[MILITARY_SCREEN_ONLY]
 		[RESPONSIBILITY:SORT_AMMUNITION]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
@@ -2936,9 +2936,9 @@ Site Military
 		[REQUIRED_BOXES:1]
 
 	[POSITION:MARSHAL] 
-	- This position of marshal and the constable are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
+	// This position of marshal and the constable are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
 		[NAME:Marshal:Marshals]
-		[DESCRIPTION:The Marshal is the second highest-ranking officer of the republican military. Due to their high status, they demand lavish living quarters. -- The marshal commands all military forces of the settlement, including the municipal, civic, and republican guards.]
+		[DESCRIPTION:The Marshal is the second highest-ranking officer of the republican military. Due to their high status, they demand lavish living quarters. - The marshal commands all military forces of the settlement, including the municipal, civic, and republican guards.]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
 		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[SITE]
@@ -2951,7 +2951,7 @@ Site Military
 		[APPOINTED_BY:BURGER_5]	
 		[APPOINTED_BY:BURGER_6]	
 		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		- when burgers become patricians, the HGM is on site.
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:MILITARY_STRATEGY]
 		[RESPONSIBILITY:COLLECT_TAXES]
 		[COMMANDER:MG_CAPTAIN:ALL]
@@ -2982,11 +2982,11 @@ Law enforcement
 		[NAME:Executioner (hammer):Executioners]
 		[NAME_MALE:Executioner:Executioners]
 		[NAME_FEMALE:Executioner:Executioners]
-		[DESCRIPTION:The executioner (hammer) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
+		[DESCRIPTION:The executioner (hammer) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
-		[NUMBER:1]						- as player, you can choose which type of executioner you want.
-		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
+		[NUMBER:1]						// as player, you can choose which type of executioner you want.
+		[APPOINTED_BY:HGM]				// when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:HAMMER]
 		[PRECEDENCE:118]
@@ -3001,11 +3001,11 @@ Law enforcement
 		[NAME:Executioner (axe):Executioners]
 		[NAME_MALE:Executioner:Executioners]
 		[NAME_FEMALE:Executioner:Executioners]
-		[DESCRIPTION:The executioner (axe) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
+		[DESCRIPTION:The executioner (axe) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
-		[NUMBER:1]				- as player, you can choose which type of executioner you want.		
-		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
+		[NUMBER:1]				// as player, you can choose which type of executioner you want.		
+		[APPOINTED_BY:HGM]				// when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:AXE]
 		[PRECEDENCE:117]
@@ -3020,11 +3020,11 @@ Law enforcement
 		[NAME:Executioner (spear):Executioners]
 		[NAME_MALE:Executioner:Executioners]
 		[NAME_FEMALE:Executioner:Executioners]
-		[DESCRIPTION:The executioner (spear) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. -- Executioners are appointable when the settlement becomes the capital of the republic.]
+		[DESCRIPTION:The executioner (spear) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are appointable when the settlement becomes the capital of the republic.]
 		[SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
-		[NUMBER:1]				- as player, you can choose which type of executioner you want.	
-		[APPOINTED_BY:HGM]				- when your fortress has become the capital,		
+		[NUMBER:1]				// as player, you can choose which type of executioner you want.	
+		[APPOINTED_BY:HGM]				// when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:SPEAR]
 		[PRECEDENCE:116]
@@ -3052,7 +3052,7 @@ Law enforcement
 		[EXPORTED_IN_LEGENDS]
 
 	[POSITION:BAILIFF] 
-		- This position and the marshal are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
+		// This position and the marshal are needed to be defined on the bottom of the file, so that squad management becomes available, as at least on of them is appointed.
 		[NAME:Bailiff:Bailiffs]
 		[DESCRIPTION:The bailiff is the chief law enforcement officer of the settlement, responsible for maintaining order and overseeing the constables. Due to their high status, they demand comfortable living quarters. The bailiff commands two constables who assist in law enforcement duties throughout the settlement.]
 		[SITE]
