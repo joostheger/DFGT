@@ -2268,7 +2268,6 @@ Burgers
 		[REQUIRED_BOXES:1]
 		[COLOR:4:0:0]
 
-
 	[POSITION:BURGER_2] 						
 		[NAME:Recognized burgher:Burghers] 
 		[NAME_MALE:Recognized burgher:Burghers]
