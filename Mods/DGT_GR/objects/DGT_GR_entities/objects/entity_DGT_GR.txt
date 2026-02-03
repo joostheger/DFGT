@@ -747,7 +747,11 @@ Merchants' guild
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_FOOD]
 		[RESPONSIBILITY:PREPARE_LEADER_MEALS]
-		[SQUAD:1:member:members] 	// this prevents the position to be assumed by syuccession positions.
+
+		SQUAD:1:member:members 	// this prevents the position to be assumed by syuccession positions.
+			//or
+		[ELECTED]	// this prevents to early assumption
+
 		[DUTY_BOUND]
 		[PRECEDENCE:105]
 		[COLOR:2:0:0] 
