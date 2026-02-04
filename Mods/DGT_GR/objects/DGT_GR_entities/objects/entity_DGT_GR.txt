@@ -608,7 +608,8 @@ Merchants' guild
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[RESPONSIBILITY:ADVISE_LEADERS]
-		[SUCCESSION:BY_POSITION:M_JM]
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[SUCCESSION:BY_POSITION:MM_AMBAS]
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[SUCCESSION:BY_POSITION:MM_MAG]
@@ -645,7 +646,8 @@ Merchants' guild
 		[RESPONSIBILITY:FIRE_SAFETY]
 		[RESPONSIBILITY:BUILDING_SAFETY]
 		[RESPONSIBILITY:ADVISE_LEADERS]
-		[SUCCESSION:BY_POSITION:M_JM]
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[SUCCESSION:BY_POSITION:MM_AMBAS]
 		[ELECTED]
@@ -680,7 +682,8 @@ Merchants' guild
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[RESPONSIBILITY:ADVISE_LEADERS]
-		[SUCCESSION:BY_POSITION:M_JM]
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[ELECTED]
 		[PRECEDENCE:22]
@@ -715,7 +718,8 @@ Merchants' guild
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]
 		[RESPONSIBILITY:ADVISE_LEADERS]
 		[RESPONSIBILITY:OVERSEE_LEADER_HOUSEHOLD]
-		[SUCCESSION:BY_POSITION:M_JM]
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[ELECTED]
 		[PRECEDENCE:23]
 		[COLOR:2:0:0] 
@@ -1131,8 +1135,9 @@ Landholders
 		[LAND_HOLDER:1]
 		[LAND_NAME:Chartered trade post]
 		[NUMBER:AS_NEEDED]
-		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[APPOINTED_BY:MM_COUNC]
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[REPLACED_BY:LH2]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
@@ -1157,8 +1162,9 @@ Landholders
 		[LAND_HOLDER:2]
 		[LAND_NAME:Chartered market town]
 		[NUMBER:AS_NEEDED]
-		[APPOINTED_BY:M_JM]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[APPOINTED_BY:MM_COUNC]
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[REPLACED_BY:LH3]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
@@ -1184,7 +1190,8 @@ Landholders
 		[LAND_NAME:Chartered merchant city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[REPLACED_BY:LH4]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
@@ -1212,7 +1219,8 @@ Landholders
 		[LAND_NAME:Principal mercantile city]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[REPLACED_BY:LH5]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 
 		[RESPONSIBILITY:MILITARY_GOALS]	
@@ -1245,7 +1253,8 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[REPLACED_BY:LH6]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]			TEST. werkt dit bij landholdeR?
@@ -1280,7 +1289,8 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH7]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
@@ -1315,7 +1325,8 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH8]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
@@ -1350,7 +1361,8 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH9]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 
 		[RESPONSIBILITY:MILITARY_GOALS]			
@@ -1385,7 +1397,8 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]	// not sure if this works, but its better than nothing.
 		[REPLACED_BY:LH10]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:MILITARY_GOALS]		
@@ -1420,7 +1433,8 @@ Landholders
 		[LAND_NAME:Citadel of commerce]
 		[NUMBER:AS_NEEDED]
 		[APPOINTED_BY:MM_COUNC]
-		[SUCCESSION:BY_POSITION:M_JM]	// not sure if this works, but its better than nothing.
+		[SUCCESSION:BY_POSITION:M_JM_TRADE]
+		[SUCCESSION:BY_POSITION:M_JM_ECTA]	// not sure if this works, but its better than nothing.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:MILITARY_GOALS]		
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
@@ -1446,17 +1460,49 @@ Landholders
 
 Merchants
 
-	[POSITION:M_JM]
+	[POSITION:M_JM_ECTA]
+		// This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
+		//The reason that both M_JM_ECTA and M_JM_TRADE exist, is because if both these responsibilies
+		//were to be defined in one position, the offered elevantion for LH1 wont happen.
+		[NAME:Merchant journeyman:Merchant journeymen]
+		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for overseeing the trade routes between settlements. While conducting business as a merchant, they mandate the flow of goods and communication across the republic. Their position entails clear but modest and practical living requirements.]
+		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
+		[SPOUSE_MALE:Gentleman:Gentlemen]
+		[LAND_NAME:Merchants' guild]
+		[NUMBER:2]
+		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
+		[RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS]
+		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
+		[RESPONSIBILITY:MAINTAIN_BRIDGES]
+		[RESPONSIBILITY:MAINTAIN_ROADS]
+		[RESPONSIBILITY:MAINTAIN_SEWERS]
+		[RESPONSIBILITY:MAINTAIN_TUNNELS]
+		[SUCCESSION:BY_POSITION:M_AP]
+		[ELECTED]
+		[PRECEDENCE:70]
+		[COLOR:2:0:0] 
+		[DO_NOT_CULL]
+		[DUTY_BOUND]
+		[EXPORTED_IN_LEGENDS]
+		[MENIAL_WORK_EXEMPTION] 			// does not work for civ-nobles, unfortunately
+		[QUEST_GIVER]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:500]
+		[REQUIRED_TOMB:500]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
+
+	[POSITION:M_JM_TRADE]
 		// This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
 		[NAME:Merchant journeyman:Merchant journeymen]
 		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for overseeing the trade routes between settlements. While conducting business as a merchant, they mandate the flow of goods and communication across the republic. Their position entails clear but modest and practical living requirements.]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
 		[SPOUSE_MALE:Gentleman:Gentlemen]
 		[LAND_NAME:Merchants' guild]
-		[NUMBER:4]
+		[NUMBER:2]
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[RESPONSIBILITY:TRADE]
-		[RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[RESPONSIBILITY:MAINTAIN_BRIDGES]
 		[RESPONSIBILITY:MAINTAIN_ROADS]
@@ -1645,107 +1691,6 @@ Non-fortresses TEST
 		[REQUIRED_BOXES:4]
 		[COLOR:5:0:0]
 
-Settlers
-
-
-	[POSITION:SETTLER_BASE1]
-	// If no noble position trigger happens, new migrants will also not assume this position. And when that eventually happens, the succession has already taken place, preventing others for promotion
-		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages	
-		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:7] 								// more than neccesary
-		[REJECTED_CREATURE:ELF:ALL] 			// this forces an even spreading of this position over the units. 
-		[SQUAD:1:member:members] 				// prevents re-assumption by SETTLER_BASE2
-		[SUCCESSION:BY_HEIR] 					// precents unassigning by the player
-		[REPLACED_BY:REPL_50] 					// cleared up after 50 pop 
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-
-	[POSITION:SETTLER_BASE2]
-		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
-		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6] 								// more than neccesary
-		[APPOINTED_BY:SETTLER_TRADER1b]
-		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
-		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-
-	[POSITION:SETTLER_TRADER1]
-		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
-		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:1]
-		[ALLOWED_CREATURE:DWARF:ALL]
-		[REJECTED_CREATURE:DWARF:ALL] 			// will only be filled at embark, but not assumable later.
-		[SUCCESSION:BY_HEIR] 					// precents unassigning by the player
-		[REPLACED_BY:REPL_8]					// cleared up after 50 pop, also not available in other sites.
-		[RESPONSIBILITY:TRADE]				// best suited unit should take this position.
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-
-	[POSITION:SETTLER_TRADER2]
-		[LAND_NAME:Settler] 
-		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
-		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]		
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:1] 								// more than neccesary
-		[APPOINTED_BY:SETTLER_TRADER1b] 			// available, but not automatic assumed. also, only usable by the first embarked dwarfs
-		[SUCCESSION:BY_POSITION:SETTLER_TRADER1b] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
-		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
-		[RESPONSIBILITY:TRADE]
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]	
-
-	[POSITION:SETTLER_TRADER1b]
-		[LAND_NAME:(select broker)] 
-		[NAME:Settler (and broker):Settlers] 
-		[DESCRIPTION:This is your only opportunity to select a broker until a population of 50 is reached. Once you unpause, one of the settlers will be automatically selected to act as broker.]	
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:1] 								// more than neccesary
-		[APPOINTED_BY:SETTLER_TRADER1] 			// available, but not automatic assumed. also, only usable by the first embarked dwarfs
-		[SUCCESSION:BY_POSITION:SETTLER_TRADER1] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
-		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
-		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
-		[RESPONSIBILITY:TRADE]
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]	
-
-	[POSITION:PROMOTION_TRIGGER] 
-		[LAND_NAME:(trigger promotion)] 
-		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
-		[SITE]
-		[PRECEDENCE:NONE]
-		[SQUAD:1:member:members]	// prevent assignment of settlers or citizens.
-		[NUMBER:1] 								
-		[APPOINTED_BY:SETTLER_TRADER2] 	
-		[APPOINTED_BY:CITIZEN_0] 
-		[APPOINTED_BY:CITIZEN_1] 
-		[APPOINTED_BY:CITIZEN_2] 
-		[APPOINTED_BY:CITIZEN_3]  
-		[APPOINTED_BY:CITIZEN_4] 
-		[APPOINTED_BY:CITIZEN_5] 
-		[APPOINTED_BY:CITIZEN_6] 
-		[APPOINTED_BY:CITIZEN_7]
-
 	[POSITION:TO_BURGER_SWITCH] 						
 		[NAME:True burgher:Burghers] 		
 		[SITE]
@@ -1757,122 +1702,7 @@ Settlers
 
 Citizens
 
-	[POSITION:CITIZEN_0_TRADER] 						// Will contain guaranteed only the first 7 dwarves. 
-		[NAME:Citizen:Citizens] 
-		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]	
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:1mes]
-		[APPOINTED_BY:SETTLER_TRADER2] 			// unavailable for appointment by later settlers, also not for other sites
-		[SUCCESSION:BY_POSITION:SETTLER_TRADER2]
-		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
-		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
-		[RESPONSIBILITY:TRADE]
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-		[QUEST_GIVER]
-		[REQUIRED_BEDROOM:1]
-		[COLOR:4:0:1]
-
-	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
-		[NAME:Citizen:Citizens] 	
-		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
-		[SITE]
-		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6]
-		[APPOINTED_BY:SETTLER_TRADER2] 			//	unavailable for appointment by later settlers, also not for other sites 
-		[SUCCESSION:BY_POSITION:CITIZEN_0_GATEKEEPER]
-		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
-		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-		[QUEST_GIVER]
-		[REQUIRED_BEDROOM:1]
-		[COLOR:4:0:1]
-
-	[POSITION:CITIZEN_0_GATEKEEPER]
-		// this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2, making it available to be promoted to citizen 0.
-		// without this position, the next generation settlers would inherrit CITIZEN_0, when their current holders are promoted
-		// to CITIZEN_1. This is not premature, but regular succession, and cannot be steered by removing an appointer.
-		// Thats why this gatekeeper is used: it works for premature succession, but after that it stays empty.
-		// On promotion, this position is just quickly used.
-		[NAME:one of the sites true settlers:Citizens] 	
-		[SITE]
-		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6]
-		[APPOINTED_BY:SETTLER_TRADER2] 			// unavailable for appointment by later settlers, also not for other sites
-		[SUCCESSION:BY_POSITION:SETTLER_BASE1]  
-		[SUCCESSION:BY_POSITION:SETTLER_BASE2]	
-		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-		[QUEST_GIVER]
-		[REQUIRED_BEDROOM:1]
-		[COLOR:4:0:1]
-	
-	[POSITION:CITIZEN_1_TRADER] 						
-		[NAME:Free citizen:Citizens] 
-		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]	
-		[SITE]
-		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:1]
-		[APPOINTED_BY:CITIZEN_0_TRADER] 			
-		[SUCCESSION:BY_POSITION:CITIZEN_0_TRADER] 
-		[SUCCESSION:BY_HEIR] 					
-		[REQUIRES_POPULATION:20] 	
-		[REPLACED_BY:CITIZEN_3]
-		[RESPONSIBILITY:TRADE]	
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-		[QUEST_GIVER]
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-		[DUTY_BOUND]
-		[REQUIRED_BEDROOM:1]
-		[REQUIRED_DINING:1]
-		[REQUIRED_BOXES:1]
-		[COLOR:4:0:1]
-
-	[POSITION:CITIZEN_1] 						
-		[NAME:Free citizen:Citizens]
-		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6]
-		[APPOINTED_BY:CITIZEN_0] 			
-		[SUCCESSION:BY_POSITION:CITIZEN_0] 
-		[SUCCESSION:BY_HEIR] 					
-		[REQUIRES_POPULATION:20] 
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[RESPONSIBILITY:COLLECT_TAXES]
-		[QUEST_GIVER]
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-		[DUTY_BOUND]
-		[REQUIRED_BEDROOM:1]
-		[REQUIRED_DINING:1]
-		[REQUIRED_BOXES:1]
-		[COLOR:4:0:1]
-
-	[POSITION:CITIZEN_2_SWITCH] 						
-		[NAME:Recognized citizen:Citizens] 	
-		[SITE]
-		[PRECEDENCE:85]					
-		[NUMBER:7]
-		[APPOINTED_BY:CITIZEN_1] 
-		[REQUIRES_POPULATION:50] 
-		[SUCCESSION:BY_POSITION:CITIZEN_1] 
-		[SUCCESSION:BY_POSITION:CITIZEN_1_TRADER] 
-
-	[POSITION:CITIZEN_2] 						
+[POSITION:CITIZEN_2] 						
 		[NAME:Recognized citizen:Citizens] 	
 		[DESCRIPTION:Recognized now not only for labor but for judgment, they shoulder the quiet weight of order. From among them emerges the first keeper of justice—appointed so that fairness may take root before law is written.]
 		[SITE]
@@ -1899,7 +1729,126 @@ Citizens
 		[REQUIRED_BOXES:1]
 		[COLOR:4:0:1]
 
+[POSITION:CITIZEN_2_SWITCH] 						
+		[NAME:Recognized citizen:Citizens] 	
+		[SITE]
+		[PRECEDENCE:85]					
+		[NUMBER:7]
+		[APPOINTED_BY:CITIZEN_1] 
+		[REQUIRES_POPULATION:50] 
+		[SUCCESSION:BY_POSITION:CITIZEN_1] 
+		[SUCCESSION:BY_POSITION:CITIZEN_1_TRADER] 
 
+[POSITION:CITIZEN_1] 						
+		[NAME:Free citizen:Citizens]
+		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:6]
+		[APPOINTED_BY:CITIZEN_0] 			
+		[SUCCESSION:BY_POSITION:CITIZEN_0] 
+		[SUCCESSION:BY_HEIR] 					
+		[REQUIRES_POPULATION:20] 
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[QUEST_GIVER]
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:1]
+		[REQUIRED_DINING:1]
+		[REQUIRED_BOXES:1]
+		[COLOR:4:0:1]
+
+[POSITION:CITIZEN_1_TRADER] 						
+		[NAME:Free citizen:Citizens] 
+		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]	
+		[SITE]
+		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_0_TRADER] 			
+		[SUCCESSION:BY_POSITION:CITIZEN_0_TRADER] 
+		[SUCCESSION:BY_HEIR] 					
+		[REQUIRES_POPULATION:20] 	
+		[REPLACED_BY:CITIZEN_3]
+		[RESPONSIBILITY:TRADE]	
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[QUEST_GIVER]
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:1]
+		[REQUIRED_DINING:1]
+		[REQUIRED_BOXES:1]
+		[COLOR:4:0:1]
+
+	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
+		[NAME:Citizen:Citizens] 	
+		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]
+		[SITE]
+		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:6]
+		[APPOINTED_BY:SETTLER_TRADER2] 			//	unavailable for appointment by later settlers, also not for other sites 
+		[SUCCESSION:BY_POSITION:CITIZEN_0_GATEKEEPER]
+		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
+		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[QUEST_GIVER]
+		[REQUIRED_BEDROOM:1]
+		[COLOR:4:0:1]
+
+	[POSITION:CITIZEN_0_TRADER] 						// Will contain guaranteed only the first 7 dwarves. 
+		[NAME:Citizen:Citizens] 
+		[DESCRIPTION:Among the first to claim a place within the rising walls, they carve out quarters of their own. An earned shelter for those upon whose shoulders all others stand.]	
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:1mes]
+		[APPOINTED_BY:SETTLER_TRADER2] 			// unavailable for appointment by later settlers, also not for other sites
+		[SUCCESSION:BY_POSITION:SETTLER_TRADER2]
+		[SUCCESSION:BY_HEIR] 					// from here on, this position is inherrited by the units heir. 
+		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[QUEST_GIVER]
+		[REQUIRED_BEDROOM:1]
+		[COLOR:4:0:1]
+
+	
+
+	[POSITION:CITIZEN_0_GATEKEEPER]
+		// this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2, making it available to be promoted to citizen 0.
+		// without this position, the next generation settlers would inherrit CITIZEN_0, when their current holders are promoted
+		// to CITIZEN_1. This is not premature, but regular succession, and cannot be steered by removing an appointer.
+		// Thats why this gatekeeper is used: it works for premature succession, but after that it stays empty.
+		// On promotion, this position is just quickly used.
+		[NAME:one of the sites true settlers:Citizens] 	
+		[SITE]
+		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:6]
+		[APPOINTED_BY:SETTLER_TRADER2] 			// unavailable for appointment by later settlers, also not for other sites
+		[SUCCESSION:BY_POSITION:SETTLER_BASE1]  
+		[SUCCESSION:BY_POSITION:SETTLER_BASE2]	
+		[REQUIRES_POPULATION:8] 				// immediatly when the first migrantwave arrives.
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[QUEST_GIVER]
+		[REQUIRED_BEDROOM:1]
+		[COLOR:4:0:1]
+
+	
+
+	
 
 	[POSITION:CITIZEN_3] 						
 		[NAME:Notable citizen:Citizens] 	
@@ -2059,7 +2008,106 @@ Citizens
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
 		[COLOR:4:0:1]
+Settlers
 
+
+	[POSITION:SETTLER_BASE1]
+	// If no noble position trigger happens, new migrants will also not assume this position. And when that eventually happens, the succession has already taken place, preventing others for promotion
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages	
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:7] 								// more than neccesary
+		[REJECTED_CREATURE:ELF:ALL] 			// this forces an even spreading of this position over the units. 
+		[SQUAD:1:member:members] 				// prevents re-assumption by SETTLER_BASE2
+		[SUCCESSION:BY_HEIR] 					// precents unassigning by the player
+		[REPLACED_BY:REPL_50] 					// cleared up after 50 pop 
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+
+	[POSITION:SETTLER_BASE2]
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:6] 								// more than neccesary
+		[APPOINTED_BY:SETTLER_TRADER1b]
+		[SUCCESSION:BY_POSITION:SETTLER_BASE1] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
+		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
+		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+
+	[POSITION:SETTLER_TRADER1]
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:1]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CREATURE:DWARF:ALL] 			// will only be filled at embark, but not assumable later.
+		[SUCCESSION:BY_HEIR] 					// precents unassigning by the player
+		[REPLACED_BY:REPL_8]					// cleared up after 50 pop, also not available in other sites.
+		[RESPONSIBILITY:TRADE]				// best suited unit should take this position.
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]
+
+	[POSITION:SETTLER_TRADER2]
+		[LAND_NAME:Settler] 
+		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
+		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]		
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:1] 								// more than neccesary
+		[APPOINTED_BY:SETTLER_TRADER1b] 			// available, but not automatic assumed. also, only usable by the first embarked dwarfs
+		[SUCCESSION:BY_POSITION:SETTLER_TRADER1b] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
+		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
+		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]	
+
+	[POSITION:SETTLER_TRADER1b]
+		[LAND_NAME:(select broker)] 
+		[NAME:Settler (and broker):Settlers] 
+		[DESCRIPTION:This is your only opportunity to select a broker until a population of 50 is reached. Once you unpause, one of the settlers will be automatically selected to act as broker.]	
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:1] 								// more than neccesary
+		[APPOINTED_BY:SETTLER_TRADER1] 			// available, but not automatic assumed. also, only usable by the first embarked dwarfs
+		[SUCCESSION:BY_POSITION:SETTLER_TRADER1] 	// this takes all current holders of SETTLER, making it available again for well-spreaded assumption
+		[REQUIRES_POPULATION:7]					// I dont believe that this is neccesary
+		[REPLACED_BY:REPL_50]					// cleared up after 50 pop
+		[RESPONSIBILITY:TRADE]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[RESPONSIBILITY:COLLECT_TAXES]	
+
+	[POSITION:PROMOTION_TRIGGER] 
+		[LAND_NAME:(trigger promotion)] 
+		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
+		[SITE]
+		[PRECEDENCE:NONE]
+		SQUAD:1:member:members	// should not prevent assignment of settlers or citizens, because there could be exacltu 7+7, preventing promotion
+		[NUMBER:1] 								
+		[APPOINTED_BY:SETTLER_TRADER2] 	
+		[APPOINTED_BY:CITIZEN_0] 
+		[APPOINTED_BY:CITIZEN_1] 
+		[APPOINTED_BY:CITIZEN_2] 
+		[APPOINTED_BY:CITIZEN_3]  
+		[APPOINTED_BY:CITIZEN_4] 
+		[APPOINTED_BY:CITIZEN_5] 
+		[APPOINTED_BY:CITIZEN_6] 
+		[APPOINTED_BY:CITIZEN_7]
 Burgers
 
 
