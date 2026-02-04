@@ -1694,8 +1694,8 @@ Non-fortresses TEST
 	[POSITION:TO_BURGER_SWITCH] 						
 		[NAME:True burgher:Burghers] 		
 		[SITE]
-		[PRECEDENCE:85]					
-		[NUMBER:7]
+		[PRECEDENCE:NONE]					
+		[NUMBER:1]
 		[ELECTED]
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_2_SWITCH] 
@@ -2097,7 +2097,7 @@ Settlers
 		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
 		[SITE]
 		[PRECEDENCE:NONE]
-		SQUAD:1:member:members	// should not prevent assignment of settlers or citizens, because there could be exacltu 7+7, preventing promotion
+		[SQUAD:1:member:members]	// prevent assignment of settlers or citizens.
 		[NUMBER:1] 								
 		[APPOINTED_BY:SETTLER_TRADER2] 	
 		[APPOINTED_BY:CITIZEN_0] 
