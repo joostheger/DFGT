@@ -11,6 +11,7 @@ TODO: remove.
 
 
 [ENTITY:GRAND_DWARVEN_REPUBLIC]
+
 	[SITE_CONTROLLABLE]
 	[ALL_MAIN_POPS_CONTROLLABLE]
 	[CREATURE:DWARF]
@@ -557,7 +558,6 @@ TODO: remove.
 	[GEM_SHAPE:CUSHION_CUT_GEM]
 	[GEM_SHAPE:OCTAGON_CUT_GEM]
 	[GEM_SHAPE:SQUARE_CUT_GEM]
-
 
 Ruler
 
@@ -1119,6 +1119,7 @@ Clerks
 		[REQUIRED_CABINETS:1]
 	
 Landholders
+
 	[POSITION:LH1]
 		// landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
 		// landholders need to be defined above the Merchant Journeyman
@@ -1549,7 +1550,7 @@ Merchants
 		[REQUIRED_CABINETS:4]
 		[REQUIRED_BOXES:1]
 
-Non-fortresses TEST
+Non-fortress sites TODO:TEST
 
 	[POSITION:APPOINTER_NONFORT]
 		[NAME:Citizen:Citizens]
@@ -1687,9 +1688,7 @@ Non-fortresses TEST
 		[REQUIRED_BOXES:4]
 		[COLOR:5:0:0]
 
-
-
-Citizens an burgers 
+Citizens and burgers 
 
 	[POSITION:BURGER_7] 						
 		[NAME:Grand burgher:Burghers] 
@@ -1701,11 +1700,14 @@ Citizens an burgers
 		[SITE]
 		[PRECEDENCE:60]
 		[NUMBER:7]
-		[APPOINTED_BY:BURGER_6] 
-		[APPOINTED_BY:CITIZEN_7_SWITCH] 				// for the first regular succession by population
-		not APPOINTED_BY: CIT_TO_BURGER_7_SWITCH		//Not, otherwise it becomes used by non-fortress LH
-		[APPOINTED_BY:BURGER_7] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[APPOINTED_BY:BURGER_6] 						// burger promotion
+		[APPOINTED_BY:CITIZEN_7_SWITCH] 				// for the first citizen succession by population
+		[APPOINTED_BY:BURGER_7] 						// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_A] 
+		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_B] 
 		[SUCCESSION:BY_POSITION:CIT_TO_BURGER_7_SWITCH]
+		[SUCCESSION:BY_POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_A]
+		[SUCCESSION:BY_POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_B]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:200] 	
 		[RESPONSIBILITY:LAW_MAKING]
@@ -1728,6 +1730,42 @@ Citizens an burgers
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
 		[COLOR:4:0:0]
+
+	[POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_A] 
+		// This is the last possible switch for citizen to burger. I make it work by appointing it from LH5,
+		// And make this one appoint Burger7. It doenst work very well for non-fortress sites, because the LH5 can 
+		// always make burgers pop-up, but the change for a LH5 in non-fortress sites is pretty small, so we'll 
+		// let that happen.
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (15)]
+		[LAND_NAME:(promotion position)]						
+		[NAME:Burgher:Burghers] 		
+		[SITE]
+		[PRECEDENCE:NONE]					
+		[NUMBER:1]
+		[ELECTED]										// Not appointable by the player.
+		[APPOINTED_BY:LH5] 
+		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_B] 	// A and B fill eachother
+		[SUCCESSION:BY_POSITION:CITIZEN_7] 
+		[SUCCESSION:BY_POSITION:CITIZEN_6]
+		[SUCCESSION:BY_POSITION:CITIZEN_5]
+		[SUCCESSION:BY_POSITION:CITIZEN_4] 
+		[SUCCESSION:BY_POSITION:CITIZEN_3]
+		[SUCCESSION:BY_POSITION:CITIZEN_2]
+
+	[POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_B] 
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (14)]
+		[LAND_NAME:(promotion position)]						
+		[NAME:Burgher:Burghers] 		
+		[SITE]
+		[PRECEDENCE:NONE]					
+		[NUMBER:6]
+		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_A] 	// A and B fill eachother
+		[SUCCESSION:BY_POSITION:CITIZEN_7] 
+		[SUCCESSION:BY_POSITION:CITIZEN_6]
+		[SUCCESSION:BY_POSITION:CITIZEN_5]
+		[SUCCESSION:BY_POSITION:CITIZEN_4] 
+		[SUCCESSION:BY_POSITION:CITIZEN_3]
+		[SUCCESSION:BY_POSITION:CITIZEN_2]
 
 	[POSITION:CITIZEN_7] 						
 		[NAME:Grand citizen:Citizens] 
@@ -1766,6 +1804,7 @@ Citizens an burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_7_SWITCH] 
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (13)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
 		[SITE]
@@ -1776,7 +1815,8 @@ Citizens an burgers
 		[SUCCESSION:BY_POSITION:CITIZEN_7_SWITCH] 
 		[REQUIRES_POPULATION:200] 
 
-	[POSITION:CITIZEN_7_SWITCH] 	
+	[POSITION:CITIZEN_7_SWITCH] 		
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (12)]
 		[LAND_NAME:(promotion position)]					
 		[NAME:Honored citizen:Citizens] 	
 		[SITE]
@@ -1857,7 +1897,8 @@ Citizens an burgers
 		[REQUIRED_BOXES:2]
 		[COLOR:4:0:1]	
 
-	[POSITION:CIT_TO_BURGER_6_SWITCH] 
+	[POSITION:CIT_TO_BURGER_6_SWITCH] 	
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (11)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
 		[SITE]
@@ -1867,8 +1908,10 @@ Citizens an burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_6_SWITCH] 
 		[REQUIRES_POPULATION:170] 
+		[REPLACED_BY:CITIZEN_7_SWITCH]
 
 	[POSITION:CITIZEN_6_SWITCH] 	
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (10)]	
 		[LAND_NAME:(promotion position)]					
 		[NAME:Honored citizen:Citizens] 	
 		[SITE]
@@ -1877,6 +1920,7 @@ Citizens an burgers
 		[APPOINTED_BY:CITIZEN_5] 
 		[REQUIRES_POPULATION:170] 
 		[SUCCESSION:BY_POSITION:CITIZEN_5] 
+		[REPLACED_BY:CITIZEN_7_SWITCH]
 
 	[POSITION:BURGER_5] 						
 		[NAME:Esteemed burgher:Burghers] 
@@ -1948,7 +1992,8 @@ Citizens an burgers
 		[REQUIRED_BOXES:2]
 		[COLOR:4:0:1]
 
-	[POSITION:CIT_TO_BURGER_5_SWITCH] 
+	[POSITION:CIT_TO_BURGER_5_SWITCH] 	
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (9)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
 		[SITE]
@@ -1958,8 +2003,10 @@ Citizens an burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_5_SWITCH] 
 		[REQUIRES_POPULATION:140] 
+		[REPLACED_BY:CITIZEN_6_SWITCH]
 
-	[POSITION:CITIZEN_5_SWITCH] 	
+	[POSITION:CITIZEN_5_SWITCH] 		
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (8)]
 		[LAND_NAME:(promotion position)]					
 		[NAME:Esteemed citizen:Citizens] 	
 		[SITE]
@@ -1968,6 +2015,7 @@ Citizens an burgers
 		[APPOINTED_BY:CITIZEN_4] 
 		[REQUIRES_POPULATION:140] 
 		[SUCCESSION:BY_POSITION:CITIZEN_4] 
+		[REPLACED_BY:CITIZEN_6_SWITCH]
 
 	[POSITION:BURGER_4] 						
 		[NAME:Distinguished burgher:Burghers] 
@@ -2037,6 +2085,7 @@ Citizens an burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_4_SWITCH] 
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (7)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
 		[SITE]
@@ -2046,8 +2095,10 @@ Citizens an burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_4_SWITCH] 
 		[REQUIRES_POPULATION:110] 
+		[REPLACED_BY:CITIZEN_5_SWITCH]
 
-	[POSITION:CITIZEN_4_SWITCH] 	
+	[POSITION:CITIZEN_4_SWITCH] 		
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (6)]
 		[LAND_NAME:(promotion position)]					
 		[NAME:Distinguished citizen:Citizens] 	
 		[SITE]
@@ -2056,6 +2107,7 @@ Citizens an burgers
 		[APPOINTED_BY:CITIZEN_3] 
 		[REQUIRES_POPULATION:110] 
 		[SUCCESSION:BY_POSITION:CITIZEN_3] 
+		[REPLACED_BY:CITIZEN_5_SWITCH]
 
 	[POSITION:BURGER_3] 						
 		[NAME:Notable burgher:Burghers] 	
@@ -2124,7 +2176,8 @@ Citizens an burgers
 		[REQUIRED_BOXES:1]
 		[COLOR:4:0:1]
 
-	[POSITION:CIT_TO_BURGER_3_SWITCH] 
+	[POSITION:CIT_TO_BURGER_3_SWITCH] 	
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (5)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
 		[SITE]
@@ -2134,8 +2187,10 @@ Citizens an burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_3_SWITCH] 
 		[REQUIRES_POPULATION:80] 
+		[REPLACED_BY:CITIZEN_4_SWITCH]
 
 	[POSITION:CITIZEN_3_SWITCH] 	
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (4)]
 		[LAND_NAME:(promotion position)]					
 		[NAME:Notable citizen:Citizens] 	
 		[SITE]
@@ -2144,6 +2199,7 @@ Citizens an burgers
 		[APPOINTED_BY:CITIZEN_2] 
 		[REQUIRES_POPULATION:80] 
 		[SUCCESSION:BY_POSITION:CITIZEN_2] 
+		[REPLACED_BY:CITIZEN_4_SWITCH]
 
 	[POSITION:BURGER_2] 						
 		[NAME:Recognized burgher:Burghers] 
@@ -2209,6 +2265,7 @@ Citizens an burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_2_SWITCH] 
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
 		[SITE]
@@ -2218,8 +2275,11 @@ Citizens an burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_2_SWITCH] 
 		[REQUIRES_POPULATION:50] 
+		[REPLACED_BY:CITIZEN_3_SWITCH]
 
-	[POSITION:CITIZEN_2_SWITCH] 			
+	[POSITION:CITIZEN_2_SWITCH] 
+		// This switch is neccesary, because it should be the only one that appoints BURGER_2. 
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (2)]
 		[LAND_NAME:(promotion position)]			
 		[NAME:Recognized citizen:Citizens] 	
 		[SITE]
@@ -2227,6 +2287,7 @@ Citizens an burgers
 		[NUMBER:7]
 		[APPOINTED_BY:CITIZEN_1] 
 		[REQUIRES_POPULATION:50] 
+		[REPLACED_BY:CITIZEN_3_SWITCH]
 		[SUCCESSION:BY_POSITION:CITIZEN_1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_1_TRADER] 
 
@@ -2320,6 +2381,7 @@ Citizens an burgers
 		// Thats why this gatekeeper is used: it works for premature succession, but after that it stays empty.
 		// On promotion, this position is just quickly used.
 		[LAND_NAME:(promotion position)]
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (1)]
 		[NAME:Citizen:Citizens] 	
 		[SITE]
 		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
@@ -2339,6 +2401,7 @@ Citizens an burgers
 Settlers
 
 	[POSITION:SETTLER_BASE1]
+	// This is one of the basic assumable positions. It is assumed on embark, and when the current holders are promoted, it is re-assumed by the rest of the inhabitants.
 	// If no noble position trigger happens, new migrants will also not assume this position. And when that eventually happens, the succession has already taken place, preventing others for promotion
 		[LAND_NAME:Settler] 
 		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages	
@@ -2356,6 +2419,8 @@ Settlers
 		[RESPONSIBILITY:COLLECT_TAXES]
 
 	[POSITION:SETTLER_BASE2]
+		// this position holds the units that had assumed SETTLER_BASE1 on embark, freeing that up for new assumption. 
+		// The units in this position are later promoted.
 		[LAND_NAME:Settler] 
 		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
@@ -2372,6 +2437,7 @@ Settlers
 		[RESPONSIBILITY:COLLECT_TAXES]
 
 	[POSITION:SETTLER_TRADER1]
+		// This position is first assumed on embark by the dwarf with the best trading skills. It is inpossible to be assumed later.
 		[LAND_NAME:Settler] 
 		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]	
@@ -2388,6 +2454,7 @@ Settlers
 		[RESPONSIBILITY:COLLECT_TAXES]
 
 	[POSITION:SETTLER_TRADER2]
+		// This position holds the best trader from SETTLER_TRADER1, and is promoted later on.
 		[LAND_NAME:Settler] 
 		[NAME:Settler:Settlers] 			// though this name is mostly invissible, I wanted to show it at least in succession messages
 		[DESCRIPTION:Among the first, the settler set boot and hammer to stone, before rank or privilege was forged. By shared toil they laid the foundation of a city yet to rise. Their authority is no reward, but a burden carried from the beginning.]		
@@ -2404,6 +2471,8 @@ Settlers
 		[RESPONSIBILITY:COLLECT_TAXES]	
 
 	[POSITION:SETTLER_TRADER1b]
+		// Because SETTLER_TRADER2 was visible on embark before unpausing, I think that was ugly. So, 
+		// I created this position to utilize the already neccesary position to give the player also a bit of agency.
 		[LAND_NAME:(select broker)] 
 		[NAME:Settler (and broker):Settlers] 
 		[DESCRIPTION:This is your only opportunity to select a broker until a population of 50 is reached. Once you unpause, one of the settlers will be automatically selected to act as broker.]	
@@ -2519,7 +2588,6 @@ Patricians
 		[REQUIRED_BOXES:4]
 		[COLOR:5:0:0]
 
-
 	[POSITION:PATRICIAN_3] 						
 		[NAME:Honored patrician:Patricians]
 		[NAME_MALE:Honored patrician:Patricians]
@@ -2634,7 +2702,6 @@ Patricians
 		[REQUIRED_BOXES:5]
 		[COLOR:5:0:0]
 
-
 	[POSITION:PATRICIAN_6] 						
 		[NAME:Most serene patrician:Patricians]
 		[NAME_MALE:Most serene patrician:Patricians]
@@ -2673,8 +2740,8 @@ Patricians
 		[REQUIRED_BOXES:5]
 		[COLOR:5:0:0]
 
-
 Replacers
+
 	[POSITION:REPL_7]
 		The replacer is used to prevent the creation the Town founder in fortress mode
 		[NAME:replacer 7 (SHOULD NOT BE FILLED):replacer]
@@ -2737,7 +2804,7 @@ Doctor
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_BOXES:2]
 
-Site Military
+Site military
 
 	[POSITION:RG_CAPTAIN]
 		[NAME:Republican guard captain:Republican guard captains]
