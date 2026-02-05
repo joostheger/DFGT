@@ -1691,14 +1691,7 @@ Non-fortresses TEST
 		[REQUIRED_BOXES:4]
 		[COLOR:5:0:0]
 
-	[POSITION:TO_BURGER_SWITCH] 						
-		[NAME:True burgher:Burghers] 		
-		[SITE]
-		[PRECEDENCE:NONE]					
-		[NUMBER:1]
-		[ELECTED]
-		[APPOINTED_BY:LH1] 
-		[SUCCESSION:BY_POSITION:CITIZEN_2_SWITCH] 
+
 
 Citizens
 
@@ -1728,6 +1721,52 @@ Citizens
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_BOXES:1]
 		[COLOR:4:0:1]
+
+[POSITION:BURGER_2] 						
+		[NAME:Recognized burgher:Burghers] 
+		[NAME_MALE:Recognized burgher:Burghers]
+		[NAME_FEMALE:Recognized burghess:Burghers]
+		[SPOUSE_FEMALE:Recognized burghess:Burghers]
+		[SPOUSE_MALE:Recognized burgher:Burghers]	
+		[DESCRIPTION:Further settled into the life of a free republic, they shoulder little beyond the obligations of decency, their responsibilities far gentler than in their citizen days. Their quarters grow correspondingly refined, and they make no secret of expecting such comforts now that the Merchants’ Guild has placed its seal upon the city.]
+		[SITE]
+		[PRECEDENCE:65]
+		[NUMBER:7]
+		[APPOINTED_BY:CITIZEN_2_SWITCH] 				// for the first regular succession by population
+		[APPOINTED_BY:BURGER_2] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
+		[SUCCESSION:BY_POSITION:CIT_TO_BURGER_SWITCH2]
+		[SUCCESSION:BY_HEIR] 					
+		[REQUIRES_POPULATION:50]	
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[MENIAL_WORK_EXEMPTION]
+		[MENIAL_WORK_EXEMPTION_SPOUSE]
+		[CHAT_WORTHY]
+		[QUEST_GIVER]
+		[SLEEP_PRETENSION]
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+		[DUTY_BOUND]
+		[REQUIRES_MARKET]	
+		[DEMAND_MAX:1]
+		[REQUIRED_BEDROOM:1000]
+		[REQUIRED_DINING:500]
+		[REQUIRED_OFFICE:250]
+		[REQUIRED_TOMB:250]
+		[REQUIRED_BOXES:2]
+		[COLOR:4:0:0]
+
+[POSITION:CIT_TO_BURGER_SWITCH2] 
+		[LAND_NAME:(promotion position)]						
+		[NAME:Burgher:Burghers] 		
+		[SITE]
+		[PRECEDENCE:NONE]					
+		[NUMBER:7]
+		[ELECTED]
+		[APPOINTED_BY:LH1] 
+		[SUCCESSION:BY_POSITION:CITIZEN_2_SWITCH] 
+		[REQUIRES_POPULATION:50] 
 
 [POSITION:CITIZEN_2_SWITCH] 						
 		[NAME:Recognized citizen:Citizens] 	
@@ -1830,7 +1869,7 @@ Citizens
 		// to CITIZEN_1. This is not premature, but regular succession, and cannot be steered by removing an appointer.
 		// Thats why this gatekeeper is used: it works for premature succession, but after that it stays empty.
 		// On promotion, this position is just quickly used.
-		[NAME:one of the sites true settlers:Citizens] 	
+		[NAME:Citizen:Citizens] 	
 		[SITE]
 		[PRECEDENCE:NONE]						// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:6]
@@ -2111,40 +2150,7 @@ Settlers
 Burgers
 
 
-	[POSITION:BURGER_2] 						
-		[NAME:Recognized burgher:Burghers] 
-		[NAME_MALE:Recognized burgher:Burghers]
-		[NAME_FEMALE:Recognized burghess:Burghers]
-		[SPOUSE_FEMALE:Recognized burghess:Burghers]
-		[SPOUSE_MALE:Recognized burgher:Burghers]	
-		[DESCRIPTION:Further settled into the life of a free republic, they shoulder little beyond the obligations of decency, their responsibilities far gentler than in their citizen days. Their quarters grow correspondingly refined, and they make no secret of expecting such comforts now that the Merchants’ Guild has placed its seal upon the city.]
-		[SITE]
-		[PRECEDENCE:65]
-		[NUMBER:7]
-		[APPOINTED_BY:CITIZEN_2_SWITCH] 				// for the first regular succession by population
-		[APPOINTED_BY:BURGER_2] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[SUCCESSION:BY_POSITION:TO_BURGER_SWITCH]
-		[SUCCESSION:BY_HEIR] 					
-		[REQUIRES_POPULATION:50]	
-		[RESPONSIBILITY:LAW_MAKING]
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[MENIAL_WORK_EXEMPTION]
-		[MENIAL_WORK_EXEMPTION_SPOUSE]
-		[CHAT_WORTHY]
-		[QUEST_GIVER]
-		[SLEEP_PRETENSION]
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-		[DUTY_BOUND]
-		[REQUIRES_MARKET]	
-		[DEMAND_MAX:1]
-		[REQUIRED_BEDROOM:1000]
-		[REQUIRED_DINING:500]
-		[REQUIRED_OFFICE:250]
-		[REQUIRED_TOMB:250]
-		[REQUIRED_BOXES:2]
-		[COLOR:4:0:0]
+	
 
 	[POSITION:BURGER_3] 						
 		[NAME:Notable burgher:Burghers] 	
