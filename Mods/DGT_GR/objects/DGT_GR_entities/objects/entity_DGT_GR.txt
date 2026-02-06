@@ -1887,7 +1887,7 @@ Citizens and burgers
 	[POSITION:CITIZEN_7_SWITCH] 		
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (12)]
 		[LAND_NAME:(promotion position)]					
-		[NAME:Honored citizen:Citizens] 	
+		[NAME:Grand citizen:Citizens] 	
 		[SITE]
 		[PRECEDENCE:NONE]					
 		[NUMBER:7]
