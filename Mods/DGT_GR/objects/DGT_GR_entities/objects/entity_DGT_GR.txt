@@ -2821,6 +2821,35 @@ Replacers
 
 Doctor
 
+	[POSITION:CUSTOM_OFFICIAL_0] TODO: verwijderen
+		[NAME:Doctor:Doctors]
+		[DESCRIPTION:The doctor is responsible for the health and well-being of the settlement's inhabitants. They require adequate facilities and resources to perform their duties effectively.]
+		[SITE]
+		[NUMBER:1]	
+		[APPOINTED_BY:FORCED_ADMINISTRATOR]
+		[APPOINTED_BY:APPOINTER_NONFORT]
+		[APPOINTED_BY:CITIZEN_1]
+		[APPOINTED_BY:CITIZEN_2]
+		[APPOINTED_BY:CITIZEN_3]
+		[APPOINTED_BY:CITIZEN_4]
+		[APPOINTED_BY:CITIZEN_5]
+		[APPOINTED_BY:CITIZEN_6]
+		[APPOINTED_BY:CITIZEN_7]
+		[APPOINTED_BY:BURGER_2]
+		[APPOINTED_BY:BURGER_3]	
+		[APPOINTED_BY:BURGER_4]	
+		[APPOINTED_BY:BURGER_5]	
+		[APPOINTED_BY:BURGER_6]	
+		[APPOINTED_BY:BURGER_7]	
+		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.		
+		[RESPONSIBILITY:HEALTH_MANAGEMENT]
+		[PRECEDENCE:115]
+		[COLOR:7:0:1] 
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_BOXES:2]
+
 	[POSITION:DOCTOR]
 		[NAME:Doctor:Doctors]
 		[DESCRIPTION:The doctor is responsible for the health and well-being of the settlement's inhabitants. They require adequate facilities and resources to perform their duties effectively.]
