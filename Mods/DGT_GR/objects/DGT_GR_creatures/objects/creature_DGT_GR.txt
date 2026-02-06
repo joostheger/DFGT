@@ -1,10 +1,15 @@
 creature_DGT_GR
 
 [SELECT_CREATURE:DWARF]
+	[SELECT_CASTE:ALL]
 
+	[PROFESSION_NAME:MINER:miner TODO:craftsdwarves]
 	[PROFESSION_NAME:SETTLER_BASE1:settler TODO:craftsdwarves]
 	// CASTE_PROFESSION_NAME
-	[PROFESSION_NAME:SETTLER_BASE1:settler TODO2:craftsdwarves]
+	[PROFESSION_NAME:MESSENGER:messenger TODO2:craftsdwarves]
+	[PROFESSION_NAME:MERCHANT:merchant TODO2:craftsdwarves]
+	[PROFESSION_NAME:SETTLER_BASE2:settler TODO2:craftsdwarves]
+	[PROFESSION_NAME:DOCTOR:doccy TODO2:craftsdwarves]
 	[PROFESSION_NAME:SETTLER_TRADER1:settler TODO3:craftsdwarves]
 	[PROFESSION_NAME:CITIZEN_2:citizen TODO4:craftsdwarves]
 	[PROFESSION_NAME:TYRANT:conquerer-tyrant TODO5:conquerers]
