@@ -2,7 +2,7 @@ creature_DGT_GR
 
 [SELECT_CREATURE:DWARF]
 	[SELECT_CASTE:ALL]
-
+	[DESCRIPTION:TODO, TODO A short, sturdy creature fond of drink and industry.]
 	[PROFESSION_NAME:MINER:miner TODO:craftsdwarves]
 	[PROFESSION_NAME:SETTLER_BASE1:settler TODO:craftsdwarves]
 	// CASTE_PROFESSION_NAME
