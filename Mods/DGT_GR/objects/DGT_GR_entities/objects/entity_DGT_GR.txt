@@ -1768,7 +1768,6 @@ Citizens and burgers
 		[PRECEDENCE:60]
 		[NUMBER:7]
 		[APPOINTED_BY:BURGER_6] 						// burger promotion
-		[APPOINTED_BY:CITIZEN_7_SWITCH] 				// for the first citizen succession by population
 		[APPOINTED_BY:BURGER_7] 						// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_A] 
 		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_B] 
@@ -1807,11 +1806,6 @@ Citizens and burgers
 		[NUMBER:6]
 		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_A] 	// A and B fill eachother
 		[SUCCESSION:BY_POSITION:CITIZEN_7] 
-		[SUCCESSION:BY_POSITION:CITIZEN_6]
-		[SUCCESSION:BY_POSITION:CITIZEN_5]
-		[SUCCESSION:BY_POSITION:CITIZEN_4] 
-		[SUCCESSION:BY_POSITION:CITIZEN_3]
-		[SUCCESSION:BY_POSITION:CITIZEN_2]
 
 	[POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_A] 
 		// This is the last possible switch for citizen to burger. I make it work by appointing it from LH5,
@@ -1828,11 +1822,6 @@ Citizens and burgers
 		[APPOINTED_BY:LH5] 
 		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_B] 	// A and B fill eachother
 		[SUCCESSION:BY_POSITION:CITIZEN_7] 
-		[SUCCESSION:BY_POSITION:CITIZEN_6]
-		[SUCCESSION:BY_POSITION:CITIZEN_5]
-		[SUCCESSION:BY_POSITION:CITIZEN_4] 
-		[SUCCESSION:BY_POSITION:CITIZEN_3]
-		[SUCCESSION:BY_POSITION:CITIZEN_2]
 
 	[POSITION:CITIZEN_7] 						
 		[NAME:Grand citizen:Citizens] 
@@ -1870,6 +1859,7 @@ Citizens and burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_7_SWITCH] 
+		// In world-gen, this position gets appointed.
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (13)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
@@ -1962,6 +1952,7 @@ Citizens and burgers
 		[COLOR:4:0:1]	
 
 	[POSITION:CIT_TO_BURGER_6_SWITCH] 	
+		// In world-gen, this position gets appointed.
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (11)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
@@ -2055,6 +2046,7 @@ Citizens and burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_5_SWITCH] 	
+		// In world-gen, this position gets appointed.
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (9)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
@@ -2145,6 +2137,7 @@ Citizens and burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_4_SWITCH] 
+		// In world-gen, this position gets appointed.
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (7)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
@@ -2235,6 +2228,7 @@ Citizens and burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_3_SWITCH] 	
+		// In world-gen, this position gets appointed.
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (5)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
@@ -2321,6 +2315,7 @@ Citizens and burgers
 		[COLOR:4:0:1]
 
 	[POSITION:CIT_TO_BURGER_2_SWITCH] 
+		// In world-gen, this position gets appointed.
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
 		[LAND_NAME:(promotion position)]						
 		[NAME:Burgher:Burghers] 		
@@ -2820,35 +2815,6 @@ Replacers
 		[PRECEDENCE:200]
 
 Doctor
-
-	[POSITION:CUSTOM_OFFICIAL_0] TODO: verwijderen
-		[NAME:Doctor:Doctors]
-		[DESCRIPTION:The doctor is responsible for the health and well-being of the settlement's inhabitants. They require adequate facilities and resources to perform their duties effectively.]
-		[SITE]
-		[NUMBER:1]	
-		[APPOINTED_BY:FORCED_ADMINISTRATOR]
-		[APPOINTED_BY:APPOINTER_NONFORT]
-		[APPOINTED_BY:CITIZEN_1]
-		[APPOINTED_BY:CITIZEN_2]
-		[APPOINTED_BY:CITIZEN_3]
-		[APPOINTED_BY:CITIZEN_4]
-		[APPOINTED_BY:CITIZEN_5]
-		[APPOINTED_BY:CITIZEN_6]
-		[APPOINTED_BY:CITIZEN_7]
-		[APPOINTED_BY:BURGER_2]
-		[APPOINTED_BY:BURGER_3]	
-		[APPOINTED_BY:BURGER_4]	
-		[APPOINTED_BY:BURGER_5]	
-		[APPOINTED_BY:BURGER_6]	
-		[APPOINTED_BY:BURGER_7]	
-		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.		
-		[RESPONSIBILITY:HEALTH_MANAGEMENT]
-		[PRECEDENCE:115]
-		[COLOR:7:0:1] 
-		[REQUIRES_MARKET]
-		[REQUIRED_BEDROOM:100]
-		[REQUIRED_OFFICE:100]
-		[REQUIRED_BOXES:2]
 
 	[POSITION:DOCTOR]
 		[NAME:Doctor:Doctors]
