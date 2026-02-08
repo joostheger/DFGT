@@ -443,11 +443,11 @@ TODO: remove.
 	[ARMOR:ITEM_ARMOR_ROBE:RARE]
 	[HELM:ITEM_HELM_HELM:COMMON]
 	[HELM:ITEM_HELM_CAP:RARE]
-	[HELM:ITEM_HELM_HOOD:RARE]
+	[HELM:ITEM_HELM_HOOD:UNCOMMON]
 	[HELM:ITEM_HELM_MASK:RARE]
-	[HELM:ITEM_HELM_SCARF_HEAD:RARE]
+	[HELM:ITEM_HELM_SCARF_HEAD:UNCOMMON]
 	[HELM:ITEM_HELM_TURBAN:FORCED]
-	[HELM:ITEM_HELM_VEIL_FACE:UNCOMMON]
+	[HELM:ITEM_HELM_VEIL_FACE:RARE]
 	[HELM:ITEM_HELM_VEIL_HEAD:COMMON]
 	[GLOVES:ITEM_GLOVES_GAUNTLETS:UNCOMMON]
 	[GLOVES:ITEM_GLOVES_GLOVES:UNCOMMON]
@@ -920,6 +920,10 @@ Clerks
 		[NUMBER:1]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
 		[APPOINTED_BY:CITIZEN_NONFORT]
+		[APPOINTED_BY:CITIZEN_2]
+		[APPOINTED_BY:CITIZEN_3]
+		[APPOINTED_BY:CITIZEN_4]
+		[APPOINTED_BY:CITIZEN_5]
 		[APPOINTED_BY:CITIZEN_6]
 		[APPOINTED_BY:CITIZEN_7]
 		[APPOINTED_BY:BURGER_2]
@@ -974,12 +978,6 @@ Clerks
 		[APPOINTED_BY:CITIZEN_5]
 		[APPOINTED_BY:CITIZEN_6]
 		[APPOINTED_BY:CITIZEN_7]
-		[APPOINTED_BY:BURGER_2]
-		[APPOINTED_BY:BURGER_3]	
-		[APPOINTED_BY:BURGER_4]	
-		[APPOINTED_BY:BURGER_5]	
-		[APPOINTED_BY:BURGER_6]	
-		[APPOINTED_BY:BURGER_7]	
 		[APPOINTED_BY:HGM]		// when burgers become patricians, the HGM is on site.
 		[RESPONSIBILITY:MANAGE_PRODUCTION]
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
@@ -1073,7 +1071,6 @@ Clerks
 		[NUMBER:1]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
 		[APPOINTED_BY:CITIZEN_NONFORT]
-		[APPOINTED_BY:CITIZEN_3]
 		[APPOINTED_BY:CITIZEN_4]
 		[APPOINTED_BY:CITIZEN_5]
 		[APPOINTED_BY:CITIZEN_6]
@@ -1121,7 +1118,7 @@ Clerks
 Landholders
 
 	[POSITION:LH1]
-		// landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
+		// OBSOLETE landholders need to be defined below clerks, so the landholder will be named as broker, but the clerk actually doing the trading.
 		// landholders need to be defined above the Merchant Journeyman
 		[NAME:Trade agent:Trade agents]
 		[DESCRIPTION:The trade agent is an administrator assigned to the fortress by the Merchants' Guild. Their appointment designates the site as a chartered trade post. They appoints clerks to assist them with their tasks. They are empowered to issue trade mandates, defining which goods may be produced or exchanged. A modest office is required.]
@@ -1135,7 +1132,7 @@ Landholders
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS] 	
 		[RESPONSIBILITY:CONSTRUCTION_PERMITS]	
 		[RESPONSIBILITY:JUDGE]	
-		[PRECEDENCE:150]				// Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be selectable for LH by the player
+		[PRECEDENCE:89]				// Precedence of LH1 must be lower than every protected citizen-class, to prevent them to be selectable for LH by the player
 		[COLOR:1:0:0] 
 		[MANDATE_MAX:1]
 		[DO_NOT_CULL]
@@ -1457,7 +1454,7 @@ Merchants
 		// This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
 		//The reason that both M_JM_ECTA and M_JM_TRADE exist, is because if both these responsibilies
 		//were to be defined in one position, the offered elevantion for LH1 wont happen.
-		[NAME:Merchant journeyman:Merchant journeymen]
+		[NAME:Merchant journeyman 1TODO:Merchant journeymen]
 		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for overseeing the trade routes between settlements. While conducting business as a merchant, they mandate the flow of goods and communication across the republic. Their position entails clear but modest and practical living requirements.]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
 		[SPOUSE_MALE:Gentleman:Gentlemen]
@@ -1488,7 +1485,7 @@ Merchants
 
 	[POSITION:M_JM_TRADE]
 		// This position needs to be defined after the landholders, so that they take precedence on diplomatic visits. 
-		[NAME:Merchant journeyman:Merchant journeymen]
+		[NAME:Merchant journeyman 2TODO:Merchant journeymen]
 		[DESCRIPTION:The merchant guilds journeyman serves as a trusted representative of the guild in diplomatic affairs and is responsible for overseeing the trade routes between settlements. While conducting business as a merchant, they mandate the flow of goods and communication across the republic. Their position entails clear but modest and practical living requirements.]
 		[SPOUSE_FEMALE:Gentlewoman:Gentlewomen]
 		[SPOUSE_MALE:Gentleman:Gentlemen]
@@ -1769,11 +1766,13 @@ Citizens and burgers
 		[NUMBER:7]
 		[APPOINTED_BY:BURGER_6] 						// burger promotion
 		[APPOINTED_BY:BURGER_7] 						// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_A] 
-		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_B] 
 		[SUCCESSION:BY_POSITION:CIT_TO_BURGER_7_SWITCH]
-		[SUCCESSION:BY_POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_A]
-		[SUCCESSION:BY_POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_B]
+		// This is the last possible switch for citizen to burger. I make it work by appointing it from LH5,
+		// And make this one appoint Burger7. It doenst work very well for non-fortress sites, because the LH5 can 
+		// always make burgers pop-up, but the change for a LH5 in non-fortress sites is pretty small, so we'll 
+		// let that happen.
+		[APPOINTED_BY:LH5]								
+		[SUCCESSION:BY_POSITION:CITIZEN_7]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:200] 	
 		[RESPONSIBILITY:LAW_MAKING]
@@ -1796,32 +1795,6 @@ Citizens and burgers
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
 		[COLOR:4:0:0]
-
-	[POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_B] 
-		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (14)]
-		[LAND_NAME:(promotion position)]						
-		[NAME:Burgher:Burghers] 		
-		[SITE]
-		[PRECEDENCE:NONE]					
-		[NUMBER:6]
-		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_A] 	// A and B fill eachother
-		[SUCCESSION:BY_POSITION:CITIZEN_7] 
-
-	[POSITION:CIT_TO_BURGER_TERMINAL_SWITCH_A] 
-		// This is the last possible switch for citizen to burger. I make it work by appointing it from LH5,
-		// And make this one appoint Burger7. It doenst work very well for non-fortress sites, because the LH5 can 
-		// always make burgers pop-up, but the change for a LH5 in non-fortress sites is pretty small, so we'll 
-		// let that happen.
-		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (15)]
-		[LAND_NAME:(promotion position)]						
-		[NAME:Burgher:Burghers] 		
-		[SITE]
-		[PRECEDENCE:NONE]					
-		[NUMBER:1]
-		[ELECTED]										// Not appointable by the player.
-		[APPOINTED_BY:LH5] 
-		[APPOINTED_BY:CIT_TO_BURGER_TERMINAL_SWITCH_B] 	// A and B fill eachother
-		[SUCCESSION:BY_POSITION:CITIZEN_7] 
 
 	[POSITION:CITIZEN_7] 						
 		[NAME:Grand citizen:Citizens] 
@@ -1893,6 +1866,7 @@ Citizens and burgers
 		[PRECEDENCE:61]
 		[NUMBER:7]
 		[APPOINTED_BY:BURGER_5] 
+		[SUCCESSION:BY_POSITION:BURGER_5]
 		[APPOINTED_BY:CITIZEN_6_SWITCH] 				// for the first regular succession by population
 		not APPOINTED_BY: CIT_TO_BURGER_6_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_6] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
@@ -1987,7 +1961,8 @@ Citizens and burgers
 		[SITE]
 		[NUMBER:7]
 		[PRECEDENCE:62]
-		[APPOINTED_BY:BURGER_4] 
+		[APPOINTED_BY:BURGER_4]  
+		[SUCCESSION:BY_POSITION:BURGER_4]
 		[APPOINTED_BY:CITIZEN_5_SWITCH] 				// for the first regular succession by population
 		not APPOINTED_BY: CIT_TO_BURGER_5_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_5] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
@@ -2081,7 +2056,8 @@ Citizens and burgers
 		[SITE]
 		[NUMBER:7]
 		[PRECEDENCE:63]
-		[APPOINTED_BY:BURGER_3] 
+		[APPOINTED_BY:BURGER_3]  
+		[SUCCESSION:BY_POSITION:BURGER_3]
 		[APPOINTED_BY:CITIZEN_4_SWITCH] 				// for the first regular succession by population
 		not APPOINTED_BY: CIT_TO_BURGER_4_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_4] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
@@ -2172,7 +2148,8 @@ Citizens and burgers
 		[SITE]
 		[NUMBER:7]
 		[PRECEDENCE:64]
-		[APPOINTED_BY:BURGER_2] 
+		[APPOINTED_BY:BURGER_2]  
+		[SUCCESSION:BY_POSITION:BURGER_2]
 		[APPOINTED_BY:CITIZEN_3_SWITCH] 				// for the first regular succession by population
 		not APPOINTED_BY: CIT_TO_BURGER_3_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_3] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
@@ -2342,28 +2319,6 @@ Citizens and burgers
 		[SUCCESSION:BY_POSITION:CITIZEN_1] 
 		[SUCCESSION:BY_POSITION:CITIZEN_1_TRADER] 
 
-	[POSITION:CITIZEN_1] 						
-		[NAME:Free citizen:Citizens]
-		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]
-		[SITE]
-		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
-		[NUMBER:6]
-		[APPOINTED_BY:CITIZEN_0] 			
-		[SUCCESSION:BY_POSITION:CITIZEN_0] 
-		[SUCCESSION:BY_HEIR] 					
-		[REQUIRES_POPULATION:20] 
-		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:FOOD_SUPPLY]
-		[QUEST_GIVER]
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-		[DUTY_BOUND]
-		[REQUIRED_BEDROOM:1]
-		[REQUIRED_DINING:1]
-		[REQUIRED_BOXES:1]
-		[COLOR:4:0:1]
-
 	[POSITION:CITIZEN_1_TRADER] 						
 		[NAME:Free citizen:Citizens] 
 		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]	
@@ -2377,6 +2332,28 @@ Citizens and burgers
 		[REPLACED_BY:CITIZEN_3]
 		[RESPONSIBILITY:TRADE]	
 		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+		[QUEST_GIVER]
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+		[DUTY_BOUND]
+		[REQUIRED_BEDROOM:1]
+		[REQUIRED_DINING:1]
+		[REQUIRED_BOXES:1]
+		[COLOR:4:0:1]
+
+	[POSITION:CITIZEN_1] 						
+		[NAME:Free citizen:Citizens]
+		[DESCRIPTION:With the settlement taking form, they refine their quarters, allowing themselves a measure of comfort befitting those who endure the brunt of early hardship. A small elevation, yet a sign that the city begins to breathe.]
+		[SITE]
+		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
+		[NUMBER:6]
+		[APPOINTED_BY:CITIZEN_0] 			
+		[SUCCESSION:BY_POSITION:CITIZEN_0] 
+		[SUCCESSION:BY_HEIR] 					
+		[REQUIRES_POPULATION:20] 
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[QUEST_GIVER]
 		[DO_NOT_CULL]
@@ -2516,8 +2493,8 @@ Settlers
 		// Because SETTLER_TRADER2 was visible on embark before unpausing, I think that was ugly. So, 
 		// I created this position to utilize the already neccesary position to give the player also a bit of agency.
 		[LAND_NAME:(select broker)] 
-		[NAME:Settler (and broker):Settlers] 
-		[DESCRIPTION:This is your only opportunity to select a broker until a population of 50 is reached. Once you unpause, one of the settlers will be automatically selected to act as broker.]	
+		[NAME:Settler:Settlers] 
+		[DESCRIPTION:This is your only opportunity to select a broker until a population of 50 is reached. If you don't, once you unpause, one of the settlers will be automatically selected to act as broker.]	
 		[SITE]
 		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:1] 								// more than neccesary
