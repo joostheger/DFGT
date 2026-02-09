@@ -1726,12 +1726,14 @@ Citizens and burgers
 		[APPOINTED_BY:BURGER_6] 						// burger promotion
 		[APPOINTED_BY:BURGER_7] 						// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_7_SWITCH]
+		
 		// This is the last possible switch for citizen to burger. I make it work by appointing it from LH5,
 		// And make this one appoint Burger7. It doenst work very well for non-fortress sites, because the LH5 can 
-		// always make burgers pop-up, but the change for a LH5 in non-fortress sites is pretty small, so we'll 
+		// always make burgers pop-up, but the chance for a LH5 in non-fortress sites is pretty small, so we'll 
 		// let that happen.
 		[APPOINTED_BY:LH5]								
 		[SUCCESSION:BY_POSITION:CITIZEN_7]
+		
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:200] 	
 		[RESPONSIBILITY:LAW_MAKING]
@@ -1827,7 +1829,6 @@ Citizens and burgers
 		[APPOINTED_BY:BURGER_5] 
 		[SUCCESSION:BY_POSITION:BURGER_5]
 		[APPOINTED_BY:FUNC_CITIZEN_6_SWITCH] 				// for the first regular succession by population
-		not APPOINTED_BY: FUNC_CIT_TO_BURGER_6_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_6] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_6_SWITCH]
 		[SUCCESSION:BY_HEIR] 				
@@ -1922,7 +1923,6 @@ Citizens and burgers
 		[APPOINTED_BY:BURGER_4]  
 		[SUCCESSION:BY_POSITION:BURGER_4]
 		[APPOINTED_BY:FUNC_CITIZEN_5_SWITCH] 				// for the first regular succession by population
-		not APPOINTED_BY: FUNC_CIT_TO_BURGER_5_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_5] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_5_SWITCH]
 		[SUCCESSION:BY_HEIR] 					
@@ -2016,7 +2016,6 @@ Citizens and burgers
 		[APPOINTED_BY:BURGER_3]  
 		[SUCCESSION:BY_POSITION:BURGER_3]
 		[APPOINTED_BY:FUNC_CITIZEN_4_SWITCH] 				// for the first regular succession by population
-		not APPOINTED_BY: FUNC_CIT_TO_BURGER_4_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_4] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_4_SWITCH]
 		[SUCCESSION:BY_HEIR] 					
@@ -2107,7 +2106,6 @@ Citizens and burgers
 		[APPOINTED_BY:BURGER_2]  
 		[SUCCESSION:BY_POSITION:BURGER_2]
 		[APPOINTED_BY:FUNC_CITIZEN_3_SWITCH] 				// for the first regular succession by population
-		not APPOINTED_BY: FUNC_CIT_TO_BURGER_3_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_3] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_3_SWITCH]
 		[SUCCESSION:BY_HEIR] 					
@@ -2196,9 +2194,9 @@ Citizens and burgers
 		[PRECEDENCE:65]
 		[NUMBER:7]
 		[APPOINTED_BY:FUNC_CITIZEN_2_SWITCH] 				// for the first regular succession by population
-		not APPOINTED_BY: FUNC_CIT_TO_BURGER_2_SWITCH		//Not, otherwise it becomes used by non-fortress LH
 		[APPOINTED_BY:BURGER_2] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_2_SWITCH]
+		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_2_SWITCH_REST]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:50]	
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -2246,6 +2244,19 @@ Citizens and burgers
 		[REQUIRED_BOXES:1]
 		[COLOR:4:0:1]
 
+	[POSITION:FUNC_CIT_TO_BURGER_2_SWITCH_REST] 
+		// In world-gen, this position gets appointed.
+		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
+		[LAND_NAME:(promotion position)]						
+		[NAME:Burgher:Burghers] 		
+		[SITE]
+		[PRECEDENCE:NONE]					
+		[NUMBER:6]
+		[APPOINTED_BY:FUNC_CIT_TO_BURGER_2_SWITCH] 
+		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_2_SWITCH] 
+		[REQUIRES_POPULATION:50] 
+		[REPLACED_BY:FUNC_CITIZEN_3_SWITCH]
+
 	[POSITION:FUNC_CIT_TO_BURGER_2_SWITCH] 
 		// In world-gen, this position gets appointed.
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
@@ -2253,8 +2264,8 @@ Citizens and burgers
 		[NAME:Burgher:Burghers] 		
 		[SITE]
 		[PRECEDENCE:NONE]					
-		[NUMBER:7]
-		[ELECTED]
+		[NUMBER:1]
+		[ELECTED]					// this postion stays visible because of APPOINTED_BY:LH1, but should at least not realy be appointabe by the player.
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_2_SWITCH] 
 		[REQUIRES_POPULATION:50] 
