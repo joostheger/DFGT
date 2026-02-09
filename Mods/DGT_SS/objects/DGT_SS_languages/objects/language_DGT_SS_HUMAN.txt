@@ -1,0 +1,17 @@
+language_HUMAN
+
+instructions:
+Use 4-6 characters, up to 10
+Balance consonants and vowels
+Mix smooth (like th, m, n) and hard (like k, st) sounds
+Include qu- patterns
+Varied endings
+make it sound pleasant, familiar and versatile
+their should be no relation to the original word, maybe only a similar 'feel' 
+if you detect any relations between original words, you may apply similar relations in the translations.
+
+[OBJECT:LANGUAGE]
+
+[SELECT_TRANSLATION:HUMAN]
+	[T_WORD:REPUBLIC:ergor]	
+	

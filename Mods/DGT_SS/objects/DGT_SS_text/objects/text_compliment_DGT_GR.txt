@@ -1,0 +1,57 @@
+text_compliment_DGT_GR
+
+TEST all of the below. how does this work in regular greetings? which one is used when? also.
+TODO: finisch
+TODO: make these texts more varied based on relationship, status, etc.
+
+[OBJECT:TEXT_SET]
+
+[TEXT_SET:GREET]
+
+Glad to have you around, friend!
+
+[TEXT_SET:GREET_BABY]
+
+Well done, little one!
+
+[TEXT_SET:GREET_REPLY]
+
+Thanks!
+
+[TEXT_SET:GREET_REPLY_AFTER_HERO]
+
+Thanks! It means a lot coming from you.
+
+[TEXT_SET:GREET_REPLY_DIFF_LANGUAGE]
+
+Ehm.. Thanks?
+
+[TEXT_SET:GREET_REPLY_UNUSUAL_FIRST]
+
+Thank you, ehm .. [AUDIENCE:FIRST_NAME] is it?
+
+[TEXT_SET:GREET_WORSHIP]
+
+[TEXT_SET:GENERAL]
+
+[TEXT_SET:FAMILY_RELATIONSHIP_SPEC]
+
+[TEXT_SET:FAMILY_RELATIONSHIP_NO_SPEC]
+
+[TEXT_SET:FAMILY_RELATIONSHIP_ADDITIONAL]
+
+[TEXT_SET:POSITIVE]
+
+
+[SPEAKER:TRANS_NAME].
+[AUDIENCE:RACE]
+ [AUDIENCE:FIRST_NAME]
+
+TODO 
+https://www.dwarffortresswiki.org/index.php/Speech_file
+
+
+
+
+
+

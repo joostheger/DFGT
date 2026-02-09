@@ -1,0 +1,16 @@
+language_ELF
+
+instructions:
+Use 4-6 characters, up to 8
+Alternate consonant-vowel smoothly
+End predominantly in vowels (-a, -e, -i)
+Use soft consonants (th, f, l, r, m)
+Include á, í diacritics sparingly
+make it sound melodic and flowing
+their should be no relation to the original word, maybe only a similar 'feel' 
+if you detect any relations between original words, you may apply similar relations in the translations.
+
+[OBJECT:LANGUAGE]
+
+[SELECT_TRANSLATION:ELF]
+	[T_WORD:REPUBLIC:famashta]
