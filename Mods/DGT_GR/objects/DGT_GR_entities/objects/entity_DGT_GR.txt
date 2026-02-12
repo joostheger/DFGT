@@ -24,6 +24,9 @@ TODO: remove.
 	[LIKES_SITE:CITY]
 	[LIKES_SITE:PLAYER_FORTRESS]
 
+TODO: make: Temperate grassland
+Woodland
+Savanna
 	[START_BIOME:ANY_GRASSLAND]
 	[START_BIOME:ANY_SAVANNA]
 	[START_BIOME:ANY_SHRUBLAND]
@@ -48,7 +51,7 @@ TODO: remove.
 
 	[MAX_STARTING_CIV_NUMBER:10] 		// This is a pretty unique civilization.
 	[MAX_POP_NUMBER:10000]
-	[MAX_SITE_POP_NUMBER:120]		
+	[MAX_SITE_POP_NUMBER:240] 			// increased to stimulate town growth		
 
 	[PERMITTED_JOB:MINER]
 	[PERMITTED_JOB:CARPENTER]
@@ -356,7 +359,7 @@ TODO: remove.
 	[VARIABLE_VALUE:DECORUM:10:20]				// somewhat higher
 	[VARIABLE_VALUE:TRADITION:-5:5]	 		// as dwarves
 	[VARIABLE_VALUE:ARTWORK:15:25]				// somewhat lower
-	[VARIABLE_VALUE:COOPERATION:30:40]			// much higher
+	[VARIABLE_VALUE:COOPERATION:35:45]			// much higher
 	[VARIABLE_VALUE:INDEPENDENCE:-10:0]			// somewhat lower
 	[VARIABLE_VALUE:STOICISM:0:10]	 		// as dwarves
 	[VARIABLE_VALUE:KNOWLEDGE:10:20]	 	// as dwarves
@@ -365,17 +368,17 @@ TODO: remove.
 	[VARIABLE_VALUE:TRANQUILITY:-5:5]	 	// as dwarves
 	[VARIABLE_VALUE:HARMONY:-5:5]	 		// as dwarves
 	[VARIABLE_VALUE:MERRIMENT:0:10]	 			// somewhat lower
-	[VARIABLE_VALUE:CRAFTSMANSHIP:15:25]		// much lower
+	[VARIABLE_VALUE:CRAFTSMANSHIP:25:35]		// somewhat lower
 	[VARIABLE_VALUE:MARTIAL_PROWESS:-5:5]		// lower
 	[VARIABLE_VALUE:SKILL:15:25]	 			// somewhat lower
-	[VARIABLE_VALUE:HARD_WORK:25:35]	 	// as dwarves
+	[VARIABLE_VALUE:HARD_WORK:35:45]	 	// higher
 	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	// as dwarves
-	[VARIABLE_VALUE:COMPETITION:10:20]			// higher
+	[VARIABLE_VALUE:COMPETITION:15:25]			// higher
 	[VARIABLE_VALUE:PERSEVERANCE:-5:5]			// somewhat lower
 	[VARIABLE_VALUE:LEISURE_TIME:15:15]	 	// as dwarves
 	[VARIABLE_VALUE:COMMERCE:50:50]				// very high
 	[VARIABLE_VALUE:ROMANCE:0:0]	 		// as dwarves
-	[VARIABLE_VALUE:NATURE:-15:-15]	 		// as dwarves
+	[VARIABLE_VALUE:NATURE:-25:-15]	 		// as dwarves
 	[VARIABLE_VALUE:PEACE:15:25]				// higher
 
 	[WILL_ACCEPT_TRIBUTE]
