@@ -1662,8 +1662,9 @@ Citizens and burgers
 		[NUMBER:7]
 		[APPOINTED_BY:BURGER_6] 						// burger promotion
 		[APPOINTED_BY:BURGER_7] 						// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_7_SWITCH]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_7_SWITCH_B]
+		[APPOINTED_BY:FUNC_CIT_TO_BURGER_7_SWITCH_B] 
+		[SUCCESSION:BY_POSITION:CITIZEN_6]
 		
 		// This is the last possible switch for citizen to burger. I make it work by appointing it from LH5,
 		// And make this one appoint Burger7. It doenst work very well for non-fortress sites, because the LH5 can 
@@ -1685,7 +1686,7 @@ Citizens and burgers
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
-		[REQUIRES_MARKET]	
+		[REQUIRES_MARKET]
 		[DEMAND_MAX:2]
 		[REQUIRED_BEDROOM:2500]
 		[REQUIRED_DINING:2500]
@@ -1709,7 +1710,7 @@ Citizens and burgers
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:200] 	
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[MENIAL_WORK_EXEMPTION]
@@ -1737,9 +1738,9 @@ Citizens and burgers
 		[NAME:Burgher:Burghers] 		
 		[SITE]
 		[PRECEDENCE:NONE]					
-		[NUMBER:6]
-		[APPOINTED_BY:FUNC_CIT_TO_BURGER_7_SWITCH] 
-		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_7_SWITCH] 
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_6] 
+		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_7_SWITCH] 
 		[REQUIRES_POPULATION:200] 
 
 	[POSITION:FUNC_CIT_TO_BURGER_7_SWITCH] 
@@ -1778,10 +1779,10 @@ Citizens and burgers
 		[NUMBER:7]
 		[APPOINTED_BY:BURGER_5] 
 		[SUCCESSION:BY_POSITION:BURGER_5]
-		[APPOINTED_BY:FUNC_CITIZEN_6_SWITCH] 				// for the first regular succession by population
+		[APPOINTED_BY:FUNC_CIT_TO_BURGER_6_SWITCH_B] 				// for the first regular succession by population
 		[APPOINTED_BY:BURGER_6] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_6_SWITCH]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_6_SWITCH_B]
+		[SUCCESSION:BY_POSITION:CITIZEN_5]
 		[SUCCESSION:BY_HEIR] 				
 		[REQUIRES_POPULATION:170] 
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -1843,9 +1844,9 @@ Citizens and burgers
 		[NAME:Burgher:Burghers] 		
 		[SITE]
 		[PRECEDENCE:NONE]					
-		[NUMBER:6]
-		[APPOINTED_BY:FUNC_CIT_TO_BURGER_6_SWITCH] 
-		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_6_SWITCH] 
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_5] 
+		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_6_SWITCH] 
 		[REQUIRES_POPULATION:170] 
 
 	[POSITION:FUNC_CIT_TO_BURGER_6_SWITCH] 	
@@ -1885,10 +1886,10 @@ Citizens and burgers
 		[PRECEDENCE:62]
 		[APPOINTED_BY:BURGER_4]  
 		[SUCCESSION:BY_POSITION:BURGER_4]
-		[APPOINTED_BY:FUNC_CITIZEN_5_SWITCH] 				// for the first regular succession by population
+		[APPOINTED_BY:FUNC_CIT_TO_BURGER_5_SWITCH_B] 				// for the first regular succession by population
 		[APPOINTED_BY:BURGER_5] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_5_SWITCH]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_5_SWITCH_B]
+		[SUCCESSION:BY_POSITION:CITIZEN_4]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:140]
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -1949,9 +1950,9 @@ Citizens and burgers
 		[NAME:Burgher:Burghers] 		
 		[SITE]
 		[PRECEDENCE:NONE]					
-		[NUMBER:6]
-		[APPOINTED_BY:FUNC_CIT_TO_BURGER_5_SWITCH] 
-		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_5_SWITCH] 
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_4] 
+		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_5_SWITCH] 
 		[REQUIRES_POPULATION:140] 
 		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
 
@@ -1992,10 +1993,10 @@ Citizens and burgers
 		[PRECEDENCE:63]
 		[APPOINTED_BY:BURGER_3]  
 		[SUCCESSION:BY_POSITION:BURGER_3]
-		[APPOINTED_BY:FUNC_CITIZEN_4_SWITCH] 				// for the first regular succession by population
+		[APPOINTED_BY:FUNC_CIT_TO_BURGER_4_SWITCH_B] 				// for the first regular succession by population
 		[APPOINTED_BY:BURGER_4] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_4_SWITCH]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_4_SWITCH_B]
+		[SUCCESSION:BY_POSITION:CITIZEN_3]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:110] 
 		[RESPONSIBILITY:MEET_WORKERS]
@@ -2054,8 +2055,8 @@ Citizens and burgers
 		[NAME:Burgher:Burghers] 		
 		[SITE]
 		[PRECEDENCE:NONE]					
-		[NUMBER:6]
-		[APPOINTED_BY:FUNC_CIT_TO_BURGER_4_SWITCH] 
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_3] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_4_SWITCH] 
 		[REQUIRES_POPULATION:110] 
 		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
@@ -2099,7 +2100,7 @@ Citizens and burgers
 		[SUCCESSION:BY_POSITION:BURGER_2]
 		[APPOINTED_BY:FUNC_CITIZEN_3_SWITCH] 				// for the first regular succession by population
 		[APPOINTED_BY:BURGER_3] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_3_SWITCH]
+		[SUCCESSION:BY_POSITION:CITIZEN_2]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_3_SWITCH_B]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:80] 
@@ -2159,9 +2160,9 @@ Citizens and burgers
 		[NAME:Burgher:Burghers] 		
 		[SITE]
 		[PRECEDENCE:NONE]					
-		[NUMBER:6]
-		[APPOINTED_BY:FUNC_CIT_TO_BURGER_3_SWITCH] 
-		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_3_SWITCH] 
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_2] 
+		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_3_SWITCH] 
 		[REQUIRES_POPULATION:80] 
 		[REPLACED_BY:FUNC_CITIZEN_6_SWITCH]
 
@@ -2200,9 +2201,9 @@ Citizens and burgers
 		[SITE]
 		[PRECEDENCE:65]
 		[NUMBER:7]
-		[APPOINTED_BY:FUNC_CITIZEN_2_SWITCH] 				// for the first regular succession by population
+		[APPOINTED_BY:FUNC_CIT_TO_BURGER_2_SWITCH_B] 		// for the cit to burg promotion
 		[APPOINTED_BY:BURGER_2] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
-		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_2_SWITCH]
+		[SUCCESSION:BY_POSITION:CITIZEN_1]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_2_SWITCH_B]
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:50]	
@@ -2258,9 +2259,9 @@ Citizens and burgers
 		[NAME:Burgher:Burghers] 		
 		[SITE]
 		[PRECEDENCE:NONE]					
-		[NUMBER:6]
-		[APPOINTED_BY:FUNC_CIT_TO_BURGER_2_SWITCH] 
-		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_2_SWITCH] 
+		[NUMBER:1]
+		[APPOINTED_BY:CITIZEN_1] //since this citizen is removed by promotion, this appointment isnt even ever visible for players in the noble screen.
+		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_2_SWITCH] 
 		[REQUIRES_POPULATION:50] 
 		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
 
@@ -2482,7 +2483,7 @@ Settlers
 		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
 		[SITE]
 		[PRECEDENCE:NONE]
-		[SQUAD:1:member:members]	// prevent assignment of settlers or citizens.
+			SQUAD:1:member:members //  assignment of settlers or citizens should be able, incase of 7 + 7
 		[NUMBER:1] 				
 
 		// Let these be appointed by the real citizens, to prevent usage by world-gen mode				
