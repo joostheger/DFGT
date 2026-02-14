@@ -818,7 +818,7 @@ Civ military
 
 Free merchants
 
-	[POSITION:Free_MERCHANT1_SITE]
+	[POSITION:FREE_MERCHANT1_SITE]
 		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
@@ -832,7 +832,7 @@ Free merchants
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
-	[POSITION:Free_MERCHANT2_SITE]
+	[POSITION:FREE_MERCHANT2_SITE]
 		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
@@ -845,70 +845,6 @@ Free merchants
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
-
-	[POSITION:Free_MERCHANT1]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:2]
-		[REQUIRES_POPULATION:200] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-
-	[POSITION:Free_MERCHANT2]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:2]
-		[REQUIRES_POPULATION:400] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-
-	[POSITION:Free_MERCHANT3]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:4]
-		[REQUIRES_POPULATION:800] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-
-	[POSITION:Free_MERCHANT4]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:8]
-		[REQUIRES_POPULATION:1600] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				T must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-
-	[POSITION:Free_MERCHANT5]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:16]
-		[REQUIRES_POPULATION:3200] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				 // must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-
-	[POSITION:Free_MERCHANT6]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:32]
-		[REQUIRES_POPULATION:6400] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]					// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
 
 Clerks
 	// Clerks need to be defined above landholders and citizends, so the landholder will be named as broker, but the clerk actually doing the trading.
