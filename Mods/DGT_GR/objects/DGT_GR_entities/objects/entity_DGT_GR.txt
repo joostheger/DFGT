@@ -363,13 +363,13 @@ Savanna
 	[VARIABLE_VALUE:INDEPENDENCE:-10:0]			// somewhat lower
 	[VARIABLE_VALUE:STOICISM:0:10]	 		// as dwarves
 	[VARIABLE_VALUE:KNOWLEDGE:10:20]	 	// as dwarves
-	[VARIABLE_VALUE:INTROSPECTION:-5:5]	 	// as dwarves
+	[VARIABLE_VALUE:INTROSPECTION:-15:5]	 	// as dwarves
 	[VARIABLE_VALUE:SELF_CONTROL:-5:5]	 	// as dwarves
-	[VARIABLE_VALUE:TRANQUILITY:-5:5]	 	// as dwarves
+	[VARIABLE_VALUE:TRANQUILITY:-15:5]	 	// as dwarves
 	[VARIABLE_VALUE:HARMONY:-5:5]	 		// as dwarves
 	[VARIABLE_VALUE:MERRIMENT:0:10]	 			// somewhat lower
 	[VARIABLE_VALUE:CRAFTSMANSHIP:25:35]		// somewhat lower
-	[VARIABLE_VALUE:MARTIAL_PROWESS:-5:5]		// lower
+	[VARIABLE_VALUE:MARTIAL_PROWESS:-15:5]		// lower
 	[VARIABLE_VALUE:SKILL:15:25]	 			// somewhat lower
 	[VARIABLE_VALUE:HARD_WORK:35:45]	 	// higher
 	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	// as dwarves
@@ -3008,7 +3008,7 @@ Law enforcement
 	[POSITION:INQUISITOR] 
 		[NAME:Inquisitor:Inquisitors]
 		[DESCRIPTION:The inquisitor is responsible for investigating and rooting out heresy and dissent within the settlement. Inquisitors are only appointable for conquered settlements.]
-		[SITE]
+		[CONQUERED_SITE]
 		[APPOINTED_BY:FORCED_ADMINISTRATOR]
 		[NUMBER:1]
 		[SQUAD:20:constable:constables]
