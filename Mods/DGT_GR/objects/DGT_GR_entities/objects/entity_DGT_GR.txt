@@ -1848,6 +1848,7 @@ Citizens and burgers
 		[APPOINTED_BY:CITIZEN_5] 
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_6_SWITCH] 
 		[REQUIRES_POPULATION:170] 
+		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_6_SWITCH] 	
 		// In world-gen, this position gets appointed.
@@ -1954,7 +1955,7 @@ Citizens and burgers
 		[APPOINTED_BY:CITIZEN_4] 
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_5_SWITCH] 
 		[REQUIRES_POPULATION:140] 
-		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_6_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_5_SWITCH] 	
 		// In world-gen, this position gets appointed.
@@ -2059,7 +2060,7 @@ Citizens and burgers
 		[APPOINTED_BY:CITIZEN_3] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_4_SWITCH] 
 		[REQUIRES_POPULATION:110] 
-		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_4_SWITCH] 
 		// In world-gen, this position gets appointed.
@@ -2073,7 +2074,7 @@ Citizens and burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_4_SWITCH] 
 		[REQUIRES_POPULATION:110] 
-		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
 
 	[POSITION:FUNC_CITIZEN_4_SWITCH] 		
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (6)]
@@ -2098,7 +2099,7 @@ Citizens and burgers
 		[PRECEDENCE:64]
 		[APPOINTED_BY:BURGER_2]  
 		[SUCCESSION:BY_POSITION:BURGER_2]
-		[APPOINTED_BY:FUNC_CITIZEN_3_SWITCH] 				// for the first regular succession by population
+		[APPOINTED_BY:FUNC_CIT_TO_BURGER_3_SWITCH_B] 				// for the first regular succession by population
 		[APPOINTED_BY:BURGER_3] 				// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:CITIZEN_2]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_3_SWITCH_B]
@@ -2164,7 +2165,7 @@ Citizens and burgers
 		[APPOINTED_BY:CITIZEN_2] 
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_3_SWITCH] 
 		[REQUIRES_POPULATION:80] 
-		[REPLACED_BY:FUNC_CITIZEN_6_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_4_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_3_SWITCH] 	
 		// In world-gen, this position gets appointed.
@@ -2178,7 +2179,7 @@ Citizens and burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_3_SWITCH] 
 		[REQUIRES_POPULATION:80] 
-		[REPLACED_BY:FUNC_CITIZEN_6_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_4_SWITCH]
 
 	[POSITION:FUNC_CITIZEN_3_SWITCH] 	
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (4)]
@@ -2263,7 +2264,7 @@ Citizens and burgers
 		[APPOINTED_BY:CITIZEN_1] //since this citizen is removed by promotion, this appointment isnt even ever visible for players in the noble screen.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_2_SWITCH] 
 		[REQUIRES_POPULATION:50] 
-		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_3_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_2_SWITCH] 
 		// In world-gen, this position gets appointed.
@@ -2277,7 +2278,7 @@ Citizens and burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_2_SWITCH] 
 		[REQUIRES_POPULATION:50] 
-		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_3_SWITCH]
 
 	[POSITION:FUNC_CITIZEN_2_SWITCH] 
 		// This switch is neccesary, because it should be the only one that appoints BURGER_2. 
@@ -2287,7 +2288,7 @@ Citizens and burgers
 		[SITE]
 		[PRECEDENCE:NONE]					
 		[NUMBER:1]
-		[APPOINTED_BY:CITIZEN_1] 
+		[APPOINTED_BY:CITIZEN_1_TRADER] 
 		[REQUIRES_POPULATION:50] 
 		[SUCCESSION:BY_POSITION:CITIZEN_1_TRADER] 
 
