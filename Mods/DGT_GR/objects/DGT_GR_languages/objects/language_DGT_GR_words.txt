@@ -7,6 +7,21 @@ language_DGT_GR_words
 		[REAR_COMPOUND_NOUN_SING]
 		[THE_NOUN_SING]
 
+[WORD:MERCHANT REPUBLIC]
+	[NOUN:merchant republic:merchant republics]
+		[REAR_COMPOUND_NOUN_SING]
+		[THE_NOUN_SING]
+
+[WORD:TRADE REPUBLIC]
+	[NOUN:trade republic:trade republics]
+		[REAR_COMPOUND_NOUN_SING]
+		[THE_NOUN_SING]
+
+[WORD:GUILD REPUBLIC]
+	[NOUN:guild republic:guild republics]
+		[REAR_COMPOUND_NOUN_SING]
+		[THE_NOUN_SING]
+
 [WORD:FAIR FESTIVAL]
 	[NOUN:fair:fairs]
 		[FRONT_COMPOUND_NOUN_SING]

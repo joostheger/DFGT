@@ -13,7 +13,10 @@ if you detect any relations between original words, you may apply similar relati
 [OBJECT:LANGUAGE]
 
 [SELECT_TRANSLATION:HUMAN]
-	[T_WORD:REPUBLIC:ergor]	
+	[T_WORD:REPUBLIC:erghor]	
+	[T_WORD:GUILD REPUBLIC:hibghor]	
+	[T_WORD:MERCHANT REPUBLIC:hatghor]	
+	[T_WORD:TRADE REPUBLIC:batoghor]	
 	[T_WORD:FAIR FESTIVAL:quilomar]
 	[T_WORD:CARNIVAL:banthek]
 	[T_WORD:STREET MARKET:nostram]

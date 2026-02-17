@@ -14,6 +14,9 @@ if you detect any relations between original words, you may apply similar relati
 
 [SELECT_TRANSLATION:GOBLIN]
 	[T_WORD:REPUBLIC:akslup]
+	[T_WORD:GUILD REPUBLIC:takslup]
+	[T_WORD:MERCHANT REPUBLIC:mukslup]
+	[T_WORD:TRADE REPUBLIC:otslup]
 	[T_WORD:FAIR FESTIVAL:gnaxub]
 	[T_WORD:CARNIVAL:stroxkög]
 	[T_WORD:STREET MARKET:zugnak]

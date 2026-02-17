@@ -14,6 +14,9 @@ if you detect any relations between original words, you may apply similar relati
 
 [SELECT_TRANSLATION:DWARF]
 	[T_WORD:REPUBLIC:kotorba]
+	[T_WORD:MERCHANT REPUBLIC:asmorba]
+	[T_WORD:TRADE REPUBLIC:nishtorba]
+	[T_WORD:GUILD REPUBLIC:domastorba]
 	[T_WORD:FAIR FESTIVAL:thokril]
 	[T_WORD:CARNIVAL:bengrûk]
 	[T_WORD:STREET MARKET:dalmosh]

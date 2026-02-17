@@ -14,6 +14,9 @@ if you detect any relations between original words, you may apply similar relati
 
 [SELECT_TRANSLATION:ELF]
 	[T_WORD:REPUBLIC:famashta]
+	[T_WORD:MERCHANT REPUBLIC:fecimishta]
+	[T_WORD:GUILD REPUBLIC:refishta]
+	[T_WORD:TRADE REPUBLIC:lathashta]
 	[T_WORD:FAIR FESTIVAL:limari]
 	[T_WORD:CARNIVAL:velathae]
 	[T_WORD:STREET MARKET:famiso]
