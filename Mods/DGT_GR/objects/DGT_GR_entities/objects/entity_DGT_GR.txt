@@ -818,7 +818,7 @@ Civ military
 
 Free merchants
 
-	[POSITION:Free_MERCHANT1_SITE]
+	[POSITION:FREE_MERCHANT1_SITE]
 		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
@@ -832,7 +832,7 @@ Free merchants
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
-	[POSITION:Free_MERCHANT2_SITE]
+	[POSITION:FREE_MERCHANT2_SITE]
 		[NAME:Free merchant:Free merchants]
 		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
 		[SITE]
@@ -845,70 +845,6 @@ Free merchants
 		[COLOR:2:0:1] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
-
-	[POSITION:Free_MERCHANT1]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:2]
-		[REQUIRES_POPULATION:200] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-
-	[POSITION:Free_MERCHANT2]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:2]
-		[REQUIRES_POPULATION:400] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-		[DO_NOT_CULL]
-		[EXPORTED_IN_LEGENDS]
-
-	[POSITION:Free_MERCHANT3]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:4]
-		[REQUIRES_POPULATION:800] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-
-	[POSITION:Free_MERCHANT4]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:8]
-		[REQUIRES_POPULATION:1600] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				T must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-
-	[POSITION:Free_MERCHANT5]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:16]
-		[REQUIRES_POPULATION:3200] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]				 // must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
-
-	[POSITION:Free_MERCHANT6]
-		[NAME:Free merchant:Free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
-		[NUMBER:32]
-		[REQUIRES_POPULATION:6400] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	// In case the landholder leaves, this allows diplomats still to arrive.
-		[SQUAD:1:member:members] 		// prevent assumption by succession-positions
-		[PRECEDENCE:100]					// must be lower than LH1, te prevent unneccesary competition for receive diplomats
-		[COLOR:2:0:1] 
 
 Clerks
 	// Clerks need to be defined above landholders and citizends, so the landholder will be named as broker, but the clerk actually doing the trading.
@@ -1728,7 +1664,7 @@ Citizens and burgers
 		[APPOINTED_BY:BURGER_7] 						// for the rest of the regular succession and in case this position becomes empty, the player has the opportunity to appoint someone again.
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_7_SWITCH]
 		[SUCCESSION:BY_POSITION:FUNC_CIT_TO_BURGER_7_SWITCH_B]
-		
+				
 		// This is the last possible switch for citizen to burger. I make it work by appointing it from LH5,
 		// And make this one appoint Burger7. It doenst work very well for non-fortress sites, because the LH5 can 
 		// always make burgers pop-up, but the chance for a LH5 in non-fortress sites is pretty small, so we'll 
@@ -1749,7 +1685,7 @@ Citizens and burgers
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
-		[REQUIRES_MARKET]	
+		[REQUIRES_MARKET]
 		[DEMAND_MAX:2]
 		[REQUIRED_BEDROOM:2500]
 		[REQUIRED_DINING:2500]
@@ -1772,7 +1708,7 @@ Citizens and burgers
 		[SUCCESSION:BY_HEIR] 					
 		[REQUIRES_POPULATION:200] 	
 		[RESPONSIBILITY:MEET_WORKERS]
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]	
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[MENIAL_WORK_EXEMPTION]
@@ -1909,6 +1845,7 @@ Citizens and burgers
 		[APPOINTED_BY:FUNC_CIT_TO_BURGER_6_SWITCH] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_6_SWITCH] 
 		[REQUIRES_POPULATION:170] 
+		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_6_SWITCH] 	
 		// In world-gen, this position gets appointed.
@@ -2014,7 +1951,7 @@ Citizens and burgers
 		[APPOINTED_BY:FUNC_CIT_TO_BURGER_5_SWITCH] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_5_SWITCH] 
 		[REQUIRES_POPULATION:140] 
-		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_6_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_5_SWITCH] 	
 		// In world-gen, this position gets appointed.
@@ -2118,7 +2055,7 @@ Citizens and burgers
 		[APPOINTED_BY:FUNC_CIT_TO_BURGER_4_SWITCH] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_4_SWITCH] 
 		[REQUIRES_POPULATION:110] 
-		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_4_SWITCH] 
 		// In world-gen, this position gets appointed.
@@ -2132,7 +2069,7 @@ Citizens and burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_4_SWITCH] 
 		[REQUIRES_POPULATION:110] 
-		[REPLACED_BY:FUNC_CITIZEN_7_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
 
 	[POSITION:FUNC_CITIZEN_4_SWITCH] 		
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (6)]
@@ -2222,7 +2159,7 @@ Citizens and burgers
 		[APPOINTED_BY:FUNC_CIT_TO_BURGER_3_SWITCH] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_3_SWITCH] 
 		[REQUIRES_POPULATION:80] 
-		[REPLACED_BY:FUNC_CITIZEN_6_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_4_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_3_SWITCH] 	
 		// In world-gen, this position gets appointed.
@@ -2236,7 +2173,7 @@ Citizens and burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_3_SWITCH] 
 		[REQUIRES_POPULATION:80] 
-		[REPLACED_BY:FUNC_CITIZEN_6_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_4_SWITCH]
 
 	[POSITION:FUNC_CITIZEN_3_SWITCH] 	
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (4)]
@@ -2320,7 +2257,7 @@ Citizens and burgers
 		[APPOINTED_BY:FUNC_CIT_TO_BURGER_2_SWITCH] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_2_SWITCH] 
 		[REQUIRES_POPULATION:50] 
-		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_3_SWITCH]
 
 	[POSITION:FUNC_CIT_TO_BURGER_2_SWITCH] 
 		// In world-gen, this position gets appointed.
@@ -2334,7 +2271,7 @@ Citizens and burgers
 		[APPOINTED_BY:LH1] 
 		[SUCCESSION:BY_POSITION:FUNC_CITIZEN_2_SWITCH] 
 		[REQUIRES_POPULATION:50] 
-		[REPLACED_BY:FUNC_CITIZEN_5_SWITCH]
+		[REPLACED_BY:FUNC_CITIZEN_3_SWITCH]
 
 	[POSITION:FUNC_CITIZEN_2_SWITCH] 
 		// This switch is neccesary, because it should be the only one that appoints BURGER_2. 
@@ -2537,11 +2474,11 @@ Settlers
 		[RESPONSIBILITY:FOOD_SUPPLY]
 
 	[POSITION:FUNC_PROMOTION_TRIGGER] 
+		//  assignment of settlers or citizens should be able, incase of 7 + 7
 		[LAND_NAME:(trigger promotion)] 
 		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
 		[SITE]
 		[PRECEDENCE:NONE]
-		[SQUAD:1:member:members]	// prevent assignment of settlers or citizens.
 		[NUMBER:1] 				
 
 		// Let these be appointed by the real citizens, to prevent usage by world-gen mode				
