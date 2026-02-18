@@ -3,7 +3,7 @@ creature_DGT_GR
 [SELECT_CREATURE:DWARF]
 
 TODO:
-	[CLASS:ANARCHIST_MALE]
+	[CASTE:ANARCHIST_MALE]
 		[MALE]
 		[CLASS_NAME:anarchist male aaa:an:an]
 		[DESCRIPTION:A dwarf who has been transformed by the anarchist sphere of chaos. They are often seen as unpredictable and rebellious, with a strong desire for freedom and individuality. They may have a wild appearance, with unkempt hair and clothing, and a tendency to act on impulse.]
