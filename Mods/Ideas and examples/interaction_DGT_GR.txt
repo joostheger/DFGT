@@ -135,184 +135,42 @@ interaction_DGT_GR
 		[CE:COUNTER_TRIGGER:CAVE_ADAPT:100800:NONE:REQUIRED] //Having been inside for longer than a three months
 
 
-secrets:
-CE_MENT_ATT_CHANGE
-- bookkeeping
-	- increate of analytic ability
-	 increases PERFECTIONIST
-- political beast:
-	- increase of Linguistic Ability
-	- increate of Social Awareness
-- 
-CE_CHANGE_PERSONALITY
-- equal distribution of wealth: 
-	- Lowers ENVY_PROPENSITY
-	- increases GRATITUDE
-- temper
-	- increases IMMODERATION
-- orderlyness
-	- decreases WASTEFULNESS
-	- increases POLITENESS
-	- decreases IMMODESTY
-	- increases ORDERLINESS
-- the benefits of wealth / decadency:
-	- increases ENVY_PROPENSITY
-	- increases GREED
-	- increases VANITY
-	- insreases PRIDE
-	- decreases ALTRUISM
-- how to coop with political chaos:
-	- lowers ANXIETY_PROPENSITY and STRESS_VULNERABILITY
-	- increases ASSERTIVENESS
-- harmony
-	- lowers DISCORD
-	- increases FRIENDLINESS
-- being a good citizen:
-	- increases DUTIFULNESS
-- cooperation
-	- lowers DISDAIN_ADVICE
-	- oncreases TRUST
-	- increase ALTRUISM
-	- increase GREGARIOUSNESS
-	- can do interaction: give compliments
-- how to make it in live:
-	- increases CONFIDENCE
-	- increases AMBITION
-- loves other races
-	- increases CURIOSITY, 
-	- increases TOLERANT
 
-goals:
-- ATTAIN_RANK_IN_SOCIETY
-- MAINTAIN_ENTITY_STATUS
-- BRING_PEACE_TO_THE_WORLD
-- RULE_THE_WORLD
-- MAKE_A_GREAT_DISCOVERY
-- BATHE_WORLD_IN_CHAOS
-- IMMORTALITY 
+TODO add more interactions
 
 
-interactions the anarchist can do:
-- sow dissent, adds MISCHIEVOUS (or MISCHIEVIOUS)or CE_ERRATIC_BEHAVIOR
-- remove nobles position (shortly removes CAN_LEARN) or adds OPPOSED_TO_LIFE
-- uprising: adds CRAZED, only with sufficient support.
-- recruit followers:
-	- first add FIT_FOR_RESURRECTION
-	- then, try to resurect. 
-	- if need be, kill first, then animate (ass FIT_FOR_ANIMATION), then kill again, then resurect.
+	GREET after meeting after a long time:
+		A: Geen CAVE_ADAPT: 
+		B: lange CAVE_ADAPT: 
+		See: https://www.dwarffortresswiki.org/index.php/Syndrome_examples
+	
+	NEGATIVE_SOCIAL_RESPONSE
+		LINE_OF_SIGHT: flip the bird
+		Push softley
+		VERBAL: mild Insult
+		Give nickname: CE_DISPLAY_NAME + shame
+		Motivate good behaviour: Adds tag to prevent negative interactins. needs syndrome: negative behaviour
+	TORMENT 
+		Push awai(propel force)
+		VERBAL: dark Insult
+		Give nickname: CE_DISPLAY_NAME
+		Motivate good behaviour: Adds tag to prevent negative interactins. needs syndrome: negative behaviour
 
-consider:
-- CAN_BE_HIDDEN
-- ALCOHOLIC trigger: only angy dwarfs do stuff
-- GROUNDED_ANIMAL_ANGER -trigger
-- MOON_PHASE trigger
 
-TODO:
-[INTERACTION:GR_ANARCHIST_1]
-	[GENERATED]
-	[I_SOURCE:SECRET]
-		[IS_NAME:GR_ANARCHIST_1]
-		[IS_SPHERE:DEATH]
-		[IS_SPHERE:NIGHTMARES]
-		[IS_SECRET_GOAL:IMMORTALITY]
-		[IS_SECRET:SUPERNATURAL_LEARNING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RESEARCH_POSSIBLE]
-		[IS_SECRET:MUNDANE_TEACHING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RECORDING_POSSIBLE:objects/text/book_instruction.txt:objects/text/secret_death.txt]
-	[I_TARGET:A:CREATURE]
-		[IT_LOCATION:CONTEXT_CREATURE]
-		[IT_REQUIRES:MORTAL]
-		[IT_REQUIRES:CAN_LEARN]
-		[IT_REQUIRES:CAN_SPEAK]
-	[I_EFFECT:ADD_SYNDROME]
-		[IE_TARGET:A]
-		[IE_IMMEDIATE]
-		[SYNDROME]
-			[SYN_CONCENTRATION_ADDED:1000:0]
-		// CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT
-			[CE_DISPLAY_NAME:NAME:anarchist base:anarchists:anarchistic:START:0:ABRUPT]
-		
-		// CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0:ABRUPT
-			[CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			
-TODO:
-[INTERACTION:GR_ANARCHIST_2]
-	[GENERATED]
-	[I_SOURCE:SECRET]
-		[IS_NAME:GR_ANARCHIST_2]
-		[IS_SPHERE:CHAOS]
-		[IS_SECRET_GOAL:IMMORTALITY]
-		[IS_SECRET:SUPERNATURAL_LEARNING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RESEARCH_POSSIBLE]
-		[IS_SECRET:MUNDANE_TEACHING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RECORDING_POSSIBLE:objects/text/book_instruction.txt:objects/text/secret_death.txt]
-	[I_TARGET:A:CREATURE]
-		[IT_LOCATION:CONTEXT_CREATURE]
-		[IT_REQUIRES:MORTAL]
-		[IT_REQUIRES:CAN_LEARN]
-		[IT_REQUIRES:CAN_SPEAK]
-	[I_EFFECT:ADD_SYNDROME]
-		[IE_TARGET:A]
-		[IE_IMMEDIATE]
-		[SYNDROME]
-			[SYN_CONCENTRATION_ADDED:1000:0]
-		// CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT
-			[CE_DISPLAY_NAME:NAME:anarchist sphere chaos 2:anarchists:anarchistic:START:0:ABRUPT]
-		// CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0:ABRUPT
-			[CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			
-TODO:			
-[INTERACTION:GR_ANARCHIST_3]
-	[GENERATED]
-	[I_SOURCE:SECRET]
-		[IS_NAME:GR_ANARCHIST_3]
-		[IS_SPHERE:CHAOS]
-		[IS_SECRET_GOAL:BATHE_WORLD_IN_CHAOS]
-		[IS_SECRET:SUPERNATURAL_LEARNING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RESEARCH_POSSIBLE]
-		[IS_SECRET:MUNDANE_TEACHING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RECORDING_POSSIBLE:objects/text/book_instruction.txt:objects/text/secret_death.txt]
-	[I_TARGET:A:CREATURE]
-		[IT_LOCATION:CONTEXT_CREATURE]
-		[IT_REQUIRES:MORTAL]
-		[IT_REQUIRES:CAN_LEARN]
-		[IT_REQUIRES:CAN_SPEAK]
-	[I_EFFECT:ADD_SYNDROME]
-		[IE_TARGET:A]
-		[IE_IMMEDIATE]
-		[SYNDROME]
-			[SYN_CONCENTRATION_ADDED:1000:0]
-		// CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT
-			[CE_DISPLAY_NAME:NAME:anarchist sphere chaos other goal 2:anarchists:anarchistic:START:0:ABRUPT]
-		// CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0:ABRUPT
-			[CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			
-TODO:
-[INTERACTION:GR_ANARCHIST_4_MALE]
-	[GENERATED]
-	[I_SOURCE:SECRET]
-		[IS_NAME:GR_ANARCHIST_4_MALE]
-		[IS_SPHERE:CHAOS]
-		[IS_SECRET_GOAL:IMMORTALITY]
-		[IS_SECRET:SUPERNATURAL_LEARNING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RESEARCH_POSSIBLE]
-		[IS_SECRET:MUNDANE_TEACHING_POSSIBLE]
-		[IS_SECRET:MUNDANE_RECORDING_POSSIBLE:objects/text/book_instruction.txt:objects/text/secret_death.txt]
-	[I_TARGET:A:CREATURE]
-		[IT_LOCATION:CONTEXT_CREATURE]
-		[IT_REQUIRES:MORTAL]
-		[IT_REQUIRES:CAN_LEARN]
-		[IT_REQUIRES:CAN_SPEAK]
-		[IT_IMMUNE_CLASS:DWARF_MALE]
-	[I_EFFECT:ADD_SYNDROME]
-		[IE_TARGET:A]
-		[IE_IMMEDIATE]
-		[SYNDROME]
-			[SYN_CONCENTRATION_ADDED:1000:0]
-			[CE_BODY_TRANSFORMATION:START:0:ABRUPT]
-				[CE:CREATURE:DWARF:ANARCHIST_MALE]
-		// CE_DISPLAY_TILE:TILE:165:5:0:1:START:0:ABRUPT
-			[CE_DISPLAY_NAME:NAME:anarchist sphere chaos 4 male transformation:anarchists:anarchistic:START:0:ABRUPT]
-		// CE_ADD_TAG:NOEXERT:NO_AGING:NO_EAT:NO_DRINK:NO_SLEEP:NO_PHYS_ATT_GAIN:NO_PHYS_ATT_RUST:START:0:ABRUPT
-			[CE_CHANGE_PERSONALITY:FACET:ANXIETY_PROPENSITY:50:FACET:TRUST:-50:START:0:ABRUPT]
-			
+
+	ATTACK
+	FLEEING
+	DEFEND
+
+negatieve Secrets om te leren:
+sectet handshakes:
+- make temporary MISCHIEVOUS (CE_ADD_TAG)
+- go on! temporary NO_SLEEP
+- temporary CE_ERRATIC_BEHAVIOR
+- very short CRAZED
+- secret of the deal: value of commerce higher, better skiils in appraiser etc. 
+- secret of double bookkeeping
+
+The best joke ever
+- tell a very funny joke. person is temporary parallized with laughter (CE_ADD_TAG). once recovered, they can tell it themselfs, but only if noone has heard that before. 
+
