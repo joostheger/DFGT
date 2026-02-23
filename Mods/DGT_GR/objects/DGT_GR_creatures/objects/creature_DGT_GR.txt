@@ -1,25 +1,17 @@
 creature_DGT_GR
+[OBJECT:CREATURE]
 
 [SELECT_CREATURE:DWARF]
 
 TODO:
 	[CASTE:ANARCHIST_MALE]
-		[MALE]
-		[CLASS_NAME:anarchist male aaa:an:an]
-		[DESCRIPTION:A dwarf who has been transformed by the anarchist sphere of chaos. They are often seen as unpredictable and rebellious, with a strong desire for freedom and individuality. They may have a wild appearance, with unkempt hair and clothing, and a tendency to act on impulse.]
+		MALE]
+		CASTE_NAME:anarchist male aaa:an:an]
 		[CREATURE_CLASS:ANARCHIST_MALE]
+		[POP_RATIO:0]
+		[NATURAL_SKILL:ORGANIZATION:15]
+		[NATURAL_SKILL:RECORD_KEEPING:15]
+		[MAXAGE:100000:100000]
+	
 
-	[SELECT_CASTE:ALL]
-
-	[CAN_DO_INTERACTION:HANDSHAKE] TEST
-		[CDI:ADV_NAME:Shake hands]
-		[CDI:USAGE_HINT:GREETING]
-		[CDI:BP_REQUIRED:BY_TYPE:GRASP]
-		[CDI:VERB:shake hand:shake hands:shake hands]
-		[CDI:CAN_BE_MUTUAL]
-		[CDI:TARGET:A:SELF_ONLY]
-		[CDI:TARGET:B:TOUCHABLE]
-		[CDI:TARGET_RANGE:B:1]
-		[CDI:MAX_TARGET_NUMBER:B:1]
-		[CDI:WAIT_PERIOD:100]
-
+	SELECT_CASTE:ALL]
