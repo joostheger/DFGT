@@ -2,14 +2,6 @@
 
 [OBJECT:ENTITY]
 
-TODO: remove.
-[CUT_ENTITY:MOUNTAIN]
-[CUT_ENTITY:PLAINS]
-[CUT_ENTITY:FOREST]
-[CUT_ENTITY:EVIL]
-[CUT_ENTITY:SKULKING]
-
-
 [ENTITY:DGT_GRAND_REPUBLIC]
 
 	[SITE_CONTROLLABLE]
@@ -47,9 +39,9 @@ TODO: remove.
 	[WORLD_CONSTRUCTION:BRIDGE]
 	[WORLD_CONSTRUCTION:ROAD]
 
-	[MAX_STARTING_CIV_NUMBER:10] 		// This is a pretty unique civilization.
+	[MAX_STARTING_CIV_NUMBER:5] 		// This is a bit unique civilization.
 	[MAX_POP_NUMBER:10000]
-	[MAX_SITE_POP_NUMBER:240] 			// increased to stimulate town growth		
+	[MAX_SITE_POP_NUMBER:120] 				
 
 	[PERMITTED_JOB:MINER]
 	[PERMITTED_JOB:CARPENTER]
@@ -366,7 +358,7 @@ TODO: remove.
 	[VARIABLE_VALUE:SKILL:15:25]	 			// somewhat lower
 	[VARIABLE_VALUE:HARD_WORK:35:45]	 	// higher
 	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	// as dwarves
-	[VARIABLE_VALUE:COMPETITION:15:25]			// higher
+	[VARIABLE_VALUE:COMPETITION:-5:5]		// as dwarves
 	[VARIABLE_VALUE:PERSEVERANCE:-5:5]			// somewhat lower
 	[VARIABLE_VALUE:LEISURE_TIME:15:15]	 	// as dwarves
 	[VARIABLE_VALUE:COMMERCE:50:50]				// very high
@@ -556,7 +548,6 @@ TODO: remove.
 	[GENERATE_DANCE_FORMS]
 
 Ruler
-
 
 	[POSITION:GMM]
 		[NAME:grand merchant-master:grand merchant-masters]
@@ -2503,9 +2494,9 @@ Settlers
 	[POSITION:SETTLER_TRADER1b]
 		// Because SETTLER_TRADER2 was visible on embark before unpausing, I think that was ugly. So, 
 		// I created this position to utilize the already neccesary position to give the player also a bit of agency.
-		[LAND_NAME:(select broker)] 
+		[LAND_NAME:(select trader)] 
 		[NAME:settler:settlers] 
-		[DESCRIPTION:This is your only opportunity to select a broker until a population of 50 is reached. If you don't, once you unpause, one of the settlers will be automatically selected to act as broker.]	
+		[DESCRIPTION:This is your only opportunity to select a trader until a population of 50 is reached. If you don't, once you unpause, one of the settlers will be automatically selected to act as trader.]	
 		[SITE]
 		[PRECEDENCE:NONE]					// no precedence means that the Original occupation is shown. untill they are exempt of menial work
 		[NUMBER:1] 								// more than neccesary
@@ -3048,6 +3039,7 @@ Law enforcement
 		[APPOINTED_BY:CITIZEN_5]
 		[APPOINTED_BY:CITIZEN_6]
 		[APPOINTED_BY:CITIZEN_7]
+		[APPOINTED_BY:LH1]
 		[APPOINTED_BY:BURGER_2]
 		[APPOINTED_BY:BURGER_3]
 		[APPOINTED_BY:BURGER_4]

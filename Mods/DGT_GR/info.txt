@@ -1,5 +1,4 @@
 https://dwarffortresswiki.org/index.php/Mod_info_token
-TODO: afmaken
 
 [ID:DGT_GR]
 [NUMERIC_VERSION:6]
