@@ -1,0 +1,255 @@
+	[POSITION:ARCHDUKE] 	
+        [NAME:archduke:archdukes] 
+        [LAND_NAME:Archduchy]
+        [PRECEDENCE:1]
+        [APPOINTED_BY:LH4]
+        [SUCCESSION:BY_POSITION:LH4]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+    
+    [POSITION:LH1] 						
+		[NAME:duke:dukes] 
+       	[LAND_HOLDER:1]
+		[LAND_NAME:Council of dukes]
+		[PRECEDENCE:50]
+		[NUMBER:1]
+        [ELECTED]
+        [REPLACED_BY:LH2]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+
+	[POSITION:LH2] 						
+		[NAME:high duke:dukes] 
+       	[LAND_HOLDER:2]
+		[LAND_NAME:Council of dukes]
+		[PRECEDENCE:50]
+		[NUMBER:1]
+        [ELECTED]
+        [REPLACED_BY:LH3]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+
+    [POSITION:LH3] 						
+		[NAME:grand duke:grand dukes] 
+       	[LAND_HOLDER:3]
+		[LAND_NAME:Council of dukes]
+		[PRECEDENCE:50]
+		[NUMBER:1]
+        [ELECTED]
+        [REPLACED_BY:LH4]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+
+     [POSITION:LH4] 						
+		[NAME:duke-protector:duke-protectors] 
+       	[LAND_HOLDER:4]
+		[LAND_NAME:Archduchy]
+		[PRECEDENCE:50]
+		[NUMBER:1]
+        [ELECTED]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+   
+    [POSITION:DUKE_SITE_2] 						
+		[NAME:duke:dukes]
+        [LAND_NAME:Council of dukes]
+		[SITE]
+		[PRECEDENCE:50]
+		[NUMBER:2]
+        [APPOINTED_BY:LH2]
+        [SUCCESSION:BY_POSITION:ALDERMAN]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+    
+     [POSITION:DUKE_SITE_3] 						
+		[NAME:duke:dukes] 
+        [LAND_NAME:Council of dukes]
+		[SITE]
+		[PRECEDENCE:50]
+		[NUMBER:1]
+        [APPOINTED_BY:LH3]
+        [SUCCESSION:BY_POSITION:ALDERMAN]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+
+    [POSITION:DUKE_SITE_4] 						
+		[NAME:grand duke:grand dukes] 
+        [LAND_NAME:Council of dukes]
+		[SITE]
+		[PRECEDENCE:50]
+		[NUMBER:1]
+        [APPOINTED_BY:LH4]          //Test: which one works
+        [APPOINTED_BY:ARCHDUKE]     //Test: which one works
+        [SUCCESSION:BY_POSITION:ALDERMAN]
+        [RESPONSIBILITY:LAW_MAKING]
+        [RESPONSIBILITY:RECEIVE_DIPLOMATS]
+	
+    [POSITION:CHARTERMASTER] 	
+        // Expedition leader
+		[NAME:chartermaster:chartermasters] 
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:1]
+        [ELECTED]
+		[RESPONSIBILITY:TRADE]
+        [SQUAD:7:constable:constables]
+        [REPLACED_BY:ALDERMANOFTRADE]
+
+    [POSITION:ALDERMANOFTRADE] 	
+        // Alternavive names: alderman of the depot, alderman of the market
+		[NAME:alderman of trade:aldermen] 
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:1]
+        [ELECTED]
+		[REQUIRES_POPULATION:8] 
+		[RESPONSIBILITY:TRADE]
+
+    [POSITION:ALDERMANOFTHEWATCH] 	
+        // Alternative names: alderman of the guard,
+		[NAME:alderman of the watch:aldermen] 
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:1]
+        [ELECTED]
+		[REQUIRES_POPULATION:8] 
+		[RESPONSIBILITY:LAW_ENFORCEMENT]
+        [SQUAD:8:constable:constables]
+
+    [POSITION:ALDERMANOFTHEHALL] 	
+        // Alternative names: alderman of the council
+		[NAME:alderman of the hall:aldermen] 
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:1]
+        [ELECTED]
+		[REQUIRES_POPULATION:8] 
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+
+    [POSITION:ALDERMANOFINDUSTRY] 	
+        // Alternative names: alderman of the forge, alderman of the workshop
+        [NAME:alderman of industry:aldermen]
+        [SITE]
+		[PRECEDENCE:100]
+		[NUMBER:1]
+        [ELECTED]
+		[REQUIRES_POPULATION:8] 
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+
+    [POSITION:ALDERMANOFTREASURY] 	
+        // Alternative names: alderman of coin, alderman of finance
+        [NAME:alderman of the treasury:aldermen]
+        [SITE]
+		[PRECEDENCE:100]
+		[NUMBER:1]
+        [ELECTED]
+		[REQUIRES_POPULATION:8] 
+		[RESPONSIBILITY:ACCOUNTS]
+
+    [POSITION:ALDERMANOFTHEINFIRMARY] 	
+        // Alternative names: alderman of physick
+        [NAME:alderman of the infirmary:aldermen]
+        [SITE]
+        [PRECEDENCE:100]
+        [NUMBER:1]
+        [ELECTED]
+        [REQUIRES_POPULATION:20] 
+        [RESPONSIBILITY:HEALTH_MANAGEMENT]
+
+    [POSITION:ALDERMANOFTHECOMMONS] 	
+        [NAME:alderman of the commons:aldermen]
+        [SITE]
+        [PRECEDENCE:100]
+        [NUMBER:1]
+        [ELECTED]
+        [REQUIRES_POPULATION:20] 
+        [RESPONSIBILITY:MEET_WORKERS]
+
+    [POSITION:ALDERMANOFDISPATCHES] 	
+        [NAME:alderman of dispatches:aldermen]
+        [SITE]
+        [PRECEDENCE:100]
+        [NUMBER:1]
+        [ELECTED]
+        [REQUIRES_POPULATION:20] 
+        [RESPONSIBILITY:DELIVER_MESSAGES]
+
+    [POSITION:ALDERMANOFINQUEST] 	
+        [NAME:alderman of inquest:aldermen]
+        [SITE]
+        [PRECEDENCE:100]
+        [NUMBER:1]
+        [ELECTED]
+        [REQUIRES_POPULATION:50] 
+        [RESPONSIBILITY:LAW_ENFORCEMENT]
+        [RESPONSIBILITY:ESPIONAGE]
+
+    [POSITION:ALDERMANOFRITES] 	
+        [NAME:alderman of rites:aldermen]
+        [SITE]
+        [PRECEDENCE:100]
+        [NUMBER:1]
+        [ELECTED]
+        [REQUIRES_POPULATION:50] 
+        [RESPONSIBILITY:RELIGION]
+
+    [POSITION:ALDERMANOFTHEMENAGERIE] 	
+        // Alternative names: alderman of beasts
+        [NAME:alderman of the menagerie:aldermen]
+        [SITE]
+        [PRECEDENCE:100]
+        [NUMBER:1]
+        [ELECTED]
+        [REQUIRES_POPULATION:50] 
+        [RESPONSIBILITY:TAME_EXOTICS]
+        [RESPONSIBILITY:MANAGE_ANIMALS]
+
+    [POSITION:FUNC_PROMOTION_TRIGGER] 
+		//  assignment of settlers or citizens should be able, incase of 7 + 7
+		[LAND_NAME:(trigger promotion)] 
+		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
+		[SITE]
+		[PRECEDENCE:NONE]
+		[NUMBER:1] 		
+        [APPOINTED_BY:Chartermaster]
+        TODO: appointed_by aanvullen
+
+app by archduke, CIV? / variable?
+housekeeper- manage leader household cleanliness
+cup-bearer - manage leader household food and drinks
+chamberlain- oversee leader household
+chef - prepare leader meals
+
+variable site:
+- maintain sewers
+- food supply
+- fire safety
+- judge
+- construction permits
+- building safety
+- maintain roads / bridjges, tunnels
+
+dukes:
+- judge?
+
+forced admin:
+Warden
+
+//diplomtat: Grand Legate / envoy / ambassador / Ducal envoy (upgrade) / Ducal Legate
+
+//Captain-General // Ducal General
+- military strategy
+// Ducal Captain
+
+//Ducal Justiciar - succeeded from alderman
+- law enforcement, collect taxes
+
+//High Alderman / First Alderman (x3)  - succeeded from alderman
+ - military goals / law_making
+Tribune of the Commons
+
+Treasurer
+- trade, accounting
+
+
+

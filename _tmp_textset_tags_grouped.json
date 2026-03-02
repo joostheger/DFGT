@@ -1,0 +1,489 @@
+﻿[
+    {
+        "file":  "text_ab_specific_hf_seeker.txt",
+        "text_set":  "AB_SPECIFIC_HF_SEEKER",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:TRANS_NAME",
+                     "CONTEXT:ABSTRACT_BUILDING:TRANS_NAME",
+                     "CONTEXT:SITE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_animal_slayer.txt",
+        "text_set":  "ANIMAL_SLAYER",
+        "tags":  [
+                     "CONTEXT:NUMBER",
+                     "CONTEXT:RACE:NUMBERED_NAME",
+                     "CONTEXT:PLACE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_arch_info_justification.txt",
+        "text_set":  "ARCH_INFO_JUSTIFICATION",
+        "tags":  [
+                     "CONTEXT:ARCH_ELEMENT",
+                     "CONTEXT:ABSTRACT_BUILDING:TRANS_NAME",
+                     "CONTEXT:JUSTIFICATION",
+                     "CONTEXT:DEF_SPHERE",
+                     "CONTEXT:HIST_FIG:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_book_art.txt",
+        "text_set":  "BOOK_ART",
+        "tags":  [
+                     "NAME",
+                     "PHRASE",
+                     "ADJ",
+                     "NO_ART_NAME",
+                     "NOUN",
+                     "ANY_PRONOUN"
+                 ]
+    },
+    {
+        "file":  "text_book_instruction.txt",
+        "text_set":  "BOOK_INSTRUCTION",
+        "tags":  [
+                     "NAME",
+                     "NO_ART_NAME",
+                     "ANY_AGE"
+                 ]
+    },
+    {
+        "file":  "text_child_age_proclamation.txt",
+        "text_set":  "CHILD_AGE_PROCLAMATION",
+        "tags":  [
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_current_profession_no_year.txt",
+        "text_set":  "CURRENT_PROFESSION_NO_YEAR",
+        "tags":  [
+                     "CONTEXT:UNIT_NAME"
+                 ]
+    },
+    {
+        "file":  "text_current_profession_year.txt",
+        "text_set":  "CURRENT_PROFESSION_YEAR",
+        "tags":  [
+                     "CONTEXT:ORDINAL",
+                     "CONTEXT:UNIT_NAME"
+                 ]
+    },
+    {
+        "file":  "text_curse.txt",
+        "text_set":  "CURSE",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_family_relationship_additional.txt",
+        "text_set":  "FAMILY_RELATIONSHIP_ADDITIONAL",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:PRO_SUB",
+                     "CONTEXT:FAMILY_RELATIONSHIP"
+                 ]
+    },
+    {
+        "file":  "text_family_relationship_additional_dead.txt",
+        "text_set":  "FAMILY_RELATIONSHIP_ADDITIONAL_DEAD",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:PRO_SUB",
+                     "CONTEXT:FAMILY_RELATIONSHIP"
+                 ]
+    },
+    {
+        "file":  "text_family_relationship_no_spec.txt",
+        "text_set":  "FAMILY_RELATIONSHIP_NO_SPEC",
+        "tags":  [
+                     "CONTEXT:INDEF_FAMILY_RELATIONSHIP",
+                     "CONTEXT:HIST_FIG:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_family_relationship_no_spec_dead.txt",
+        "text_set":  "FAMILY_RELATIONSHIP_NO_SPEC_DEAD",
+        "tags":  [
+                     "CONTEXT:INDEF_FAMILY_RELATIONSHIP",
+                     "CONTEXT:HIST_FIG:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_family_relationship_spec.txt",
+        "text_set":  "FAMILY_RELATIONSHIP_SPEC",
+        "tags":  [
+                     "CONTEXT:FAMILY_RELATIONSHIP",
+                     "CONTEXT:HIST_FIG:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_family_relationship_spec_dead.txt",
+        "text_set":  "FAMILY_RELATIONSHIP_SPEC_DEAD",
+        "tags":  [
+                     "CONTEXT:FAMILY_RELATIONSHIP",
+                     "CONTEXT:HIST_FIG:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_general.txt",
+        "text_set":  "GENERAL",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_goodbye_worship_1.txt",
+        "text_set":  "GOODBYE_WORSHIP_1",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_goodbye_worship_2.txt",
+        "text_set":  "GOODBYE_WORSHIP_2",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_goodbye_worship_3.txt",
+        "text_set":  "GOODBYE_WORSHIP_3",
+        "tags":  [
+                     "SPEAKER:HF_LINK:DEITY:TRANS_NAME",
+                     "SPEAKER:HF_LINK:DEITY:RANDOM_DEF_SPHERE"
+                 ]
+    },
+    {
+        "file":  "text_greet.txt",
+        "text_set":  "GREET",
+        "tags":  [
+                     "SPEAKER:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_greet_baby.txt",
+        "text_set":  "GREET_BABY",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_greet_reply.txt",
+        "text_set":  "GREET_REPLY",
+        "tags":  [
+                     "SPEAKER:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_greet_reply_after_hero.txt",
+        "text_set":  "GREET_REPLY_AFTER_HERO",
+        "tags":  [
+                     "SPEAKER:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_greet_reply_diff_language.txt",
+        "text_set":  "GREET_REPLY_DIFF_LANGUAGE",
+        "tags":  [
+                     "AUDIENCE:RACE",
+                     "SPEAKER:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_greet_reply_unusual_first.txt",
+        "text_set":  "GREET_REPLY_UNUSUAL_FIRST",
+        "tags":  [
+                     "AUDIENCE:FIRST_NAME"
+                 ]
+    },
+    {
+        "file":  "text_greet_worship.txt",
+        "text_set":  "GREET_WORSHIP",
+        "tags":  [
+                     "SPEAKER:HF_LINK:DEITY:TRANS_NAME",
+                     "SPEAKER:HF_LINK:DEITY:RANDOM_DEF_SPHERE"
+                 ]
+    },
+    {
+        "file":  "text_guard_profession.txt",
+        "text_set":  "GUARD_PROFESSION",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_guard_warning.txt",
+        "text_set":  "GUARD_WARNING",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_hist_fig_slayer.txt",
+        "text_set":  "HIST_FIG_SLAYER",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:TRANS_NAME",
+                     "CONTEXT:HIST_FIG:RACE"
+                 ]
+    },
+    {
+        "file":  "text_hunting_profession.txt",
+        "text_set":  "HUNTING_PROFESSION",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_hunting_profession_year.txt",
+        "text_set":  "HUNTING_PROFESSION_YEAR",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME",
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_justification_antithetical.txt",
+        "text_set":  "JUSTIFICATION_ANTITHETICAL",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_justification_experience.txt",
+        "text_set":  "JUSTIFICATION_EXPERIENCE",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_justification_proximity.txt",
+        "text_set":  "JUSTIFICATION_PROXIMITY",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_justification_reminder.txt",
+        "text_set":  "JUSTIFICATION_REMINDER",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_justification_representation.txt",
+        "text_set":  "JUSTIFICATION_REPRESENTATION",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_mercenary_profession.txt",
+        "text_set":  "MERCENARY_PROFESSION",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_mercenary_profession_year.txt",
+        "text_set":  "MERCENARY_PROFESSION_YEAR",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME",
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_no_family.txt",
+        "text_set":  "NO_FAMILY",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_past_hunting_profession.txt",
+        "text_set":  "PAST_HUNTING_PROFESSION",
+        "tags":  [
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_past_mercenary_profession.txt",
+        "text_set":  "PAST_MERCENARY_PROFESSION",
+        "tags":  [
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_past_profession_no_year.txt",
+        "text_set":  "PAST_PROFESSION_NO_YEAR",
+        "tags":  [
+                     "CONTEXT:UNIT_NAME"
+                 ]
+    },
+    {
+        "file":  "text_past_profession_year.txt",
+        "text_set":  "PAST_PROFESSION_YEAR",
+        "tags":  [
+                     "CONTEXT:UNIT_NAME",
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_past_snatcher_profession.txt",
+        "text_set":  "PAST_SNATCHER_PROFESSION",
+        "tags":  [
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_past_thief_profession.txt",
+        "text_set":  "PAST_THIEF_PROFESSION",
+        "tags":  [
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_past_wandering_profession.txt",
+        "text_set":  "PAST_WANDERING_PROFESSION",
+        "tags":  [
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_positive.txt",
+        "text_set":  "POSITIVE",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_same_site_ab_specific_hf_seeker.txt",
+        "text_set":  "SAME_SITE_AB_SPECIFIC_HF_SEEKER",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:TRANS_NAME",
+                     "CONTEXT:SITE:TRANS_NAME",
+                     "CONTEXT:ABSTRACT_BUILDING:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_same_site_specific_hf_seeker.txt",
+        "text_set":  "SAME_SITE_SPECIFIC_HF_SEEKER",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:TRANS_NAME",
+                     "CONTEXT:SITE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_secret_death.txt",
+        "text_set":  "SECRET_DEATH",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_site_specific_hf_seeker.txt",
+        "text_set":  "SITE_SPECIFIC_HF_SEEKER",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:TRANS_NAME",
+                     "CONTEXT:SITE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_slayer.txt",
+        "text_set":  "SLAYER",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_snatcher_profession.txt",
+        "text_set":  "SNATCHER_PROFESSION",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_snatcher_profession_year.txt",
+        "text_set":  "SNATCHER_PROFESSION_YEAR",
+        "tags":  [
+                     "CONTEXT:NUMBER",
+                     "CONTEXT:PLACE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_soldier_profession.txt",
+        "text_set":  "SOLDIER_PROFESSION",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_task_recommendation.txt",
+        "text_set":  "TASK_RECOMMENDATION",
+        "tags":  [
+                     "CONTEXT:ANY:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_temple_already_member.txt",
+        "text_set":  "TEMPLE_ALREADY_MEMBER",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_temple_become_member.txt",
+        "text_set":  "TEMPLE_BECOME_MEMBER",
+        "tags":  [
+                     "CONTEXT:ENTITY:TRANS_NAME",
+                     "CONTEXT:ENTITY:WORSHIP_HF:TRANS_NAME",
+                     "CONTEXT:ENTITY:WORSHIP_HF:RANDOM_DEF_SPHERE"
+                 ]
+    },
+    {
+        "file":  "text_thief_profession.txt",
+        "text_set":  "THIEF_PROFESSION",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_thief_profession_year.txt",
+        "text_set":  "THIEF_PROFESSION_YEAR",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME",
+                     "CONTEXT:NUMBER"
+                 ]
+    },
+    {
+        "file":  "text_threat.txt",
+        "text_set":  "THREAT",
+        "tags":  [
+
+                 ]
+    },
+    {
+        "file":  "text_unknown_hf_seeker.txt",
+        "text_set":  "UNKNOWN_HF_SEEKER",
+        "tags":  [
+                     "CONTEXT:HIST_FIG:TRANS_NAME",
+                     "CONTEXT:HIST_FIG:PRO_SUB"
+                 ]
+    },
+    {
+        "file":  "text_wandering_profession.txt",
+        "text_set":  "WANDERING_PROFESSION",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME"
+                 ]
+    },
+    {
+        "file":  "text_wandering_profession_year.txt",
+        "text_set":  "WANDERING_PROFESSION_YEAR",
+        "tags":  [
+                     "CONTEXT:PLACE:TRANS_NAME",
+                     "CONTEXT:NUMBER"
+                 ]
+    }
+]

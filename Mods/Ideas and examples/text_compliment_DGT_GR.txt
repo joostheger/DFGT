@@ -43,9 +43,8 @@ Thank you, ehm .. [AUDIENCE:FIRST_NAME] is it?
 [TEXT_SET:POSITIVE]
 
 
-[SPEAKER:TRANS_NAME].
-[AUDIENCE:RACE]
- [AUDIENCE:FIRST_NAME]
+
+
 
 TODO 
 https://www.dwarffortresswiki.org/index.php/Speech_file
