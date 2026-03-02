@@ -803,12 +803,26 @@ Civ military
 
 Free merchants
 
-	[POSITION:FREE_MERCHANT_90]
+	[POSITION:FREE_MERCHANT_70]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce.]
 		[SITE]
 		[NUMBER:1]
-		[REQUIRES_POPULATION:90] 
+		[REQUIRES_POPULATION:70] 
+		[RESPONSIBILITY:BUILD_MORALE]
+		[SUCCESSION:BY_HEIR] // not really necessary, just to prevent re-assignent by the player.
+		[SQUAD:1:member:members] 		// prevent assumption by succession-positions, like citizens
+		[PRECEDENCE:100]				
+		[COLOR:2:0:1] 
+		[DO_NOT_CULL]
+		[EXPORTED_IN_LEGENDS]
+
+	[POSITION:FREE_MERCHANT_130]
+		[NAME:free merchant:free merchants]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce.]
+		[SITE]
+		[NUMBER:1]
+		[REQUIRES_POPULATION:130] 
 		[RESPONSIBILITY:BUILD_MORALE]
 		[SUCCESSION:BY_HEIR] // not really necessary, just to prevent re-assignent by the player.
 		[SQUAD:1:member:members] 		// prevent assumption by succession-positions, like citizens
@@ -819,7 +833,7 @@ Free merchants
 
 	[POSITION:FREE_MERCHANT_190]
 		[NAME:free merchant:free merchants]
-		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce. Approximately 2% of the population belongs to this group.]
+		[DESCRIPTION:Free merchants are the 'pillars of society'. The republic rests on the principles of freedom and commerce.]
 		[SITE]
 		[NUMBER:1]
 		[REQUIRES_POPULATION:190] 
