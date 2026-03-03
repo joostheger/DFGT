@@ -1,5 +1,7 @@
 	[POSITION:ARCHDUKE] 	
-        [NAME:archduke:archdukes] 
+        [NAME:high authority:high authority] // this name is used when the position is vacant, with ": none" after.
+        [NAME_MALE:archduke:archdukes] 
+        [NAME_FEMALE:archduchess:archduchesses] 
         [LAND_NAME:Archduchy]
         [PRECEDENCE:1]
         [APPOINTED_BY:LH4]
@@ -238,7 +240,26 @@ dukes:
 forced admin:
 name: Warden
 
+misschien kunnen deze ervoor zorgen, dat er minder onderlinge oorlog is, als dat al zo is. 
+	[ETHIC:KILL_NEUTRAL:ONLY_IF_SANCTIONED] --> unthinkable
+	[ETHIC:KILL_ENEMY:ACCEPTABLE] --> required
+
 //diplomtat: Grand Legate / envoy / ambassador / Ducal envoy (upgrade) / Ducal Legate
+
+Diplomats:
+
+0: League Envoy 
+? MAKE_INTRODUCTIONS
+? New settlements
+
+1-3: League Legate (High, Grand)
+? MAKE_TOPIC_AGREEMENTS
+? MAKE_PEACE_AGREEMENTS
+
+A: Ducal Ambassador
+? MAKE_PEACE_AGREEMENTS
+? MAKE_TOPIC_AGREEMENTS
+? MAKE_INTRODUCTIONS
 
 //Captain-General // Ducal General
 - military strategy
