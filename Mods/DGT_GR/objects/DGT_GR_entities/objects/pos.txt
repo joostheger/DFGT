@@ -214,11 +214,14 @@
         [APPOINTED_BY:Chartermaster]
         TODO: appointed_by aanvullen
 
+Civ posities TODO:
+- basis set aanmaken, en dit uitbreiden als er meer LH posties bijkomen
+
 app by archduke, CIV? / variable?
-housekeeper- manage leader household cleanliness
-cup-bearer - manage leader household food and drinks
-chamberlain- oversee leader household
-chef - prepare leader meals
+- housekeeper- manage leader household cleanliness
+- cup-bearer - manage leader household food and drinks
+- chamberlain- oversee leader household
+- chef - prepare leader meals
 
 variable site:
 - maintain sewers
@@ -233,7 +236,7 @@ dukes:
 - judge?
 
 forced admin:
-Warden
+name: Warden
 
 //diplomtat: Grand Legate / envoy / ambassador / Ducal envoy (upgrade) / Ducal Legate
 
