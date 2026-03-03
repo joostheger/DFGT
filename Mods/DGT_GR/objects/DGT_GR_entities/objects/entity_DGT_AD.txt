@@ -335,45 +335,44 @@
 	[ETHIC:MAKE_TROPHY_SAPIENT:SHUN]	 	// as dwarves
 	[ETHIC:MAKE_TROPHY_ANIMAL:ACCEPTABLE]	// as dwarves
 
-	[VARIABLE_VALUE:LAW:25:35]	 			// as dwarves
-	[VARIABLE_VALUE:LOYALTY:25:35]	 		// as dwarves
-	[VARIABLE_VALUE:FAMILY:25:35]	 		// as dwarves
-	[VARIABLE_VALUE:FRIENDSHIP:25:35]	 	// as dwarves
-	[VARIABLE_VALUE:POWER:-5:5]		 		// as dwarves
-	[VARIABLE_VALUE:TRUTH:15:25]		 		// somewhat lower
-	[VARIABLE_VALUE:CUNNING:0:10]				// a bit higher
-	[VARIABLE_VALUE:ELOQUENCE:0:10]				// a bit higher
-	[VARIABLE_VALUE:FAIRNESS:10:20]		 	// as dwarves
-	[VARIABLE_VALUE:DECORUM:10:20]				// somewhat higher
-	[VARIABLE_VALUE:TRADITION:-5:5]	 		// as dwarves
-	[VARIABLE_VALUE:ARTWORK:15:25]				// somewhat lower
-	[VARIABLE_VALUE:COOPERATION:35:45]			// much higher
-	[VARIABLE_VALUE:INDEPENDENCE:-10:0]			// somewhat lower
-	[VARIABLE_VALUE:STOICISM:0:10]	 		// as dwarves
-	[VARIABLE_VALUE:KNOWLEDGE:10:20]	 	// as dwarves
-	[VARIABLE_VALUE:INTROSPECTION:-15:5]	 	// as dwarves
-	[VARIABLE_VALUE:SELF_CONTROL:-5:5]	 	// as dwarves
-	[VARIABLE_VALUE:TRANQUILITY:-15:5]	 	// as dwarves
-	[VARIABLE_VALUE:HARMONY:-5:5]	 		// as dwarves
-	[VARIABLE_VALUE:MERRIMENT:0:10]	 			// somewhat lower
-	[VARIABLE_VALUE:CRAFTSMANSHIP:25:35]		// somewhat lower
-	[VARIABLE_VALUE:MARTIAL_PROWESS:-15:5]		// lower
-	[VARIABLE_VALUE:SKILL:15:25]	 			// somewhat lower
-	[VARIABLE_VALUE:HARD_WORK:35:45]	 	// higher
-	[VARIABLE_VALUE:SACRIFICE:-5:5]		 	// as dwarves
-	[VARIABLE_VALUE:COMPETITION:-5:5]		// as dwarves
-	[VARIABLE_VALUE:PERSEVERANCE:-5:5]			// somewhat lower
-	[VARIABLE_VALUE:LEISURE_TIME:15:15]	 	// as dwarves
-	[VARIABLE_VALUE:COMMERCE:50:50]				// very high
-	[VARIABLE_VALUE:ROMANCE:0:0]	 		// as dwarves
-	[VARIABLE_VALUE:NATURE:-25:-15]	 		// as dwarves
-	[VARIABLE_VALUE:PEACE:15:25]				// higher
+	[VARIABLE_VALUE:LAW:20:40]	 			// as dwarves
+	[VARIABLE_VALUE:LOYALTY:20:40]	 		// as dwarves
+	[VARIABLE_VALUE:FAMILY:20:40]	 		// as dwarves
+	[VARIABLE_VALUE:FRIENDSHIP:20:40]	 	// as dwarves
+	[VARIABLE_VALUE:POWER:-10:10]		 		// as dwarves
+	[VARIABLE_VALUE:TRUTH:10:30]		 		// somewhat lower
+	[VARIABLE_VALUE:CUNNING:-5:15]				// a bit higher
+	[VARIABLE_VALUE:ELOQUENCE:-5:15]			// a bit higher
+	[VARIABLE_VALUE:FAIRNESS:5:25]		 	// as dwarves
+	[VARIABLE_VALUE:DECORUM:5:25]				// somewhat higher
+	[VARIABLE_VALUE:TRADITION:-10:10]	 		// as dwarves
+	[VARIABLE_VALUE:ARTWORK:10:30]				// somewhat lower
+	[VARIABLE_VALUE:COOPERATION:30:50]			// much higher
+	[VARIABLE_VALUE:INDEPENDENCE:-15:5]			// somewhat lower
+	[VARIABLE_VALUE:STOICISM:-5:15]	 		// as dwarves
+	[VARIABLE_VALUE:KNOWLEDGE:5:25]	 	// as dwarves
+	[VARIABLE_VALUE:INTROSPECTION:-20:10]	 	// as dwarves
+	[VARIABLE_VALUE:SELF_CONTROL:-10:10]	 	// as dwarves
+	[VARIABLE_VALUE:TRANQUILITY:-20:10]	 	// as dwarves
+	[VARIABLE_VALUE:HARMONY:-10:10]	 		// as dwarves
+	[VARIABLE_VALUE:MERRIMENT:-5:15]	 		// somewhat lower
+	[VARIABLE_VALUE:CRAFTSMANSHIP:20:40]		// somewhat lower
+	[VARIABLE_VALUE:MARTIAL_PROWESS:-20:10]		// lower
+	[VARIABLE_VALUE:SKILL:10:30]	 			// somewhat lower
+	[VARIABLE_VALUE:HARD_WORK:30:50]	 	// higher
+	[VARIABLE_VALUE:SACRIFICE:-10:10]		 	// as dwarves
+	[VARIABLE_VALUE:COMPETITION:-10:10]		// as dwarves
+	[VARIABLE_VALUE:PERSEVERANCE:-10:10]		// somewhat lower
+	[VARIABLE_VALUE:LEISURE_TIME:10:20]	 	// as dwarves
+	[VARIABLE_VALUE:COMMERCE:45:50]				// very high
+	[VARIABLE_VALUE:ROMANCE:-5:5]	 		// as dwarves
+	[VARIABLE_VALUE:NATURE:-30:-10]	 		// as dwarves
+	[VARIABLE_VALUE:PEACE:10:30]				// higher
 
 	[WILL_ACCEPT_TRIBUTE]
 
 	[WANDERER]
 	
-	[ACTIVE_SEASON:SPRING]
 	[ACTIVE_SEASON:SUMMER]
 	[ACTIVE_SEASON:AUTUMN]
 

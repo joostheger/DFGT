@@ -1,16 +1,29 @@
-## General features of the Grand Republic ##
+## General features of Grand Republic ##
 * The Grand Republics are peaceful, trade-focused dwarven civilizations built around commerce and cooperation.
 * Towns and hamlets flourish on fertile plains, while nestling at the feet of the mountains that bore their kin.
 * The Merchants’ Guild governs the republic and sends their representatives as diplomats across the world.
 * They serve the gods of trade, wealth, and order.
 * Their peaceful, conflict-averse nature makes them strong and reliable trading partners.
 * Republican dwarves value competition, hard work, cooperation, and commerce over martial prowess and merriment.
-* Caravans arrive in spring, summer, and autumn.
+* Caravans arrive in summer and autumn.
 * Production options for clothing and weapons are expanded, and they make use of all crop types.
 * Includes custom naming for groups, roads, bridges, and more.
 * No DFHack is required.
 * The entity is dwarf-only, it works with the vanilla dwarves.
 * Compatibity with most other mods is assumed, not guaranteed.
+
+## Challenge level: 4/5 ##
+'Grand Republic' is designed to be a challenging experience. 
+
+Harder:
+* Citizens increasingly high demands and require continues attention.
+* Minimal player agency for who gets a citizen-position.
+* Less military options.
+* Certain administrative roles need a minimum population to be available.
+
+Easier:
+* Trade caravans arrive more frequenty and bring a broader range of goods
+* Because of their balanced ethics, they are treated less aggressively by other civilizations.
 
 ## Play Guide ##
 ### Freeholders ###
@@ -27,7 +40,7 @@
 
 ### Other notes for positions ###
 * Clerks can be appointed from certain citizenry ranks for tasks such as trading (*clerk of stores*), management (*clerk of works*), and accounting (*clerk of accounts*). More of these positions unlock as the settlement grows.
-* The limited military focus restricts early army-building options, but additional options open up as the settlement develops.
+* The limited military focus restricts the number of squads and soldiers per squad, but additional options open up as the settlement develops.
 * If a diplomat leaves unhappy, it may be one of the two merchant journeymen arriving with the caravan. You likely did not have a *clerk of stores* assigned. Do not worry—the only thing you missed was a supplemental trade negotiation.
 * There is a functional noble position called *Promotion Trigger*. It has no special features, but it can be used to force evaluation of nobility positions and trigger promotions when applicable. 
 
