@@ -2,6 +2,15 @@
 
 [OBJECT:ENTITY]
 
+//These tags are missing in regular dwarven civs.
+[SELECT_ENTITY:MOUNTAIN]
+	[PROGRESS_TRIGGER_POPULATION:1]
+	[PROGRESS_TRIGGER_PRODUCTION:1]
+	[PROGRESS_TRIGGER_TRADE:1]
+	[PROGRESS_TRIGGER_POP_SIEGE:3]
+	[PROGRESS_TRIGGER_PROD_SIEGE:4]
+	[PROGRESS_TRIGGER_TRADE_SIEGE:0]
+
 [ENTITY:DGT_GRAND_REPUBLIC]
 
 	[SITE_CONTROLLABLE]
@@ -397,8 +406,8 @@
 	[PROGRESS_TRIGGER_PRODUCTION:1]
 	[PROGRESS_TRIGGER_TRADE:1]
 	[PROGRESS_TRIGGER_POP_SIEGE:0]
-	[PROGRESS_TRIGGER_PROD_SIEGE:0]
-	[PROGRESS_TRIGGER_TRADE_SIEGE:3]		// They wont really be that agressive, but if they have to, than this would be the factor.
+	[PROGRESS_TRIGGER_PROD_SIEGE:3]
+	[PROGRESS_TRIGGER_TRADE_SIEGE:1]		// They wont really be that agressive, but if they are hostile, than these would be the factors.
 
 	[SIEGER]
 
