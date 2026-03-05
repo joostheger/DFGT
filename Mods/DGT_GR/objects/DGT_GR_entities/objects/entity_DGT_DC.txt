@@ -330,39 +330,56 @@
 	[ETHIC:MAKE_TROPHY_ANIMAL:ACCEPTABLE]	// as dwarves
 
 TODO
-	[VARIABLE_VALUE:LAW:20:40]	 			// as dwarves
-	[VARIABLE_VALUE:LOYALTY:20:40]	 		// as dwarves
-	[VARIABLE_VALUE:FAMILY:20:40]	 		// as dwarves
-	[VARIABLE_VALUE:FRIENDSHIP:20:40]	 	// as dwarves
-	[VARIABLE_VALUE:POWER:-10:10]		 		// as dwarves
-	[VARIABLE_VALUE:TRUTH:10:30]		 		// somewhat lower
-	[VARIABLE_VALUE:CUNNING:-5:15]				// a bit higher
-	[VARIABLE_VALUE:ELOQUENCE:-5:15]			// a bit higher
-	[VARIABLE_VALUE:FAIRNESS:5:25]		 	// as dwarves
-	[VARIABLE_VALUE:DECORUM:5:25]				// somewhat higher
-	[VARIABLE_VALUE:TRADITION:-10:10]	 		// as dwarves
-	[VARIABLE_VALUE:ARTWORK:10:30]				// somewhat lower
-	[VARIABLE_VALUE:COOPERATION:30:50]			// much higher
-	[VARIABLE_VALUE:INDEPENDENCE:-15:5]			// somewhat lower
-	[VARIABLE_VALUE:STOICISM:-5:15]	 		// as dwarves
-	[VARIABLE_VALUE:KNOWLEDGE:5:25]	 	// as dwarves
-	[VARIABLE_VALUE:INTROSPECTION:-20:10]	 	// as dwarves
-	[VARIABLE_VALUE:SELF_CONTROL:-10:10]	 	// as dwarves
-	[VARIABLE_VALUE:TRANQUILITY:-20:10]	 	// as dwarves
-	[VARIABLE_VALUE:HARMONY:-10:10]	 		// as dwarves
-	[VARIABLE_VALUE:MERRIMENT:-5:15]	 		// somewhat lower
-	[VARIABLE_VALUE:CRAFTSMANSHIP:20:40]		// somewhat lower
-	[VARIABLE_VALUE:MARTIAL_PROWESS:-20:10]		// lower
-	[VARIABLE_VALUE:SKILL:10:30]	 			// somewhat lower
-	[VARIABLE_VALUE:HARD_WORK:30:50]	 	// higher
-	[VARIABLE_VALUE:SACRIFICE:-10:10]		 	// as dwarves
-	[VARIABLE_VALUE:COMPETITION:-10:10]		// as dwarves
-	[VARIABLE_VALUE:PERSEVERANCE:-10:10]		// somewhat lower
-	[VARIABLE_VALUE:LEISURE_TIME:10:20]	 	// as dwarves
-	[VARIABLE_VALUE:COMMERCE:45:50]				// very high
-	[VARIABLE_VALUE:ROMANCE:-5:5]	 		// as dwarves
-	[VARIABLE_VALUE:NATURE:-30:-10]	 		// as dwarves
-	[VARIABLE_VALUE:PEACE:10:30]				// higher
+	// All values are based on the regular dwarven values, but adjusted to fit the narrative of this civilization. 
+	// Values that are less important to the identity of the civilization are more random, while values that are more important to the identity of the civilization are more consistent.
+	// The reach is:
+	// 		      none: 30
+	// Importance: 1/3: 20
+	// Importance: 2/3: 10
+	// Importance: 3/3: 5
+	// For DC: exactly one value is 3/3, and only six values total are 1/3 or 2/3.
+
+// All values are based on the regular dwarven values, but adjusted to fit the narrative of this civilization. 
+	// Values that are less important to the identity of the civilization are more random, while values that are more important to the identity of the civilization are more consistent.
+	// The reach is:
+	// 		      none: 30
+	// Importance: 1/3: 20
+	// Importance: 2/3: 10
+	// Importance: 3/3: 5
+
+	[VARIABLE_VALUE:LAW:20:40]	 			// Importance: 1/3.
+	[VARIABLE_VALUE:LOYALTY:10:40]	 		
+	[VARIABLE_VALUE:FAMILY:10:40]	 		
+	[VARIABLE_VALUE:FRIENDSHIP:10:40]	 	
+	[VARIABLE_VALUE:POWER:-15:15]		 		
+	[VARIABLE_VALUE:TRUTH:5:35]		 		// somewhat lower
+	[VARIABLE_VALUE:CUNNING:0:20]			// Importance: 1/3. a bit higher
+	[VARIABLE_VALUE:ELOQUENCE:-5:25]			// a bit higher
+	[VARIABLE_VALUE:FAIRNESS:0:30]		 	
+	[VARIABLE_VALUE:DECORUM:0:30]			// somewhat higher
+	[VARIABLE_VALUE:TRADITION:-15:15]	 		
+	[VARIABLE_VALUE:ARTWORK:5:35]			// somewhat lower
+	[VARIABLE_VALUE:COOPERATION:40:50]		// Importance: 2/3. much higher
+	[VARIABLE_VALUE:INDEPENDENCE:-15:5]		// Importance: 1/3. somewhat lower
+	[VARIABLE_VALUE:STOICISM:-10:20]	 		
+	[VARIABLE_VALUE:KNOWLEDGE:0:30]	 	
+	[VARIABLE_VALUE:INTROSPECTION:-20:10]	 	
+	[VARIABLE_VALUE:SELF_CONTROL:-15:15]	 	
+	[VARIABLE_VALUE:TRANQUILITY:-20:10]	 	
+	[VARIABLE_VALUE:HARMONY:-20:10]	 		
+	[VARIABLE_VALUE:MERRIMENT:-10:20]	 	// somewhat lower
+	[VARIABLE_VALUE:CRAFTSMANSHIP:10:40]	// somewhat lower
+	[VARIABLE_VALUE:MARTIAL_PROWESS:-15:5]	// Importance: 1/3. lower
+	[VARIABLE_VALUE:SKILL:5:35]	 		// somewhat lower
+	[VARIABLE_VALUE:HARD_WORK:20:50]	 	// higher
+	[VARIABLE_VALUE:SACRIFICE:-15:15]		 	
+	[VARIABLE_VALUE:COMPETITION:-15:15]		
+	[VARIABLE_VALUE:PERSEVERANCE:-15:15]	// somewhat lower
+	[VARIABLE_VALUE:LEISURE_TIME:5:25]	 	
+	[VARIABLE_VALUE:COMMERCE:45:50]			// Importance: 3/3. very high
+	[VARIABLE_VALUE:ROMANCE:-15:15]	 		
+	[VARIABLE_VALUE:NATURE:-35:-5]	 		
+	[VARIABLE_VALUE:PEACE:10:30]			// Importance: 2/3. higher
 
 	[WILL_ACCEPT_TRIBUTE]
 
