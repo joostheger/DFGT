@@ -700,13 +700,13 @@ TODO: finisch below
 	manager
 	accountant
 - appointed by LH1
-	watch
+	watch (law enforcement)
 	health
 - appointed by ARCHON
 	MANAGE_ANIMALS / tame_exotics
 	rites
 - appointed by councilors (capital)
-	magistrate of law
+	inquest
 	marshal
 
 	[POSITION:MARKET_OVERSEER] 	
@@ -716,131 +716,6 @@ TODO: finisch below
 		[NUMBER:1]
 		[ELECTED]
 		[RESPONSIBILITY:TRADE]
-		[REQUIRES_MARKET]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFTHEWATCH] 	
-		[NAME:alderman of the watch:aldermen] 
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:8] 
-		[RESPONSIBILITY:LAW_ENFORCEMENT]
-		[SQUAD:8:constable:constables]
-		[REQUIRES_MARKET]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFTHEHALL] 	
-		// Alternative names: alderman of the council
-		[NAME:alderman of the hall:aldermen] 
-		[SITE]
-		[PRECEDENCE:100]HIGH_ALDERMAN
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:8] 
-		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFINDUSTRY] 	
-		// Alternative names: alderman of the forge, alderman of the workshop
-		[NAME:alderman of industry:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:8] 
-		[RESPONSIBILITY:MANAGE_PRODUCTION]
-		[REQUIRES_MARKET]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFCOIN] 	
-		// Alternative names: alderman of the treasury, alderman of finance
-		[NAME:alderman of coin:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:8] 
-		[RESPONSIBILITY:ACCOUNTS]
-		[REQUIRES_MARKET]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFTHEINFIRMARY] 	
-		// Alternative names: alderman of physick
-		[NAME:alderman of the infirmary:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:20] 
-		[RESPONSIBILITY:HEALTH_MANAGEMENT]
-		[REQUIRES_MARKET]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFTHECOMMONS] 	
-		[NAME:alderman of the commons:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:20] 
-		[RESPONSIBILITY:MEET_WORKERS]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFDISPATCHES] 	
-		[NAME:alderman of dispatches:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:20] 
-		[RESPONSIBILITY:DELIVER_MESSAGES]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFINQUEST] 	
-		[NAME:alderman of inquest:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:50] 
-		[RESPONSIBILITY:LAW_ENFORCEMENT]
-		[RESPONSIBILITY:ESPIONAGE]
-		[REQUIRES_MARKET]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFRITES] 	
-		[NAME:alderman of rites:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:50] 
-		[RESPONSIBILITY:RELIGION]
-		[REQUIRES_MARKET]
-        [EXPORTED_IN_LEGENDS]
-        [DO_NOT_CULL]
-
-	[POSITION:ALDERMANOFTHEMENAGERIE] 	
-		// Alternative names: alderman of beasts
-		[NAME:alderman of the menagerie:aldermen]
-		[SITE]
-		[PRECEDENCE:100]
-		[NUMBER:1]
-		[ELECTED]
-		[REQUIRES_POPULATION:50] 
-		[RESPONSIBILITY:TAME_EXOTICS]
-		[RESPONSIBILITY:MANAGE_ANIMALS]
 		[REQUIRES_MARKET]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
