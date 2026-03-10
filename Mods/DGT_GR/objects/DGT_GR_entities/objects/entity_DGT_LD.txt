@@ -798,6 +798,7 @@ Ruler
         [APPOINTED_BY:ARCHDUKE]
         [RESPONSIBILITY:JUDGE]
         [RESPONSIBILITY:LAW_ENFORCEMENT]
+		[SQUAD:4:constable:constables]
         [RESPONSIBILITY:COLLECT_TAXES]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
@@ -1054,7 +1055,7 @@ Ruler
 		// Alternative names: alderman of the council
 		[NAME:alderman of the hall:aldermen] 
 		[SITE]
-		[PRECEDENCE:100]HIGH_ALDERMAN
+		[PRECEDENCE:100]
 		[NUMBER:1]
 		[ELECTED]
 		[REQUIRES_POPULATION:8] 
