@@ -1,4 +1,4 @@
-## General features of Ducal Cities
+## General features of League of Dukes ##
 
 ## Political Character ##
 Ducal cities zijn zelfstandige steden die zich hebben verenigd in een bondgenootschap. 
