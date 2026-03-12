@@ -585,6 +585,8 @@ Ruler
         [DO_NOT_CULL]
 		[DUTY_BOUND]
 		[RULES_FROM_LOCATION]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 
 	[POSITION:COUNCIILOR_OF_WAR] 	
 		[NAME:councilor of war:councilors] 
@@ -594,6 +596,8 @@ Ruler
 		[RESPONSIBILITY:MILITARY_STRATEGY]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 
 	[POSITION:COUNCIILOR_OF_LAW] 	
 		[NAME:councilor of law:councilors] 
@@ -606,6 +610,8 @@ Ruler
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 
 	[POSITION:COUNCIILOR_OF_COIN] 	
 		[NAME:councilor of coin:councilors] 
@@ -619,6 +625,8 @@ Ruler
 		[RESPONSIBILITY:ACCOUNTING]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 	
 	[POSITION:COUNCIILOR_OF_PUBLIC_WORKS] 	
 		[NAME:councilor of public works:councilors] 
@@ -631,7 +639,21 @@ Ruler
 		[RESPONSIBILITY:BUILDING_SAFETY]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
-	
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
+		
+	[POSITION:COUNCIILOR_OF_MARKETS] 	
+		[NAME:councilor of markets:councilors] 
+		[NUMBER:1]
+		[ELECTED]
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:ADVISE_LEADERS]
+		[RESPONSIBILITY:FOOD_SUPPLY]
+        [EXPORTED_IN_LEGENDS]
+        [DO_NOT_CULL]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
+
 	[POSITION:HERALD_OF_THE_ARCHON]
 		[NAME:herald of the archon:heralds]
 		[PRECEDENCE:40]
@@ -643,6 +665,8 @@ Ruler
 		//Not neccesary: RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 
 	[POSITION:LH2] 						
 		[NAME:city warden:city wardens] 
@@ -650,12 +674,15 @@ Ruler
 		[LAND_NAME:City proper]
 		[PRECEDENCE:50]
 		[NUMBER:AS_NEEDED]
-		[REPLACED_BY:LH3]
-		[ELECTED]
+		[APPOINTED_BY:COUNCIILOR_OF_MARKETS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:JUDGE]
+		[SUCCESSION:BY_POSITION:MAGISTRATE]
+		[SUCCESSION:BY_POSITION:MAGISTRATE_2]
+		[SUCCESSION:BY_POSITION:MAGISTRATE_3]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 	[POSITION:LH1] 						
 		[NAME:warden:wardens] 
@@ -664,11 +691,12 @@ Ruler
 		[PRECEDENCE:50]
 		[NUMBER:AS_NEEDED]
 		[REPLACED_BY:LH2]
-		[ELECTED]
+		[APPOINTED_BY:COUNCIILOR_OF_MARKETS]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:JUDGE]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 
 TODO: reconsider all these positions carefully. 
@@ -693,6 +721,7 @@ TODO: reconsider all these positions carefully.
 		[REQUIRES_MARKET]
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 	[POSITION:MAGISTRATE_2] 	
 		[NAME:magistrate:magistrates] 
@@ -705,6 +734,7 @@ TODO: reconsider all these positions carefully.
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
 		[REQUIRES_POPULATION:70]
+		[CHAT_WORTHY]
 
 	[POSITION:MAGISTRATE_3] 	
 		[NAME:magistrate:magistrates] 
@@ -717,6 +747,7 @@ TODO: reconsider all these positions carefully.
         [EXPORTED_IN_LEGENDS]
         [DO_NOT_CULL]
 		[REQUIRES_POPULATION:140]
+		[CHAT_WORTHY]
 
 	[POSITION:MESSENGER]	
 		[NAME:messenger:messengers] 
@@ -819,6 +850,7 @@ TODO: reconsider all these positions carefully.
 		[PRECEDENCE:115]
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
+		[CHAT_WORTHY]
 
 TODO: determine difference of each group. maybe a garrison for every site, an extra for the market and capital
 	[POSITION:MARSHAL]
@@ -833,6 +865,7 @@ TODO: determine difference of each group. maybe a garrison for every site, an ex
         [EXPORTED_IN_LEGENDS]
 		[REQUIRES_MARKET]
         [DO_NOT_CULL]
+		[CHAT_WORTHY]
 
     [POSITION:CAPTAIN]
 		[NAME:captain:captains]
