@@ -43,6 +43,7 @@ Easier:
 * The limited military focus restricts the number of squads and soldiers per squad, but additional options open up as the settlement develops.
 * If a diplomat leaves unhappy, it may be one of the two merchant journeymen arriving with the caravan. You likely did not have a *clerk of stores* assigned. Do not worry—the only thing you missed was a supplemental trade negotiation.
 * There is a functional noble position called *Promotion Trigger*. It has no special features, but it can be used to force evaluation of nobility positions and trigger promotions when applicable. 
+* If you want to use the squads of the municipal and republican guards, you have to assign first a civic guard captain or a bailif, to activate that function. 
 
 
 ### Starting a new fortress ###
