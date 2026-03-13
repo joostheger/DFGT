@@ -1,8 +1,0 @@
-language_DGT_SS_words
-
-[OBJECT:LANGUAGE]
-
-[WORD:REPUBLIC]
-	[NOUN:republic:republics]
-		[REAR_COMPOUND_NOUN_SING]
-		[THE_NOUN_SING]

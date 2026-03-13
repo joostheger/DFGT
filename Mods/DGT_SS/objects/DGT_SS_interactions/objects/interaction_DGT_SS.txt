@@ -1,3 +1,0 @@
-interaction_DGT_SS
-
-OBJECT:INTERACTION

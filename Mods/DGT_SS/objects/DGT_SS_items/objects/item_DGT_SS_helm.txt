@@ -1,3 +1,0 @@
-item_DGT_SS_helm
-
-OBJECT:ITEM

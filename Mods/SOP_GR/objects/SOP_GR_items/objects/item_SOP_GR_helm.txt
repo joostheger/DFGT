@@ -1,0 +1,6 @@
+item_SOP_GR_helm
+
+[OBJECT:ITEM]
+
+[SELECT_ITEM:ITEM_HELM_TURBAN]
+[LAYER:UNDER]           - needed for being available at embark.
