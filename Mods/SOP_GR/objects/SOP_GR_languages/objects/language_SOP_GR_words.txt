@@ -429,7 +429,7 @@ language_SOP_GR_words
 	[VERB:register:registers:registered:registered:registering]
 		[STANDARD_VERB]
 
-// NAME_RULERS_GROUP
+// SOP_RULERS_GROUP
 [WORD:CHARTER]
 	[NOUN:charter:charters]
 		[FRONT_COMPOUND_NOUN_SING]
@@ -521,7 +521,7 @@ language_SOP_GR_words
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
-// NAME_CITY_GROUP
+// SOP_CITY_GROUP
 [WORD:COMMUNITY]
 	[NOUN:community:communities]
 		[FRONT_COMPOUND_NOUN_SING]
@@ -562,7 +562,7 @@ language_SOP_GR_words
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
-// NAME_CITY_DISTRICT
+// SOP_CITY_DISTRICT
 [WORD:BOROUGH]
 	[NOUN:borough:boroughs]
 		[FRONT_COMPOUND_NOUN_SING]
@@ -618,7 +618,7 @@ language_SOP_GR_words
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
-// NAME_CITY_LOCATION
+// SOP_CITY_LOCATION
 [WORD:DOCKS]
 	[NOUN:dock:docks]
 		[FRONT_COMPOUND_NOUN_SING]
@@ -663,7 +663,7 @@ language_SOP_GR_words
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
-// NAME_MULTIPLE
+// SOP_NUMBERS
 [WORD:FOUR]
 	[ADJ:four]
 		[ADJ_DIST:2]
@@ -736,7 +736,6 @@ language_SOP_GR_words
 		[FRONT_COMPOUND_PREFIX]
 		[THE_COMPOUND_PREFIX]
 
-// LEAGUE_RULER_ADDITIONAL
 [WORD:DUKE]
 	[NOUN:duke:dukes]
 		[FRONT_COMPOUND_NOUN_SING]
@@ -750,7 +749,6 @@ language_SOP_GR_words
 		[FRONT_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
-// LEAGUE_CITY_ADDITIONAL
 [WORD:CHOSEN]
 	[ADJ:chosen]
 		[ADJ_DIST:2]
@@ -765,7 +763,7 @@ language_SOP_GR_words
 		[REAR_COMPOUND_ADJ]
 		[THE_COMPOUND_ADJ]
 
-// NAME_LEAGUE
+// SOP_LEAGUE
 [WORD:CONCORD]
 	[NOUN:concord:concords]
 		[FRONT_COMPOUND_NOUN_SING]
@@ -810,7 +808,7 @@ language_SOP_GR_words
 		[THE_NOUN_PLUR]
 		[OF_NOUN_PLUR]
 
-// NAME_CITY_STATE
+// SOP_CITY_STATE
 [WORD:CITY UNBOUND]
 	[NOUN:city unbound:cities unbound]
 		[THE_NOUN_SING]
