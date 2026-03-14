@@ -1,5 +1,9 @@
 ## General features of League of Dukes ##
 
+## Features ##
+Het verkiezingssysteem houdt in, dat personen in meerdere posten verkozen kunnen worden. zodra ze echter tot duke verkozen worden, laten ze eerst eerdere rollen weer los, maar kunnen daarna alsnog daar opniuew voor gekozen worden. 
+diverse rollen benodigen goede sociale vaardigheden. de dwarf met de beste sociale vaardigheden zal dan vaak als alderman worden gekozen.
+
 ## Political Character ##
 League of Dukes zijn zelfstandige steden die zich hebben verenigd in een bondgenootschap. 
 
