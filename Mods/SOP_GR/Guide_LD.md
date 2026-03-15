@@ -16,3 +16,5 @@ Naarmate steden groeien, stellen zij dukes aan. Deze behartigen de belangen van 
 Wanneer één van de dukes zich door erkenning, vertrouwen en bestuurlijke kracht als natuurlijke leider van het geheel manifesteert, ontstaat de centrale macht in de persoon van de archduke. Deze positie wordt bekrachtigd door verkiezing binnen het bestaande bestel en rust op brede institutionele legitimiteit.
 
 Deze staat is opgebouwd rond ambt en verantwoordelijkheid. Titels drukken bevoegdheid uit en markeren een plaats binnen een helder gedefinieerde bestuurlijke orde. Vanuit de stedelijke basis groeit het hogere bestuur organisch voort. Nationale ambten sluiten aan op bestaande verantwoordelijkheden en bouwen daarop voort. Hierin ligt de eenheid van het verbond besloten.
+
+* veel intrigue
