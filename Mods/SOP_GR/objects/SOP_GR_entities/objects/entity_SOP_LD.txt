@@ -590,6 +590,8 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
+		
 
 	[POSITION:FIRST_ALDERMAN]
 		[NAME:first alderman:first aldermen]
@@ -612,7 +614,6 @@ Ruler
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
-		[BRAG_ON_KILL]
 
 	[POSITION:LEAGUE_ENVOY]
 		[NAME:league envoy:league envoys]
@@ -677,6 +678,7 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
     [POSITION:DUCAL_MARSHAL]
 		[NAME:ducal marshal:ducal marshals]
@@ -690,6 +692,7 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
     [POSITION:CAPTAIN]
 		[NAME:captain:captains]
@@ -706,6 +709,7 @@ Ruler
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
 	[POSITION:CAPTAIN_SITE]
 		[NAME:captain:captains]
@@ -740,6 +744,7 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
     [POSITION:DUCAL_TREASURER]
 		[NAME:ducal treasurer:ducal treasurers]
@@ -852,6 +857,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
 	[POSITION:LH2] 						
 		[NAME:duke:dukes] 
@@ -866,7 +872,9 @@ Ruler
 		[RESPONSIBILITY:JUDGE]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
+		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
 	[POSITION:LH3] 						
 		[NAME:high duke:dukes] 
@@ -883,6 +891,7 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
 	[POSITION:LH4] 						
 		[NAME:grand duke:grand dukes] 
@@ -899,6 +908,7 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
 
 	 [POSITION:LH5] 						
 		[NAME:duke-protector:duke-protectors] 
@@ -913,6 +923,7 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
+		[CHAT_WORTHY]
    
 	[POSITION:FORCED_ADMINISTRATOR]
 		[NAME:league warden:league wardens]
@@ -928,6 +939,7 @@ Ruler
 		[RESPONSIBILITY:MEET_WORKERS]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 	[POSITION:INQUISITOR] 
 		[NAME:inquisitor:inquisitors]
@@ -1090,6 +1102,7 @@ Ruler
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 
 	[POSITION:ALDERMANOFTHEHALL_2] 	
@@ -1104,6 +1117,7 @@ Ruler
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 
 	[POSITION:ALDERMANOFTHEHALL_3] 	
@@ -1118,6 +1132,7 @@ Ruler
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 
 	[POSITION:ALDERMANOFTHEHALL_4] 	
@@ -1131,6 +1146,7 @@ Ruler
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
+		[CHAT_WORTHY]
 
 	[POSITION:ALDERMANOFINDUSTRY_1] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
@@ -1642,6 +1658,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[REQUIRES_MARKET]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 	
 	 [POSITION:DUKE_SITE_B] 						
 		[NAME:duke:dukes] 
@@ -1704,6 +1722,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[REQUIRES_MARKET]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 
 	[POSITION:DUKE_SITE_C] 						
 		[NAME:duke:dukes] 
@@ -1765,6 +1785,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[REQUIRES_MARKET]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 
 	[POSITION:DUKE_SITE_GRAND] 						
 		[NAME:grand duke:grand dukes] 
@@ -1826,6 +1848,8 @@ Ruler
 		[DO_NOT_CULL]
 		[BRAG_ON_KILL]
 		[REQUIRES_MARKET]
+		[BRAG_ON_KILL]
+		[CHAT_WORTHY]
 
 	[POSITION:FUNC_PROMOTION_TRIGGER] 
 		[NAME:election official:election officials]
