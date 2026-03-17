@@ -578,6 +578,8 @@ Ruler
 		[NAME:high authority:high authority] // this name is used when the position is vacant, with ": none" after.
 		[NAME_MALE:archduke:archdukes] 
 		[NAME_FEMALE:archduchess:archduchesses] 
+		[SPOUSE_MALE:archduke consort:archdukes consort] 
+		[SPOUSE_FEMALE:archduchess consort:archduchesses consort] 
 		[LAND_NAME:Archduchy]
 		[NUMBER:1]
 		[PRECEDENCE:1]
@@ -668,6 +670,8 @@ Ruler
 
 	[POSITION:FIRST_ALDERMAN]
 		[NAME:first alderman:first aldermen]
+		[NAME_MALE:first alderman:first aldermen]
+		[NAME_FEMALE:first alderwoman:first alderwomen]
 		[PRECEDENCE:10]
 		[NUMBER:2]
 		[ELECTED]
@@ -871,6 +875,8 @@ Ruler
 	
 	[POSITION:LH1] 						
 		[NAME:high alderman:high aldermen] 
+		[NAME_MALE:high alderman:high aldermen]
+		[NAME_FEMALE:high alderwoman:high alderwomen]
 	   	[LAND_HOLDER:1]
 		[LAND_NAME:League Town]
 		[PRECEDENCE:19]
@@ -895,6 +901,10 @@ Ruler
 
 	[POSITION:LH2] 						
 		[NAME:duke:dukes] 
+		[NAME_MALE:duke:dukes]
+		[NAME_FEMALE:duchess:duchesses]
+		[SPOUSE_MALE:duke consort:dukes consort] 
+		[SPOUSE_FEMALE:duchess consort:duchesses consort]
 	   	[LAND_HOLDER:2]
 		[LAND_NAME:Council of dukes]
 		[PRECEDENCE:12]
@@ -916,8 +926,12 @@ Ruler
 		[RULES_FROM_LOCATION]
 		[SLEEP_PRETENSION]
 
-	[POSITION:LH3] 						
+	[POSITION:LH3]
 		[NAME:high duke:dukes] 
+		[NAME_MALE:high duke:dukes]
+		[NAME_FEMALE:high duchess:duchesses]
+		[SPOUSE_MALE:high duke consort:dukes consort] 
+		[SPOUSE_FEMALE:high duchess consort:duchesses consort]
 	   	[LAND_HOLDER:3]
 		[LAND_NAME:Council of dukes]
 		[PRECEDENCE:11]
@@ -941,6 +955,10 @@ Ruler
 
 	[POSITION:LH4] 						
 		[NAME:grand duke:grand dukes] 
+		[NAME_MALE:grand duke:dukes]
+		[NAME_FEMALE:grand duchess:duchesses]
+		[SPOUSE_MALE:grand duke consort:dukes consort] 
+		[SPOUSE_FEMALE:grand duchess consort:duchesses consort]
 	   	[LAND_HOLDER:4]
 		[LAND_NAME:Council of dukes]
 		[PRECEDENCE:10]
@@ -964,6 +982,10 @@ Ruler
 
 	 [POSITION:LH5] 						
 		[NAME:duke-protector:duke-protectors] 
+		[NAME_MALE:duke-protector:duke-protectors] 
+		[NAME_FEMALE:duchess-protector:duchess-protectors] 
+		[SPOUSE_MALE:duke-protector consort:duke-protectors consort] 
+		[SPOUSE_FEMALE:duchess-protector consort:duchess-protectors consort]
 	   	[LAND_HOLDER:5]
 		[LAND_NAME:Archduchy]
 		[PRECEDENCE:3]
@@ -1037,6 +1059,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEHALL_1] 	
 		// Alternative names: alderman of the council
 		[NAME:alderman of the hall:aldermen] 
+		[NAME_MALE:alderman of the hall:aldermen]
+		[NAME_FEMALE:alderwoman of the hall:alderwomen]
 		[SITE]
 		[PRECEDENCE:20]
 		[NUMBER:1]
@@ -1052,6 +1076,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEHALL_2] 	
 		// Alternative names: alderman of the council
 		[NAME:alderman of the hall:aldermen] 
+		[NAME_MALE:alderman of the hall:aldermen]
+		[NAME_FEMALE:alderwoman of the hall:alderwomen]
 		[SITE]
 		[PRECEDENCE:20]
 		[NUMBER:1]
@@ -1067,7 +1093,9 @@ Ruler
 
 	[POSITION:ALDERMANOFTHEHALL_3] 	
 		// Alternative names: alderman of the council
-		[NAME:alderman of the hall:aldermen] 
+		[NAME:alderman of the hall:aldermen]
+		[NAME_MALE:alderman of the hall:aldermen]
+		[NAME_FEMALE:alderwoman of the hall:alderwomen] 
 		[SITE]
 		[PRECEDENCE:20]
 		[NUMBER:1]
@@ -1084,7 +1112,9 @@ Ruler
 
 	[POSITION:ALDERMANOFTHEHALL_4] 	
 		// Alternative names: alderman of the council
-		[NAME:alderman of the hall:aldermen] 
+		[NAME:alderman of the hall:aldermen]
+		[NAME_MALE:alderman of the hall:aldermen]
+		[NAME_FEMALE:alderwoman of the hall:alderwomen] 
 		[SITE]
 		[PRECEDENCE:20]
 		[NUMBER:1]
@@ -1100,7 +1130,9 @@ Ruler
 
 	[POSITION:ALDERMANOFTRADE_1] 	
 		// Alternavive names: alderman of the depot, alderman of the market
-		[NAME:alderman of trade:aldermen] 
+		[NAME:alderman of trade:aldermen]
+		[NAME_MALE:alderman of trade:aldermen]
+		[NAME_FEMALE:alderwoman of trade:alderwomen] 
 		[SITE]
 		[PRECEDENCE:21]
 		[NUMBER:1]
@@ -1116,6 +1148,8 @@ Ruler
 	[POSITION:ALDERMANOFTRADE_2] 	
 		// Alternavive names: alderman of the depot, alderman of the market
 		[NAME:alderman of trade:aldermen] 
+		[NAME_MALE:alderman of trade:aldermen]
+		[NAME_FEMALE:alderwoman of trade:alderwomen]
 		[SITE]
 		[PRECEDENCE:21]
 		[NUMBER:1]
@@ -1132,6 +1166,8 @@ Ruler
 	[POSITION:ALDERMANOFTRADE_3] 	
 		// Alternavive names: alderman of the depot, alderman of the market
 		[NAME:alderman of trade:aldermen] 
+		[NAME_MALE:alderman of trade:aldermen]
+		[NAME_FEMALE:alderwoman of trade:alderwomen]
 		[SITE]
 		[PRECEDENCE:21]
 		[NUMBER:1]
@@ -1149,6 +1185,8 @@ Ruler
 	[POSITION:ALDERMANOFTRADE_4] 	
 		// Alternavive names: alderman of the depot, alderman of the market
 		[NAME:alderman of trade:aldermen] 
+		[NAME_MALE:alderman of trade:aldermen]
+		[NAME_FEMALE:alderwoman of trade:alderwomen]
 		[SITE]
 		[PRECEDENCE:21]
 		[NUMBER:1]
@@ -1165,6 +1203,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEGUARD_1] 	
 		// Alternative names: alderman of the guard,
 		[NAME:alderman of the guard:aldermen] 
+		[NAME_MALE:alderman of the guard:aldermen]
+		[NAME_FEMALE:alderwoman of the guard:alderwomen]
 		[SITE]
 		[PRECEDENCE:22]
 		[NUMBER:1]
@@ -1183,6 +1223,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEGUARD_2] 	
 		// Alternative names: alderman of the guard,
 		[NAME:alderman of the guard:aldermen] 
+		[NAME_MALE:alderman of the guard:aldermen]
+		[NAME_FEMALE:alderwoman of the guard:alderwomen]
 		[SITE]
 		[PRECEDENCE:22]
 		[NUMBER:1]
@@ -1202,6 +1244,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEGUARD_3] 	
 		// Alternative names: alderman of the guard,
 		[NAME:alderman of the guard:aldermen] 
+		[NAME_MALE:alderman of the guard:aldermen]
+		[NAME_FEMALE:alderwoman of the guard:alderwomen]
 		[SITE]
 		[PRECEDENCE:22]
 		[NUMBER:1]
@@ -1222,6 +1266,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEGUARD_4] 	
 		// Alternative names: alderman of the guard, 
 		[NAME:alderman of the guard:aldermen] 
+		[NAME_MALE:alderman of the guard:aldermen]
+		[NAME_FEMALE:alderwoman of the guard:alderwomen]
 		[SITE]
 		[PRECEDENCE:22]
 		[NUMBER:1]
@@ -1241,6 +1287,8 @@ Ruler
 	[POSITION:ALDERMANOFINDUSTRY_1] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
 		[NAME:alderman of industry:aldermen]
+		[NAME_MALE:alderman of industry:aldermen]
+		[NAME_FEMALE:alderwoman of industry:alderwomen]
 		[SITE]
 		[PRECEDENCE:23]
 		[NUMBER:1]
@@ -1256,6 +1304,8 @@ Ruler
 	[POSITION:ALDERMANOFINDUSTRY_2] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
 		[NAME:alderman of industry:aldermen]
+		[NAME_MALE:alderman of industry:aldermen]
+		[NAME_FEMALE:alderwoman of industry:alderwomen]
 		[SITE]
 		[PRECEDENCE:23]
 		[NUMBER:1]
@@ -1272,6 +1322,8 @@ Ruler
 	[POSITION:ALDERMANOFINDUSTRY_3] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
 		[NAME:alderman of industry:aldermen]
+		[NAME_MALE:alderman of industry:aldermen]
+		[NAME_FEMALE:alderwoman of industry:alderwomen]
 		[SITE]
 		[PRECEDENCE:23]
 		[NUMBER:1]
@@ -1289,6 +1341,8 @@ Ruler
 	[POSITION:ALDERMANOFINDUSTRY_4] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
 		[NAME:alderman of industry:aldermen]
+		[NAME_MALE:alderman of industry:aldermen]
+		[NAME_FEMALE:alderwoman of industry:alderwomen]
 		[SITE]
 		[PRECEDENCE:23]
 		[NUMBER:1]
@@ -1305,6 +1359,8 @@ Ruler
 	[POSITION:ALDERMANOFCOIN_1] 	
 		// Alternative names: alderman of the treasury, alderman of finance
 		[NAME:alderman of coin:aldermen]
+		[NAME_MALE:alderman of coin:aldermen]
+		[NAME_FEMALE:alderwoman of coin:alderwomen]
 		[SITE]
 		[PRECEDENCE:24]
 		[NUMBER:1]
@@ -1321,6 +1377,8 @@ Ruler
 	[POSITION:ALDERMANOFCOIN_2] 	
 		// Alternative names: alderman of the treasury, alderman of finance
 		[NAME:alderman of coin:aldermen]
+		[NAME_MALE:alderman of coin:aldermen]
+		[NAME_FEMALE:alderwoman of coin:alderwomen]
 		[SITE]
 		[PRECEDENCE:24]
 		[NUMBER:1]
@@ -1338,6 +1396,8 @@ Ruler
 	[POSITION:ALDERMANOFCOIN_3] 	
 		// Alternative names: alderman of the treasury, alderman of finance
 		[NAME:alderman of coin:aldermen]
+		[NAME_MALE:alderman of coin:aldermen]
+		[NAME_FEMALE:alderwoman of coin:alderwomen]
 		[SITE]
 		[PRECEDENCE:24]
 		[NUMBER:1]
@@ -1356,6 +1416,8 @@ Ruler
 	[POSITION:ALDERMANOFCOIN_4] 	
 		// Alternative names: alderman of the treasury, alderman of finance
 		[NAME:alderman of coin:aldermen]
+		[NAME_MALE:alderman of coin:aldermen]
+		[NAME_FEMALE:alderwoman of coin:alderwomen]
 		[SITE]
 		[PRECEDENCE:24]
 		[NUMBER:1]
@@ -1372,6 +1434,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHECOMMONS_1] 	
 		[NAME:alderman of the commons:aldermen]
+		[NAME_MALE:alderman of the commons:aldermen]
+		[NAME_FEMALE:alderwoman of the commons:alderwomen]
 		[SITE]
 		[PRECEDENCE:25]
 		[NUMBER:1]
@@ -1385,6 +1449,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHECOMMONS_2] 	
 		[NAME:alderman of the commons:aldermen]
+		[NAME_MALE:alderman of the commons:aldermen]
+		[NAME_FEMALE:alderwoman of the commons:alderwomen]
 		[SITE]
 		[PRECEDENCE:25]
 		[NUMBER:1]
@@ -1399,6 +1465,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHECOMMONS_3] 	
 		[NAME:alderman of the commons:aldermen]
+		[NAME_MALE:alderman of the commons:aldermen]
+		[NAME_FEMALE:alderwoman of the commons:alderwomen]
 		[SITE]
 		[PRECEDENCE:25]
 		[NUMBER:1]
@@ -1414,6 +1482,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHECOMMONS_4] 	
 		[NAME:alderman of the commons:aldermen]
+		[NAME_MALE:alderman of the commons:aldermen]
+		[NAME_FEMALE:alderwoman of the commons:alderwomen]
 		[SITE]
 		[PRECEDENCE:25]
 		[NUMBER:1]
@@ -1429,6 +1499,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEINFIRMARY_1] 	
 		// Alternative names: alderman of physick
 		[NAME:alderman of the infirmary:aldermen]
+		[NAME_MALE:alderman of the infirmary:aldermen]
+		[NAME_FEMALE:alderwoman of the infirmary:alderwomen]
 		[SITE]
 		[PRECEDENCE:26]
 		[NUMBER:1]
@@ -1444,6 +1516,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEINFIRMARY_2] 	
 		// Alternative names: alderman of physick
 		[NAME:alderman of the infirmary:aldermen]
+		[NAME_MALE:alderman of the infirmary:aldermen]
+		[NAME_FEMALE:alderwoman of the infirmary:alderwomen]
 		[SITE]
 		[PRECEDENCE:26]
 		[NUMBER:1]
@@ -1460,6 +1534,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEINFIRMARY_3] 	
 		// Alternative names: alderman of physick
 		[NAME:alderman of the infirmary:aldermen]
+		[NAME_MALE:alderman of the infirmary:aldermen]
+		[NAME_FEMALE:alderwoman of the infirmary:alderwomen]
 		[SITE]
 		[PRECEDENCE:26]
 		[NUMBER:1]
@@ -1476,6 +1552,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEINFIRMARY_4] 	
 		// Alternative names: alderman of physick
 		[NAME:alderman of the infirmary:aldermen]
+		[NAME_MALE:alderman of the infirmary:aldermen]
+		[NAME_FEMALE:alderwoman of the infirmary:alderwomen]
 		[SITE]
 		[PRECEDENCE:26]
 		[NUMBER:1]
@@ -1490,6 +1568,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHEROAD_1] 	
 		[NAME:alderman of the road:aldermen]
+		[NAME_MALE:alderman of the road:aldermen]
+		[NAME_FEMALE:alderwoman of the road:alderwomen]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -1503,6 +1583,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHEROAD_2] 	
 		[NAME:alderman of the road:aldermen]
+		[NAME_MALE:alderman of the road:aldermen]
+		[NAME_FEMALE:alderwoman of the road:alderwomen]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -1517,6 +1599,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHEROAD_3] 	
 		[NAME:alderman of the road:aldermen]
+		[NAME_MALE:alderman of the road:aldermen]
+		[NAME_FEMALE:alderwoman of the road:alderwomen]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -1532,6 +1616,8 @@ Ruler
 
 	[POSITION:ALDERMANOFTHEROAD_4] 	
 		[NAME:alderman of the road:aldermen]
+		[NAME_MALE:alderman of the road:aldermen]
+		[NAME_FEMALE:alderwoman of the road:alderwomen]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -1546,6 +1632,8 @@ Ruler
 
 	[POSITION:ALDERMANOFINQUEST_1] 	
 		[NAME:alderman of inquest:aldermen]
+		[NAME_MALE:alderman of the inquest:aldermen]
+		[NAME_FEMALE:alderwoman of the inquest:alderwomen]
 		[SITE]
 		[PRECEDENCE:27]
 		[NUMBER:1]
@@ -1561,6 +1649,8 @@ Ruler
 
 	[POSITION:ALDERMANOFINQUEST_2] 	
 		[NAME:alderman of inquest:aldermen]
+		[NAME_MALE:alderman of the inquest:aldermen]
+		[NAME_FEMALE:alderwoman of the inquest:alderwomen]
 		[SITE]
 		[PRECEDENCE:27]
 		[NUMBER:1]
@@ -1577,6 +1667,8 @@ Ruler
 
 	[POSITION:ALDERMANOFINQUEST_3] 	
 		[NAME:alderman of inquest:aldermen]
+		[NAME_MALE:alderman of the inquest:aldermen]
+		[NAME_FEMALE:alderwoman of the inquest:alderwomen]
 		[SITE]
 		[PRECEDENCE:27]
 		[NUMBER:1]
@@ -1594,6 +1686,8 @@ Ruler
 
 	[POSITION:ALDERMANOFINQUEST_4] 	
 		[NAME:alderman of inquest:aldermen]
+		[NAME_MALE:alderman of the inquest:aldermen]
+		[NAME_FEMALE:alderwoman of the inquest:alderwomen]
 		[SITE]
 		[PRECEDENCE:27]
 		[NUMBER:1]
@@ -1610,6 +1704,8 @@ Ruler
 
 	[POSITION:ALDERMANOFRITES_1] 	
 		[NAME:alderman of rites:aldermen]
+		[NAME_MALE:alderman of the rites:aldermen]
+		[NAME_FEMALE:alderwoman of the rites:alderwomen]
 		[SITE]
 		[PRECEDENCE:28]
 		[NUMBER:1]
@@ -1624,6 +1720,8 @@ Ruler
 
 	[POSITION:ALDERMANOFRITES_2] 	
 		[NAME:alderman of rites:aldermen]
+		[NAME_MALE:alderman of the rites:aldermen]
+		[NAME_FEMALE:alderwoman of the rites:alderwomen]
 		[SITE]
 		[PRECEDENCE:28]
 		[NUMBER:1]
@@ -1639,6 +1737,8 @@ Ruler
 
 	[POSITION:ALDERMANOFRITES_3] 	
 		[NAME:alderman of rites:aldermen]
+		[NAME_MALE:alderman of the rites:aldermen]
+		[NAME_FEMALE:alderwoman of the rites:alderwomen]
 		[SITE]
 		[PRECEDENCE:28]
 		[NUMBER:1]
@@ -1655,6 +1755,8 @@ Ruler
 
 	[POSITION:ALDERMANOFRITES_4] 	
 		[NAME:alderman of rites:aldermen]
+		[NAME_MALE:alderman of the rites:aldermen]
+		[NAME_FEMALE:alderwoman of the rites:alderwomen]
 		[SITE]
 		[PRECEDENCE:28]
 		[NUMBER:1]
@@ -1671,6 +1773,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEMENAGERIE_1] 	
 		// Alternative names: alderman of beasts
 		[NAME:alderman of the menagerie:aldermen]
+		[NAME_MALE:alderman of the menagerie:aldermen]
+		[NAME_FEMALE:alderwoman of the menagerie:alderwomen]
 		[SITE]
 		[PRECEDENCE:29]
 		[NUMBER:1]
@@ -1687,6 +1791,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEMENAGERIE_2] 	
 		// Alternative names: alderman of beasts
 		[NAME:alderman of the menagerie:aldermen]
+		[NAME_MALE:alderman of the menagerie:aldermen]
+		[NAME_FEMALE:alderwoman of the menagerie:alderwomen]
 		[SITE]
 		[PRECEDENCE:29]
 		[NUMBER:1]
@@ -1704,6 +1810,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEMENAGERIE_3] 	
 		// Alternative names: alderman of beasts
 		[NAME:alderman of the menagerie:aldermen]
+		[NAME_MALE:alderman of the menagerie:aldermen]
+		[NAME_FEMALE:alderwoman of the menagerie:alderwomen]
 		[SITE]
 		[PRECEDENCE:29]
 		[NUMBER:1]
@@ -1722,6 +1830,8 @@ Ruler
 	[POSITION:ALDERMANOFTHEMENAGERIE_4] 	
 		// Alternative names: alderman of beasts
 		[NAME:alderman of the menagerie:aldermen]
+		[NAME_MALE:alderman of the menagerie:aldermen]
+		[NAME_FEMALE:alderwoman of the menagerie:alderwomen]
 		[SITE]
 		[PRECEDENCE:29]
 		[NUMBER:1]
@@ -1738,6 +1848,10 @@ Ruler
 
 	[POSITION:DUKE_SITE_A] 						
 		[NAME:duke:dukes]
+		[NAME_MALE:duke:dukes]
+		[NAME_FEMALE:duchess:duchesses]
+		[SPOUSE_MALE:duke consort:dukes consort] 
+		[SPOUSE_FEMALE:duchess consort:duchesses consort]
 		[LAND_NAME:Council of dukes]
 		[SITE]
 		[PRECEDENCE:14]
@@ -1809,6 +1923,10 @@ Ruler
 	
 	 [POSITION:DUKE_SITE_B] 						
 		[NAME:duke:dukes] 
+		[NAME_MALE:duke:dukes]
+		[NAME_FEMALE:duchess:duchesses]
+		[SPOUSE_MALE:duke consort:dukes consort] 
+		[SPOUSE_FEMALE:duchess consort:duchesses consort]
 		[LAND_NAME:Council of dukes]
 		[SITE]
 		[PRECEDENCE:15]
@@ -1879,6 +1997,10 @@ Ruler
 
 	[POSITION:DUKE_SITE_C] 						
 		[NAME:duke:dukes] 
+		[NAME_MALE:duke:dukes]
+		[NAME_FEMALE:duchess:duchesses]
+		[SPOUSE_MALE:duke consort:dukes consort] 
+		[SPOUSE_FEMALE:duchess consort:duchesses consort]
 		[LAND_NAME:Council of dukes]
 		[SITE]
 		[PRECEDENCE:16]
@@ -1947,7 +2069,11 @@ Ruler
 		[SLEEP_PRETENSION]
 
 	[POSITION:DUKE_SITE_GRAND] 						
-		[NAME:grand duke:grand dukes] 
+		[NAME:grand duke:dukes] 
+		[NAME_MALE:grand duke:dukes]
+		[NAME_FEMALE:grand duchess:duchesses]
+		[SPOUSE_MALE:grand duke consort:dukes consort] 
+		[SPOUSE_FEMALE:grand duchess consort:duchesses consort]
 		[LAND_NAME:Council of dukes]
 		[SITE]
 		[PRECEDENCE:13]

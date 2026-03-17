@@ -2519,12 +2519,13 @@ Settlers
 		[RESPONSIBILITY:FOOD_SUPPLY]
 
 	[POSITION:FUNC_PROMOTION_TRIGGER] 
-		//  assignment of settlers or citizens should be able, incase of 7 + 7
-		[LAND_NAME:(trigger promotion)] 
-		[DESCRIPTION:Assign or unassign his position to trigger promotions.]	
+		// assignment of settlers or citizens should be able, incase of 7 + 7
+		[NAME:election official:election officials]
+		[DESCRIPTION:Assign or unassign his position to trigger elections, if a population milestone is reached]	
 		[SITE]
 		[PRECEDENCE:NONE]
-		[NUMBER:1] 				
+		[NUMBER:1]
+		[REQUIRES_MARKET]
 
 		// Let these be appointed by the real citizens, to prevent usage by world-gen mode				
 		[APPOINTED_BY:SETTLER_TRADER2] 	
