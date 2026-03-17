@@ -10,13 +10,13 @@ TODO:
 [EARLIEST_COMPATIBLE_DISPLAYED_VERSION:1.0.6]
 [AUTHOR:Joost Heger]
 [NAME:Grand Republic (Seats of Power)]
-[DESCRIPTION:The Grand Republic: An aristocratic government type for your dwarves that transforms the political and social systems of Dwarf Fortress. Experience a new level of depth with revamped governance structures, improved trade options, and a new citizen-class: burghers, all designed to create a more immersive and challenging gameplay experience.]
+[DESCRIPTION:The Grand Republic: An aristocratic government type for your dwarves that transforms the political and social systems of Dwarf Fortress. Experience a new level of depth with revamped governance structures, improved trade options, and a new citizen-classes: citizens, burghers and patricians, all designed to create a more immersive and challenging gameplay experience.]
 REQUIRES_ID
 REQUIRES_ID_BEFORE_ME
 REQUIRES_ID_AFTER_ME
 CONFLICTS_WITH_ID
 [STEAM_TITLE:Grand Republic (Seats of Power)]
-[STEAM_DESCRIPTION:The Grand Republic: An aristocratic government type for your dwarves that transforms the political and social systems of Dwarf Fortress. Experience a new level of depth with revamped governance structures, improved trade options, and a new citizen-class: burghers, all designed to create a more immersive and challenging gameplay experience.]
+[STEAM_DESCRIPTION:The Grand Republic: An aristocratic government type for your dwarves that transforms the political and social systems of Dwarf Fortress. Experience a new level of depth with revamped governance structures, improved trade options, and a new citizen-classes: citizens, burghers and patricians, all designed to create a more immersive and challenging gameplay experience.]
 [STEAM_TAG:Entity]
 [STEAM_KEY_VALUE_TAG:Entity]
 [STEAM_METADATA:SOP_GR]
