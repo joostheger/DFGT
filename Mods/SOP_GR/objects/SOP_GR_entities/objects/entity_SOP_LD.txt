@@ -592,6 +592,13 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:5:0:1]
+		[DETERMINES_COIN_DESIGN]
+		[FLASHES]
+		[KILL_QUEST]
+		[PUNISHMENT_EXEMPTION]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
+		[SPECIAL_BURIAL]
 
 	[POSITION:DUCAL_MARSHAL]
 		[NAME:ducal marshal:ducal marshals]
@@ -607,6 +614,8 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:2:0:1]
+		[KILL_QUEST]
+		[QUEST_GIVER]
 
 	[POSITION:DUCAL_AMBASSADOR]
 		[NAME:ducal ambassador:ducal ambassadors]
@@ -622,6 +631,7 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:2:0:1]
+		[QUEST_GIVER]
 	
 	[POSITION:DUCAL_JUSTICIAR]
 		[NAME:ducal justiciar:ducal justiciars]
@@ -638,6 +648,8 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:2:0:1]
+		[KILL_QUEST]
+		[QUEST_GIVER]
 
     [POSITION:DUCAL_TREASURER]
 		[NAME:ducal treasurer:ducal treasurers]
@@ -651,6 +663,8 @@ Ruler
 		[BRAG_ON_KILL]
 		[DUTY_BOUND]
 		[COLOR:2:0:1]
+		[DETERMINES_COIN_DESIGN]
+		[QUEST_GIVER]
 
 	[POSITION:FIRST_ALDERMAN]
 		[NAME:first alderman:first aldermen]
@@ -664,6 +678,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:2:0:1]
+		[QUEST_GIVER]
 
 	[POSITION:LEAGUE_SECRETARY]
 		[NAME:league secretary:league secretaries]
@@ -685,7 +700,6 @@ Ruler
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
-		[DUTY_BOUND]
 		[COLOR:7:0:1]
 
 	[POSITION:HIGH_LEGATE]
@@ -731,6 +745,7 @@ Ruler
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[COLOR:7:0:1]
+		[QUEST_GIVER]
 
     [POSITION:CAPTAIN]
 		[NAME:captain:captains]
@@ -744,11 +759,11 @@ Ruler
 		[PRECEDENCE:60]
 		[COLOR:0:0:1]
 		[DO_NOT_CULL]
-		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:0:0:1]
+		[MILITARY_SCREEN_ONLY]
 
 	[POSITION:CAPTAIN_SITE]
 		[NAME:captain:captains]
@@ -766,10 +781,10 @@ Ruler
 		[PRECEDENCE:61]
 		[COLOR:0:0:1]
 		[DO_NOT_CULL]
-		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
 		[COLOR:0:0:1]
+		[MILITARY_SCREEN_ONLY]
 
 	[POSITION:CLERK_OF_TRADE]
 		[NAME:clerk of trade:clerks]
@@ -876,6 +891,7 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:1:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:LH2] 						
 		[NAME:duke:dukes] 
@@ -894,6 +910,11 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:1:0:0]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
 
 	[POSITION:LH3] 						
 		[NAME:high duke:dukes] 
@@ -912,6 +933,11 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:1:0:0]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
 
 	[POSITION:LH4] 						
 		[NAME:grand duke:grand dukes] 
@@ -930,6 +956,11 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:1:0:0]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
 
 	 [POSITION:LH5] 						
 		[NAME:duke-protector:duke-protectors] 
@@ -946,6 +977,10 @@ Ruler
 		[DUTY_BOUND]
 		[CHAT_WORTHY]
 		[COLOR:1:0:0]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
+		[SLEEP_PRETENSION]
    
 	[POSITION:FORCED_ADMINISTRATOR]
 		[NAME:league warden:league wardens]
@@ -963,6 +998,9 @@ Ruler
 		[DO_NOT_CULL]
 		[CHAT_WORTHY]
 		[COLOR:1:0:0]
+		[DUTY_BOUND]
+		[QUEST_GIVER]
+		[RULES_FROM_LOCATION]
 
 	[POSITION:INQUISITOR] 
 		[NAME:inquisitor:inquisitors]
@@ -979,6 +1017,7 @@ Ruler
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
 		[COLOR:1:0:1]
+		[QUEST_GIVER]
 	
 	[POSITION:CHARTERMASTER] 	
 		// Expedition leader
@@ -1024,6 +1063,7 @@ Ruler
 		[DO_NOT_CULL]
 		[CHAT_WORTHY]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEHALL_3] 	
 		// Alternative names: alderman of the council
@@ -1039,6 +1079,8 @@ Ruler
 		[DO_NOT_CULL]
 		[CHAT_WORTHY]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEHALL_4] 	
 		// Alternative names: alderman of the council
@@ -1053,6 +1095,8 @@ Ruler
 		[DO_NOT_CULL]
 		[CHAT_WORTHY]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTRADE_1] 	
 		// Alternavive names: alderman of the depot, alderman of the market
@@ -1083,6 +1127,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTRADE_3] 	
 		// Alternavive names: alderman of the depot, alderman of the market
@@ -1098,6 +1143,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTRADE_4] 	
 		// Alternavive names: alderman of the depot, alderman of the market
@@ -1112,6 +1159,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEGUARD_1] 	
 		// Alternative names: alderman of the guard,
@@ -1148,6 +1197,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEGUARD_3] 	
 		// Alternative names: alderman of the guard,
@@ -1166,6 +1216,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEGUARD_4] 	
 		// Alternative names: alderman of the guard, 
@@ -1183,6 +1235,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFINDUSTRY_1] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
@@ -1213,6 +1267,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFINDUSTRY_3] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
@@ -1228,6 +1283,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFINDUSTRY_4] 	
 		// Alternative names: alderman of the forge, alderman of the workshop
@@ -1242,6 +1299,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFCOIN_1] 	
 		// Alternative names: alderman of the treasury, alderman of finance
@@ -1257,6 +1316,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[DETERMINES_COIN_DESIGN]
 
 	[POSITION:ALDERMANOFCOIN_2] 	
 		// Alternative names: alderman of the treasury, alderman of finance
@@ -1272,6 +1332,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[DETERMINES_COIN_DESIGN]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFCOIN_3] 	
 		// Alternative names: alderman of the treasury, alderman of finance
@@ -1287,6 +1349,9 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[DETERMINES_COIN_DESIGN]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFCOIN_4] 	
 		// Alternative names: alderman of the treasury, alderman of finance
@@ -1301,6 +1366,9 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[DETERMINES_COIN_DESIGN]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHECOMMONS_1] 	
 		[NAME:alderman of the commons:aldermen]
@@ -1327,6 +1395,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHECOMMONS_3] 	
 		[NAME:alderman of the commons:aldermen]
@@ -1340,6 +1409,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHECOMMONS_4] 	
 		[NAME:alderman of the commons:aldermen]
@@ -1352,6 +1423,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEINFIRMARY_1] 	
 		// Alternative names: alderman of physick
@@ -1382,6 +1455,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEINFIRMARY_3] 	
 		// Alternative names: alderman of physick
@@ -1397,6 +1471,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEINFIRMARY_4] 	
 		// Alternative names: alderman of physick
@@ -1411,6 +1486,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEROAD_1] 	
 		[NAME:alderman of the road:aldermen]
@@ -1437,6 +1513,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEROAD_3] 	
 		[NAME:alderman of the road:aldermen]
@@ -1450,6 +1527,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEROAD_4] 	
 		[NAME:alderman of the road:aldermen]
@@ -1462,6 +1541,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFINQUEST_1] 	
 		[NAME:alderman of inquest:aldermen]
@@ -1492,6 +1573,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFINQUEST_3] 	
 		[NAME:alderman of inquest:aldermen]
@@ -1507,6 +1589,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFINQUEST_4] 	
 		[NAME:alderman of inquest:aldermen]
@@ -1521,6 +1605,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFRITES_1] 	
 		[NAME:alderman of rites:aldermen]
@@ -1549,6 +1635,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFRITES_3] 	
 		[NAME:alderman of rites:aldermen]
@@ -1563,6 +1650,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFRITES_4] 	
 		[NAME:alderman of rites:aldermen]
@@ -1576,6 +1665,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEMENAGERIE_1] 	
 		// Alternative names: alderman of beasts
@@ -1608,6 +1699,7 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEMENAGERIE_3] 	
 		// Alternative names: alderman of beasts
@@ -1624,6 +1716,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:ALDERMANOFTHEMENAGERIE_4] 	
 		// Alternative names: alderman of beasts
@@ -1639,6 +1733,8 @@ Ruler
 		[EXPORTED_IN_LEGENDS]
 		[DO_NOT_CULL]
 		[COLOR:6:0:0]
+		[MENIAL_WORK_EXEMPTION]
+		[QUEST_GIVER]
 
 	[POSITION:DUKE_SITE_A] 						
 		[NAME:duke:dukes]
@@ -1705,6 +1801,11 @@ Ruler
 		[BRAG_ON_KILL]
 		[CHAT_WORTHY]
 		[COLOR:6:0:1]
+		[DUTY_BOUND]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
 	
 	 [POSITION:DUKE_SITE_B] 						
 		[NAME:duke:dukes] 
@@ -1770,6 +1871,11 @@ Ruler
 		[BRAG_ON_KILL]
 		[CHAT_WORTHY]
 		[COLOR:6:0:1]
+		[DUTY_BOUND]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
 
 	[POSITION:DUKE_SITE_C] 						
 		[NAME:duke:dukes] 
@@ -1834,6 +1940,11 @@ Ruler
 		[BRAG_ON_KILL]
 		[CHAT_WORTHY]
 		[COLOR:6:0:1]
+		[DUTY_BOUND]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
 
 	[POSITION:DUKE_SITE_GRAND] 						
 		[NAME:grand duke:grand dukes] 
@@ -1898,6 +2009,11 @@ Ruler
 		[BRAG_ON_KILL]
 		[CHAT_WORTHY]
 		[COLOR:6:0:1]
+		[DUTY_BOUND]
+		[KILL_QUEST]
+		[MENIAL_WORK_EXEMPTION]
+		[RULES_FROM_LOCATION]
+		[SLEEP_PRETENSION]
 
 	[POSITION:FUNC_PROMOTION_TRIGGER] 
 		[NAME:election official:election officials]
