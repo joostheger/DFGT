@@ -591,7 +591,7 @@ Ruler
 		[SUCCESSION:BY_POSITION:MM_MAG]
 		[ELECTED]
 		[PRECEDENCE:1]
-		[COLOR:2:0:0] 
+		[COLOR:2:0:1] 
 		[DEMAND_MAX:2]
 		[BRAG_ON_KILL]
 		[CHAT_WORTHY]
@@ -628,7 +628,7 @@ Merchants' guild
 		[SUCCESSION:BY_POSITION:MM_MAG]
 		[ELECTED]
 		[PRECEDENCE:20]
-		[COLOR:2:0:0] 
+		[COLOR:2:0:1] 
 		[DEMAND_MAX:1]
 		[MANDATE_MAX:1]
 		[BRAG_ON_KILL]
@@ -666,7 +666,7 @@ Merchants' guild
 		[SUCCESSION:BY_POSITION:MM_AMBAS]
 		[ELECTED]
 		[PRECEDENCE:21]
-		[COLOR:2:0:0] 
+		[COLOR:2:0:1] 
 		[DEMAND_MAX:1]
 		[MANDATE_MAX:1]
 		[BRAG_ON_KILL]
@@ -701,7 +701,7 @@ Merchants' guild
 		[SUCCESSION:BY_POSITION:MM_STEW]
 		[ELECTED]
 		[PRECEDENCE:22]
-		[COLOR:2:0:0] 
+		[COLOR:2:0:1] 
 		[DEMAND_MAX:1]
 		[MANDATE_MAX:1]
 		[BRAG_ON_KILL]
@@ -737,7 +737,7 @@ Merchants' guild
 		[SUCCESSION:BY_POSITION:M_JM_ECTA]
 		[ELECTED]
 		[PRECEDENCE:23]
-		[COLOR:2:0:0] 
+		[COLOR:2:0:1] 
 		[DEMAND_MAX:1]
 		[MANDATE_MAX:1]
 		[BRAG_ON_KILL]
@@ -773,7 +773,7 @@ Merchants' guild
 
 		[DUTY_BOUND]
 		[PRECEDENCE:105]
-		[COLOR:2:0:0] 
+		[COLOR:7:0:1] 
 		[DO_NOT_CULL]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
@@ -843,7 +843,7 @@ Free merchants
 		[SUCCESSION:BY_HEIR] // not really necessary, just to prevent re-assignent by the player.
 		[SQUAD:1:member:members] 		// prevent assumption by succession-positions, like citizens
 		[PRECEDENCE:100]				
-		[COLOR:2:0:1] 
+		[COLOR:2:0:0] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
@@ -857,7 +857,7 @@ Free merchants
 		[SUCCESSION:BY_HEIR] // not really necessary, just to prevent re-assignent by the player.
 		[SQUAD:1:member:members] 		// prevent assumption by succession-positions, like citizens
 		[PRECEDENCE:100]				
-		[COLOR:2:0:1] 
+		[COLOR:2:0:0] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
@@ -871,7 +871,7 @@ Free merchants
 		[SUCCESSION:BY_HEIR] // not really necessary, just to prevent re-assignent by the player.
 		[SQUAD:1:member:members] 		// prevent assumption by succession-positions, like citizens
 		[PRECEDENCE:100]				
-		[COLOR:2:0:1] 
+		[COLOR:2:0:0] 
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 
@@ -905,7 +905,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:161]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -938,7 +938,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:163]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -971,7 +971,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:165]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -1003,7 +1003,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:167]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
@@ -1019,7 +1019,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:161]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -1036,7 +1036,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:163]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -1053,7 +1053,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:165]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -1070,7 +1070,7 @@ Clerks
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:167]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[DUTY_BOUND]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
@@ -1430,7 +1430,7 @@ Merchants
 		[SUCCESSION:BY_POSITION:M_AP]
 		[ELECTED]
 		[PRECEDENCE:70]
-		[COLOR:2:0:0] 
+		[COLOR:7:0:1] 
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
@@ -1461,7 +1461,7 @@ Merchants
 		[SUCCESSION:BY_POSITION:M_AP]
 		[ELECTED]
 		[PRECEDENCE:70]
-		[COLOR:2:0:0] 
+		[COLOR:7:0:1] 
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[EXPORTED_IN_LEGENDS]
@@ -1561,7 +1561,7 @@ Merchants
 		[REQUIRED_TOMB:1500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:BURGER_NONFORT] 						
 		[NAME:notable burgher:burghers] 	
@@ -1596,7 +1596,7 @@ Merchants
 		[REQUIRED_TOMB:500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:2]
-		[COLOR:4:0:0]
+		[COLOR:4:0:1]
 
 	
 
@@ -1656,7 +1656,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:2500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
-		[COLOR:4:0:0]
+		[COLOR:4:0:1]
 
 	[POSITION:CITIZEN_7] 						
 		[NAME:grand citizen:citizens] 
@@ -1694,7 +1694,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:1500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:FUNC_CIT_TO_BURGER_7_SWITCH_B] 
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
@@ -1767,7 +1767,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:1000]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:2]
-		[COLOR:4:0:1]	
+		[COLOR:6:0:0]	
 
 	[POSITION:BURGER_6] 						
 		[NAME:honored burgher:burghers] 
@@ -1812,7 +1812,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:2500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
-		[COLOR:4:0:0]
+		[COLOR:4:0:1]
 
 	[POSITION:FUNC_CIT_TO_BURGER_6_SWITCH_B] 
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
@@ -1886,7 +1886,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:2]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:BURGER_5] 						
 		[NAME:esteemed burgher:burghers] 
@@ -1931,7 +1931,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:1500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:3]
-		[COLOR:4:0:0]	
+		[COLOR:4:0:1]	
 
 	[POSITION:FUNC_CIT_TO_BURGER_5_SWITCH_B] 
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
@@ -2002,7 +2002,7 @@ Citizens and burgers
 		[REQUIRED_OFFICE:250]
 		[REQUIRED_TOMB:250]
 		[REQUIRED_BOXES:2]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:BURGER_4] 						
 		[NAME:distinguished burgher:burghers] 
@@ -2047,7 +2047,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:1000]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:2]
-		[COLOR:4:0:0]
+		[COLOR:4:0:1]
 
 	[POSITION:FUNC_CIT_TO_BURGER_4_SWITCH_B] 
 		// In world-gen, this position gets appointed.
@@ -2119,7 +2119,7 @@ Citizens and burgers
 		[REQUIRED_OFFICE:250]
 		[REQUIRED_TOMB:100]
 		[REQUIRED_BOXES:1]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:BURGER_3] 						
 		[NAME:notable burgher:burghers] 	
@@ -2164,7 +2164,7 @@ Citizens and burgers
 		[REQUIRED_TOMB:500]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:2]
-		[COLOR:4:0:0]
+		[COLOR:4:0:1]
 
 	[POSITION:FUNC_CIT_TO_BURGER_3_SWITCH_B] 
 		// In world-gen, this position gets appointed.
@@ -2234,7 +2234,7 @@ Citizens and burgers
 		[REQUIRED_DINING:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_BOXES:1]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:BURGER_2] 						
 		[NAME:recognized burgher:burghers] 
@@ -2276,7 +2276,7 @@ Citizens and burgers
 		[REQUIRED_OFFICE:250]
 		[REQUIRED_TOMB:250]
 		[REQUIRED_BOXES:2]
-		[COLOR:4:0:0]
+		[COLOR:4:0:1]
 
 	[POSITION:FUNC_CIT_TO_BURGER_2_SWITCH_B] 
 		[DESCRIPTION:This position only exists for promotion purposes, it should never stay filled by a unit. (3)]
@@ -2345,7 +2345,7 @@ Citizens and burgers
 		[REQUIRED_BEDROOM:1]
 		[REQUIRED_DINING:1]
 		[REQUIRED_BOXES:1]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:CITIZEN_1] 						
 		[NAME:full citizen:citizens] 
@@ -2372,7 +2372,7 @@ Citizens and burgers
 		[REQUIRED_BEDROOM:1]
 		[REQUIRED_DINING:1]
 		[REQUIRED_BOXES:1]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:CITIZEN_0] 						// Will contain guaranteed only the first 7 dwarves. 
 		[NAME:sworn citizen:citizens]  
@@ -2390,7 +2390,7 @@ Citizens and burgers
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[QUEST_GIVER]
 		[REQUIRED_BEDROOM:1]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:CITIZEN_0_TRADER] 						// Will contain guaranteed only the first 7 dwarves. 
 		[NAME:sworn citizen:citizens] 
@@ -2408,7 +2408,7 @@ Citizens and burgers
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[QUEST_GIVER]
 		[REQUIRED_BEDROOM:1]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 	[POSITION:FUNC_CITIZEN_0_GATEKEEPER]
 		// this takes all current holders of SETTLER_BASE1 and SETTLER_BASE2, making it available to be promoted to citizen 0.
@@ -2431,7 +2431,7 @@ Citizens and burgers
 		[RESPONSIBILITY:FOOD_SUPPLY]
 		[QUEST_GIVER]
 		[REQUIRED_BEDROOM:1]
-		[COLOR:4:0:1]
+		[COLOR:6:0:0]
 
 Settlers
 
@@ -2597,7 +2597,7 @@ Patricians
 		[REQUIRED_TOMB:2500]
 		[REQUIRED_CABINETS:2]
 		[REQUIRED_BOXES:4]
-		[COLOR:5:0:0]
+		[COLOR:6:0:1]
 
 	[POSITION:PATRICIAN_2] 						
 		[NAME:esteemed patrician:patricians]
@@ -2641,7 +2641,7 @@ Patricians
 		[REQUIRED_TOMB:2500]
 		[REQUIRED_CABINETS:2]
 		[REQUIRED_BOXES:4]
-		[COLOR:5:0:0]
+		[COLOR:6:0:1]
 
 	[POSITION:PATRICIAN_3] 						
 		[NAME:honored patrician:patricians]
@@ -2685,7 +2685,7 @@ Patricians
 		[REQUIRED_TOMB:2500]
 		[REQUIRED_CABINETS:3]
 		[REQUIRED_BOXES:4]
-		[COLOR:5:0:0]
+		[COLOR:6:0:1]
 
 	[POSITION:PATRICIAN_4] 						
 		[NAME:grand patrician:patricians]
@@ -2729,7 +2729,7 @@ Patricians
 		[REQUIRED_TOMB:2500]
 		[REQUIRED_CABINETS:3]
 		[REQUIRED_BOXES:5]
-		[COLOR:5:0:0]
+		[COLOR:6:0:1]
 
 	[POSITION:PATRICIAN_5] 						
 		[NAME:most serene patrician:patricians]
@@ -2773,7 +2773,7 @@ Patricians
 		[REQUIRED_TOMB:2500]
 		[REQUIRED_CABINETS:3]
 		[REQUIRED_BOXES:5]
-		[COLOR:5:0:0]
+		[COLOR:6:0:1]
 
 Replacers
 
@@ -2836,7 +2836,7 @@ Doctor
 		[APPOINTED_BY:PATRICIAN_5]
 		[RESPONSIBILITY:HEALTH_MANAGEMENT]
 		[PRECEDENCE:115]
-		[COLOR:7:0:1] 
+		[COLOR:5:0:0] 
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]

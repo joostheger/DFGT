@@ -1,12 +1,20 @@
+Example usage: [COLOR:7:0:1] 
+
 0:0:1: Military
 1:0:0: Landholders
-1:0:1: 		Unused. in vanilla: SHERIFF, CAPTAIN_OF_THE_GUARD
-2:0:0: Civ level special caste, like clerics and merchants 
-2:0:1: Civ level special caste, like clerics and merchants 
-3:0:0: Justice
-3:0:1:      Unused. In vanilla, elven GENERAL
-4:0:0: Citizens local caste, medium
-4:0:1: Citizens local caste, lower
-5:0:0: Citizens local caste, higher
+1:0:1: Justice
+2:0:0: Civ level special caste, like clerics and merchants, lower tier
+2:0:1: Civ level special caste, like clerics and merchants, higher tier
+3:0:0:  - not used yet -
+3:0:1:  - not used yet -
+4:0:0:  - not used yet - (normally used for children. )
+4:0:1: Citizens local caste, lower tier
+5:0:0: Admin/support: general administrative or supportive roles, like envoys, clerks or medics 
 5:0:1: Head of state
-7:0:1: Admin/support: general administrative or supportive roles, like envoys, clerks or medics 
+6:0:0: Citizens local caste, medium tier
+6:0:1: Citizens local caste, higher tier
+7:0:0:  - not used yet -
+7:0:1: ambassadors, envoys, diplomats
+
+no color tag: unimportant figures, functional roles, or lacking a PRECEDENCE value
+
