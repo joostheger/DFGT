@@ -580,6 +580,8 @@ Ruler
 		[NAME_FEMALE:archduchess:archduchesses] 
 		[SPOUSE_MALE:archduke consort:archdukes consort] 
 		[SPOUSE_FEMALE:archduchess consort:archduchesses consort] 
+		[DESCRIPTION:]
+		DESCRIPTION:aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa ]
 		[LAND_NAME:Archduchy]
 		[NUMBER:1]
 		[PRECEDENCE:1]
@@ -2326,3 +2328,15 @@ Bailif:
 		[REQUIRED_STANDS:1]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:1]
+
+
+
+create a description for each of these positions, with a max of 410 characters
+
+1. describe in a few words this person and its role. 
+2. name its responsibilities, 
+3. describe its standing in sociaty (flavor) and keep it short. Dont be to bold in your statements
+4. incorporate notes the following notes into the tekst, but keep it very subtle:
+- the alderman were directly elected, 
+- the dukes are promoted alderman but are 'elected' for life.
+- Also, make it sound epic, but dont disturb these important details to much. 'subtle epic'
