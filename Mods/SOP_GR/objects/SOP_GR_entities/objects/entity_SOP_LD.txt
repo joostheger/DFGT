@@ -2238,9 +2238,17 @@ Bailif:
 
 create a description for each of these positions, with a max of 410 characters
 
+the (...) is chosen to
+the (...) has the responsibility
+the (...) is responsible for
+the (...) is tasked with
+the (...) is the first to 
+
 1. describe in a few words this person and its role. 
 2. name its responsibilities, 
 3. describe its standing in sociaty (flavor) and keep it short. Dont be to bold in your statements
+3a why at this population level
+3b why does it have these requirements. 
 4. incorporate notes the following notes into the tekst, but keep it very subtle:
 - the alderman were directly elected, 
 - the dukes are promoted alderman but are 'elected' for life.
