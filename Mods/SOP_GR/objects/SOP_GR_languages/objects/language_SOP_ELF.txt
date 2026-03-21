@@ -1,4 +1,4 @@
-language_ELF
+language_SOP_ELF
 
 instructions:
 Use 4-6 characters, up to 8

@@ -1,4 +1,4 @@
-language_SOP_GR_words
+language_SOP_words
 
 [OBJECT:LANGUAGE]
 

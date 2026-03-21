@@ -1,4 +1,4 @@
-language_SOP_GR_SYM
+language_SOP_SYM
 
 [OBJECT:LANGUAGE]
 

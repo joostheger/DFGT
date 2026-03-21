@@ -1,4 +1,4 @@
-language_HUMAN
+language_SOP_HUMAN
 
 instructions:
 Use 4-6 characters, up to 10

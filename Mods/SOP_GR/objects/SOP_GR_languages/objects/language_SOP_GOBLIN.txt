@@ -1,4 +1,4 @@
-language_GOBLIN
+language_SOP_|GOBLIN
 
 instructions:
 Use 3-6 characters
