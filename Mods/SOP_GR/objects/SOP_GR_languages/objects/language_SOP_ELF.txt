@@ -5,7 +5,7 @@ Use 4-6 characters, up to 8
 Alternate consonant-vowel smoothly
 End predominantly in vowels (-a, -e, -i)
 Use soft consonants (th, f, l, r, m)
-Include á, í diacritics sparingly
+Include  , ¡ diacritics sparingly
 make it sound melodic and flowing
 their should be no relation to the original word, maybe only a similar 'feel' 
 if you detect any relations between original words, you may apply similar relations in the translations.
@@ -21,12 +21,12 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:CARNIVAL:velathae]
 	[T_WORD:STREET MARKET:famiso]
 	[T_WORD:CONVENTION:thareni]
-	[T_WORD:MAJESTIC:línari]
+	[T_WORD:MAJESTIC:l¡nari]
 	[T_WORD:MOST SERENE:valethi]
 	[T_WORD:BENEVOLENT:mirathae]
 	[T_WORD:DIGNIFIED:therumi]
 	[T_WORD:IMPOSING:solathra]
-	[T_WORD:MAGNIFICENT:reláthefi]
+	[T_WORD:MAGNIFICENT:rel thefi]
 	[T_WORD:OPULENT:nomira]
 	[T_WORD:PALATIAL:talithera]
 	[T_WORD:SPLENDID:fareni]
@@ -34,7 +34,7 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:ILLUSTRIOUS:thirelafi]
 	[T_WORD:VENERABLE:anemora]
 	[T_WORD:EMINENT:vethali]
-	[T_WORD:PREEMINENT:varáthemi]
+	[T_WORD:PREEMINENT:var themi]
 	[T_WORD:PROSPEROUS:lithanoe]
 	[T_WORD:AFFLUENT:melirafi]
 	[T_WORD:THRIVING:somari]
@@ -66,16 +66,16 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:PROJECT:lemora]
 	[T_WORD:OPERATION:valethiri]
 	[T_WORD:CONSORTIUM:silathorae]
-	[T_WORD:TOLL TUNNEL:mirathíaás]
-	[T_WORD:TOLL ROAD:mirathiáfel]
-	[T_WORD:TOLL BRIDGE:mirathiálome]
+	[T_WORD:TOLL TUNNEL:mirath¡a s]
+	[T_WORD:TOLL ROAD:mirathi fel]
+	[T_WORD:TOLL BRIDGE:mirathi lome]
 	[T_WORD:ARCHIVE:lafinora]
 	[T_WORD:ACCOUNT:relemi]
 	[T_WORD:RECORD:thalemori]
 	[T_WORD:FILE:venali]
 	[T_WORD:REGISTER:farimathi]
 
-	[T_WORD:CHARTER:thalía]
+	[T_WORD:CHARTER:thal¡a]
 	[T_WORD:CABINET:melora]
 	[T_WORD:COURT:valeri]
 	[T_WORD:CONGRESS:therali]	

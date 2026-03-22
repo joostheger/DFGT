@@ -1,4 +1,4 @@
-﻿entity_SOP_CS
+entity_SOP_CS
 
 [OBJECT:ENTITY]
 
