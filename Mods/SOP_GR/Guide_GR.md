@@ -1,10 +1,13 @@
+# Grand Republic #
+'Grand Republic' is part of 'Seats of Power': a set of additional dwarven government types.
+
 ## General features of Grand Republic ##
-* The Grand Republics are peaceful, trade-focused dwarven civilizations built around commerce and cooperation.
-* Towns and hamlets flourish on fertile plains, while nestling at the feet of the mountains that bore their kin.
-* The Merchants’ Guild governs the republic and sends their representatives as diplomats across the world.
-* They serve the gods of trade, wealth, and order.
-* Their peaceful, conflict-averse nature makes them strong and reliable trading partners.
-* Republican dwarves value competition, hard work, cooperation, and commerce over martial prowess and merriment.
+Main features:
+* **Elite citizenry system**
+* **Merchants’ Guild rules the republic**
+
+The Grand Republics are peaceful, trade-focused dwarven civilizations built around commerce and cooperation. Towns and hamlets flourish on fertile plains, while nestling at the feet of the mountains that bore their kin. The Merchants’ Guild governs the republic and sends their representatives as diplomats across the world. They serve the gods of trade, wealth, and order. 
+Their peaceful, conflict-averse nature makes them strong and reliable trading partners. Republican dwarves value competition, hard work, cooperation, and commerce over martial prowess and merriment.
 * Caravans arrive in summer and autumn.
 * Production options for clothing and weapons are expanded, and they make use of all crop types.
 * Includes custom naming for groups, roads, bridges, and more.
@@ -16,8 +19,8 @@
 'Grand Republic' is designed to be a challenging experience. 
 
 Harder:
-* Citizens increasingly high demands and require continues attention.
-* Minimal player agency for who gets a citizen-position.
+* The Citizen's increasingly higher demands require continues attention.
+* Minimal player agency for who gets a citizen position.
 * Less military options.
 * Certain administrative roles need a minimum population to be available.
 
@@ -27,7 +30,7 @@ Easier:
 
 ## Play Guide ##
 ### Freeholders ###
-* The main feature of this mod is the **extended citizenry system**, called *Freeholders*. It gives all 7 starting dwarves a special status with extensive rights and demands. They progress from *settler* to *citizen*, *burgher*, and eventually *patrician*. When they reach certain thresholds, they are promoted automatically. When you receive a succession message, check the nobles screen for new demands.
+* The main feature of this mod is the extensive **elite citizenry system**, called *Freeholders*. It gives all 7 starting dwarves a special status with extensive rights and demands. They progress from *settler* to *citizen*, *burgher*, and eventually *patrician*. When they reach certain thresholds, they are promoted automatically. When you receive a succession message, check the nobles screen for new demands.
 * When the first promotion has occurred, new migrants will also assume the *settler* status. This is an unsolvable issue in the system, however, these settlers will never be promoted and will not interfere with the citizenry. These positions will be cleaned up eventually. Just lets call it enthusiasm of these newcomers.
 * Read the descriptions of the positions for more details of each rank.
 * Once they reach a certain status, members of the citizenry can no longer be assigned tasks. They are exempt from menial labor. However, any tasks assigned earlier will continue. It is wise to plan ahead and only assign suitable duties. If they need to craft something, you can use the earlier assigned labor so they remain active when needed.
