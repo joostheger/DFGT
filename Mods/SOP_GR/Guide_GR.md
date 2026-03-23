@@ -1,5 +1,5 @@
-# Grand Republic #
-'Grand Republic' is part of 'Seats of Power': a set of additional dwarven government types.
+# Grand Republic Guide #
+*Grand Republic* is part of *Seats of Power*: a set of additional dwarven government types.
 
 ## General features of Grand Republic ##
 Main features:
@@ -8,12 +8,6 @@ Main features:
 
 The Grand Republics are peaceful, trade-focused dwarven civilizations built around commerce and cooperation. Towns and hamlets flourish on fertile plains, while nestling at the feet of the mountains that bore their kin. The Merchants’ Guild governs the republic and sends their representatives as diplomats across the world. They serve the gods of trade, wealth, and order. 
 Their peaceful, conflict-averse nature makes them strong and reliable trading partners. Republican dwarves value competition, hard work, cooperation, and commerce over martial prowess and merriment.
-* Caravans arrive in summer and autumn.
-* Production options for clothing and weapons are expanded, and they make use of all crop types.
-* Includes custom naming for groups, roads, bridges, and more.
-* No DFHack is required.
-* The entity is dwarf-only, it works with the vanilla dwarves.
-* Compatibity with most other mods is assumed, not guaranteed.
 
 ## Challenge level: 4/5 ##
 'Grand Republic' is designed to be a challenging experience. 
@@ -41,13 +35,18 @@ Easier:
   * You also might encounter *(promotion position)*'s in the nobles screen. These are residues from promotions and are cleaned up eventually. They are not functional anymore and should be ignored.
 * The *select trader* position is a special case. It is the only position that initially can be assigned to a settler. This can be used to represent the initial selection of a representative of the fortress, but may also be ignored, in which case a random settler will assume this role. Eventually, when you become able to assign a *clerk of stores* this becomes irrelevant.
 
-### Other notes for positions ###
+### Other notes ###
 * Clerks can be appointed from certain citizenry ranks for tasks such as trading (*clerk of stores*), management (*clerk of works*), and accounting (*clerk of accounts*). More of these positions unlock as the settlement grows.
 * The limited military focus restricts the number of squads and soldiers per squad, but additional options open up as the settlement develops.
 * If a diplomat leaves unhappy, it may be one of the two merchant journeymen arriving with the caravan. You likely did not have a *clerk of stores* assigned. Do not worry—the only thing you missed was a supplemental trade negotiation.
-* There is a functional noble position called *Promotion Trigger*. It has no special features, but it can be used to force evaluation of nobility positions and trigger promotions when applicable. 
+* There is a functional noble position called *election official*. It has no special features, but it can be used to force evaluation of nobility positions and trigger promotions when applicable. 
 * If you want to use the squads of the municipal and republican guards, you have to assign first a civic guard captain or a bailif, to activate that function. 
-
+* Caravans arrive in summer and autumn.
+* Production options for clothing and weapons are expanded, and they make use of all crop types.
+* Includes custom naming for groups, roads, bridges, and more.
+* No DFHack is required.
+* Dwarf-only entity; works with vanilla dwarves.
+* Compatibity with most other mods is assumed, not guaranteed.
 
 ### Starting a new fortress ###
 * When starting a new fortress, choose a civilization named '... Republic ...' with a 'Grand merchant-master' as its leader.
