@@ -1,3 +1,0 @@
-interaction_SOP_SS
-
-OBJECT:INTERACTION
