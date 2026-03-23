@@ -1,5 +1,5 @@
 # Grand Republic Guide #
-*Grand Republic* is part of *Seats of Power*: a set of additional dwarven government types.
+*Grand Republic* is part of *Seats of Power*: a collection of additional dwarven government types.
 
 ## General features of Grand Republic ##
 Main features:

@@ -1,5 +1,5 @@
 # League of Dukes Guide #
-*League of Dukes* is part of *Seats of Power*: a set of additional dwarven government types.
+*League of Dukes* is part of *Seats of Power*: a collection of additional dwarven government types.
 
 ## General features of League of Dukes ##
 Main features:
