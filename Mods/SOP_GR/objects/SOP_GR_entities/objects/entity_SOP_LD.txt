@@ -573,7 +573,7 @@ TODO: remove
 	[GENERATE_MUSICAL_FORMS]
 	[GENERATE_DANCE_FORMS]
 
-Ruler
+Civ postitions
 
 	[POSITION:ARCHDUKE] 	
 		[NAME:high authority:high authority] // this name is used when the position is vacant, with ": none" after.
@@ -755,7 +755,7 @@ Ruler
 		[REQUIRED_BOXES:2]
 
 	[POSITION:LEAGUE_EMISSARY]
-		[NAME:league emissary:league emissarys]
+		[NAME:league emissary:league emissaries]
 		[DESCRIPTION:The league emissary is a diplomat, empowered to forge special accords and proclaim the rise of ducal cities when the League Town's thresholds are fulfilled.]
 		[PRECEDENCE:52]
 		[NUMBER:1]
@@ -773,7 +773,7 @@ Ruler
 		[REQUIRED_BOXES:1]
 
 	[POSITION:HIGH_EMISSARY]
-		[NAME:high emissary:high emissarys]
+		[NAME:high emissary:high emissaries]
 		[DESCRIPTION:The high emissary is a senior diplomat, empowered to forge special accords and proclaim the rise of ducal cities when the League Town's thresholds are fulfilled.]
 		[PRECEDENCE:51]
 		[NUMBER:1]
@@ -790,7 +790,7 @@ Ruler
 		[REQUIRED_BOXES:2]
 
 	[POSITION:GRAND_EMISSARY]
-		[NAME:grand emissary:grand emissarys]
+		[NAME:grand emissary:grand emissaries]
 		[DESCRIPTION:The grand emissary is a senior diplomat, empowered to forge special accords and proclaim the rise of ducal cities when the League Town's thresholds are fulfilled.]
 		[PRECEDENCE:50]
 		[NUMBER:1]
@@ -841,6 +841,8 @@ Ruler
 		[REQUIRED_BOXES:2]
 		[REQUIRES_POPULATION:100]
 
+captains, civ and site
+
     [POSITION:CAPTAIN]
 		[NAME:captain:captains]
 		[DESCRIPTION:A captain leads a squad of ten, sworn to guard the League's borders and uphold its interests.]
@@ -851,7 +853,6 @@ Ruler
 		[SQUAD:10:soldier:soldiers]
 		[APPOINTED_BY:DUCAL_MARSHAL]
 		[PRECEDENCE:60]
-		[COLOR:0:0:1]
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
@@ -879,7 +880,6 @@ Ruler
 		[APPOINTED_BY:ALDERMANWARDEN_3]
 		[APPOINTED_BY:ALDERMANWARDEN_4]
 		[PRECEDENCE:61]
-		[COLOR:0:0:1]
 		[DO_NOT_CULL]
 		[EXPORTED_IN_LEGENDS]
 		[DUTY_BOUND]
@@ -891,6 +891,8 @@ Ruler
 		[REQUIRED_RACKS:1]
 		[REQUIRED_STANDS:1]
 		[REQUIRED_BOXES:1]
+
+clerks
 
 	[POSITION:CLERK_OF_STORES]
 		[NAME:clerk of stores:clerks]
@@ -905,7 +907,6 @@ Ruler
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:75]
-		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -926,7 +927,6 @@ Ruler
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:76]
-		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -947,7 +947,6 @@ Ruler
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:77]
-		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRES_MARKET]
 		[REQUIRED_BEDROOM:100]
@@ -968,12 +967,13 @@ Ruler
 		[RESPONSIBILITY:EQUIPMENT_MANIFESTS]
 		[RESPONSIBILITY:MANAGE_LEADER_HOUSEHOLD_DRINKS] // makes them susceptible to villain influece.
 		[PRECEDENCE:78]
-		[COLOR:7:0:1] 
 		[DUTY_BOUND]
 		[REQUIRED_BEDROOM:100]
 		[REQUIRED_OFFICE:100]
 		[REQUIRED_CABINETS:1]
 		[COLOR:5:0:0]
+
+land holders
 	
 	[POSITION:LH1] 						
 		[NAME:high alderman:high aldermen] 
@@ -1082,7 +1082,7 @@ Ruler
 		[NAME_FEMALE:grand duchess:duchesses]
 		[SPOUSE_MALE:grand duke consort:dukes consort] 
 		[SPOUSE_FEMALE:grand duchess consort:duchesses consort]
-		[DESCRIPTION:The grand duke presides over the Council of Dukes and determines the cities military course, authorizing campaigns and setting strategic goals. Each ducal city is governed by its Council, whose dukes?elevated from aldermen?serve as lawmakers, shaping policy and defining the city's order.]
+		[DESCRIPTION:The grand duke presides over the Council of Dukes and determines the cities military course, authorizing campaigns and setting strategic goals. Each ducal city is governed by its Council, whose dukes - elevated from aldermen- serve as lawmakers, shaping policy and defining the city's order.]
 	   	[LAND_HOLDER:4]
 		[LAND_NAME:ducal city]
 		[PRECEDENCE:10]
@@ -1147,6 +1147,8 @@ Ruler
 		[REQUIRED_BOXES:4]
 		[REQUIRED_RACKS:3]
 		[REQUIRED_STANDS:3]
+
+conquered site
    
 	[POSITION:FORCED_ADMINISTRATOR]
 		[NAME:league warden:league wardens]
@@ -1181,7 +1183,6 @@ Ruler
 		[RESPONSIBILITY:ESPIONAGE]			
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		[PRECEDENCE:70]
-		[COLOR:3:0:0] 
 		[CHAT_WORTHY]
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
@@ -1194,6 +1195,8 @@ Ruler
 		[REQUIRED_STANDS:1]
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:1]
+
+aldermen and chartermaster
 	
 	[POSITION:CHARTERMASTER] 	
 		// Expedition leader
@@ -1870,7 +1873,7 @@ Ruler
 		[NAME:alderman emissary:aldermen]
 		[NAME_MALE:alderman emissary:aldermen]
 		[NAME_FEMALE:alderwoman emissary:alderwomen]
-		[DESCRIPTION:The alderman emissay represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
+		[DESCRIPTION:The alderman emissary represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -1890,7 +1893,7 @@ Ruler
 		[NAME:alderman emissary:aldermen]
 		[NAME_MALE:alderman emissary:aldermen]
 		[NAME_FEMALE:alderwoman emissary:alderwomen]
-		[DESCRIPTION:The alderman emissay represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
+		[DESCRIPTION:The alderman emissary represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -1911,7 +1914,7 @@ Ruler
 		[NAME:alderman emissary:aldermen]
 		[NAME_MALE:alderman emissary:aldermen]
 		[NAME_FEMALE:alderwoman emissary:alderwomen]
-		[DESCRIPTION:The alderman emissay represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
+		[DESCRIPTION:The alderman emissary represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -1935,7 +1938,7 @@ Ruler
 		[NAME:alderman emissary:aldermen]
 		[NAME_MALE:alderman emissary:aldermen]
 		[NAME_FEMALE:alderwoman emissary:alderwomen]
-		[DESCRIPTION:The alderman emissay represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
+		[DESCRIPTION:The alderman emissary represents the local government in relations with its outlying holdings. They oversee communication and the maintenance of roads and bridges.]
 		[SITE]
 		[PRECEDENCE:30]
 		[NUMBER:1]
@@ -2135,9 +2138,10 @@ Ruler
 		[REQUIRED_OFFICE:1000]
 		[REQUIRED_BEDROOM:1000]
 		[REQUIRED_DINING:1000]
-		[REQUIRED_DINING:1000]
 		[REQUIRED_BOXES:2]
 		[REQUIRED_CABINETS:2]
+
+local dukes
 
 	[POSITION:DUKE_SITE_A] 						
 		[NAME:duke:dukes]
@@ -2380,6 +2384,8 @@ Ruler
 		[REQUIRED_RACKS:2]
 		[REQUIRED_STANDS:2]
 
+promotion trigger
+
 	[POSITION:FUNC_PROMOTION_TRIGGER] 
 		[NAME:election official:election officials]
 		[DESCRIPTION:Assign or unassign his position to trigger elections, if a population milestone is reached]	
@@ -2390,11 +2396,13 @@ Ruler
 		[APPOINTED_BY:CHARTERMASTER]
 		[REPLACED_BY:ALDERMANCHAMBERLAIN_1]
 
+executioners
+
     [POSITION:EXECUTIONER_HAMMER]
 		[NAME:executioner (hammer):executioners]
 		[NAME_MALE:executioner:executioners]
 		[NAME_FEMALE:executioner:executioners]
-		[DESCRIPTION:The executioner (hammer) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are only appointablable by the archduke.]
+		[DESCRIPTION:The executioner (hammer) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are only appointable by the archduke.]
 		[SITE]
 		[NUMBER:1]						// as player, you can choose which type of executioner you want.
 		[APPOINTED_BY:ARCHDUKE]				// when your fortress has become the capital,		
@@ -2412,9 +2420,9 @@ Ruler
 		[NAME:executioner (axe):executioners]
 		[NAME_MALE:executioner:executioners]
 		[NAME_FEMALE:executioner:executioners]
-		[DESCRIPTION:The executioner (axe) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are only appointablable by the archduke.]
+		[DESCRIPTION:The executioner (axe) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are only appointable by the archduke.]
 		[SITE]
-		[NUMBER:AS_NEEDED]				// as player, you can choose which type of executioner you want.		
+		[NUMBER:1]				// as player, you can choose which type of executioner you want.		
 		[APPOINTED_BY:ARCHDUKE]				// when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:AXE]
@@ -2430,9 +2438,9 @@ Ruler
 		[NAME:executioner (spear):executioners]
 		[NAME_MALE:executioner:executioners]
 		[NAME_FEMALE:executioner:executioners]
-		[DESCRIPTION:The executioner (spear) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are only appointablable by the archduke.]
+		[DESCRIPTION:The executioner (spear) is responsible for carrying out capital punishments within the settlement. They require specialized skills in using the chosen method of execution. Any of the executioner types may be appointed by the player, giving the option to select the preferred method of execution. - Executioners are only appointable by the archduke.]
 		[SITE]
-		[NUMBER:AS_NEEDED]				// as player, you can choose which type of executioner you want.	
+		[NUMBER:1]				// as player, you can choose which type of executioner you want.	
 		[APPOINTED_BY:ARCHDUKE]				// when your fortress has become the capital,		
 		[RESPONSIBILITY:EXECUTIONS]
 			[EXECUTION_SKILL:SPEAR]
