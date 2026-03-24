@@ -1,0 +1,40 @@
+{
+    "DF Entity Header": {
+        "scope": "plaintext",
+        "prefix": "dfentity",
+        "body": [
+            "[OBJECT:ENTITY]",
+            "",
+            "[ENTITY:${1:MY_ENTITY}]",
+            "\t[SITE_CONTROLLABLE]",
+            "\t[ALL_MAIN_POPS_CONTROLLABLE]",
+            "\t[CREATURE:DWARF]",
+            "\t[TRANSLATION:DWARF]"
+        ],
+        "description": "Entity block skeleton from vanilla entity structure"
+    },
+    "DF Common Entity Tag": {
+        "scope": "plaintext",
+        "prefix": "dftag",
+        "body": "[${1|SITE_CONTROLLABLE,ALL_MAIN_POPS_CONTROLLABLE,CREATURE,TRANSLATION,START_BIOME,BIOME_SUPPORT,WORLD_CONSTRUCTION,MAX_STARTING_CIV_NUMBER,MAX_POP_NUMBER,MAX_SITE_POP_NUMBER,PERMITTED_JOB,PERMITTED_BUILDING,PERMITTED_REACTION|}:${2}]",
+        "description": "Common entity tags based on vanilla and project usage"
+    },
+    "DF PERMITTED_JOB": {
+        "scope": "plaintext",
+        "prefix": "pjob",
+        "body": "[PERMITTED_JOB:${1|MINER,CARPENTER,BOWYER,WOODCUTTER,ENGRAVER,MASON,ANIMAL_CARETAKER,ANIMAL_TRAINER,HUNTER,TRAPPER,FURNACE_OPERATOR,WEAPONSMITH,ARMORER,BLACKSMITH,METALCRAFTER,GEM_CUTTER,GEM_SETTER,WOODCRAFTER,STONECRAFTER,LEATHERWORKER,BONE_CARVER,WEAVER,CLOTHIER,GLASSMAKER,FISHERMAN,COOK,BUTCHER,PLANTER,HERBALIST,BREWER,MECHANIC,CLERK,ADMINISTRATOR,TRADER,DIAGNOSER,SURGEON,POTTER,PRESSER,PAPERMAKER,BOOKBINDER|}]",
+        "description": "PERMITTED_JOB values from vanilla entity_default"
+    },
+    "DF PERMITTED_BUILDING": {
+        "scope": "plaintext",
+        "prefix": "pbuild",
+        "body": "[PERMITTED_BUILDING:${1:BUILDING_TOKEN}]",
+        "description": "PERMITTED_BUILDING tag"
+    },
+    "DF PERMITTED_REACTION": {
+        "scope": "plaintext",
+        "prefix": "preact",
+        "body": "[PERMITTED_REACTION:${1:REACTION_TOKEN}]",
+        "description": "PERMITTED_REACTION tag"
+    }
+}
