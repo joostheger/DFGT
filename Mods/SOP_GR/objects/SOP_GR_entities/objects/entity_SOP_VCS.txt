@@ -29,8 +29,14 @@ TODO: remove
 	[TOLERATES_SITE:CITY]
 	[LIKES_SITE:CITY]
 
-	[START_BIOME:ANY_GRASSLAND]
-	[BIOME_SUPPORT:TEMPERATE_GRASSLAND:1]
+	[EXCLUSIVE_START_BIOME:ANY_GRASSLAND]
+	[SETTLEMENT_BIOME:ANY_GRASSLAND]
+	[SETTLEMENT_BIOME:ANY_SAVANNA]
+	[SETTLEMENT_BIOME:ANY_FOREST]
+	[BIOME_SUPPORT:ANY_SAVANNA:1]
+	[BIOME_SUPPORT:ANY_FOREST:1]
+	[BIOME_SUPPORT:ANY_GRASSLAND:100]	
+	[BIOME_SUPPORT:GLACIER:5000]
 
 	[WORLD_CONSTRUCTION:BRIDGE]
 	[WORLD_CONSTRUCTION:ROAD]
@@ -38,9 +44,9 @@ TODO: remove
 	// Not: BUILDS_OUTDOOR_FORTIFICATIONS
 	// not: BUILDS_OUTDOOR_TOMBS
 
-	[MAX_STARTING_CIV_NUMBER:3] 		// This is a bit unique civilization.
-	[MAX_POP_NUMBER:8000]				// a little lower, to prevent way to large civs. seems not to work, by the way.
-	[MAX_SITE_POP_NUMBER:120] 				
+	[MAX_STARTING_CIV_NUMBER:5] 		// This is a bit unique civilization.
+	[MAX_POP_NUMBER:6000]				// a little lower, to prevent way to large civs. seems not to work, by the way.
+	[MAX_SITE_POP_NUMBER:200] 				
 
 	[PERMITTED_JOB:MINER]
 	[PERMITTED_JOB:CARPENTER]
@@ -820,7 +826,7 @@ Ruler
 		[SLEEP_PRETENSION]
 
 	[POSITION:LH1] 						
-		[NAME:warden:wardens] 
+		[NAME:district warden:district wardens] 
 	   	[LAND_HOLDER:1]
 		[LAND_NAME:District]
 		[PRECEDENCE:11]
