@@ -7,8 +7,9 @@ Main features:
 * **Non-playable in fortress mode**
 * **Isolationists**
 * The generated state may have a different name; "Verdant City-State" refers to the government type, not the in-game entity.
+* The sites of this civ are tightly clustered. The civ varies in size between only a single town to two or three larger towns close together, linked with roads. 
 
-## Description ##
+## Lore ##
 On the green hills, surrounded by lush meadows and winding rivers, lies the Verdant City-State. It stands as an oasis of peace and prosperity, a refuge for those who seek distance from the noise and ambition of larger civilizations. Its people take pride in a self-sufficient way of life, relying on agriculture, craftsmanship, and internal trade to sustain their community.
 
 Though peaceful by nature, the Verdant City-State is resolute in preserving its independence, and its inhabitants are known for their tenacity in defending their lands against any who would encroach upon them.
