@@ -1,6 +1,7 @@
 language_SOP_HUMAN
 
 instructions:
+Create fantasy language words. This one is human.
 Use 4-6 characters, up to 10
 Balance consonants and vowels
 Mix smooth (like th, m, n) and hard (like k, st) sounds
@@ -128,3 +129,29 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:CHARTER CITY:karquor]
 	[T_WORD:CITY-REPUBLIC:quorghor]
 	[T_WORD:CITIZEN STATE:civstel]
+	[T_WORD:ACCORD:venqor]
+	[T_WORD:BONDAGE:draskel]
+	[T_WORD:CARTEL:morquen]
+	[T_WORD:CONGLOMERATE:thavorel]
+	[T_WORD:FINE:selmar]
+	[T_WORD:GILDED:brasken]
+	[T_WORD:INDENTURE:kalveth]
+	[T_WORD:KNOUT:kravel]
+	[T_WORD:MAROON:threnol]
+	[T_WORD:MASTERS:valkor]
+	[T_WORD:OATH:queren]
+	[T_WORD:PACT:varsen]
+	[T_WORD:PROUD:drelan]
+	[T_WORD:REAL:merok]
+	[T_WORD:RING:kordel]
+	[T_WORD:ROD:staven]
+	[T_WORD:SERVITUDE:narveth]
+	[T_WORD:SHACKLE:skarel]
+	[T_WORD:SLAVERS:valdrin]
+	[T_WORD:SUBLIME:orquell]
+	[T_WORD:SUPERB:halvoren]
+	[T_WORD:SYNDICATE:kelvaron]
+	[T_WORD:TRUE:thren]
+	[T_WORD:USURY:malvek]
+	[T_WORD:WISE:quorin]
+	[T_WORD:YOKE:yovren]

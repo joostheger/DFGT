@@ -1,6 +1,7 @@
 language_SOP_DWARF
 
 instructions:
+Create fantasy language words. This one is dwarven.
 Use 3-5 characters up to 8
 Include consonant clusters (st, sh, th, ng, kr)
 End often in consonants
@@ -128,3 +129,29 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:CHARTER CITY:kr–khar]
 	[T_WORD:CITY-REPUBLIC:khartorba]
 	[T_WORD:CITIZEN STATE:grimst]
+	[T_WORD:ACCORD:thr–mk]
+	[T_WORD:BONDAGE:skard]
+	[T_WORD:CARTEL:dr–ng]
+	[T_WORD:CONGLOMERATE:kradg–m]
+	[T_WORD:FINE:thesk]
+	[T_WORD:GILDED:br“kt]
+	[T_WORD:INDENTURE:m–rkath]
+	[T_WORD:KNOUT:grath]
+	[T_WORD:MAROON:d–rven]
+	[T_WORD:MASTERS:thrumg]
+	[T_WORD:OATH:gr–th]
+	[T_WORD:PACT:skolth]
+	[T_WORD:PROUD:drakm]
+	[T_WORD:REAL:th–nd]
+	[T_WORD:RING:gormth]
+	[T_WORD:ROD:kr–b]
+	[T_WORD:SERVITUDE:br–shk]
+	[T_WORD:SHACKLE:thrangk]
+	[T_WORD:SLAVERS:dr–mkar]
+	[T_WORD:SUBLIME:gh“lt]
+	[T_WORD:SUPERB:sk–rth]
+	[T_WORD:SYNDICATE:krumdeth]
+	[T_WORD:TRUE:vrand]
+	[T_WORD:USURY:th–mrek]
+	[T_WORD:WISE:grend]
+	[T_WORD:YOKE:drokth]

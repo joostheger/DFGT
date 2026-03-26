@@ -1,6 +1,7 @@
 language_SOP_|GOBLIN
 
 instructions:
+Create fantasy language words. This one is goblin.
 Use 3-6 characters
 Pack consonant clusters (ng, sm, st, sp, str)
 Use harsh sounds (x, z, g, k)
@@ -128,3 +129,29 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:CHARTER CITY:krasgrak]
 	[T_WORD:CITY-REPUBLIC:grakslup]
 	[T_WORD:CITIZEN STATE:zargst]
+	[T_WORD:ACCORD:vrakth]
+	[T_WORD:BONDAGE:snagk]
+	[T_WORD:CARTEL:kr”xul]
+	[T_WORD:CONGLOMERATE:strugm]
+	[T_WORD:FINE:zugra]
+	[T_WORD:GILDED:br”zak]
+	[T_WORD:INDENTURE:krastul]
+	[T_WORD:KNOUT:gn”sk]
+	[T_WORD:MAROON:dr£mga]
+	[T_WORD:MASTERS:gruxak]
+	[T_WORD:OATH:snurk]
+	[T_WORD:PACT:trakz]
+	[T_WORD:PROUD:bragz]
+	[T_WORD:REAL:zugth]
+	[T_WORD:RING:grinkz]
+	[T_WORD:ROD:krug]
+	[T_WORD:SERVITUDE:snarth]
+	[T_WORD:SHACKLE:xnagk]
+	[T_WORD:SLAVERS:drakzul]
+	[T_WORD:SUBLIME:gr”xal]
+	[T_WORD:SUPERB:kr£zom]
+	[T_WORD:SYNDICATE:snagz£k]
+	[T_WORD:TRUE:vrum]
+	[T_WORD:USURY:grask]
+	[T_WORD:WISE:zugm]
+	[T_WORD:YOKE:gnark]
