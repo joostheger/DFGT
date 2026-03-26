@@ -1,5 +1,5 @@
 {
-    "files.encoding": "cp437",
+    "files.encoding": "utf8",
     "editor.snippetSuggestions": "top",
     "editor.suggest.showWords": true,
     "editor.suggest.showSnippets": true,
@@ -8,12 +8,13 @@
         "plaintext": false
     },
     "[plaintext]": {
+        "files.encoding": "cp437",
         "editor.quickSuggestions": {
             "other": false,
             "comments": false,
             "strings": false
         },
-        "editor.wordBasedSuggestions": "off",
+        "editor.wordBasedSuggestions": "matchingDocuments",
         "editor.inlineSuggest.enabled": true
     }
 }

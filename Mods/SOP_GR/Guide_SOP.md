@@ -5,7 +5,7 @@ The set includes:
 * Grand Republic - An aristocratic government centered on trade, influence, and rigid social hierarchy.
 * Holy Order of the Tree - A tree-venerating military order that aggressively spreads its beliefs.
 * Mountain Monk Republic - A theocratic government focused on religious devotion and communal living.
-* Slaver Syndicate - A ruthless regime built on systematic slavery and exploitation.
+* Slavers Pact - A ruthless regime built on systematic slavery and exploitation.
 * Raider Clans - A tribal society that survives through raiding and pillaging rival settlements, based on familiar clan structures.
 * Mountainborne Empire - The opus magnum of Seats of Power: a vast and intricate government that merges elements of all other types into a single, awe-inspiring imperial system.
 * Mageocracy - A government ruled by powerful mages who use their arcane abilities to maintain control and influence over their subjects.

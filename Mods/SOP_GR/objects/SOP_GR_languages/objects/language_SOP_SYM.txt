@@ -154,7 +154,7 @@ language_SOP_SYM
 	[S_WORD:COALITION]
 
 // partial name of a group of people living in a district of a city, or a group of people living in a city.
-[SYMBOL:SOP_CITY_GROUP]
+[SYMBOL:SOP_LOCAL_GROUP]
 	[S_WORD:FELLOWSHIP]
 	[S_WORD:COMMUNITY]
 	[S_WORD:COMPANY]

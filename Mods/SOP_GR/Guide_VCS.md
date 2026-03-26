@@ -6,8 +6,8 @@ Main features:
 * **A compact territory centered around a single primary city**
 * **Non-playable in fortress mode**
 * **Isolationists.** Their influence is limited to the plains they live.
-* Groupnames and positions contribute to the feeling that this is one city.
-* The sites of this civ are tightly clustered. The civ varies in size between only a single town to up to three larger towns close together, linked with roads, with a few scattered monasteries.
+* Group names and positions reinforce the sense that this is a single, unified city.
+* The sites of this civilization are tightly clustered. It ranges in size from a single town to up to three larger towns in close proximity, connected by roads, with a few scattered monasteries.
 * The generated state may have a different name; "Verdant City-State" refers to the government type, not the in-game entity. 
 
 ## Lore ##
@@ -15,5 +15,5 @@ On the green hills, surrounded by lush meadows and winding rivers, lies the Verd
 
 Though peaceful by nature, the Verdant City-State is resolute in preserving its independence, and its inhabitants are known for their tenacity in defending their lands against any who would encroach upon them.
 
-The state is governed by an Archon, who serves as the central authority, supported by a structured council of councillors. Rather than a loose collection of settlements, the Verdant City-State functions as a unified urban entity: a primary city surrounded by integrated suburbs and satellite towns, governed by wardens. Within these, market overseers and labour overseers manage daily economic and workforce affairs, while magistrates oversee local executors and ensure that the Archon’s will is enforced throughout the state.
+The state is governed by an Archon, who serves as the central authority, supported by a structured council of councillors. Rather than a loose collection of settlements, the Verdant City-State functions as a unified urban entity: a primary city surrounded by integrated suburbs and satellite towns, governed by wardens. Within these, market overseers and labour overseers manage daily economic and workforce affairs, while magistrates oversee local executors and ensure that the Archonï¿½s will is enforced throughout the state.
 
