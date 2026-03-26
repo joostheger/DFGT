@@ -34,6 +34,8 @@ TODO: remove
 	[SETTLEMENT_BIOME:ANY_SAVANNA]
 	[SETTLEMENT_BIOME:ANY_FOREST]
 	[SETTLEMENT_BIOME:ANY_SHRUBLAND]
+		// Somehow this seems to be working. maybe the first three aren't neccesary, but anyway/
+		// Makes the civ also isolationists, because they cant really reach anyone that isnt on their grasslands.
 	[BIOME_SUPPORT:ANY_FOREST:0]
 	[BIOME_SUPPORT:ANY_SAVANNA:0]
 	[BIOME_SUPPORT:ANY_SHRUBLAND:0]
