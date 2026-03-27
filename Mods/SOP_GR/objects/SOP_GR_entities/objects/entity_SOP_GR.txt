@@ -2480,7 +2480,7 @@ Settlers
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CREATURE:DWARF:ALL] 			// will only be filled at embark, but not assumable later.
 		[SUCCESSION:BY_HEIR] 					// precents unassigning by the player
-		[REPLACED_BY:REPL_8]					// cleared up after 50 pop, also not available in other sites.
+		[REPLACED_BY:REPL_8]					// cleared up after 8 pop, also not available in other sites.
 		[RESPONSIBILITY:TRADE]				// best suited unit should take this position.
 		[RESPONSIBILITY:MEET_WORKERS]
 		[RESPONSIBILITY:FOOD_SUPPLY]
@@ -2779,7 +2779,7 @@ Patricians
 Replacers
 
 	[POSITION:REPL_7]
-		The replacer is used to prevent the creation the Town founder in fortress mode
+		The replacer is also used to prevent the creation the Town founder in fortress mode
 		[NAME:replacer 7 (should not be filled):replacer]
 		[SITE]
 		[NUMBER:1]

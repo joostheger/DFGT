@@ -12,7 +12,20 @@ creature_SOP
       [PETVALUE:1500]
 
 [SELECT_CREATURE:DWARF]
-    [PETVALUE:2500]
+      [PETVALUE:2500]
+
+      [USE_CASTE:MALE_SLAVE:MALE]         // Makes a copy of the male caste
+      [USE_CASTE:FEMALE_SLAVE:FEMALE]     // Makes a copy of the female caste
+                                          // Select both new castes
+      [SELECT_CASTE:MALE_SLAVE]
+      [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
+            [CREATURE_CLASS:SOP_SLAVE]
+            [POP_RATIO:0]
+
+                                          // Select both old castes
+      [SELECT_CASTE:MALE]
+      [SELECT_ADDITIONAL_CASTE:FEMALE]
+            [CREATURE_CLASS:SOP_FREE]
 
 [SELECT_CREATURE:GREMLIN]
       [PETVALUE:500]
@@ -24,3 +37,4 @@ creature_SOP
       [PETVALUE:500]
       
 
+[SELECT_CREATURE:DWARF]
