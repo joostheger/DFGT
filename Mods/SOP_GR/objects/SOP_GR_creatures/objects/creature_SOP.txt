@@ -21,6 +21,8 @@ creature_SOP
       [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
             [CREATURE_CLASS:SOP_SLAVE]
             [POP_RATIO:0]
+            // less clothing?
+            
 
                                           // Select both old castes
       [SELECT_CASTE:MALE]
