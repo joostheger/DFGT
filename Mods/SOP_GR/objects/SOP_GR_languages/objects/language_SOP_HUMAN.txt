@@ -8,8 +8,9 @@ Mix smooth (like th, m, n) and hard (like k, st) sounds
 Include qu- patterns
 Varied endings
 make it sound pleasant, familiar and versatile
-their should be no relation to the original word, maybe only a similar 'feel' 
+their should be no relation to the original word, maybe only a similar 'feel'
 if you detect any relations between original words, you may apply similar relations in the translations.
+IMPORTANT: Ensure translations do NOT sound like the original English words. Avoid phonetic similarity even if the meaning is unrelated (e.g., don't translate RULERS to rulven, LORDS to lordenth, HONORED to honqueth, etc.)
 
 [OBJECT:LANGUAGE]
 
@@ -147,3 +148,19 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:USURY:malvek]
 	[T_WORD:WISE:quorin]
 	[T_WORD:YOKE:yovren]
+	[T_WORD:NOBLE:kelvorn]
+	[T_WORD:EXALTED:zethral]
+	[T_WORD:EMINENT:kolath]
+	[T_WORD:SUPREME:mathron]
+	[T_WORD:REGAL:relkath]
+	[T_WORD:RADIANT:brethnal]
+	[T_WORD:GLORIOUS:thorquil]
+	[T_WORD:HONORED:belmorn]
+	[T_WORD:REVERED:morketh]
+	[T_WORD:JUST:karleth]
+	[T_WORD:RIGHTFUL:sorveth]
+	[T_WORD:WARDENS:nethvorn]
+	[T_WORD:LORDS:thelvir]
+	[T_WORD:CUSTODIANS:nesthrel]
+	[T_WORD:KEEPERS:nethren]
+	[T_WORD:RULERS:torlemak]

@@ -3,13 +3,16 @@ creature_SOP
 [OBJECT:CREATURE]
 
 [SELECT_CREATURE:ELF]
-    [PETVALUE:2000]
+      [PETVALUE:2000]
+      [PET_EXOTIC]
 
 [SELECT_CREATURE:GOBLIN]
       [PETVALUE:1500]
+      [PET_EXOTIC]
 
 [SELECT_CREATURE:HUMAN]
       [PETVALUE:1500]
+      [PET_EXOTIC]
 
 [SELECT_CREATURE:DWARF]
       [PETVALUE:2500]
@@ -21,9 +24,9 @@ creature_SOP
       [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
             [CREATURE_CLASS:SOP_SLAVE]
             [POP_RATIO:0]
+            [PET_EXOTIC]
             // less clothing?
             
-
                                           // Select both old castes
       [SELECT_CASTE:MALE]
       [SELECT_ADDITIONAL_CASTE:FEMALE]
@@ -39,4 +42,4 @@ creature_SOP
       [PETVALUE:500]
       
 
-[SELECT_CREATURE:DWARF]
+

@@ -10,6 +10,7 @@ Include  , ¡ diacritics sparingly
 make it sound melodic and flowing
 their should be no relation to the original word, maybe only a similar 'feel' 
 if you detect any relations between original words, you may apply similar relations in the translations.
+IMPORTANT: Ensure translations do NOT sound like the original English words. Avoid phonetic similarity even if the meaning is unrelated.
 
 [OBJECT:LANGUAGE]
 
@@ -147,3 +148,19 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:USURY:fenora]
 	[T_WORD:WISE:mireth]
 	[T_WORD:YOKE:l¢mari]
+	[T_WORD:NOBLE:silathi]
+	[T_WORD:EXALTED:velanore]
+	[T_WORD:EMINENT:vethali]
+	[T_WORD:SUPREME:ther¡male]
+	[T_WORD:REGAL:felathie]
+	[T_WORD:RADIANT:meloria]
+	[T_WORD:GLORIOUS:lathemire]
+	[T_WORD:HONORED:faremia]
+	[T_WORD:REVERED:valethrae]
+	[T_WORD:JUST:thirami]
+	[T_WORD:RIGHTFUL:someth¡]
+	[T_WORD:WARDENS:melitha]
+	[T_WORD:LORDS:thelomae]
+	[T_WORD:CUSTODIANS:feliramo]
+	[T_WORD:KEEPERS:larethie]
+	[T_WORD:RULERS:rimethae]

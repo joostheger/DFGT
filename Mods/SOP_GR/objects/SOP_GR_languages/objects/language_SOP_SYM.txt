@@ -254,7 +254,6 @@ language_SOP_SYM
 
 [SYMBOL:SOP_MASTERS]
 	[S_WORD:MASTERS]
-	//TODO: add these words
 	[S_WORD:WARDENS]
 	[S_WORD:LORDS]
 	[S_WORD:CUSTODIANS]
@@ -276,8 +275,6 @@ language_SOP_SYM
 	[S_WORD:PROUD]
 	[S_WORD:SPLENDID]
 	[S_WORD:SUPERB]
-	
-	//TODO: add these words
 	[S_WORD:NOBLE]
 	[S_WORD:EXALTED]
 	[S_WORD:EMINENT]

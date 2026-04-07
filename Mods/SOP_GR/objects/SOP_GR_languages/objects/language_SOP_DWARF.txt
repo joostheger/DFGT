@@ -10,6 +10,7 @@ Add occasional £, “ for authenticity
 make it sound stout and sturdy
 their should be no relation to the original word, maybe only a similar 'feel' 
 if you detect any relations between original words, you may apply similar relations in the translations.
+IMPORTANT: Ensure translations do NOT sound like the original English words. Avoid phonetic similarity even if the meaning is unrelated.
 
 [OBJECT:LANGUAGE]
 
@@ -147,3 +148,19 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:USURY:th–mrek]
 	[T_WORD:WISE:grend]
 	[T_WORD:YOKE:drokth]
+	[T_WORD:NOBLE:th–rk]
+	[T_WORD:EXALTED:krad–m]
+	[T_WORD:EMINENT:dagrim]
+	[T_WORD:SUPREME:grunt–m]
+	[T_WORD:REGAL:drak–th]
+	[T_WORD:RADIANT:thr–mk]
+	[T_WORD:GLORIOUS:skar?–l]
+	[T_WORD:HONORED:bram–sh]
+	[T_WORD:REVERED:mog–rth]
+	[T_WORD:JUST:gr“thd–m]
+	[T_WORD:RIGHTFUL:kr–stad]
+	[T_WORD:WARDENS:thrang–m]
+	[T_WORD:LORDS:gr–mtok]
+	[T_WORD:CUSTODIANS:brekst–m]
+	[T_WORD:KEEPERS:dalm–sh]
+	[T_WORD:RULERS:kord–mth]

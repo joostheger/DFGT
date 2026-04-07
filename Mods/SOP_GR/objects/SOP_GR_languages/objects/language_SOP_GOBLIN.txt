@@ -10,6 +10,7 @@ Add ”, £ occasionally
 make it sound rough and guttural
 their should be no relation to the original word, maybe only a similar 'feel' 
 if you detect any relations between original words, you may apply similar relations in the translations.
+IMPORTANT: Ensure translations do NOT sound like the original English words. Avoid phonetic similarity even if the meaning is unrelated.
 
 [OBJECT:LANGUAGE]
 
@@ -147,3 +148,19 @@ if you detect any relations between original words, you may apply similar relati
 	[T_WORD:USURY:grask]
 	[T_WORD:WISE:zugm]
 	[T_WORD:YOKE:gnark]
+	[T_WORD:NOBLE:strung]
+	[T_WORD:EXALTED:graxul]
+	[T_WORD:EMINENT:zukgra]
+	[T_WORD:SUPREME:xulgrath]
+	[T_WORD:REGAL:krugax]
+	[T_WORD:RADIANT:strogna]
+	[T_WORD:GLORIOUS:gn£xul]
+	[T_WORD:HONORED:bragzul]
+	[T_WORD:REVERED:drakzum]
+	[T_WORD:JUST:zulgron]
+	[T_WORD:RIGHTFUL:krastun]
+	[T_WORD:WARDENS:snargul]
+	[T_WORD:LORDS:grakzum]
+	[T_WORD:CUSTODIANS:spranguk]
+	[T_WORD:KEEPERS:gnaxtul]
+	[T_WORD:RULERS:strogmak]
