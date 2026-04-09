@@ -348,7 +348,7 @@ TODO: remove
 	// Priority: 2/3: 10
 	// Priority: 3/3: 5
 
-	[VARIABLE_VALUE:LAW:15:40]	 			// Priority: 2/3		
+	[VARIABLE_VALUE:LAW:0:30]	 				
 	[VARIABLE_VALUE:LOYALTY:40:50]	 		// Priority: 2/3
 	[VARIABLE_VALUE:FAMILY:30:50]	 		
 	[VARIABLE_VALUE:FRIENDSHIP:10:40]	 	
