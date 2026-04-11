@@ -354,13 +354,13 @@ entity_SOP_GR
 	// Priority: 2/3: 10
 	// Priority: 3/3: 5
 
-	[VARIABLE_VALUE:LAW:20:40]	 			// Priority: 1/3.
+	[VARIABLE_VALUE:LAW:10:40]	 			
 	[VARIABLE_VALUE:LOYALTY:10:40]	 		
 	[VARIABLE_VALUE:FAMILY:10:40]	 		
 	[VARIABLE_VALUE:FRIENDSHIP:10:40]	 	
 	[VARIABLE_VALUE:POWER:-15:15]		 		
 	[VARIABLE_VALUE:TRUTH:5:35]		 		// somewhat lower
-	[VARIABLE_VALUE:CUNNING:20:40]			// Priority: 1/3. a lot higher
+	[VARIABLE_VALUE:CUNNING:30:40]			// Priority: 1/3. a lot higher
 	[VARIABLE_VALUE:ELOQUENCE:-5:25]			// a bit higher
 	[VARIABLE_VALUE:FAIRNESS:0:30]		 	
 	[VARIABLE_VALUE:DECORUM:10:30]			// Priority: 1/3. higher
