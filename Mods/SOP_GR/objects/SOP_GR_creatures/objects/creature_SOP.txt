@@ -21,8 +21,37 @@ creature_SOP
       [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
             [CREATURE_CLASS:SOP_SLAVE]
             [POP_RATIO:0]
-            // less clothing?
-            
+            [CASTE_NAME:slave:slaves]
+            [CASTE_PROFESSION_NAME:STANDARD:enslaved:enslaved]
+            [CASTE_PROFESSION_NAME:CHILD:enslaved child:enslaved children]
+            [DESCRIPTION:A short, sturdy creature fond of drink and industry. It has been enslaved by its society.]
+
+            Problematic behaviour:
+            [CURIOUSBEAST_EATER]  // tamed instances wont show this behaviour
+            [CURIOUSBEAST_GUZZLER]  // tamed instances wont show this behaviour
+            [CURIOUSBEAST_ITEM]  // tamed instances wont show this behaviour
+            [LOCKPICKER]
+            [MEANDERER]
+            [PRONE_TO_RAGE]
+            [FLEEQUICK]
+            [ROOT_AROUND:BY_TYPE:GRASP_STRIKE:scratch:scratches]
+
+      TODO: kalm, submissive, angstig, hard werkend, gehoorzaam. 
+            [PERSONALITY:IMMODERATION:0:55:100]
+	      [PERSONALITY:STRESS_VULNERABILITY:0:45:100]
+	      [PERSONALITY:BASHFUL:0:45:100]
+	      [PERSONALITY:SINGLEMINDED:0:55:100]
+	      [PERSONALITY:GREED:0:55:100]
+
+      TODO: Syndrome functies voor opstandigheid. 
+      CE_ADD_TAG
+            NOFEAR
+            CRAZED
+            MISCHIEVOUS
+            UTTERANCES      
+      CE_ERRATIC_BEHAVIOR
+      CE_CHANGE_PERSONALITY
+      CE_FEEL_EMOTION
                                           // Select both old castes
       [SELECT_CASTE:MALE]
       [SELECT_ADDITIONAL_CASTE:FEMALE]
