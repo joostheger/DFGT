@@ -10,6 +10,20 @@ creature_SOP
 
 [SELECT_CREATURE:HUMAN]
       [PETVALUE:1500]
+      
+[SELECT_CREATURE:GREMLIN]
+      [PETVALUE:500]
+
+[SELECT_CREATURE:TROLL]
+      [PETVALUE:1000]
+      [TRAINABLE_WAR]
+
+[SELECT_CREATURE:KOBOLD]
+      [PETVALUE:500]
+      [TRAINABLE_HUNTING]
+
+
+
 
 [SELECT_CREATURE:DWARF]
       [PETVALUE:2500]
@@ -20,8 +34,8 @@ creature_SOP
       [SELECT_CASTE:MALE_SLAVE]
       [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
             [CREATURE_CLASS:SOP_SLAVE]
-            [POP_RATIO:0]
-            [CASTE_NAME:slave:slaves]
+            [POP_RATIO:2] TODO: dit heb veranderd naar 2 om het te testen. maar moet misschien dus op 0 blijven saan.
+            [CASTE_NAME:slaveAAAAAAAAAAAAAAAAAAAAAAAATODO:slaves]
             [CASTE_PROFESSION_NAME:STANDARD:enslaved:enslaved]
             [CASTE_PROFESSION_NAME:CHILD:enslaved child:enslaved children]
             [DESCRIPTION:A short, sturdy creature fond of drink and industry. It has been enslaved by its society.]
@@ -57,16 +71,9 @@ creature_SOP
       [SELECT_ADDITIONAL_CASTE:FEMALE]
             [CREATURE_CLASS:SOP_FREE]
 
-[SELECT_CREATURE:GREMLIN]
-      [PETVALUE:500]
 
-[SELECT_CREATURE:TROLL]
-      [PETVALUE:1000]
-      [TRAINABLE_WAR]
 
-[SELECT_CREATURE:KOBOLD]
-      [PETVALUE:500]
-      [TRAINABLE_HUNTING]
+
 
 [SELECT_CREATURE:AARDVARK_MAN]
       [PETVALUE:400]
