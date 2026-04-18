@@ -30,6 +30,8 @@ TODO: remove
 //TODO: Review
 	[TOLERATES_SITE:CAVE_DETAILED]
 	[TOLERATES_SITE:CITY]
+	[TOLERATES_SITE:DARK_FORTRESS]
+	[TOLERATES_SITE:TREE_CITY]
 	[LIKES_SITE:CAVE_DETAILED]
 
 //TEST:
@@ -45,7 +47,7 @@ TODO: remove
 	[WORLD_CONSTRUCTION:ROAD]
 	// Not: WORLD_CONSTRUCTION:BRIDGE
 
-	//Not: BUILDS_OUTDOOR_FORTIFICATIONS
+	[BUILDS_OUTDOOR_FORTIFICATIONS]
 	[BUILDS_OUTDOOR_TOMBS]
 
 	[MAX_STARTING_CIV_NUMBER:10] 		// This is a bit unique civilization.
@@ -1031,7 +1033,7 @@ Replacers
 world-gen sites
 
 	[POSITION:PROPRIETOR_NONFORT] 
-		[NAME:proprietor TODO 2:proprietors]
+		[NAME:proprietor TODO nonfort:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -1075,6 +1077,8 @@ world-gen sites
 		[ALLOWED_CREATURE:DWARF:FEMALE_SLAVE]
 		[REQUIRES_POPULATION:100]
 
+		TODO: add non-fort exchequer and others.
+
 site main positions
 
 	[POSITION:PROPRIETOR_1] 
@@ -1087,54 +1091,119 @@ site main positions
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CREATURE:DWARF:ALL] 			// will only be filled at embark, but not assumable later.
-		[REPLACED_BY:REPL_8]	// Prevents this position in non-fortress mode.
+		[REPLACED_BY:REPL_8]				// Prevents this position in non-fortress mode.
 		[MENIAL_WORK_EXEMPTION]
 
 	[POSITION:PROPRIETOR_2] 
 		//Main site leader	
 		//upgrade naar Grand
-		//TODO: verliest niet zijn positie, dus succession type.
-		//Moet wel reappointable zijn, als hij dood gaat en geen successor heeft.
-		[NAME:proprietor TODO 1:proprietors]
+		[NAME:proprietor TODO 2:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
+		[REQUIRES_POPULATION:8]	 //TODO: test of dit removed kan worden.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MILITARY_GOALS]
 		[APPOINTED_BY:PROPRIETOR_1]
-		[APPOINTED_BY:LH1]
-		[APPOINTED_BY:LH2]
-		[APPOINTED_BY:LH3]
-		[APPOINTED_BY:LH4]
-		[APPOINTED_BY:LH5]
-		[APPOINTED_BY:LH6]
-		[APPOINTED_BY:LH7]
-		[APPOINTED_BY:LH8]
-		[APPOINTED_BY:LH9]
-		[APPOINTED_BY:LH10]
+		[SUCCESSION:BY_POSITION:PROPRIETOR_1]
+		//if lost, any administrative role can reappoint. 
+		//This cannot be done by the landholder, to prevent this position to exist in non-fortresses.
+		[APPOINTED_BY:EXCHEQUER]
+		[APPOINTED_BY:FACTOR]
+		[APPOINTED_BY:INTENDANT]
+		[APPOINTED_BY:CUSTODIAN]
+		[APPOINTED_BY:ARBITERT]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
-		[SUCCESSION:BY_POSITION:PROPRIETOR_1]
-		[REQUIRES_POPULATION:8]	 //TODO: test of dit removed kan worden.
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PROPRIETOR_3] 
+		//Main site leader	
+		//upgrade naar Grand
+		[NAME:proprietor TODO 2:proprietors]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[REQUIRES_POPULATION:50]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MILITARY_GOALS]
+		[APPOINTED_BY:PROPRIETOR_2]
+		[SUCCESSION:BY_POSITION:PROPRIETOR_2]
+		//if lost, any administrative role can reappoint. 
+		//This cannot be done by the landholder, to prevent this position to exist in non-fortresses.
+		[APPOINTED_BY:EXCHEQUER]
+		[APPOINTED_BY:FACTOR]
+		[APPOINTED_BY:INTENDANT]
+		[APPOINTED_BY:CUSTODIAN]
+		[APPOINTED_BY:ARBITERT]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PROPRIETOR_4] 
+		//Main site leader	
+		//upgrade naar Grand
+		[NAME:proprietor TODO 2:proprietors]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[REQUIRES_POPULATION:100]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MILITARY_GOALS]
+		[APPOINTED_BY:PROPRIETOR_3]
+		[SUCCESSION:BY_POSITION:PROPRIETOR_3]
+		//if lost, any administrative role can reappoint. 
+		//This cannot be done by the landholder, to prevent this position to exist in non-fortresses.
+		[APPOINTED_BY:EXCHEQUER]
+		[APPOINTED_BY:FACTOR]
+		[APPOINTED_BY:INTENDANT]
+		[APPOINTED_BY:CUSTODIAN]
+		[APPOINTED_BY:ARBITERT]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PROPRIETOR_5] 
+		//Main site leader	
+		//upgrade naar Grand
+		[NAME:proprietor TODO 2:proprietors]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[REQUIRES_POPULATION:150]
+		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[RESPONSIBILITY:LAW_MAKING]
+		[RESPONSIBILITY:MILITARY_GOALS]
+		[APPOINTED_BY:PROPRIETOR_4]
+		[SUCCESSION:BY_POSITION:PROPRIETOR_4]
+		//if lost, any administrative role can reappoint. 
+		//This cannot be done by the landholder, to prevent this position to exist in non-fortresses.
+		[APPOINTED_BY:EXCHEQUER]
+		[APPOINTED_BY:FACTOR]
+		[APPOINTED_BY:INTENDANT]
+		[APPOINTED_BY:CUSTODIAN]
+		[APPOINTED_BY:ARBITERT]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
 		[MENIAL_WORK_EXEMPTION]
 
 	[POSITION:SPIRITUAL_LEADER] 
-	// Elected
+	// Elected, so at least once a year the elections cause re-evaluation of noble positions.
 		[NAME:spiritual leader:spiritual leaders]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
 		[RESPONSIBILITY:RELIGION]
-		[REQUIRES_POPULATION:10]
+		[REQUIRES_POPULATION:20]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[ELECTED]
 		[MENIAL_WORK_EXEMPTION]
 
-	[POSITION:EXCHEQUER_1] 
-		//Exchequer
-		//upgrade naar High
+	[POSITION:EXCHEQUER] 
 		[NAME:exchequer:exchequers]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1145,10 +1214,25 @@ site main positions
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[APPOINTED_BY:PROPRIETOR_2]
+		[APPOINTED_BY:PROPRIETOR_3]
+		[APPOINTED_BY:PROPRIETOR_4]
+		[APPOINTED_BY:PROPRIETOR_5]
 		[MENIAL_WORK_EXEMPTION]
 
-	[POSITION:FACTOR_1] 
-		//upgrade naar High
+	[POSITION:EXCHEQUER_NONFORT] 
+		[NAME:exchequer:exchequers]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[RESPONSIBILITY:ACCOUNTING]
+		[RESPONSIBILITY:COLLECT_TAXES]
+		[REQUIRES_POPULATION:10]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[APPOINTED_BY:PROPRIETOR_NONFORT]
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:FACTOR] 
 		[NAME:factor:factors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1158,10 +1242,24 @@ site main positions
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[APPOINTED_BY:PROPRIETOR_2]
+		[APPOINTED_BY:PROPRIETOR_3]
+		[APPOINTED_BY:PROPRIETOR_4]
+		[APPOINTED_BY:PROPRIETOR_5]
 		[MENIAL_WORK_EXEMPTION]
 
-	[POSITION:INTENDANT_1] 
-		//upgrade naar High
+	[POSITION:FACTOR_NONFOR] 
+		[NAME:factor:factors]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[RESPONSIBILITY:TRADE]
+		[REQUIRES_POPULATION:10]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[APPOINTED_BY:PROPRIETOR_NONFORT]
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:INTENDANT] 
 		[NAME:intendant:intendants]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1172,10 +1270,25 @@ site main positions
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[APPOINTED_BY:PROPRIETOR_2]
+		[APPOINTED_BY:PROPRIETOR_3]
+		[APPOINTED_BY:PROPRIETOR_4]
+		[APPOINTED_BY:PROPRIETOR_5]
 		[MENIAL_WORK_EXEMPTION]
 
-	[POSITION:CUSTODIAN_1] 
-		//upgrade naar High
+	[POSITION:INTENDANT_NONFORT] 
+		[NAME:intendant:intendants]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[RESPONSIBILITY:MANAGE_PRODUCTION]
+		[RESPONSIBILITY:CONSTRUCTION_PERMITS]
+		[REQUIRES_POPULATION:10]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[APPOINTED_BY:PROPRIETOR_NONFORT]
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:CUSTODIAN] 
 		[NAME:custodian:custodians]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1187,10 +1300,26 @@ site main positions
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[APPOINTED_BY:PROPRIETOR_2]
+		[APPOINTED_BY:PROPRIETOR_3]
+		[APPOINTED_BY:PROPRIETOR_4]
+		[APPOINTED_BY:PROPRIETOR_5]
 		[MENIAL_WORK_EXEMPTION]
 
-	[POSITION:ARBITER_1] 
-		//upgrade naar High / Lord / Grand
+	[POSITION:CUSTODIAN_NONFORT] 
+		[NAME:custodian:custodians]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[RESPONSIBILITY:HEALTH_MANAGEMENT]
+		[RESPONSIBILITY:BUILD_MORALE]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[REQUIRES_POPULATION:10]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[APPOINTED_BY:PROPRIETOR_NONFORT]
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:ARBITER] 
 		[NAME:arbiter:arbiters]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1203,6 +1332,24 @@ site main positions
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[APPOINTED_BY:PROPRIETOR_2]
+		[APPOINTED_BY:PROPRIETOR_3]
+		[APPOINTED_BY:PROPRIETOR_4]
+		[APPOINTED_BY:PROPRIETOR_5]
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:ARBITER_NONFORT] 
+		[NAME:arbiter:arbiters]
+		[NUMBER:1]
+		[PRECEDENCE:50]
+		[SITE]
+		[RESPONSIBILITY:MEET_WORKERS]
+		[RESPONSIBILITY:LAW_ENFORCEMENT]
+		[RESPONSIBILITY:JUDGE]
+		[SQUAD:2:constable:constables]
+		[REQUIRES_POPULATION:10]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[APPOINTED_BY:PROPRIETOR_NONFORT]
 		[MENIAL_WORK_EXEMPTION]
 
 	[POSITION:TRIBUNE_OF_THE_GUARD_1] 
@@ -1216,6 +1363,7 @@ site main positions
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[APPOINTED_BY:PROPRIETOR_2]
+		[APPOINTED_BY:PROPRIETOR_NONFORT]
 		[MENIAL_WORK_EXEMPTION]
 
 	[POSITION:LEGATE_OF_THE_GUARD_1] 
@@ -1245,6 +1393,7 @@ site main positions
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[APPOINTED_BY:PROPRIETOR_2]
+		[APPOINTED_BY:PROPRIETOR_NONFORT]
 		[MENIAL_WORK_EXEMPTION]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:ESPIONAGE]
@@ -1413,6 +1562,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1435,6 +1587,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10] 
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1457,6 +1612,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1479,6 +1637,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1501,6 +1662,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1523,6 +1687,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1545,6 +1712,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1567,6 +1737,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1589,6 +1762,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1611,6 +1787,9 @@ freemen
 		[SUCCESSION:BY_POSITION:FREEMEN_9]
 		[SUCCESSION:BY_POSITION:FREEMEN_10]
 		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1620,8 +1799,12 @@ freemen
 		[NAME:priviledged:priviledged]
 		[SITE]
 		[PRECEDENCE:100]
-		[NUMBER:10]
-		[REQUIRES_POPULATION:80]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:65]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
 		[SUCCESSION:BY_POSITION:FULL_1]
 		[SUCCESSION:BY_POSITION:FULL_2]
 		[SUCCESSION:BY_POSITION:FULL_3]
@@ -1642,22 +1825,258 @@ freemen
 		[NAME:priviledged:priviledged]
 		[SITE]
 		[PRECEDENCE:100]
-		[NUMBER:10]
+		[NUMBER:2]
 		[REQUIRES_POPULATION:80]
-		[SUCCESSION:BY_POSITION:PRIVILEDGED_1]
-
-		Dit is dus de vraag. want ik moet hier ook rekening houden met andere successie scenarios.
-		
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
 		[APPOINTED_BY:LH2]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 
+	[POSITION:PRIVILEDGED_3] 
+		[NAME:favoured:favoured]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:95]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH3]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
 
+	[POSITION:PRIVILEDGED_4] 
+		[NAME:favoured:favoured]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:110]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH4]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PRIVILEDGED_5] 
+		[NAME:entitled:entitled]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:110]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH5]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PRIVILEDGED_6] 
+		[NAME:entitled:entitled]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:110]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH6]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PRIVILEDGED_7] 
+		[NAME:upper:uppers]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:110]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH7]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PRIVILEDGED_8] 
+		[NAME:upper:uppers]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:110]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH8]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PRIVILEDGED_9] 
+		[NAME:elite:elites]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:110]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH9]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
+
+	[POSITION:PRIVILEDGED_10] 
+		[NAME:elite:elites]
+		[SITE]
+		[PRECEDENCE:100]
+		[NUMBER:2]
+		[REQUIRES_POPULATION:110]
+		//Privileged do not inherrit from the previous rank. Otherwise, that rank stays 
+		//intact and keeps pulling members from the full-strata, because they dont go empty.
+		//Instead, the privilegded just grow slowly with only 2 per Landholder, and just stay
+		//being replenished from the full citizens
+		[SUCCESSION:BY_POSITION:FULL_1]
+		[SUCCESSION:BY_POSITION:FULL_2]
+		[SUCCESSION:BY_POSITION:FULL_3]
+		[SUCCESSION:BY_POSITION:FULL_4]
+		[SUCCESSION:BY_POSITION:FULL_5]
+		[SUCCESSION:BY_POSITION:FULL_6]
+		[SUCCESSION:BY_POSITION:FULL_7]
+		[SUCCESSION:BY_POSITION:FULL_8]
+		[SUCCESSION:BY_POSITION:FULL_9]
+		[SUCCESSION:BY_POSITION:FULL_10]
+		[APPOINTED_BY:LH10]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
+		[MENIAL_WORK_EXEMPTION]
 
 EXECUTIONS
-TODO: executers? of alleen slavery?
+
+    [POSITION:FLAGELLATOR]
+		[NAME:flagellator:flagellators]
+		[DESCRIPTION:The flagellator is responsible for carrying out capital punishments. He can execute his job using a whip or a scourge.]
+		[SITE]
+		[NUMBER:1]
+		[APPOINTED_BY:PROPRIATOR_NONFORT]	
+		[APPOINTED_BY:PROPRIATOR_2]
+		[APPOINTED_BY:PROPRIATOR_3]
+		[APPOINTED_BY:PROPRIATOR_4]
+		[APPOINTED_BY:PROPRIATOR_5]					
+		[RESPONSIBILITY:EXECUTIONS]
+			[EXECUTION_SKILL:WHIP]
+		[PRECEDENCE:80]
+		[COLOR:1:0:1]
+		[REQUIRES_MARKET]
+		[REQUIRED_BEDROOM:100]
+		[REQUIRED_OFFICE:100]
+		[REQUIRED_RACKS:1]
+		[REQUIRED_STANDS:1]
+
 
 // PRECEDENCE map:
 // 1-4: Head of state, duke-protector
