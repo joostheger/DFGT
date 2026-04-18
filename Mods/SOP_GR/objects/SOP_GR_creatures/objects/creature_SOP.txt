@@ -16,8 +16,8 @@ creature_SOP
             [POP_RATIO:0]
             [CASTE_NAME:elf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO:elf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO]
 [CHILDNAME:elf  childAAAAAAAAAAAAAAAAAAAAAAAATODO:elf  childAAAAAAAAAAAAAAAAAAAAAAAATODO]
-            [CASTE_PROFESSION_NAME:STANDARD:enslaved:enslaved]
-            [CASTE_PROFESSION_NAME:CHILD:enslaved child:enslaved children]
+            [CASTE_PROFESSION_NAME:STANDARD:enslaved elf:enslaved elves]
+            [CASTE_PROFESSION_NAME:CHILD:enslaved elf child:enslaved elf children]
 
       [SELECT_CASTE:MALE]
       [SELECT_ADDITIONAL_CASTE:FEMALE]
@@ -36,8 +36,8 @@ creature_SOP
             [POP_RATIO:0]
             [CASTE_NAME:dwarf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO:dwarf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO]
 [CHILDNAME:dwawrfchildAAAAAAAAAAAAAAAAAAAAAAAATODO:elf  childAAAAAAAAAAAAAAAAAAAAAAAATODO]
-            [CASTE_PROFESSION_NAME:STANDARD:enslaved:enslaved]
-            [CASTE_PROFESSION_NAME:CHILD:enslaved child:enslaved children]
+            [CASTE_PROFESSION_NAME:STANDARD:enslaved dwarf:enslaved dwarfs]
+            [CASTE_PROFESSION_NAME:CHILD:enslaved dwarf child:enslaved dwarf children]
 
             Problematic behaviour:
             [CURIOUSBEAST_EATER]  // tamed instances wont show this behaviour
