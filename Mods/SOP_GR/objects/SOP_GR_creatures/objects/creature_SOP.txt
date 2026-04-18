@@ -2,17 +2,10 @@ creature_SOP
 
 [OBJECT:CREATURE]
 
+
+      
 [SELECT_CREATURE:ELF]
-      [PETVALUE:2000]
-
-[SELECT_CREATURE:GOBLIN]
-      [PETVALUE:1500]
-
-[SELECT_CREATURE:HUMAN]
-      [PETVALUE:1500]
-
-[SELECT_CREATURE:DWARF]
-      [PETVALUE:2500]
+      [PETVALUE:2] //TODO: 2000
 
       [USE_CASTE:MALE_SLAVE:MALE]         // Makes a copy of the male caste
       [USE_CASTE:FEMALE_SLAVE:FEMALE]     // Makes a copy of the female caste
@@ -21,10 +14,30 @@ creature_SOP
       [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
             [CREATURE_CLASS:SOP_SLAVE]
             [POP_RATIO:0]
-            [CASTE_NAME:slave:slaves]
+            [CASTE_NAME:elf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO:elf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO]
+[CHILDNAME:elf  childAAAAAAAAAAAAAAAAAAAAAAAATODO:elf  childAAAAAAAAAAAAAAAAAAAAAAAATODO]
             [CASTE_PROFESSION_NAME:STANDARD:enslaved:enslaved]
             [CASTE_PROFESSION_NAME:CHILD:enslaved child:enslaved children]
-            [DESCRIPTION:A short, sturdy creature fond of drink and industry. It has been enslaved by its society.]
+
+      [SELECT_CASTE:MALE]
+      [SELECT_ADDITIONAL_CASTE:FEMALE]
+            [CREATURE_CLASS:SOP_FREE]
+
+
+[SELECT_CREATURE:DWARF]
+      [PETVALUE:2] //TODO: 2500
+
+      [USE_CASTE:MALE_SLAVE:MALE]         // Makes a copy of the male caste
+      [USE_CASTE:FEMALE_SLAVE:FEMALE]     // Makes a copy of the female caste
+                                          // Select both new castes
+      [SELECT_CASTE:MALE_SLAVE]
+      [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
+            [CREATURE_CLASS:SOP_SLAVE]
+            [POP_RATIO:0]
+            [CASTE_NAME:dwarf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO:dwarf  slaveAAAAAAAAAAAAAAAAAAAAAAAATODO]
+[CHILDNAME:dwawrfchildAAAAAAAAAAAAAAAAAAAAAAAATODO:elf  childAAAAAAAAAAAAAAAAAAAAAAAATODO]
+            [CASTE_PROFESSION_NAME:STANDARD:enslaved:enslaved]
+            [CASTE_PROFESSION_NAME:CHILD:enslaved child:enslaved children]
 
             Problematic behaviour:
             [CURIOUSBEAST_EATER]  // tamed instances wont show this behaviour
@@ -56,6 +69,12 @@ creature_SOP
       [SELECT_CASTE:MALE]
       [SELECT_ADDITIONAL_CASTE:FEMALE]
             [CREATURE_CLASS:SOP_FREE]
+
+[SELECT_CREATURE:GOBLIN]
+      [PETVALUE:1500]
+
+[SELECT_CREATURE:HUMAN]
+      [PETVALUE:1500]
 
 [SELECT_CREATURE:GREMLIN]
       [PETVALUE:500]
