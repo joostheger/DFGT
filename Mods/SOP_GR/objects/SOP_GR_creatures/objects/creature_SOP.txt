@@ -47,7 +47,7 @@ creature_SOP
             [MEANDERER]
             [PRONE_TO_RAGE]
             [FLEEQUICK]
-            [ROOT_AROUND:BY_TYPE:GRASP_STRIKE:scratch:scratches]
+            //TODO: hij geeft hier een error op. [ROOT_AROUND:BY_TYPE:GRASP_STRIKE:scratch:scratches]
 
       TODO: kalm, submissive, angstig, hard werkend, gehoorzaam. 
             [PERSONALITY:IMMODERATION:0:55:100]
