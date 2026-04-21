@@ -1070,13 +1070,12 @@ site main positions
 
 
 	[POSITION:PROPRIETOR_2] 
-		//Main site leader	
-		//upgrade naar Grand
+//TODO: make in its description clear that the user can use the opportunity to appoint another proprietor, but if he wont, its position will be filled with the expedition sponsor.
 		[NAME:proprietor TODO 2:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
-		[REQUIRES_POPULATION:8]	 //TODO: test of dit removed kan worden.
+		[REQUIRES_POPULATION:7]	 //TODO: test of dit removed kan worden.
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:MILITARY_GOALS]
@@ -1096,8 +1095,6 @@ site main positions
 
 
 	[POSITION:PROPRIETOR_3] 
-		//Main site leader	
-		//upgrade naar Grand
 		[NAME:proprietor TODO 3:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1122,8 +1119,6 @@ site main positions
 
 
 	[POSITION:PROPRIETOR_4] 
-		//Main site leader	
-		//upgrade naar Grand
 		[NAME:proprietor TODO 4:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1148,8 +1143,6 @@ site main positions
 
 
 	[POSITION:PROPRIETOR_5] 
-		//Main site leader	
-		//upgrade naar Grand
 		[NAME:proprietor TODO 5:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -1180,7 +1173,7 @@ site main positions
 		[PRECEDENCE:50]
 		[SITE]
 		[RESPONSIBILITY:RELIGION]
-		[REQUIRES_POPULATION:20]
+		[REQUIRES_POPULATION:110] //because the election of the spiritual leader disrupts the assumption-spread of the freemen, I want this creation not close to a freemen creation. Also, I dont need him yet, it is just that assumption need to keep working later on, when i suspect that this wont be a big problem anymore.
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[ELECTED]
@@ -1447,6 +1440,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:10]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1459,6 +1453,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:15]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1471,6 +1466,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:25]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1483,6 +1479,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:35]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1495,6 +1492,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:50]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1507,6 +1505,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:70]
 		[SUCCESSION:BY_HEIR] //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1519,6 +1518,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:95]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1531,6 +1531,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:125]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1543,6 +1544,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:160]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -1555,6 +1557,7 @@ freemen
 		[NUMBER:5]
 		[REQUIRES_POPULATION:200]
 		[SUCCESSION:BY_HEIR]  //non re-appointable
+		[REJECTED_CREATURE:ELF:ALL]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
@@ -2077,7 +2080,6 @@ EXECUTIONS
 		[DESCRIPTION:The flagellator is responsible for carrying out capital punishments. He can execute his job using a whip or a scourge.]
 		[SITE]
 		[NUMBER:1]
-		[REQUIRES_POPULATION:10]
 		[APPOINTED_BY:PROPRIETOR_NONFORT]	
 		[APPOINTED_BY:PROPRIETOR_2]
 		[APPOINTED_BY:PROPRIETOR_3]
