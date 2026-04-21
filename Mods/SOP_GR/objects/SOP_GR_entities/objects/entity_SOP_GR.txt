@@ -1507,12 +1507,27 @@ Merchants
 		[REQUIRED_CABINETS:4]
 		[REQUIRED_BOXES:1]
 
+
+//This works as follows. the APPOINTER_APPOINTER is available from a populationcount of 1
+//Even while it is replaced from a pop of 7, the fact that it could appoint the APPOINTER_NONFORT,
+//causes that position to be appointable, even if the APPOINTER_APPOINTER doesnt exist any more.
+//When however we are in fortress mode, the APPOINTER_APPOINTER doesnt exist, therefore the non-fort
+//is also not appointed. And because of the double election-appointment tokens, 
+//it is never elected either.
 	[POSITION:APPOINTER_NONFORT]
 		[NAME:citizen:citizens]
 		[SITE]
 		[NUMBER:1]
 		[ELECTED]						 // this combination prevents usage by the player
-		[APPOINTED_BY:REPL_7]			// but in world-gen, this position will be filled. it isnt even visible.
+		[APPOINTED_BY:APPOINTER_APPOINTER]			// but in world-gen, this position will be filled. it isnt even visible.
+		[PRECEDENCE:200]
+		[DUTY_BOUND]
+
+	[POSITION:APPOINTER_APPOINTER]
+		[NAME:citizen:citizens]
+		[SITE]
+		[NUMBER:1]
+		[REPLACED_BY:REPL_7]		
 		[PRECEDENCE:200]
 		[DUTY_BOUND]
 
