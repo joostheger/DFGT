@@ -818,7 +818,7 @@ Civ postitions
 	
 	[POSITION:REPRESENTATIVE_1] 	
 		[NAME:representative:representatives]
-		[NUMBER:1]
+		[NUMBER:2]
 		[PRECEDENCE:50]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[MENIAL_WORK_EXEMPTION]
@@ -827,7 +827,7 @@ Civ postitions
 
 	[POSITION:REPRESENTATIVE_2] 	
 		[NAME:representative:representatives]
-		[NUMBER:1]
+		[NUMBER:2]
 		[PRECEDENCE:50]
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[MENIAL_WORK_EXEMPTION]
@@ -836,7 +836,7 @@ Civ postitions
 
 	[POSITION:REPRESENTATIVE_3] 	
 		[NAME:representative:representatives]
-		[NUMBER:1]
+		[NUMBER:2]
 		[PRECEDENCE:50]
 		[RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS]
 		[MENIAL_WORK_EXEMPTION]
@@ -1173,7 +1173,7 @@ site main positions
 		[PRECEDENCE:50]
 		[SITE]
 		[RESPONSIBILITY:RELIGION]
-		[REQUIRES_POPULATION:110] //because the election of the spiritual leader disrupts the assumption-spread of the freemen, I want this creation not close to a freemen creation. Also, I dont need him yet, it is just that assumption need to keep working later on, when i suspect that this wont be a big problem anymore.
+		[REQUIRES_POPULATION:200] //because the election of the spiritual leader disrupts the assumption-spread of the freemen, I want this creation not close to a freemen creation. Also, I dont need him yet, it is just that assumption need to keep working later on, when i suspect that this wont be a big problem anymore.
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 		[ELECTED]
