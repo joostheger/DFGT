@@ -66,6 +66,16 @@ creature_SOP
             [ROOT_AROUND:BY_TYPE:GRASP:scratch:scratches]
 
       TODO: kalm, submissive, angstig, hard werkend, gehoorzaam. 
+      Low: ASSERTIVENESS
+      high: DUTIFULNESS
+      bit low: TRUST
+      Low: EXCITEMENT_SEEKING
+      Low: VIOLENT
+      Low: GREED
+      Low: IMMODERATION
+      High: ALTRUISM
+      High: GRATITUDE
+           
             [PERSONALITY:IMMODERATION:0:55:100]
 	      [PERSONALITY:STRESS_VULNERABILITY:0:45:100]
 	      [PERSONALITY:BASHFUL:0:45:100]
@@ -81,6 +91,8 @@ creature_SOP
       CE_ERRATIC_BEHAVIOR
       CE_CHANGE_PERSONALITY
       CE_FEEL_EMOTION
+
+      
 
 
 [SELECT_CREATURE:GREMLIN]
