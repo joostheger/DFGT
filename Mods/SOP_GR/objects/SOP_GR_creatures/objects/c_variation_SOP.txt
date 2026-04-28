@@ -14,7 +14,7 @@ c_variation_SOP.txt
     [CV_NEW_TAG:FLEEQUICK]
     [CV_NEW_TAG:ROOT_AROUND:BY_TYPE:GRASP:scratch:scratches]
 
-todo: ADD THESE
+todo: ADD THESE. [CV_NEW_TAG?
     [CASTE_PROFESSION_NAME:STANDARD:slave:slaves]
     [CASTE_PROFESSION_NAME:CHILD:slave child:slave children]
 
