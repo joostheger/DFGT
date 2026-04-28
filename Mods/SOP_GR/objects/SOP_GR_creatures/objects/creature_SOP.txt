@@ -92,7 +92,20 @@ creature_SOP
       CE_CHANGE_PERSONALITY
       CE_FEEL_EMOTION
 
-      
+      wat triggert dit:
+      * GROUNDED_ANIMAL_ANGER (werkt niet echt)
+      * CAVE_ADAPT
+      * Eigen tears
+      * Eigen Sweat
+      * Eigen Blood
+
+      niveaus van opstandigheid
+
+      1: suceptible for influence
+      2: open defiance in different forms
+      3: rebellion
+
+
 
 
 [SELECT_CREATURE:GREMLIN]
