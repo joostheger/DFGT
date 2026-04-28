@@ -99,6 +99,9 @@ creature_SOP
       * Eigen Sweat
       * Eigen Blood
 
+      Wat het weer verminderd:
+      * Flee-interaction on self
+
       niveaus van opstandigheid
 
       1: suceptible for influence
