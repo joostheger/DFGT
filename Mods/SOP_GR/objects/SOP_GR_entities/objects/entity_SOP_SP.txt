@@ -1633,8 +1633,6 @@ priviliged
 		//No: Squad. This breaks premature succession.
 		[MENIAL_WORK_EXEMPTION]
 
-
-
 propietors
 
 	[POSITION:DESIGNATED_HEIR] 
