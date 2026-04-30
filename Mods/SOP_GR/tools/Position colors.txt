@@ -5,8 +5,8 @@ Example usage: [COLOR:7:0:1]
 1:0:1: Justice
 2:0:0: Civ level special caste, like clerics and merchants, lower tier
 2:0:1: Civ level special caste, like clerics and merchants, higher tier
-3:0:0:  - not used yet -
-3:0:1:  - not used yet -
+3:0:0: Special, lower tier
+3:0:1: Special, higher tier
 4:0:0:  - not used yet - (normally used for children. )
 4:0:1: Citizens local caste, lower tier
 5:0:0: Admin/support: general administrative or supportive roles, like envoys, clerks or medics 
