@@ -803,41 +803,48 @@ TODO: remove
 	[ANIMAL][ANIMAL_TOKEN:WORM_MAN][ANIMAL_ALWAYS_PET]
 	[ANIMAL][ANIMAL_TOKEN:WREN_MAN][ANIMAL_ALWAYS_PET]
 
-      
- //TODO:
+    
 Civ postitions
 
-	[POSITION:FIRST_REPRESENTATIVE] 	
-		[NAME:first representative:first representatives]
+	[POSITION:ENVOY_CIV_1] 	
+		[NAME:envoy of the veil of welcome:envoys]
 		[NUMBER:1]
 		[PRECEDENCE:1]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
+		[MENIAL_WORK_EXEMPTION]
+		[ALLOWED_CREATURE:DWARF:ALL]
+		[REJECTED_CLASS:SOP_SLAVE]
+
+	[POSITION:ENVOY_CIV_2] 	
+		[NAME:envoy of the ceasing of bloodshed:envoys]
+		[NUMBER:1]
+		[PRECEDENCE:50]
 		[RESPONSIBILITY:MAKE_PEACE_AGREEMENTS]
 		[MENIAL_WORK_EXEMPTION]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 	
-	[POSITION:REPRESENTATIVE_1] 	
-		[NAME:representative:representatives]
-		[NUMBER:2]
+	[POSITION:ENVOY_CIV_3] 	
+		[NAME:envoy of the numbered accords:envoys]
+		[NUMBER:1]
 		[PRECEDENCE:50]
 		[RESPONSIBILITY:MAKE_TOPIC_AGREEMENTS]
 		[MENIAL_WORK_EXEMPTION]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 
-	[POSITION:REPRESENTATIVE_2] 	
-		[NAME:representative:representatives]
-		[NUMBER:2]
+	[POSITION:ENVOY_CIV_4] 	
+		[NAME:envoy of the first exchange:envoys]
+		[NUMBER:1]
 		[PRECEDENCE:50]
 		[RESPONSIBILITY:MAKE_INTRODUCTIONS]
 		[MENIAL_WORK_EXEMPTION]
 		[ALLOWED_CREATURE:DWARF:ALL]
 		[REJECTED_CLASS:SOP_SLAVE]
 
-	[POSITION:REPRESENTATIVE_3] 	
-		[NAME:representative:representatives]
-		[NUMBER:2]
+	[POSITION:ENVOY_CIV_5] 	
+		[NAME:envoy of the distant caravans:envoys]
+		[NUMBER:1]
 		[PRECEDENCE:50]
 		[RESPONSIBILITY:ESTABLISH_COLONY_TRADE_AGREEMENTS]
 		[MENIAL_WORK_EXEMPTION]
@@ -1037,7 +1044,7 @@ Replacers
 world-gen sites
 
 	[POSITION:PROPRIETOR_NONFORT] 
-		[NAME:proprietor TODO nonfort:proprietors]
+		[NAME:proprietor:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -1066,7 +1073,7 @@ world-gen sites
 site main positions
 
 	[POSITION:PROPRIETOR_1] 
-		[NAME:expedition sponsor TODO 1:expedition sponsors]
+		[NAME:expedition sponsor:expedition sponsors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -1095,7 +1102,7 @@ site main positions
 		[DO_NOT_CULL]
 
 	[POSITION:EXCHEQUER] 
-		[NAME:exchequer TODO 2:exchequers]
+		[NAME:exchequer:exchequers]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -1109,7 +1116,7 @@ site main positions
 		[DO_NOT_CULL]
 
 	[POSITION:FACTOR] 
-		[NAME:factor TODO 2:factors]
+		[NAME:factor:factors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -1653,11 +1660,11 @@ propietors
 
 	[POSITION:PROPRIETOR_2] 
 	//TODO: make in its description clear that the user can use the opportunity to appoint another proprietor, but if he wont, its position will be filled with the expedition sponsor.
-		[NAME:proprietor TODO 2:proprietors]
+		[NAME:proprietor:proprietors]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
-		[REQUIRES_POPULATION:7]	 //TODO: test of dit removed kan worden.
+		[REQUIRES_POPULATION:7]	
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:LAW_MAKING]
 		[APPOINTED_BY:PROPRIETOR_1]
