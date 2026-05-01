@@ -1,0 +1,49 @@
+
+*Grand Republic*
+**BURGER_5**
+Demand: 1
+Req: 6000
+Stuff: 4
+
+**PATRICIAN_5**
+Demand: 5
+Req: 7500
+Stuff: 8
+
+**LH7**
+Req: 2000
+Stuff: 6
+
+*League of Dukes*
+**DUKE_SITE**
+Demand: 1
+Req: 7000
+Stuff: 9
+
+
+*Legend*
+Demand:
+- DEMAND_MAX
+Req:
+- REQUIRED_BEDROOM
+- REQUIRED_DINING
+- REQUIRED_OFFICE
+- REQUIRED_TOMB
+Stuff:
+- REQUIRED_CABINETS
+- REQUIRED_BOXES
+- REQUIRED_RACKS
+- REQUIRED_STANDS
+
+*Numeric thresholds*
+| Bedroom name      | Dining room name    | Office Name        | Grave Name              | Numeric Value |
+| REQUIRED_BEDROOM  | REQUIRED_DINING     | REQUIRED_OFFICE    | REQUIRED_TOMB           |               |
+|-------------------|---------------------|--------------------|-------------------------|---------------|
+| Meager Quarters   | Meager Dining Room  | Meager Office      | Grave                   | 0             |
+| Modest Quarters   | Modest Dining Room  | Modest Office      | Servant's Burial Chamber| 100           |
+| Quarters          | Dining Room         | Office             | Burial Chamber          | 250           |
+| Decent Quarters   | Decent Dining Room  | Decent Office      | Tomb                    | 500           |
+| Fine Quarters     | Fine Dining Room    | Splendid Office    | Fine Tomb               | 1000          |
+| Great Bedroom     | Great Dining Room   | Throne Room        | Mausoleum               | 1500          |
+| Grand Bedroom     | Grand Dining Room   | Opulent Throne Room| Grand Mausoleum         | 2500          |
+| Royal Bedroom     | Royal Dining Room   | Royal Throne Room  | Royal Mausoleum         | 10000         |
