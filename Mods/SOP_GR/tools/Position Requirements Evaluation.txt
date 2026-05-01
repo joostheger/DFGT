@@ -1,49 +1,48 @@
-
-*Grand Republic*
-**BURGER_5**
-Demand: 1
-Req: 6000
-Stuff: 4
-
-**PATRICIAN_5**
-Demand: 5
-Req: 7500
-Stuff: 8
-
-**LH7**
-Req: 2000
-Stuff: 6
-
-*League of Dukes*
-**DUKE_SITE**
-Demand: 1
-Req: 7000
-Stuff: 9
+PURPOSE
+Use this file as a reference when writing new positions. Pick a prestige tier from the
+comparison table and use matching Demand/Req/Stuff values. Vanilla positions are the
+primary calibration points; mod positions show how custom designs compare.
 
 
-*Legend*
-Demand:
-- DEMAND_MAX
-Req:
-- REQUIRED_BEDROOM
-- REQUIRED_DINING
-- REQUIRED_OFFICE
-- REQUIRED_TOMB
-Stuff:
-- REQUIRED_CABINETS
-- REQUIRED_BOXES
-- REQUIRED_RACKS
-- REQUIRED_STANDS
+FIELDS
+  Demand  = DEMAND_MAX       (max demands a noble can make per cycle)
+  Req     = sum of REQUIRED_BEDROOM + REQUIRED_DINING + REQUIRED_OFFICE + REQUIRED_TOMB
+  Stuff   = sum of REQUIRED_CABINETS + REQUIRED_BOXES + REQUIRED_RACKS + REQUIRED_STANDS
 
-*Numeric thresholds*
-| Bedroom name      | Dining room name    | Office Name        | Grave Name              | Numeric Value |
-| REQUIRED_BEDROOM  | REQUIRED_DINING     | REQUIRED_OFFICE    | REQUIRED_TOMB           |               |
-|-------------------|---------------------|--------------------|-------------------------|---------------|
-| Meager Quarters   | Meager Dining Room  | Meager Office      | Grave                   | 0             |
-| Modest Quarters   | Modest Dining Room  | Modest Office      | Servant's Burial Chamber| 100           |
-| Quarters          | Dining Room         | Office             | Burial Chamber          | 250           |
-| Decent Quarters   | Decent Dining Room  | Decent Office      | Tomb                    | 500           |
-| Fine Quarters     | Fine Dining Room    | Splendid Office    | Fine Tomb               | 1000          |
-| Great Bedroom     | Great Dining Room   | Throne Room        | Mausoleum               | 1500          |
-| Grand Bedroom     | Grand Dining Room   | Opulent Throne Room| Grand Mausoleum         | 2500          |
-| Royal Bedroom     | Royal Dining Room   | Royal Throne Room  | Royal Mausoleum         | 10000         |
+  Most positions use the same threshold for all 4 rooms, so Req = 4 * threshold.
+  Use individual values when rooms should differ (e.g. a military role with a modest bedroom
+  but a fine office).
+
+
+ROOM QUALITY THRESHOLDS
+  Each Req component is a numeric quality floor. The in-game room name shown when the
+  requirement is (or is not) met is listed below.
+
+  | Value | Bedroom              | Dining Room          | Office               | Tomb                      |
+  |-------|----------------------|----------------------|----------------------|---------------------------|
+  |     0 | Meager Quarters      | Meager Dining Room   | Meager Office        | Grave                     |
+  |   100 | Modest Quarters      | Modest Dining Room   | Modest Office        | Servant's Burial Chamber  |
+  |   250 | Quarters             | Dining Room          | Office               | Burial Chamber            |
+  |   500 | Decent Quarters      | Decent Dining Room   | Decent Office        | Tomb                      |
+  |  1000 | Fine Quarters        | Fine Dining Room     | Splendid Office      | Fine Tomb                 |
+  |  1500 | Great Bedroom        | Great Dining Room    | Throne Room          | Mausoleum                 |
+  |  2500 | Grand Bedroom        | Grand Dining Room    | Opulent Throne Room  | Grand Mausoleum           |
+  | 10000 | Royal Bedroom        | Royal Dining Room    | Royal Throne Room    | Royal Mausoleum           |
+
+
+POSITION COMPARISON
+  Sorted by Req (ascending). Demand and Stuff generally scale with prestige.
+  Source tags: [V] Vanilla  [GR] Grand Republic  [LD] League of Dukes
+
+  | Position     | Source | Demand | Req   | Stuff | Notes                                          |
+  |--------------|--------|--------|-------|-------|------------------------------------------------|
+  | GENERAL      | [V]    |      2 |  1001 |     9 | Office:500, Bedroom:250, Dining:250, Tomb:1    |
+  | MAYOR        | [V]    |      2 |  1500 |     5 | 3x500, no tomb                                 |
+  | BARON        | [V]    |      2 |  2000 |     5 | 4x500                                          |
+  | LH7          | [GR]   |      - |  2000 |     6 |                                                |
+  | COUNT        | [V]    |      3 |  6000 |     9 | 4x1500                                         |
+  | BURGER_5     | [GR]   |      1 |  6000 |     4 |                                                |
+  | DUKE_SITE    | [LD]   |      1 |  7000 |     9 |                                                |
+  | PATRICIAN_5  | [GR]   |      5 |  7500 |     8 |                                                |
+  | DUKE         | [V]    |      5 | 10000 |    14 | 4x2500                                         |
+  | MONARCH      | [V]    |     10 | 40000 |    25 | 4x10000                                        |
