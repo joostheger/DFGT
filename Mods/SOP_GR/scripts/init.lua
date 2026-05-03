@@ -1,1 +1,1 @@
-﻿require("generators.slavers_pact2")
+﻿require("generators.slavers_pact")
