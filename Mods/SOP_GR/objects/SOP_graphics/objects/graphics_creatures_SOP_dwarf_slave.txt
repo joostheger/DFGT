@@ -1,4 +1,4 @@
-graphics_creatures_dwarf
+graphics_creatures_SOP_dwarf_slave
 
 [OBJECT:GRAPHICS]
 
