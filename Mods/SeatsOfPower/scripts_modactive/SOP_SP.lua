@@ -1,36 +1,34 @@
-﻿local GLOBAL_KEY = 'SOP_GR'
+﻿--@ module = true
+-- Master script for SOP_GR.
 
--- Returns a random position title from a fixed list.
-local POSITION_NAMES = {'envoy', 'herald', 'leader'}
-local function randomPositionName()
-    return POSITION_NAMES[math.random(#POSITION_NAMES)]
+local repeatUtil = require('repeat-util')
+local GLOBAL_KEY = 'SOP_GR'
+local TICKS_PER_WEEK = 7 * 1200
+
+local function do_enable()
+    -- Runs once on load: rename envoy positions in SOP_SLAVERS_PACT
+    reqscript('internal/positions').renameEnvoyPositions()
+
+    -- Runs every week while the fortress is active
+    repeatUtil.scheduleEvery(GLOBAL_KEY, TICKS_PER_WEEK, 'ticks',
+        reqscript('internal/weekly').onWeeklyTick)
 end
 
--- Called once when the map is first loaded.
--- Finds the SOP_SLAVERS_PACT entity (Civ or SiteGovernment) and iterates its positions.
-local function onLoad()
-    for _, entity in ipairs(df.global.world.entities.all) do
-        local etype = entity.type
-        if etype == df.historical_entity_type.Civilization or
-           etype == df.historical_entity_type.SiteGovernment then
-            if entity.entity_raw and entity.entity_raw.code == 'SOP_SLAVERS_PACT' then
-                for _, position in ipairs(entity.positions.own) do
-                    if position.name[0]:lower():find('envoy') then
-                        local newName = randomPositionName()
-                        position.name[0] = newName
-                        position.name[1] = newName .. 's'
-                    end
-                end
-            end
-        end
-    end
-
-    -- Disable: remove the state-change hook so this runs only once per load.
-    dfhack.onStateChange[GLOBAL_KEY] = nil
+local function do_disable()
+    repeatUtil.cancel(GLOBAL_KEY)
 end
 
 dfhack.onStateChange[GLOBAL_KEY] = function(sc)
-    if sc == SC_MAP_LOADED then
-        onLoad()
+    if sc == SC_MAP_UNLOADED then
+        do_disable()
+        -- Remove the hook so the mod doesn't run in a world where it's not active
+        dfhack.onStateChange[GLOBAL_KEY] = nil
+        return
     end
+
+    if sc ~= SC_MAP_LOADED or not dfhack.world.isFortressMode() then
+        return
+    end
+
+    do_enable()
 end
