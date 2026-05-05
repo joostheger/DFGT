@@ -14,6 +14,7 @@ c_variation_SOP.txt
     [CV_NEW_TAG:LOCKPICKER]
     [CV_NEW_TAG:MEANDERER]
     [CV_NEW_TAG:PRONE_TO_RAGE]
+	[CV_NEW_TAG:BUILDINGDESTROYER:1]
     [CV_NEW_TAG:FLEEQUICK]
     [CV_NEW_TAG:ROOT_AROUND:BY_TYPE:GRASP:scratch:scratches]
 	[CV_REMOVE_TAG:CASTE_PROFESSION_NAME:STANDARD]
@@ -69,10 +70,10 @@ low: ANGER_PROPENSITY
 
       TODO: Syndrome functies voor opstandigheid. 
       CE_ADD_TAG
-            NOFEAR
             CRAZED
-            MISCHIEVOUS
-            UTTERANCES      
+            MISCHIEVOUS    
+			extreme skill limits = slower working. CE_SKILL_ROLL_ADJUST
+			UTTERANCES: kan je volgens mij geen labours meer toewijzen, omdat ze ineens bij animals staan.   
       CE_ERRATIC_BEHAVIOR
       CE_CHANGE_PERSONALITY
       CE_FEEL_EMOTION
@@ -98,8 +99,8 @@ low: ANGER_PROPENSITY
 
       niveaus van opstandigheid
 	  0: neutral
-      1: susceptible
-      2: defiant
+      1: susceptible 1 en 2
+      2: defiant 1 en 2
       3: rebellant
 	  4. cracked down
 	  5. hopeless
