@@ -35,6 +35,24 @@ todo: ADD THESE. [CV_NEW_TAG?
       CE_CHANGE_PERSONALITY
       CE_FEEL_EMOTION
 
+
+      wat triggert dit:
+      * GROUNDED_ANIMAL_ANGER (werkt niet echt)
+      * CAVE_ADAPT
+      * Eigen tears
+      * Eigen Sweat
+      * Eigen Blood
+
+      Wat het weer verminderd:
+      * Flee-interaction on self
+
+      niveaus van opstandigheid
+
+      1: suceptible for influence
+      2: open defiance in different forms
+      3: rebellion
+
+
 TODO: remove these
 	[CV_REMOVE_TAG:NAME]
 	[CV_REMOVE_TAG:GENERAL_CHILD_NAME]
