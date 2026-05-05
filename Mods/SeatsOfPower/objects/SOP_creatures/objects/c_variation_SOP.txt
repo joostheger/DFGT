@@ -4,7 +4,6 @@ c_variation_SOP.txt
 
 [CREATURE_VARIATION:ENSLAVED_SENTIENT]
     [CV_NEW_TAG:CREATURE_CLASS:SOP_SLAVE]
-    //Adding potentional problematic behaviour
     [CV_NEW_TAG:CURIOUSBEAST_EATER]  // tamed instances wont show this behaviour
     [CV_NEW_TAG:CURIOUSBEAST_GUZZLER]  // tamed instances wont show this behaviour
     [CV_NEW_TAG:CURIOUSBEAST_ITEM]  // tamed instances wont show this behaviour
@@ -13,17 +12,46 @@ c_variation_SOP.txt
     [CV_NEW_TAG:PRONE_TO_RAGE]
     [CV_NEW_TAG:FLEEQUICK]
     [CV_NEW_TAG:ROOT_AROUND:BY_TYPE:GRASP:scratch:scratches]
+	[CV_REMOVE_TAG:CASTE_PROFESSION_NAME:STANDARD]
+	[CV_REMOVE_TAG:CASTE_PROFESSION_NAME:CHILD]
+    [CV_NEW_TAG:CASTE_PROFESSION_NAME:STANDARD:slave:slaves]
+    [CV_NEW_TAG:CASTE_PROFESSION_NAME:CHILD:slave child:slave children]
+	[CV_NEW_TAG:PERSONALITY:ASSERTIVENESS:0:40:80]
+	[CV_NEW_TAG:PERSONALITY:TRUST:20:60:100]
+	[CV_NEW_TAG:PERSONALITY:DISCORD:0:40:80]
+	[CV_NEW_TAG:PERSONALITY:ALTRUISM:20:60:100]
+	[CV_NEW_TAG:PERSONALITY:DUTIFULNESS:20:60:100]
+	[CV_NEW_TAG:PERSONALITY:EXCITEMENT_SEEKING:0:40:80]
 
-todo: ADD THESE. [CV_NEW_TAG?
-    [CASTE_PROFESSION_NAME:STANDARD:slave:slaves]
-    [CASTE_PROFESSION_NAME:CHILD:slave child:slave children]
 
-      TODO: kalm, submissive, angstig, hard werkend, gehoorzaam. 
-            [PERSONALITY:IMMODERATION:0:55:100]
-	      [PERSONALITY:STRESS_VULNERABILITY:0:45:100]
-	      [PERSONALITY:BASHFUL:0:45:100]
-	      [PERSONALITY:SINGLEMINDED:0:55:100]
-	      [PERSONALITY:GREED:0:55:100]
+	  Resistance:
+	  high: ASSERTIVENESS
+	  high: DISCORD
+	  high: ANGER_PROPENSITY
+	  low: TRUST
+	  high: violent
+	  low: DUTIFULNESS
+	  high: HATE_PROPENSITY
+	  high: ENY_PROPENSITY
+
+	  Hopelessness:
+	  high: DEPRESSION_PROPENSITY
+	  Low: HOPEFUL
+	  low: ASSERTIVENESS
+	  low: PERSEVERANCE
+	  low: ACTIVITY_LEVEL
+	  low: CHEER_PROPENSITY
+	  high: ANXIETY
+
+	over geven:
+low: DISCORD
+low: VIOLENT
+low: ANGER_PROPENSITY
+
+	  cracked_down:
+	  
+
+         
 
       TODO: Syndrome functies voor opstandigheid. 
       CE_ADD_TAG
@@ -42,15 +70,19 @@ todo: ADD THESE. [CV_NEW_TAG?
       * Eigen tears
       * Eigen Sweat
       * Eigen Blood
+	  * interacties met een grote groep slaves die bij elkaar zijn.
+	  * negatieve interacties: (spit)
 
       Wat het weer verminderd:
       * Flee-interaction on self
 
       niveaus van opstandigheid
-
-      1: suceptible for influence
-      2: open defiance in different forms
-      3: rebellion
+	  0: neutral
+      1: susceptible
+      2: defiant
+      3: rebellant
+	  4. cracked down
+	  5. hopeless
 
 
 TODO: remove these
