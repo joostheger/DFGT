@@ -20,19 +20,20 @@ creature_SOP
       [GO_TO_END]	
       [SELECT_CASTE:MALE]
 	[SELECT_ADDITIONAL_CASTE:FEMALE]
-		[CASTE_NAME:s
+		[CASTE_NAME:elf slave:elf slaves:elven]
       [GO_TO_START]
-            [DESCRIPTION:TODO:]
-
+            [BIOME:ANY_FOREST]
+      
 [CREATURE:HUMAN_SLAVE]
       [COPY_TAGS_FROM:HUMAN]
       [APPLY_CREATURE_VARIATION:ENSLAVED_SENTIENT]
       [GO_TO_END]	
       [SELECT_CASTE:MALE]
 	[SELECT_ADDITIONAL_CASTE:FEMALE]
-		[CASTE_NAME:sl
+		[CASTE_NAME:human slave:human slaves:human]
       [GO_TO_START]
-            [DESCRIPTION:TODO:]
+            [BIOME:ANY_TROPICAL_SWAMP]
+            [BIOME:ANY_DESERT]
 
 [CREATURE:GOBLIN_SLAVE]
       [COPY_TAGS_FROM:GOBLIN]
@@ -40,9 +41,10 @@ creature_SOP
       [GO_TO_END]	
       [SELECT_CASTE:MALE]
 	[SELECT_ADDITIONAL_CASTE:FEMALE]
-		[CASTE_NAME:sla
+		[CASTE_NAME:goblin slave:goblin slaves:goblin]
       [GO_TO_START]
-            [DESCRIPTION:TODO:]
+            [BIOME:ANY_DESERT]
+            [BIOME:ANY_TROPICAL_SWAMP]
 
 [CREATURE:DWARF_SLAVE]
       [COPY_TAGS_FROM:DWARF]
@@ -50,9 +52,9 @@ creature_SOP
       [GO_TO_END]	
       [SELECT_CASTE:MALE]
 	[SELECT_ADDITIONAL_CASTE:FEMALE]
-		[CASTE_NAME:
+		[CASTE_NAME:dwarf slave:dwarf slaves:dwarven]
       [GO_TO_START]
-            [DESCRIPTION:TODO:]
+            [BIOME:MOUNTAIN]
 
 [SELECT_CREATURE:GREMLIN]
       [PETVALUE:500]
