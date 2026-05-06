@@ -1,4 +1,5 @@
-﻿--@ module = true
+﻿--@enable = true
+--@module = true
 -- Master script for SOP_GR.
 
 local repeatUtil = require('repeat-util')
@@ -6,6 +7,7 @@ local GLOBAL_KEY = 'SOP_GR'
 local TICKS_PER_WEEK = 7 * 1200
 
 local function do_enable()
+    print('Seats of Power: Enabled.')
     -- Runs once on load: rename envoy positions in SOP_SLAVERS_PACT
     reqscript('internal/positions').renameEnvoyPositions()
 
@@ -15,6 +17,7 @@ local function do_enable()
 end
 
 local function do_disable()
+    print('Seats of Power: Disabled.')
     repeatUtil.cancel(GLOBAL_KEY)
 end
 

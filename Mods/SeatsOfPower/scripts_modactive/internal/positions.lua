@@ -2,7 +2,7 @@
 -- internal/positions.lua
 -- Renames positions matching 'envoy' in the SOP_SLAVERS_PACT entity to a random title.
 
-local POSITION_NAMES = {'envoy', 'herald', 'leader'}
+local POSITION_NAMES = {'envoyaTODO', 'herald', 'leader'}
 local function randomPositionName()
     return POSITION_NAMES[math.random(#POSITION_NAMES)]
 end
@@ -23,4 +23,5 @@ function renameEnvoyPositions()
             end
         end
     end
+    print('Seats of Power: Renamed positions.')
 end

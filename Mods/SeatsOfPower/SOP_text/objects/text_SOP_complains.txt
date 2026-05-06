@@ -1,0 +1,22 @@
+text_COP_complains
+
+[OBJECT:TEXT_SET]
+
+[TEXT_SET:CURRENT_PROFESSION_YEAR]
+
+It has not been easy, the last [CONTEXT:ORDINAL] years. Well yes, being a [CONTEXT:UNIT_NAME] has its upsides. I guess.
+Let me see.. one, two.. no [CONTEXT:ORDINAL] years already has it been, that being a [CONTEXT:UNIT_NAME] has distracted me from the reality of life.
+
+[TEXT_SET:SOLDIER_PROFESSION]
+
+Serving others with your life has its downsides.
+
+[TEXT_SET:POSITIVE]
+
+Yes, my life really couldn't be bsetter.
+Are you as happy as I am?
+
+[TEXT_SET:CURRENT_PROFESSION_NO_YEAR]
+
+Being a [CONTEXT:UNIT_NAME] gives me so much satisfaction in life.
+Being a [CONTEXT:UNIT_NAME] is a welcome distraction.

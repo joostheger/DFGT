@@ -22,6 +22,6 @@ function onWeeklyTick()
         end
     end
     if cleared_count > 0 then
-        print(('SOP: cleared labors from %d exempt noble%s.'):format(cleared_count, cleared_count == 1 and '' or 's'))
+        print(('Seats of Power: cleared labors from %d exempt noble%s.'):format(cleared_count, cleared_count == 1 and '' or 's'))
     end
 end
