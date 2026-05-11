@@ -1676,7 +1676,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_3] 
-		[NAME:favoured citizen:favoured citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:67]
@@ -1706,7 +1706,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_4] 
-		[NAME:favoured citizen:favoured citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:66]
@@ -1736,7 +1736,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_5] 
-		[NAME:entitled citizen:entitled citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:65]
@@ -1766,7 +1766,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_6] 
-		[NAME:entitled citizen:entitled citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:64]
@@ -1796,7 +1796,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_7] 
-		[NAME:upper citizen:upper citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:63]
@@ -1826,7 +1826,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_8] 
-		[NAME:upper citizen:upper citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:62]
@@ -1856,7 +1856,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_9] 
-		[NAME:elite citizen:elite citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:61]
@@ -1886,7 +1886,7 @@ priviliged
 		[SLEEP_PRETENSION]
 
 	[POSITION:PRIVILEDGED_10] 
-		[NAME:elite citizen:elite citizens]
+		[NAME:priviledged citizen:priviledged citizens]
 		[SITE]
 		[REQUIRES_POPULATION:20]
 		[PRECEDENCE:60]
