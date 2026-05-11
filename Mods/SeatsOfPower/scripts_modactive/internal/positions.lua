@@ -16,8 +16,8 @@ function renameEnvoyPositions()
                 for _, position in ipairs(entity.positions.own) do
                     if position.name[0]:lower():find('envoy') then
                         local newName = randomPositionName()
-                        position.name[0] = newName
-                        position.name[1] = newName .. 's'
+                        position.name[0] = position.name[0]:gsub('[Ee]nvoy', newName)
+                        position.name[1] = position.name[1]:gsub('[Ee]nvoys?', newName .. 's')
                     end
                 end
             end
