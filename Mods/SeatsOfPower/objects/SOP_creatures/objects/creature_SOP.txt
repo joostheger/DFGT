@@ -11,25 +11,29 @@ creature_SOP
 [SELECT_CREATURE:HUMAN]
       [PETVALUE:1500]
 
+ [SELECT_CREATURE:DWARF]
+       [PETVALUE:2] TODO: make it 2500
+
 [CREATURE:ELF_SLAVE]
       [COPY_TAGS_FROM:ELF]
       [APPLY_CREATURE_VARIATION:ENSLAVED_SENTIENT]
       [GO_TO_END]	
       [SELECT_CASTE:MALE]
 	[SELECT_ADDITIONAL_CASTE:FEMALE]
-		[CASTE_NAME:slave elf:slave elves:elven]
+		[CASTE_NAME:elf slave:elf slaves:elven]
       [GO_TO_START]
-            [DESCRIPTION:TODO:]
-
+            [BIOME:ANY_FOREST]
+      
 [CREATURE:HUMAN_SLAVE]
       [COPY_TAGS_FROM:HUMAN]
       [APPLY_CREATURE_VARIATION:ENSLAVED_SENTIENT]
       [GO_TO_END]	
       [SELECT_CASTE:MALE]
 	[SELECT_ADDITIONAL_CASTE:FEMALE]
-		[CASTE_NAME:slave human:slave humans:human]
+		[CASTE_NAME:human slave:human slaves:human]
       [GO_TO_START]
-            [DESCRIPTION:TODO:]
+            [BIOME:ANY_TROPICAL_SWAMP]
+            [BIOME:ANY_DESERT]
 
 [CREATURE:GOBLIN_SLAVE]
       [COPY_TAGS_FROM:GOBLIN]
@@ -37,79 +41,20 @@ creature_SOP
       [GO_TO_END]	
       [SELECT_CASTE:MALE]
 	[SELECT_ADDITIONAL_CASTE:FEMALE]
-		[CASTE_NAME:slave goblin:slave goblins:goblin]
+		[CASTE_NAME:goblin slave:goblin slaves:goblin]
       [GO_TO_START]
-            [DESCRIPTION:TODO:]
+            [BIOME:ANY_DESERT]
+            [BIOME:ANY_TROPICAL_SWAMP]
 
- [SELECT_CREATURE:DWARF]
-      //The dwarven slave is differently defined. This is I wanted the dwarven slaves to be sexually compatible with your standard dwarves. The downside is that dwarven slaves do not exist out of your player fortress.
-      [PETVALUE:2500]
-
-      [USE_CASTE:MALE_SLAVE:MALE]         // Makes a copy of the male caste
-      [USE_CASTE:FEMALE_SLAVE:FEMALE]     // Makes a copy of the female caste
-                                          // Select both new castes
-      [SELECT_CASTE:MALE_SLAVE]
-      [SELECT_ADDITIONAL_CASTE:FEMALE_SLAVE]
-            [CREATURE_CLASS:SOP_SLAVE]
-            [POP_RATIO:0] 
-            [CASTE_NAME:slave dwarf:slave dwarves:dwarven]
-            [CASTE_PROFESSION_NAME:STANDARD:slave dwarf:slave dwarfs]
-            [CASTE_PROFESSION_NAME:CHILD:slave dwarf child:slave dwarf children]
-
-            [CURIOUSBEAST_EATER]  // tamed instances wont show this behaviour
-            [CURIOUSBEAST_GUZZLER]  // tamed instances wont show this behaviour
-            [CURIOUSBEAST_ITEM]  // tamed instances wont show this behaviour
-            [LOCKPICKER]
-            [MEANDERER]
-            [PRONE_TO_RAGE]
-            [FLEEQUICK]
-            [ROOT_AROUND:BY_TYPE:GRASP:scratch:scratches]
-
-      TODO: kalm, submissive, angstig, hard werkend, gehoorzaam. 
-      Low: ASSERTIVENESS
-      high: DUTIFULNESS
-      bit low: TRUST
-      Low: EXCITEMENT_SEEKING
-      Low: VIOLENT
-      Low: GREED
-      Low: IMMODERATION
-      High: ALTRUISM
-      High: GRATITUDE
-           
-            [PERSONALITY:IMMODERATION:0:55:100]
-	      [PERSONALITY:STRESS_VULNERABILITY:0:45:100]
-	      [PERSONALITY:BASHFUL:0:45:100]
-	      [PERSONALITY:SINGLEMINDED:0:55:100]
-	      [PERSONALITY:GREED:0:55:100]
-
-      TODO: Syndrome functies voor opstandigheid. 
-      CE_ADD_TAG
-            NOFEAR
-            CRAZED
-            MISCHIEVOUS
-            UTTERANCES      
-      CE_ERRATIC_BEHAVIOR
-      CE_CHANGE_PERSONALITY
-      CE_FEEL_EMOTION
-
-      wat triggert dit:
-      * GROUNDED_ANIMAL_ANGER (werkt niet echt)
-      * CAVE_ADAPT
-      * Eigen tears
-      * Eigen Sweat
-      * Eigen Blood
-
-      Wat het weer verminderd:
-      * Flee-interaction on self
-
-      niveaus van opstandigheid
-
-      1: suceptible for influence
-      2: open defiance in different forms
-      3: rebellion
-
-
-
+[CREATURE:DWARF_SLAVE]
+      [COPY_TAGS_FROM:DWARF]
+      [APPLY_CREATURE_VARIATION:ENSLAVED_SENTIENT]
+      [GO_TO_END]	
+      [SELECT_CASTE:MALE]
+	[SELECT_ADDITIONAL_CASTE:FEMALE]
+		[CASTE_NAME:dwarf slave:dwarf slaves:dwarven]
+      [GO_TO_START]
+            [BIOME:MOUNTAIN]
 
 [SELECT_CREATURE:GREMLIN]
       [PETVALUE:500]
