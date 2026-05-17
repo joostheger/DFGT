@@ -13,7 +13,7 @@ Serving others with your life has its downsides.
 
 [TEXT_SET:POSITIVE]
 
-Yes, my life really couldn't be bsetter.
+Yes, my life really couldn't be better.
 Are you as happy as I am?
 
 [TEXT_SET:CURRENT_PROFESSION_NO_YEAR]

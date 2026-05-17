@@ -13,7 +13,7 @@ local function do_enable()
 
     -- Runs every week while the fortress is active
     repeatUtil.scheduleEvery(GLOBAL_KEY, TICKS_PER_WEEK, 'ticks',
-        reqscript('internal/weekly').onWeeklyTick)
+        reqscript('internal/weekly').SOP_onWeeklyTick)
 end
 
 local function do_disable()

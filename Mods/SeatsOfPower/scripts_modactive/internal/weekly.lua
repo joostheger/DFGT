@@ -3,7 +3,7 @@
 -- Worker function called once per in-game week by the master script.
 -- Scheduling and cancellation are handled in SOP_SP.lua via repeat-util.
 
-function onWeeklyTick()
+function SOP_onWeeklyTick()
     local cleared_count = 0
     for _, unit in ipairs(df.global.world.units.active) do
         if dfhack.units.isCitizen(unit) then
