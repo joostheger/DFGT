@@ -8222,3 +8222,9 @@ graphics_creatures_dwarf
 
 		*** gut wound
 
+	Slaves' attire
+
+	[LAYER_GROUP]
+		[LAYER:PORTRAIT_SLAVE:DWARF_SLAVE:0:0]
+	[END_LAYER_GROUP]
+

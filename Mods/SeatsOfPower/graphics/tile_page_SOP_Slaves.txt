@@ -2,7 +2,12 @@ tile_page_creatures
 
 [OBJECT:TILE_PAGE]
 
-[TILE_PAGE:DWARF_SLAVE]
-	[FILE:images/portraits/dwarf_slave.png]
+[TILE_PAGE:DWARF_SLAVE_PORTRAIT]
+	[FILE:images/portraits/dwarf_slave_portrait.png]
 	[TILE_DIM:96:96]
 	[PAGE_DIM_PIXELS:96:96]
+
+[TILE_PAGE:DWARF_SLAVE]
+	[FILE:images/portraits/dwarf_slave.png]
+	[TILE_DIM:32:32]
+	[PAGE_DIM_PIXELS:32:32]
