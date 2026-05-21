@@ -2535,7 +2535,7 @@ Settlers
 
 	[POSITION:FUNC_PROMOTION_TRIGGER] 
 		// assignment of settlers or citizens should be able, incase of 7 + 7
-		[NAME:election official:election officials]
+		[NAME:promotion official:promotion officials]
 		[DESCRIPTION:Assign or unassign his position to trigger elections, if a population milestone is reached]	
 		[SITE]
 		[PRECEDENCE:NONE]

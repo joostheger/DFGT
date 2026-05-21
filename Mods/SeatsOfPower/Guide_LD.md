@@ -14,7 +14,7 @@ Upon reaching certain population thresholds, the League promotes a grand duke to
 
 The inspiration of the League of Dukes is drawn from setting of D&D's *Baldur's Gate*, where the city is a prominent member of the *League of Lords*, ruled by the *council of four* and the *parliament of peers*. These political structures are loosely reflected in the mod.
 
-## Challenge level: 3/5 ##
+### Challenge level: 3/5 ###
 'League of Dukes' is designed to be a medium challenging experience. 
 
 Harder:
@@ -25,6 +25,10 @@ Harder:
 Easier:
 * Trade caravans arrive more frequently and bring a wider variety of goods.
 * Additional clerks can be appointed to support aldermen in their duties.
+
+### My personal opinion ###
+I think this entity is pretty cool, especially the elected aldermen. This gives a real sense of local politics and has you as a player managing the demands of your elected officials, which is a fun challenge. Also, I really like the Archduke (monarch) position, that is created after your site reaches a certain threshold. The ducal hierarchy and the council of dukes add an interesting layer of complexity to the government structure.
+
   
 ## Play Guide ##
 ### Aldermen and the Council of Dukes ###
@@ -36,12 +40,12 @@ Easier:
 * As your settlement grows, the demands of the aldermen will increase. It is important to regularly check their demands and ensure they are met to maintain their support and prevent unrest.
 * As your settlement grows, alderman demands increase. Monitor and fulfill them to prevent unrest.
 * At higher population levels, a high alderman can be appointed, later becoming the first duke. Eventually, a council of up to five co-dukes forms.
-* At landholder level 5, the grand duke becomes an archduke. The archduke appoints league-level positions, but these are based in the capital and only become available once your fortress becomes the capital.
+* At landholder level 5, the grand duke becomes an archduke. The archduke appoints league-level positions, but these are based in the capital and only become available and visible once your fortress becomes the capital.
 
 ### Other notes ###
 * Despite the name 'League of Dukes', civilizations use generated names (e.g., "The Great Group of Nobles").
 * Clerks can be appointed from certain population levels for tasks such as trading (*clerk of stores*), management (*clerk of works*), and accounting (*clerk of accounts*). 
-* The election official can be used to force reevaluation of noble positions and trigger the first elections. 
+* The promotion official can be used to force reevaluation of noble positions and trigger the first promotions. 
 * For justice, the alderman warden and alderman inquisitor work together: The warden maintains order and oversees prisons, the inquisitor interrogates suspects.
 * There are three types of executioners (axe, hammer, spear) that can be appointed by the archduke once your settlement has become the capital. You can choose which method of execution you prefer, and appoint the corresponding executioner type.
 * The *high authority* is a placeholder leader, replaced by the first archduke
@@ -51,10 +55,10 @@ Easier:
 * Includes custom naming for groups, roads, bridges, and more.
 * No DFHack is required.
 * Dwarf-only entity; works with vanilla dwarves.
-* Compatibity with most other mods is assumed, not guaranteed.
+* Compatibity with other mods is assumed, not guaranteed.
 
 ### Starting a new fortress ###
-* Choose a civilization with a name containing "League" and a high authority leader (preferably vacant). And that position should probably be empty, unless you generate a very old world.
+* Choose a civilization with a name containing something like "League" and a high authority leader (preferably vacant). And that position should probably be empty, unless you generate a very old world.
 * On embark, you only have a *chartermaster* and the open position of *election official* available. 
 * Appoint an election official after the first migrants arrive to trigger alderman elections
 * These civilizations may be destroyed early during world generation. Ensure at least one survives if you plan to play them.
@@ -77,9 +81,9 @@ When the League's capital is established, the Archduke also appoints the settlem
 - A **Duke** (LH2) presides over a ducal city, exercising law-making, judicial, and diplomatic authority. The duke appoints the first site-level co-dukes and a League Emissary.
 - A **High Duke** (LH3) chairs the Council of Dukes of their city. They may appoint an additional co-duke and a High Emissary.
 - A **Grand Duke** (LH4) adds military authority to the council's mandate and may appoint a Grand Emissary.
-- A **Duke-Protector** (LH5 onward) relocates to the capital to advise the Archduke and represent their city's interests at the League level. It is the Duke-Protector who appoints the Archduke once the threshold is met.
+- A **Duke-Protector** (LH5 onward) relocates to the capital to represent their city's interests at the League level. It is the Duke-Protector who appoints the Archduke once the threshold is met.
 
-**The Council of Dukes** is the governing body of each ducal city. Up to four site-level dukes can be appointed by the presiding land-holder, forming the Council alongside them. These co-dukes — each drawn from the ranks of sitting aldermen — share law-making, judicial, and diplomatic responsibilities. When a ducal seat falls vacant, succession passes through the aldermanic rolls.
+**The Council of Dukes** is the governing body of each ducal city. Up to four site-level dukes will be appointed by the presiding land-holder, forming the Council alongside them. These co-dukes — each drawn from the ranks of sitting aldermen — share law-making, judicial, and diplomatic responsibilities. When a ducal seat falls vacant, succession passes through the aldermanic rolls.
 
 **The Aldermen** are the elected officials of daily governance. Ten distinct alderman roles exist, each covering a specific domain of city management. All are elected and scale through four tiers of authority and demands as the settlement's population grows (roughly at populations 8, 62–80, 122–140, and 182–200).
 
