@@ -1,2 +1,0 @@
-﻿--TODO: add or remove
---require("generators.slavers_pact")
