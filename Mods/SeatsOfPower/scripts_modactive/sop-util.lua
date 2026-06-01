@@ -6,12 +6,16 @@
 --   apply_reactions(law)                ->  applies feelings on law enactment
 --   apply_reactions(law, reverse=true)  ->  applies reversed feelings on law repeal
 --
--- reaction_weights   [df.value_type.X]             = { weight, pos_feel, neg_feel }
--- trait_weights      [df.personality_facet_type.X]  = { weight, pos_feel, neg_feel }
---   Both tables: score contribution = (val-50)*weight.
--- position_reactions [POSITION_CODE_STRING]         = { score, pos_feel, neg_feel }
---   Fixed score added directly for any citizen holding that position.
---   All three tables compete for the dominant-contributor slot that picks the emotion.
+-- reaction_weights              [df.value_type.X]             = { weight, pos_feel, neg_feel }
+-- trait_weights                 [df.personality_facet_type.X]  = { weight, pos_feel, neg_feel }
+--   Both tables: score contribution = (val-50)*weight. Applied to all citizens.
+-- position_list                 { { code='POSITION', positive=true/false }, ... }
+-- trait_weights_for_positions   [df.personality_facet_type.X]  = { weight, pos_feel, neg_feel }
+--   Applied only to citizens holding a listed position.
+--   positive=true: contributions add to score normally.
+--   positive=false: all contributions are negated (position is negatively affected).
+
+local addThought = require('add-thought')
 
 local M = {}
 
@@ -26,7 +30,7 @@ local THRESHOLD_STRONG = 20   -- score beyond ±20 → strongly for / against
 --- reverse=true: scores are inverted to reflect the repeal reaction.
 --- Returns nil if the law has neither table.
 function M.calculate_reactions(law, reverse)
-    if not law.reaction_weights and not law.trait_weights and not law.position_reactions then return nil end
+    if not law.reaction_weights and not law.trait_weights and not law.trait_weights_for_positions then return nil end
 
     local strong_pos, pos, neutral, neg, strong_neg = 0, 0, 0, 0, 0
     for _, unit in ipairs(dfhack.units.getCitizens()) do
@@ -41,13 +45,20 @@ function M.calculate_reactions(law, reverse)
                 local val = soul.traits[ftype] or 50
                 score = score + (val - 50) * entry.weight
             end
-            if law.position_reactions then
+            if law.position_list and law.trait_weights_for_positions then
                 local held = {}
                 for _, noble in ipairs(dfhack.units.getNoblePositions(unit) or {}) do
                     held[noble.position.code] = true
                 end
-                for pos_code, entry in pairs(law.position_reactions) do
-                    if held[pos_code] then score = score + entry.score end
+                for _, pos_entry in ipairs(law.position_list) do
+                    if held[pos_entry.code] then
+                        local factor = pos_entry.positive and 1 or -1
+                        for ftype, entry in pairs(law.trait_weights_for_positions) do
+                            local val = soul.traits[ftype] or 50
+                            score = score + factor * (val - 50) * entry.weight
+                        end
+                        break
+                    end
                 end
             end
             if reverse then score = -score end
@@ -65,10 +76,8 @@ end
 --- Applies a one-time reaction to all citizens when a law is enacted or repealed.
 --- Scores values and facets together; the dominant contributor across both tables
 --- determines which specific emotion fires.
---- TODO: replace dfhack.print stubs with syndrome application.
 function M.apply_reactions(law, reverse)
-    if not law.reaction_weights and not law.trait_weights and not law.position_reactions then return end
-    local action = reverse and 'repeal of' or 'enactment of'
+    if not law.reaction_weights and not law.trait_weights and not law.trait_weights_for_positions then return end
 
     for _, unit in ipairs(dfhack.units.getCitizens()) do
         local soul = unit.status.current_soul
@@ -93,37 +102,36 @@ function M.apply_reactions(law, reverse)
                 if contrib > best_pos_val and entry.pos_feel then best_pos_val = contrib; best_pos_feel = entry.pos_feel end
                 if contrib < best_neg_val and entry.neg_feel then best_neg_val = contrib; best_neg_feel = entry.neg_feel end
             end
-            if law.position_reactions then
+            if law.position_list and law.trait_weights_for_positions then
                 local held = {}
                 for _, noble in ipairs(dfhack.units.getNoblePositions(unit) or {}) do
                     held[noble.position.code] = true
                 end
-                for pos_code, entry in pairs(law.position_reactions) do
-                    if held[pos_code] then
-                        local contrib = entry.score
-                        score = score + contrib
-                        if contrib > best_pos_val and entry.pos_feel then best_pos_val = contrib; best_pos_feel = entry.pos_feel end
-                        if contrib < best_neg_val and entry.neg_feel then best_neg_val = contrib; best_neg_feel = entry.neg_feel end
+                for _, pos_entry in ipairs(law.position_list) do
+                    if held[pos_entry.code] then
+                        local factor = pos_entry.positive and 1 or -1
+                        for ftype, entry in pairs(law.trait_weights_for_positions) do
+                            local val = soul.traits[ftype] or 50
+                            local contrib = factor * (val - 50) * entry.weight
+                            score = score + contrib
+                            if contrib > best_pos_val and entry.pos_feel then best_pos_val = contrib; best_pos_feel = entry.pos_feel end
+                            if contrib < best_neg_val and entry.neg_feel then best_neg_val = contrib; best_neg_feel = entry.neg_feel end
+                        end
+                        break
                     end
                 end
             end
 
             local feel_for_approver = reverse and best_neg_feel or best_pos_feel
             local feel_for_objector = reverse and best_pos_feel or best_neg_feel
+            local syn_name = reverse and law.syn_name_repeal or law.syn_name
 
-            local name = dfhack.units.getReadableName(unit)
-            if score > 0 then
-                local feel_str = feel_for_approver
-                    and (' [%s intensity:%.1f]'):format(feel_for_approver, best_pos_val)
-                    or  ''
-                -- TODO: apply syndrome using feel_for_approver and best_pos_val
-                dfhack.print(('[SoP] %s reacts to %s.%s\n'):format(name, action .. ' ' .. law.label, feel_str))
-            elseif score < 0 then
-                local feel_str = feel_for_objector
-                    and (' [%s intensity:%.1f]'):format(feel_for_objector, math.abs(best_neg_val))
-                    or  ''
-                -- TODO: apply syndrome using feel_for_objector and math.abs(best_neg_val)
-                dfhack.print(('[SoP] %s reacts to %s.%s\n'):format(name, action .. ' ' .. law.label, feel_str))
+            if score > 0 and feel_for_approver and syn_name then
+                local severity = math.max(1, math.min(100, math.floor(best_pos_val * 4)))
+                addThought.addEmotionToUnit(unit, syn_name, feel_for_approver, severity, 1, 0)
+            elseif score < 0 and feel_for_objector and syn_name then
+                local severity = math.max(1, math.min(100, math.floor(math.abs(best_neg_val) * 4)))
+                addThought.addEmotionToUnit(unit, syn_name, feel_for_objector, severity, 1, 0)
             end
         end
     end

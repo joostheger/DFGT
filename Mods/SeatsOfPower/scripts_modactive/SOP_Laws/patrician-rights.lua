@@ -7,8 +7,6 @@ return {
     desc_long  = nil,
     enabled    = false,
     visible    = false,   -- hidden: no patricians exist in this fort yet
-    effect_pos = 15,
-    effect_neg = 1,
 
     on_enable = function()
         -- TODO: e.g. grant patrician privilege flags

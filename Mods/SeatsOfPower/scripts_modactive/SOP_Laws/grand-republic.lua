@@ -4,15 +4,15 @@
 local util = require('sop-util')
 
 return {
-    label      = 'Grand Republic',
+    label           = 'Grand Republic',
+    syn_name        = 'the enactment of the Grand Republic law',
+    syn_name_repeal = 'the repeal of the Grand Republic law',
     desc       = 'Establishes the core republican government structure.',
     desc_long  = 'Formalises the separation of power between the Senate, '
               .. 'Magistrates, and the Burgher assembly. Without this law '
               .. 'no other republican laws can take effect.',
     enabled    = true,
     visible    = true,
-    effect_pos = 12,
-    effect_neg = 3,
 
     -- Each entry: { weight, pos_feel, neg_feel }
     --   weight   : single value that drives both the approval score (val-50)*weight
@@ -48,17 +48,21 @@ return {
         [df.personality_facet_type.DUTIFULNESS] = { weight =  0.4, pos_feel = 'GRATITUDE',   neg_feel = 'IRRITATION'   },
         },
 
-    -- Position holders get a fixed score adjustment regardless of personality.
-    -- score > 0: position holder approves; score < 0: position holder objects.
-    -- pos_feel / neg_feel follow the same dominant-contributor logic as above.
-    -- On repeal the swap is automatic: a MAYOR who felt DISAPPOINTMENT now feels RELIEF.
+    -- Citizens holding one of the listed positions are scored through
+    -- trait_weights_for_positions in addition to the standard weights above.
+    -- Regular citizens are not affected by these weights.
     --
     -- Example:
-    -- MAYOR = { score = -20, pos_feel = 'RELIEF', neg_feel = 'DISAPPOINTMENT' },
-    -- A Mayor feels DISAPPOINTMENT when enacted - RELIEF when repealed.
-    position_reactions = {
-        MAYOR             = { score = -20, pos_feel = 'RELIEF',        neg_feel = 'DISAPPOINTMENT' },
-        EXPEDITION_LEADER = { score = -15, pos_feel = 'RELIEF',        neg_feel = 'DISAPPOINTMENT' },
+    -- { code = 'MAYOR', positive = false },
+    -- [df.personality_facet_type.AMBITION] = { weight = 0.8, pos_feel = 'CONTENTMENT', neg_feel = 'FRUSTRATION' },
+    -- An ambitious Mayor feels FRUSTRATION when enacted (positive=false negates contributions), CONTENTMENT when repealed.
+    position_list = {
+        { code = 'MAYOR',             positive = false },
+        { code = 'EXPEDITION_LEADER', positive = false },
+    },
+    trait_weights_for_positions = {
+        [df.personality_facet_type.AMBITION]    = { weight =  0.8, pos_feel = 'CONTENTMENT', neg_feel = 'FRUSTRATION' },
+        [df.personality_facet_type.DUTIFULNESS] = { weight =  0.6, pos_feel = 'GRATITUDE',   neg_feel = 'RESENTMENT'  },
     },
 
     on_enable = function(law)
