@@ -9,8 +9,6 @@ return {
               .. 'that contributes to fort income.',
     enabled    = true,
     visible    = true,
-    effect_pos = 9,
-    effect_neg = 2,
 
     on_enable = function()
         -- TODO: e.g. unlock burgher workshop permissions

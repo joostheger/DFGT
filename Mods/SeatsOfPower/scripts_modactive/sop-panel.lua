@@ -26,8 +26,6 @@ end
 --   desc_long    string|nil  Extended description; shown as tooltip when set
 --   enabled      bool        Whether the law starts active
 --   visible      bool        When false the law is hidden from the list
---   effect_pos   number      Citizens expected to react positively
---   effect_neg   number      Citizens expected to react negatively
 --   on_enable    fn|nil      Called once when the player activates the law
 --   on_daily_tick fn|nil     Called every in-game day while the law is active
 --   on_disable   fn|nil      Called once when the player deactivates the law
@@ -46,14 +44,17 @@ local LAW_HANDLERS = {}
 for _, modname in ipairs(LAW_FILES) do
     local def = require(modname)
     LAWS[#LAWS + 1] = {
-        label            = def.label,
-        desc             = def.desc,
-        desc_long        = def.desc_long,
-        enabled          = def.enabled,
-        visible          = def.visible,
-        effect_pos       = def.effect_pos,
-        effect_neg       = def.effect_neg,
-        reaction_weights = def.reaction_weights,
+        label                       = def.label,
+        desc                        = def.desc,
+        desc_long                   = def.desc_long,
+        enabled                     = def.enabled,
+        visible                     = def.visible,
+        reaction_weights            = def.reaction_weights,
+        syn_name                    = def.syn_name,
+        syn_name_repeal             = def.syn_name_repeal,
+        trait_weights               = def.trait_weights,
+        position_list               = def.position_list,
+        trait_weights_for_positions = def.trait_weights_for_positions,
     }
     if def.on_enable or def.on_daily_tick or def.on_disable then
         LAW_HANDLERS[def.label] = {
@@ -116,9 +117,7 @@ local function visible_laws()
 end
 
 -- Builds the choices table consumed by widgets.List.
--- Row layout:  [ON ]  Label text...............  +pos  -neg
-local LABEL_WIDTH = 34   -- chars reserved for the law label (padded)
-
+-- Row layout:  [ON ]  Label text
 local function make_choices(laws)
     local choices = {}
     for _, law in ipairs(laws) do
@@ -132,11 +131,8 @@ local function make_choices(laws)
         end
         choices[#choices + 1] = {
             text = {
-                { text = badge,                                    pen = badge_pen        },
-                { text = ('%-'..LABEL_WIDTH..'s'):format(law.label)                      },
-                { text = ('+%-3d'):format(law.effect_pos),         pen = COLOR_LIGHTGREEN },
-                { text = '  '                                                             },
-                { text = ('-%-3d'):format(law.effect_neg),         pen = COLOR_LIGHTRED   },
+                { text = badge,      pen = badge_pen },
+                { text = law.label                  },
             },
             data = law,
         }

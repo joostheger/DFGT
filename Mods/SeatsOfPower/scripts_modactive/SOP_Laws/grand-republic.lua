@@ -28,7 +28,7 @@ return {
      
     reaction_weights = {
         [df.value_type.INDEPENDENCE] = { weight =  0.8, pos_feel = 'ENTHUSIASM',    neg_feel = 'ANXIETY'        },
-        [df.value_type.POWER]        = { weight = -0.6, pos_feel = 'RELIEF',        neg_feel = 'RESENTMENT'     },
+        [df.value_type.POWER]        = { weight = -0.6, pos_feel = 'RELIEF',        neg_feel = 'DISPLEASURE'    },
         [df.value_type.TRADITION]    = { weight =  0.4, pos_feel = 'PRIDE',         neg_feel = 'DISAPPOINTMENT' },
         [df.value_type.EQUALITY]     = { weight =  0.5, pos_feel = 'HOPE',          neg_feel = 'CONTEMPT'       },
       },

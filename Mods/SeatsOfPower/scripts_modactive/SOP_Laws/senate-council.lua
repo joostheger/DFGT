@@ -9,8 +9,6 @@ return {
               .. 'law is active.',
     enabled    = false,
     visible    = true,
-    effect_pos = 8,
-    effect_neg = 5,
 
     on_enable = function()
         -- TODO: e.g. schedule seasonal debate event

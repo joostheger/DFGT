@@ -37,12 +37,17 @@ function M.calculate_reactions(law, reverse)
         local soul = unit.status.current_soul
         if soul then
             local score = 0
+            -- Beliefs: dynamic vector of {type, strength}, strength in -50..+50
             for vtype, entry in pairs(law.reaction_weights or {}) do
-                local val = soul.values[vtype] or 50
-                score = score + (val - 50) * entry.weight
+                local strength = 0
+                for _, b in ipairs(soul.personality.values) do
+                    if b.type == vtype then strength = b.strength; break end
+                end
+                score = score + strength * entry.weight
             end
+            -- Traits: fixed array indexed by enum, value in 0..100 (50 = neutral)
             for ftype, entry in pairs(law.trait_weights or {}) do
-                local val = soul.traits[ftype] or 50
+                local val = soul.personality.traits[ftype] or 50
                 score = score + (val - 50) * entry.weight
             end
             if law.position_list and law.trait_weights_for_positions then
@@ -54,7 +59,7 @@ function M.calculate_reactions(law, reverse)
                     if held[pos_entry.code] then
                         local factor = pos_entry.positive and 1 or -1
                         for ftype, entry in pairs(law.trait_weights_for_positions) do
-                            local val = soul.traits[ftype] or 50
+                            local val = soul.personality.traits[ftype] or 50
                             score = score + factor * (val - 50) * entry.weight
                         end
                         break
@@ -88,15 +93,20 @@ function M.apply_reactions(law, reverse)
             local best_neg_val  = 0
             local best_neg_feel = nil
 
+            -- Beliefs: dynamic vector, strength in -50..+50
             for vtype, entry in pairs(law.reaction_weights or {}) do
-                local val     = soul.values[vtype] or 50
-                local contrib = (val - 50) * entry.weight
+                local strength = 0
+                for _, b in ipairs(soul.personality.values) do
+                    if b.type == vtype then strength = b.strength; break end
+                end
+                local contrib = strength * entry.weight
                 score = score + contrib
                 if contrib > best_pos_val and entry.pos_feel then best_pos_val = contrib; best_pos_feel = entry.pos_feel end
                 if contrib < best_neg_val and entry.neg_feel then best_neg_val = contrib; best_neg_feel = entry.neg_feel end
             end
+            -- Traits: fixed array, value in 0..100 (50 = neutral)
             for ftype, entry in pairs(law.trait_weights or {}) do
-                local val     = soul.traits[ftype] or 50
+                local val     = soul.personality.traits[ftype] or 50
                 local contrib = (val - 50) * entry.weight
                 score = score + contrib
                 if contrib > best_pos_val and entry.pos_feel then best_pos_val = contrib; best_pos_feel = entry.pos_feel end
@@ -111,7 +121,7 @@ function M.apply_reactions(law, reverse)
                     if held[pos_entry.code] then
                         local factor = pos_entry.positive and 1 or -1
                         for ftype, entry in pairs(law.trait_weights_for_positions) do
-                            local val = soul.traits[ftype] or 50
+                            local val = soul.personality.traits[ftype] or 50
                             local contrib = factor * (val - 50) * entry.weight
                             score = score + contrib
                             if contrib > best_pos_val and entry.pos_feel then best_pos_val = contrib; best_pos_feel = entry.pos_feel end

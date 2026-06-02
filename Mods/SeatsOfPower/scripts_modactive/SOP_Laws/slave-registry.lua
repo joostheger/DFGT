@@ -7,8 +7,6 @@ return {
     desc_long  = nil,
     enabled    = false,
     visible    = true,
-    effect_pos = 2,
-    effect_neg = 14,
 
     on_enable = function()
         -- TODO: e.g. tag enslaved units in the registry

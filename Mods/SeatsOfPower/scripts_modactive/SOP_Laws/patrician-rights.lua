@@ -8,15 +8,15 @@ return {
     enabled    = false,
     visible    = false,   -- hidden: no patricians exist in this fort yet
 
-    on_enable = function()
+    on_enable = function(law)
         -- TODO: e.g. grant patrician privilege flags
     end,
 
-    on_daily_tick = function()
+    on_daily_tick = function(law)
         -- TODO: e.g. apply patrician privilege effects
     end,
 
-    on_disable = function()
+    on_disable = function(law)
         -- TODO: e.g. remove patrician privilege flags
     end,
 }
