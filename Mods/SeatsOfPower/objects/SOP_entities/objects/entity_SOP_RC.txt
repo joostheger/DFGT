@@ -616,6 +616,8 @@ TODO: remove
 Civ postitions
 
 	[POSITION:HERSIR] 
+	chieftain
+	Godi
 		[NAME:hersir:hersirs]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -623,21 +625,22 @@ Civ postitions
 		[SQUAD:10:watchman:watchmen]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
-		[RESPONSIBILITY:LAW_MAKING]	
+		[RESPONSIBILITY:LAW_ENFORCEMENT]
+		
 
 	[POSITION:LAW_SPEAKER] 
 		[NAME:law speaker:law speakers]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
-		[RESPONSIBILITY:LAW_ENFORCEMENT]
+		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:JUDGE]
 		[RESPONSIBILITY:DELIVER_MESSAGES]
-		[SQUAD:2:watchman:watchmen]
 		[APPOINTED_BY:HERSIR]
 		[SUCCESSION:BY_POSITION:ELDER]
 
 	[POSITION:REEVE] 
+	Bryti / armadr
 		[NAME:reeve:reeves]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -651,6 +654,7 @@ Civ postitions
 		[APPOINTED_BY:HERSIR]
 
 	[POSITION:VOLVA] 
+	male: Vitk / Seer
 		[NAME:v”lva:v”lvas]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -676,7 +680,23 @@ Civ postitions
 
 	
 JARL
+Go?i
+Earl 
+
 		[RESPONSIBILITY:MILITARY_GOALS]
 	
 
+	Housecarl
+	Hirdmen 
+shield maiden /  Kvinnr drengr / skjoldm? / sk”rungr
+valkyrja
+ulfhednar: wolfskins
+
+
+Freemen
+Bondi, Drengs or Hauldr
+
+King / Petty King
+konungr
+Thingman
 	
