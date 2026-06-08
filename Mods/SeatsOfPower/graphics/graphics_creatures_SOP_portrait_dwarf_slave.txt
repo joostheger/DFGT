@@ -3925,10 +3925,5 @@ graphics_creatures_SOP_portrait_dwarf_slave
 			[USE_PALETTE:BODY:3]
 		[END_LAYER_GROUP]
 
-	Slaves' attire
-
-		[LAYER_GROUP]
-		[LAYER:PORTRAIT_SLAVE:DWARF_SLAVE_PORTRAIT:0:0]
-		[END_LAYER_GROUP]
 
 
