@@ -718,3 +718,6 @@ King / Petty King
 
 Thingman / lawmakers / lawgiver
 	Gothi (plural: Go?ar)
+	elders
+	witam / wise men
+	Thing-men
