@@ -615,10 +615,8 @@ TODO: remove
     
 Civ postitions
 
-	[POSITION:HERSIR] 
-	chieftain
-	Godi
-		[NAME:hersir:hersirs]
+	[POSITION:CHIEFTAIN] 
+		[NAME:chieftain:chieftains]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -627,7 +625,6 @@ Civ postitions
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[RESPONSIBILITY:LAW_ENFORCEMENT]
 		
-
 	[POSITION:LAW_SPEAKER] 
 		[NAME:law speaker:law speakers]
 		[NUMBER:1]
@@ -640,7 +637,6 @@ Civ postitions
 		[SUCCESSION:BY_POSITION:ELDER]
 
 	[POSITION:REEVE] 
-	Bryti / armadr
 		[NAME:reeve:reeves]
 		[NUMBER:1]
 		[PRECEDENCE:50]
@@ -653,9 +649,10 @@ Civ postitions
 		[RESPONSIBILITY:DELIVER_MESSAGES]
 		[APPOINTED_BY:HERSIR]
 
-	[POSITION:VOLVA] 
-	male: Vitk / Seer
-		[NAME:v”lva:v”lvas]
+	[POSITION:SEER] 
+		[NAME:seer:seers]
+		[NAME_MALE:seer:seers]
+		[NAME_FEMALE:seeress:seeresses]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -678,25 +675,46 @@ Civ postitions
 		[ELECTED]
 		[REQUIRES_POPULATION:20]
 
-	
+
+
+
+Local ruler:
+- HERSIR
+	chieftain
+	Godi
+
+LAW_SPEAKER
+
+VOLVA
+- vitka
+- seer
+
+REEVE
+- bryti
+
+elder:
+- elder
+
+Regional ruler/l
 JARL
 Go?i
 Earl 
-
 		[RESPONSIBILITY:MILITARY_GOALS]
+
 	
 
-	Housecarl
-	Hirdmen 
-shield maiden /  Kvinnr drengr / skjoldm? / sk”rungr
-valkyrja
-ulfhednar: wolfskins
-
+Militair
+- Housecarl
+- Hirdmen 
+- shield maiden /  Kvinnr drengr / skjoldm? / sk”rungr
+- valkyrja
+- ulfhednar: wolfskins
 
 Freemen
-Bondi, Drengs or Hauldr
+- Bondi, Drengs or Hauldr
 
 King / Petty King
-konungr
-Thingman
-	
+- konungr
+
+Thingman / lawmakers / lawgiver
+	Gothi (plural: Go?ar)
