@@ -2,7 +2,7 @@ graphics_creatures_SOP_portrait_dwarf_slave
 
 [OBJECT:GRAPHICS]
 
-[CREATURE_GRAPHICS:DWARF]
+[CREATURE_GRAPHICS:DWARF_SLAVE]
 	
 	[LAYER_SET:PORTRAIT]
 

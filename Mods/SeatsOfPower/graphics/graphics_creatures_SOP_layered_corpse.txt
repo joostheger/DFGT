@@ -2,7 +2,7 @@ graphics_creatures_SOP_layered_corpse
 
 [OBJECT:GRAPHICS]
 
-[CREATURE_GRAPHICS:DWARF]
+[CREATURE_GRAPHICS:DWARF_SLAVE]
 	[LAYER_SET:CORPSE]
 
 	right shoulder
