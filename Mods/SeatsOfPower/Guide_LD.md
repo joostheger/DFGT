@@ -5,6 +5,7 @@
 Main features:
 * **Independent duchies, ruled by councils and united in a league.**
 * **Elected aldermen for each discipline form the local executive branch.**
+* **The archduke is an elevated landholder position, and acts as head of the league.**
 
 The League of Dukes is a confederation of loosely connected cities, each governed by a council of dukes. Aldermen are elected officials responsible for specific areas of governance within each city. These cities are united in a league that fosters cooperation and mutual support while maintaining autonomy. The League is characterized by its intricate political structure, where power is distributed among various offices, creating a dynamic political landscape.
 
@@ -40,7 +41,9 @@ I think this entity is pretty cool, especially the elected aldermen. This gives 
 * As your settlement grows, the demands of the aldermen will increase. It is important to regularly check their demands and ensure they are met to maintain their support and prevent unrest.
 * As your settlement grows, alderman demands increase. Monitor and fulfill them to prevent unrest.
 * At higher population levels, a high alderman can be appointed, later becoming the first duke. Eventually, a council of up to five co-dukes forms.
-* At landholder level 5, the grand duke becomes an archduke. The archduke appoints league-level positions, but these are based in the capital and only become available and visible once your fortress becomes the capital.
+
+### Archduke ###
+* At landholder level 5, the grand duke becomes an archduke, the equivalent of a monarch. The archduke appoints league-level positions, but these are based in the capital and only become available and visible to you once your fortress becomes the capital.
 
 ### Other notes ###
 * Despite the name 'League of Dukes', civilizations use generated names (e.g., "The Great Group of Nobles").
@@ -48,11 +51,11 @@ I think this entity is pretty cool, especially the elected aldermen. This gives 
 * The promotion official can be used to force reevaluation of noble positions and trigger the first promotions. 
 * For justice, the alderman warden and alderman inquisitor work together: The warden maintains order and oversees prisons, the inquisitor interrogates suspects.
 * There are three types of executioners (axe, hammer, spear) that can be appointed by the archduke once your settlement has become the capital. You can choose which method of execution you prefer, and appoint the corresponding executioner type.
-* The *high authority* is a placeholder leader, replaced by the first archduke
+* The *high authority* is a placeholder for the leader, replaced by the first archduke, once the position is filled.
 * Expect increased intrigue and criminal activity, especially relevant for adventurer players.
 * Caravans arrive in summer and autumn.
 * Production options for clothing and weapons are expanded, and they make use of all crop types.
-* Includes custom naming for groups, roads, bridges, and more.
+* Custom naming for groups, roads, bridges, and more.
 * No DFHack is required.
 * Dwarf-only entity; works with vanilla dwarves.
 * Compatibity with other mods is assumed, not guaranteed.

@@ -16,24 +16,24 @@ Harder than vanilla :
 * The Citizens increasingly higher demands require continued attention.
 * Minimal player agency for who gets a citizen position.
 * Lesser military options.
-* Certain administrative roles need a minimum population to be available.
+* Certain administrative roles need a minimum population to become available.
 
 Easier than vanilla:
-* Trade caravans arrive more frequenty and bring a broader range of goods
+* Trade caravans arrive more frequently and bring a broader range of goods
 * Because of their balanced ethics, they are treated less aggressively by other civilizations.
   
 ### My personal opinion ###
-This is my favorite entity in the collection. Not perse of how it plays, but the burgher system was very fun and challenging to create and it taught me so much about entityes in DF. I'm happy with the intricate system with the helper-positions and the way it makes the system do what I had in mind. I had parts of this created a few years ago, then I throw it all away and started over end 2025. During the process I worte the article on DF Wiki 'Advanced Entity Position Mechanics' containing my findings. I hope this entity is fun to play for you and that the article is useful for other modders.
+This is my favorite entity in the collection. Not perse of how it plays, but the burgher system was very fun and challenging to create and it taught me so much about entities in DF. I'm happy with the intricate system with the helper-positions and the way it makes the system do what I had in mind. I had parts of this created a few years ago, then I throw it all away and started over end 2025. During the process I wrote and published the article on DF Wiki 'Advanced Entity Position Mechanics' containing my findings. I hope this entity is fun to play for you and that the article is useful for other modders.
 
 ## Play Guide ##
 ### Freeholders ###
 * The main feature of this mod is the extensive **elite citizenry system**, called *Freeholders*. It gives all 7 starting dwarves a special status with extensive rights and demands. They progress from *settler* to *citizen*, *burgher*, and eventually *patrician*. When they reach certain thresholds, they are promoted automatically. When you receive a succession message, check the nobles screen for new demands.
 * When the first promotion has occurred, new migrants will also assume the *settler* status. This is an unsolvable issue in the system, however, these settlers will never be promoted and will not interfere with the citizenry. These positions will be cleaned up eventually. Just lets call it enthusiasm of these newcomers.
 * Read the descriptions of the positions for more details of each rank.
-* Once they reach a certain status, members of the citizenry can no longer be assigned tasks. They are exempt from menial labor. However, any tasks assigned earlier will continue. It is wise to plan ahead and only assign suitable duties. If they need to craft something, you can use the earlier assigned labor so they remain active when needed.
+* Once they reach a certain status, members of the citizenry can no longer be assigned tasks. They are exempt from menial labor. However, any tasks assigned earlier will continue. It is wise to plan ahead and only assign suitable duties. If they like to craft something, you can use the earlier assigned labor so they remain active when needed.
 * If you assign members of the citizenry to other administrative positions, they will lose that position upon promotion. Just reassign if you want to keep them.
 * This intricate promotion system has a few drawbacks:
-  * Units may receive multiple sequential positions, resulting in multiple succession messages. Their status screen also records the history of these promotion paths.
+  * Units may receive multiple sequential positions, resulting in dozens of succession messages. Their status screen also records the history of these promotion paths.
   * In world generation, this system does not work. To compensate, dedicated positions are included to represent the fortress-mode system at world-gen sites.
   * You also might encounter *(promotion position)*'s in the nobles screen. These are residues from promotions and are cleaned up eventually. They are not functional anymore and should be ignored.
 * The *select trader* position is a special case. It is the only position that initially can be assigned to a settler. This can be used to represent the initial selection of a representative of the fortress, but may also be ignored, in which case a random settler will assume this role. Eventually, when you become able to assign a *clerk of stores* this becomes irrelevant.
@@ -46,7 +46,7 @@ This is my favorite entity in the collection. Not perse of how it plays, but the
 * If you want to use the squads of the municipal and republican guards, you have to assign first a civic guard captain or a bailif, to activate that function. 
 * Caravans arrive in summer and autumn.
 * Production options for clothing and weapons are expanded, and they make use of all crop types.
-* Includes custom naming for groups, roads, bridges, and more.
+* Custom naming for groups, roads, bridges, and more.
 * No DFHack is required.
 * Dwarf-only entity; works with vanilla dwarves.
 * Compatibity with other mods is assumed, not guaranteed.
