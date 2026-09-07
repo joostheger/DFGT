@@ -1,13 +1,13 @@
 # Verdant City-State Guide #
 *Verdant City-State* is part of *Seats of Power*: a collection of additional dwarven government types.
 
-## General features of Verdant City-State ##
+## General features ##
 Main features:
 * **A compact territory centered around a single primary city**
 * **Non-playable in fortress mode**
 * **Isolationists.** Their influence is limited to the plains they live.
 * Group names and positions reinforce the sense that this is a single, unified city.
-* The sites of this civilization are tightly clustered. It ranges in size from a single town to up to three larger towns in close proximity, connected by roads, with a few scattered monasteries.
+* Mechanically, the civilization consists of separate sites rather than one continuous settlement. These sites are tightly clustered: generation may produce a single town or up to three larger towns in close proximity, connected by roads, along with a few scattered monasteries. Politically and culturally, however, these settlements are treated as districts of one unified city-state.
 * The generated state may have a different name; "Verdant City-State" refers to the government type, not the in-game entity. 
 
 ## Features ##
@@ -18,7 +18,7 @@ Main features:
   
 ## Government structure ## 
 
-**The Archon** is the head of state, holding singular authority over law-making, diplomacy and military goals. The position is not elected: when vacant, it is filled by appointment from the City Warden of the capital. Should the Archon die or vacate office, succession passes to the Council. The Archon personally appoints the Herald of the Archon, the Grand Archivist, and the Executioner.
+**The Archon** is the head of state, holding singular authority over law-making, diplomacy and military goals. The position is not elected: when vacant, it is filled by appointment from the City Warden of the capital. Should the Archon die or vacate office, succession passes to the councillors themselves, who succeed to the position. The Archon personally appoints the Herald of the Archon, the Grand Archivist, and the Executioner.
 
 **The Council** is composed of five elected positions, each independently chosen by the citizenry. All five councillors share in law-making authority and advise the Archon. Their individual portfolios divide the work of governing:
 
@@ -32,7 +32,7 @@ Main features:
 
 **City Wardens** (land-holders of the city proper) and **District Wardens** (land-holders of outlying districts) are both appointed by the Councillor of Markets. They exercise judicial authority and receive diplomats within their territory. The District Warden is a transitional office — as a settlement grows, it is replaced by a City Warden. City Wardens in turn appoint the Inquisitor and Livestock Overseer for their sites, and when the Archon's seat falls vacant, it is the City Warden who fills it.
 
-The succession of City Wardens themselves runs through the **Magistrates**: up to three can hold office within a single site, each appearing as the local population grows (at baseline, at 70, and at 140 inhabitants), provided a market exists. Magistrates handle local diplomacy and worker relations, and from them flow all the operational appointments of daily governance: the **Market Overseer** (trade), the **Labour Overseer** (production management), the **Construction Overseer** (roads, bridges, sewers and fire safety), the **Archivist** (local accounting), and the **Messenger** (courier duties). Before a Magistrate is established, these functions fall under a **District Overseer**, who also appoints the **Bailiff** — an enforcer with a small squad of constables.
+The succession of City Wardens themselves runs through the **Magistrates**: up to three can hold office within a single site, each appearing as the local population grows (at baseline, at 70, and at 140 inhabitants), provided a market exists. Magistrates handle local diplomacy and worker relations, and from them flow all the operational appointments of daily governance: the **Market Overseer** (trade), the **Labour Overseer** (production management), the **Construction Overseer** (roads, bridges, sewers and fire safety), the **Archivist** (local accounting), and the **Messenger** (courier duties). Before a Magistrate is established, the local governance functions fall under a **District Overseer**, who also appoints the **Bailiff** — an enforcer with a small squad of constables.
 
 The **Marshal**, appointed by the Councillor of War, commands the local garrison and holds military strategy at the site level. Under the Marshal serve **Garrison Captains**, each heading a squad of soldiers responsible for patrolling, escorting tax collectors, and engaging enemies.
 
@@ -49,5 +49,5 @@ On the green hills, surrounded by lush meadows and winding rivers, lies the Verd
 
 Though peaceful by nature, the Verdant City-State is resolute in preserving its independence, and its inhabitants are known for their tenacity in defending their lands against any who would encroach upon them.
 
-The state is governed by an Archon, who serves as the central authority, supported by a structured council of councillors. Rather than a loose collection of settlements, the Verdant City-State functions as a unified urban entity: a primary city surrounded by integrated suburbs and satellite towns, governed by wardens. Within these, market overseers and labour overseers manage daily economic and workforce affairs, while magistrates oversee local executors and ensure that the Archon's will is enforced throughout the state.
+The state is governed by an Archon, who serves as the central authority, supported by a structured council of councillors. Rather than a loose collection of settlements, the Verdant City-State functions as a unified urban entity: a primary city surrounded by integrated suburbs and satellite towns, governed by wardens. Within these, market overseers and labour overseers manage daily economic and workforce affairs, while magistrates oversee local governance and ensure that the Archon's will is enforced throughout the state.
 

@@ -936,7 +936,7 @@ clerks
 
 	[POSITION:CLERK_OF_COIN]
 		[NAME:clerk of coin:clerks]
-		[DESCRIPTION:The clerk of accounts is responsible for managing financial records, overseeing budgets, and ensuring accurate accounting practices. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Bookkeeper)]
+		[DESCRIPTION:The clerk of coin is responsible for managing financial records, overseeing budgets, and ensuring accurate accounting practices. As all clerks, they require a well-organized workspace and comfortable living quarters to manage their duties effectively. (Bookkeeper)]
 		[SITE]
 		[NUMBER:1]
 		[APPOINTED_BY:ALDERMANTREASURER_1]

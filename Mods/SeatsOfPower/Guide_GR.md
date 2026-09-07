@@ -49,7 +49,7 @@ This is my favorite entity in the collection. Not perse of how it plays, but the
 * Custom naming for groups, roads, bridges, and more.
 * No DFHack is required.
 * Dwarf-only entity; works with vanilla dwarves.
-* Compatibity with other mods is assumed, not guaranteed.
+* Compatibility with other mods is assumed, not guaranteed.
 
 ### Starting a new fortress ###
 * When starting a new fortress, choose a civilization named '... Republic ...' with a 'Grand merchant-master' as its leader.
