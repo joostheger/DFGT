@@ -565,7 +565,7 @@ TODO: remove
 	[TOOL:ITEM_TOOL_DISPLAY_CASE]
 	[TOOL:ITEM_TOOL_ALTAR]
 	[TOOL:ITEM_TOOL_DIE]
-//TODO: hier verder gaan
+
 	[CLOTHING]
 	[SUBTERRANEAN_CLOTHING]
 	[METAL_PREF]
@@ -586,7 +586,6 @@ TODO: remove
 	// RC economy - no: USE_EVIL_PLANTS
 	[USE_EVIL_WOOD]
 
-//TODO: hier verder gaan
 	// RC economy - no: COMMON_DOMESTIC_PACK
 	// RC economy - no:  COMMON_DOMESTIC_PULL
 	// RC economy - no: COMMON_DOMESTIC_MOUNT
