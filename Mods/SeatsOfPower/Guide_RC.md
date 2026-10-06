@@ -10,4 +10,4 @@ ook geen honden en katten. maar die moet je niet willen slachten. maargoed, je h
 focus op: jagen, verzamelen, leren kleding en plunderen van livestock.
 booze word gemaakt van verzamelde ingrediënten.
 
-pretty basic the same as monarchy. je zou zeggen dat ze laag ontwikkeld zijn, maar hun kunstvorm, muziek en poezy is op het zelfde niveau als vanilla dwarves.
+pretty basic the same as monarchy. je zou zeggen dat ze laag ontwikkeld zijn, maar hun kunstvorm, muziek en poezy is op het zelfde niveau als vanilla dwarves. kunst: alleen percussion dance en poetry.
