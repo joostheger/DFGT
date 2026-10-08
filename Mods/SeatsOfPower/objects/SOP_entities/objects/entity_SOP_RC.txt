@@ -573,9 +573,18 @@ TODO: remove
 	// Not: MINING_UNDERWORLD_DISASTERS
     
 Positions
+
+TODO:
+- color
+- precendece
+- check numbers
+- all responsibilities
+- all other options
+- demands and mandates.
+- referenties By:x controleren. 
 	
-	[POSITION:LAW_SPEAKER] 
-		[NAME:law speaker:law speakers]
+	[POSITION:LAWSPEAKER] 
+		[NAME:lawspeaker:lawspeakers]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
@@ -597,8 +606,8 @@ Positions
 		[SUCCESSION:BY_POSITION:ELDER_5]
 		[REQUIRES_MARKET]
 
-	[POSITION:LAW_SPEAKER_CIV] 
-		[NAME:law speaker:law speakers]
+	[POSITION:LAWSPEAKER_CIV] 
+		[NAME:lawspeaker:lawspeakers]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[RESPONSIBILITY:LAW_MAKING]
@@ -608,7 +617,7 @@ Positions
 		//Position is initially assumed
 		[SUCCESSION:BY_POSITION:ELDER_CIV]
 
-	[POSITION:CLAN_SPEAKER] 
+	[POSITION:CLANSPEAKER] 
 		[NAME:clanspeaker:clanspeakers]
 		[NUMBER:2]
 		[PRECEDENCE:50]
@@ -795,16 +804,17 @@ Positions
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 
-
 [POSITION:LH6]
-		[NAME:raider king:raider kings]
+		[NAME:high autority:high autorities]
+		[NAME_MALE:raider king:raider kings]
+		[NAME_FEMALE:raider queen:raider queens]
 		[NUMBER:AS_NEEDED]
 		LAND_HOLDER:6
 		LAND_NAME:a raiders kingdom
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[SUCCESSION:BY_HEIR]
-		[APPOINTED_BY:LAW_SPEAKER_CIV]
+		[APPOINTED_BY:LAWSPEAKER_CIV]
 		[PRECEDENCE:1]
 		[SPECIAL_BURIAL]
 		[MENIAL_WORK_EXEMPTION]
@@ -816,7 +826,6 @@ Positions
 		[CHAT_WORTHY]
 		[DO_NOT_CULL]
 		[KILL_QUEST]
-		[COLOR:5:0:0]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
 		[DEMAND_MAX:2]
@@ -832,13 +841,15 @@ Positions
 
 [POSITION:LH5]
 		[NAME:great king:great kings]
+		[NAME_MALE:great king:great kings]
+		[NAME_FEMALE:great queen:great queens]
 		[NUMBER:AS_NEEDED]
 		[LAND_HOLDER:5]
 		[LAND_NAME:a great kingdom]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[SUCCESSION:BY_HEIR]
-		[APPOINTED_BY:LAW_SPEAKER_CIV]
+		[APPOINTED_BY:LAWSPEAKER_CIV]
 		[REPLACED_BY:LH6]
 		[PRECEDENCE:40]
 		[SPECIAL_BURIAL]
@@ -851,7 +862,6 @@ Positions
 		[CHAT_WORTHY]
 		[DO_NOT_CULL]
 		[KILL_QUEST]
-		[COLOR:5:0:0]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
 		[DEMAND_MAX:2]
@@ -867,13 +877,15 @@ Positions
 
 	[POSITION:LH4]
 		[NAME:high king:high kings]
+		[NAME_MALE:high king:high kings]
+		[NAME_FEMALE:high queen:high queens]
 		[NUMBER:AS_NEEDED]
 		[LAND_HOLDER:4]
 		[LAND_NAME:a high kingdom]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[SUCCESSION:BY_HEIR]
-		[APPOINTED_BY:LAW_SPEAKER_CIV]
+		[APPOINTED_BY:LAWSPEAKER_CIV]
 		[REPLACED_BY:LH5]
 		[PRECEDENCE:40]
 		[SPECIAL_BURIAL]
@@ -886,7 +898,6 @@ Positions
 		[CHAT_WORTHY]
 		[DO_NOT_CULL]
 		[KILL_QUEST]
-		[COLOR:5:0:0]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
 		[DEMAND_MAX:2]
@@ -902,13 +913,15 @@ Positions
 
 	[POSITION:LH3]
 		[NAME:king:kings]
+		[NAME_MALE:king:kings]
+		[NAME_FEMALE:queen:queens]
 		[NUMBER:AS_NEEDED]
 		[LAND_HOLDER:3]
 		[LAND_NAME:a kingdom]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[SUCCESSION:BY_HEIR]
-		[APPOINTED_BY:LAW_SPEAKER_CIV]
+		[APPOINTED_BY:LAWSPEAKER_CIV]
 		[REPLACED_BY:LH4]
 		[PRECEDENCE:40]
 		[SPECIAL_BURIAL]
@@ -921,7 +934,6 @@ Positions
 		[CHAT_WORTHY]
 		[DO_NOT_CULL]
 		[KILL_QUEST]
-		[COLOR:5:0:0]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
 		[DEMAND_MAX:2]
@@ -937,13 +949,15 @@ Positions
 
 	[POSITION:LH2]
 		[NAME:high earl:high earls]
+		[NAME_MALE:high earl:high earls]
+		[NAME_FEMALE:high earless:high earlesses]
 		[NUMBER:AS_NEEDED]
 		[LAND_HOLDER:2]
 		[LAND_NAME:a high earldom]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[SUCCESSION:BY_HEIR]
-		[APPOINTED_BY:LAW_SPEAKER_CIV]
+		[APPOINTED_BY:LAWSPEAKER_CIV]
 		[REPLACED_BY:LH3]
 		[PRECEDENCE:40]
 		[MENIAL_WORK_EXEMPTION]
@@ -955,7 +969,6 @@ Positions
 		[CHAT_WORTHY]
 		[DO_NOT_CULL]
 		[KILL_QUEST]
-		[COLOR:5:0:0]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
 		[DEMAND_MAX:2]
@@ -971,13 +984,15 @@ Positions
 
 	[POSITION:LH1]
 		[NAME:earl:earls]
+		[NAME_MALE:earl:earls]
+		[NAME_FEMALE:earless:earlesses]
 		[NUMBER:AS_NEEDED]
 		[LAND_HOLDER:1]
 		[LAND_NAME:a earldom]
 		[RESPONSIBILITY:LAW_MAKING]
 		[RESPONSIBILITY:RECEIVE_DIPLOMATS]
 		[SUCCESSION:BY_HEIR]
-		[APPOINTED_BY:LAW_SPEAKER_CIV]
+		[APPOINTED_BY:LAWSPEAKER_CIV]
 		[REPLACED_BY:LH2]
 		[PRECEDENCE:40]
 		[MENIAL_WORK_EXEMPTION]
@@ -989,7 +1004,6 @@ Positions
 		[CHAT_WORTHY]
 		[DO_NOT_CULL]
 		[KILL_QUEST]
-		[COLOR:5:0:0]
 		[ACCOUNT_EXEMPT]
 		[DUTY_BOUND]
 		[DEMAND_MAX:2]
@@ -1005,6 +1019,8 @@ Positions
 
 	[POSITION:CHIEFTAIN] 
 		[NAME:chieftain:chieftains]
+		[NAME_MALE:chieftain:chieftains]
+		[NAME_FEMALE:chieftainess:chieftainesses]
 		[NUMBER:1]
 		[PRECEDENCE:50]
 		[SITE]
