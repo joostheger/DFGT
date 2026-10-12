@@ -430,6 +430,7 @@ TODO: remove
 	[SET_SCHOLARS_ON_VALUES_AND_JOBS]
 
 	[DIGGER:ITEM_WEAPON_PICK]
+	[DIGGER:ITEM_WEAPON_PICK_GREAT]
 	[WEAPON:ITEM_WEAPON_AXE_BATTLE]
 	[WEAPON:ITEM_WEAPON_SWORD_SHORT]
 	[WEAPON:ITEM_WEAPON_SPEAR]
@@ -1395,7 +1396,7 @@ site main positions
 
 	[POSITION:FACTOR] 
 		[NAME:factor:factors]
-		[DESCRIPTION:The official responsible for trade, negotiations, and the exchange of goods. The factor manages dealings with caravans, merchants, and outside interests on behalf of the site.]
+		[DESCRIPTION:The servant responsible for trade, negotiations, and the exchange of goods. The factor manages dealings with caravans, merchants, and outside interests on behalf of the site.]
 		[NUMBER:1]
 		[PRECEDENCE:52]
 		[COLOR:5:0:0]
@@ -1485,15 +1486,15 @@ site main positions
 		[REQUIRED_CABINETS:1]
 		[REQUIRED_BOXES:1]
 
-	[POSITION:TRIBUNE_1] 
-		[NAME:tribune:tribunes]
-		[DESCRIPTION:Commander entrusted with the defense of the slaver's holdings and the enforcement of their authority. The tribune secures the domain against threats and leads armed efforts to extend its masters influence when required.]
+	[POSITION:COMP_CAPTAIN] 
+		[NAME:company captain:company captains]
+		[DESCRIPTION:Commander of the company, entrusted with the defense of the slaver's holdings and the enforcement of their authority. The captain secures the domain against threats and leads armed efforts to extend its masters influence when required.]
 		[NUMBER:1]
 		[PRECEDENCE:45]
 		[COLOR:0:0:1]
 		[SITE]
 		[RESPONSIBILITY:MILITARY_STRATEGY]
-		[COMMANDER:LEGATE_CAPTAIN_1:ALL]
+		[COMMANDER:COMP_LIEUTENANT:ALL]
 		[SQUAD:10:soldier:soldiers]
 		[REQUIRES_POPULATION:10]
 		[ALLOWED_CREATURE:DWARF:ALL]
@@ -1508,7 +1509,7 @@ site main positions
 		[KILL_QUEST]
 		[MILITARY_SCREEN_ONLY]
 		[QUEST_GIVER]
-		[REQUIRED_BEDROOM:500]
+		[REQUIRED_BEDROOM:1000]
 		[REQUIRED_DINING:500]
 		[REQUIRED_OFFICE:500]
 		[REQUIRED_TOMB:500]
@@ -1516,11 +1517,11 @@ site main positions
 		[REQUIRED_STANDS:2]
 		[REQUIRED_BOXES:2]
 
-	[POSITION:LEGATE_CAPTAIN_1] 
-		[NAME:legate captain:legate captains]
-		[DESCRIPTION:The legate captain is the field commander charged with executing military expeditions and operations beyond the core holdings. The legate captain protects affiliated territories and brings neighboring lands under the dominion of the site through force or submission.]
+	[POSITION:COMP_LIEUTENANT] 
+		[NAME:company lieutenant:company lieutenants]
+		[DESCRIPTION:The company lieutenant is the field commander charged with executing military expeditions and operations of the company. The lieutenant protects affiliated territories and brings neighboring lands under the dominion of the site through force or submission.]
 		[NUMBER:AS_NEEDED]
-		[APPOINTED_BY:TRIBUNE_1]
+		[APPOINTED_BY:COMP_CAPTAIN]
 		[PRECEDENCE:46]
 		[COLOR:0:0:1]
 		[SITE]
@@ -1538,8 +1539,8 @@ site main positions
 		[DO_NOT_CULL]
 		[DUTY_BOUND]
 		[MILITARY_SCREEN_ONLY]
-		[REQUIRED_BEDROOM:100]
-		[REQUIRED_TOMB:100]
+		[REQUIRED_BEDROOM:500]
+		[REQUIRED_TOMB:250]
 		[REQUIRED_RACKS:1]
 		[REQUIRED_STANDS:1]
 		
@@ -1637,6 +1638,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_2] 
 		[NAME:freeman:freemen]
@@ -1654,6 +1658,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_3] 
 		[NAME:freeman:freemen]
@@ -1671,6 +1678,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_4] 
 		[NAME:freeman:freemen]
@@ -1688,6 +1698,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_5] 
 		[NAME:freeman:freemen]
@@ -1705,6 +1718,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_6] 
 		[NAME:freeman:freemen]
@@ -1722,6 +1738,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_7] 
 		[NAME:freeman:freemen]
@@ -1739,6 +1758,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_8] 
 		[NAME:freeman:freemen]
@@ -1756,6 +1778,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_9] 
 		[NAME:freeman:freemen]
@@ -1773,6 +1798,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_10] 
 		[NAME:freeman:freemen]
@@ -1790,6 +1818,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_11] 
 		[NAME:freeman:freemen]
@@ -1807,6 +1838,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_12] 
 		[NAME:freeman:freemen]
@@ -1824,6 +1858,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_13] 
 		[NAME:freeman:freemen]
@@ -1841,6 +1878,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_14] 
 		[NAME:freeman:freemen]
@@ -1858,6 +1898,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_15] 
 		[NAME:freeman:freemen]
@@ -1875,6 +1918,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 	[POSITION:FREEMEN_16] 
 		[NAME:freeman:freemen]
@@ -1892,6 +1938,9 @@ freemen
 		[SQUAD:1:fighter:fighters] //needed to be distributed evenly
 		[MENIAL_WORK_EXEMPTION]
 		[PUNISHMENT_EXEMPTION]
+		[REQUIRED_BEDROOM:250]
+		[REQUIRED_CABINETS:1]
+		[REQUIRED_BOXES:1]
 
 
 priviliged

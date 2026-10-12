@@ -1,8 +1,8 @@
 # League of Dukes Guide #
-*League of Dukes* is part of *Seats of Power*: a collection of additional dwarven government types.
+*League of Dukes* is part of *Seats of Power*: a collection of additional dwarven government types. (no DFHack required)
 
-## General features of League of Dukes ##
-Main features:
+## General features ##
+Main features (see below for details):
 * **Independent duchies, ruled by councils and united in a league.**
 * **Elected aldermen for each discipline form the local executive branch.**
 * **The archduke is an elevated landholder position, and acts as head of the league.**
@@ -26,11 +26,7 @@ Harder:
 Easier:
 * Trade caravans arrive more frequently and bring a wider variety of goods.
 * Additional clerks can be appointed to support aldermen in their duties.
-
-### My personal opinion ###
-I think this entity is pretty cool, especially the elected aldermen. This gives a real sense of local politics and has you as a player managing the demands of your elected officials, which is a fun challenge. Also, I really like the Archduke (monarch) position, that is created after your site reaches a certain threshold. The ducal hierarchy and the council of dukes add an interesting layer of complexity to the government structure.
-
-  
+ 
 ## Play Guide ##
 ### Aldermen and the Council of Dukes ###
 * At certain population levels, citizens can be elected as aldermen.
@@ -127,4 +123,6 @@ And then, when one city grows so prosperous that no other can match it, when one
 
 The League endures not because it is perfect, but because enough of its citizens believe it is worth preserving.
 
+## My personal opinion ##
+I think this entity is pretty cool, especially the elected aldermen. This gives a real sense of local politics and has you as a player managing the demands of your elected officials, which is a fun challenge. Also, I really like the Archduke (monarch) position, that is created after your site reaches a certain threshold. The ducal hierarchy and the council of dukes add an interesting layer of complexity to the government structure.
 

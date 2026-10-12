@@ -1,8 +1,8 @@
 # Grand Republic Guide #
-*Grand Republic* is part of *Seats of Power*: a collection of additional dwarven government types.
+*Grand Republic* is part of *Seats of Power*: a collection of additional dwarven government types. (no DFHack required)
 
-## General features of Grand Republic ##
-Main features:
+## General features ##
+Main features (see below for details):
 * **Elite citizenry system**
 * **Merchants' Guild rules the republic**
 
@@ -21,9 +21,6 @@ Harder than vanilla :
 Easier than vanilla:
 * Trade caravans arrive more frequently and bring a broader range of goods
 * Because of their balanced ethics, they are treated less aggressively by other civilizations.
-  
-### My personal opinion ###
-This is my favorite entity in the collection. Not perse of how it plays, but the burgher system was very fun and challenging to create and it taught me so much about entities in DF. I'm happy with the intricate system with the helper-positions and the way it makes the system do what I had in mind. I had parts of this created a few years ago, then I throw it all away and started over end 2025. During the process I wrote and published the article on DF Wiki 'Advanced Entity Position Mechanics' containing my findings. I hope this entity is fun to play for you and that the article is useful for other modders.
 
 ## Play Guide ##
 ### Freeholders ###
@@ -120,3 +117,6 @@ Trade agents and administrators stepped forward, appointed by the Merchants' Gui
 Even before this city took shape, the Merchants' Guild already held the republic in a firm grip. The merchant masters dictated trade policy, upheld the law, and managed resources, taxes and security. Grand commissioners oversaw entire trade networks, while apprentices learned to support the machinery of the guild. Influence accumulated slowly—through trust kept, disputes settled, promises honored—until reliance hardened into expectation. Yet as this city flourished, the merchant masters' eyes turned increasingly toward the possibility that this place could serve as a potential heart of their trading empire.
 
 By the time the new republican freehold matured, streets thrummed with trade, halls rang with debate, and homes carried the weight of legacy. What began as a simple charter had grown into a living city-state: stratified, disciplined, and confident that the hierarchy reflected both founding right and proven competence. 
+
+## My personal opinion ##
+This is my favorite entity in the collection. Not perse of how it plays, but the burgher system was very fun and challenging to create and it taught me so much about entities in DF. I'm happy with the intricate system with the helper-positions and the way it makes the system do what I had in mind. I had parts of this created a few years ago, then I throw it all away and started over end 2025. During the process I wrote and published the article on DF Wiki 'Advanced Entity Position Mechanics' containing my findings. I hope this entity is fun to play for you and that the article is useful for other modders.

@@ -1,8 +1,8 @@
 # Verdant City-State Guide #
-*Verdant City-State* is part of *Seats of Power*: a collection of additional dwarven government types.
+*Verdant City-State* is part of *Seats of Power*: a collection of additional dwarven government types. (No DFHack required)
 
 ## General features ##
-Main features:
+Main features (see below for details):
 * **A compact territory centered around a single primary city**
 * **Non-playable in fortress mode**
 * **Isolationists.** Their influence is limited to the plains they live.
@@ -10,14 +10,13 @@ Main features:
 * Mechanically, the civilization consists of separate sites rather than one continuous settlement. These sites are tightly clustered: generation may produce a single town or up to three larger towns in close proximity, connected by roads, along with a few scattered monasteries. Politically and culturally, however, these settlements are treated as districts of one unified city-state.
 * The generated state may have a different name; "Verdant City-State" refers to the government type, not the in-game entity. 
 
-## Features ##
+## State Summary ##
 * **Government type:** City-State
 * **Government head:** Archon
 * **Government structure:** Centralized, with a single city and surrounding suburbs and satellite towns.
 * **Special mechanics:** Site to Civ succession. The City Warden, who is a landholder (Civ-level), is succeeded by the site-position of Magistrate. This does not work in fortress mode, but as this is a non-playable government type, it is not a problem.
   
 ## Government structure ## 
-
 **The Archon** is the head of state, holding singular authority over law-making, diplomacy and military goals. The position is not elected: when vacant, it is filled by appointment from the City Warden of the capital. Should the Archon die or vacate office, succession passes to the councillors themselves, who succeed to the position. The Archon personally appoints the Herald of the Archon, the Grand Archivist, and the Executioner.
 
 **The Council** is composed of five elected positions, each independently chosen by the citizenry. All five councillors share in law-making authority and advise the Archon. Their individual portfolios divide the work of governing:
