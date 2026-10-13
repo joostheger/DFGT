@@ -239,9 +239,6 @@ entity_SOP_RC
 	// Not: CURRENCY:SILVER:5
 	// Not: CURRENCY:GOLD:15
 
-//TODO: hier verder gaan,
-zie symbolen, hier woorden vor definieren en vertalingen. 
-
 // ALL, REMAINING, BATTLE, BRIDGE, CIV, CRAFT_GUILD, FESTIVAL (doesn't work, see below), HOSPITAL, LIBRARY, MERCHANT_COMPANY, MILITARY_UNIT, OTHER, RELIGION, ROAD, SIEGE, SITE, TEMPLE, TUNNEL, VESSEL, WALL, WAR
 	[SELECT_SYMBOL:CIV:SOP_CLAN_FEDERATION]
 		[SUBSELECT_SYMBOL:CIV:SOP_RAIDER_CLANS]
@@ -303,6 +300,7 @@ zie symbolen, hier woorden vor definieren en vertalingen.
 	[RELIGION_SPHERE:VALOR]
 	[RELIGION_SPHERE:HUNTING]
 	[RELIGION_SPHERE:LAWS]
+	[RELIGION_SPHERE:FAMILY]
 	// No: SPHERE_ALIGNMENT:
 
 	[ETHIC:KILL_ENTITY_MEMBER:JUSTIFIED_IF_SELF_DEFENSE]
@@ -337,7 +335,7 @@ zie symbolen, hier woorden vor definieren en vertalingen.
 	// Priority: 3/3: 5
 	[VARIABLE_VALUE:LAW:20:40]
 	[VARIABLE_VALUE:LOYALTY:20:40]
-	[VARIABLE_VALUE:FAMILY:20:40]
+	[VARIABLE_VALUE:FAMILY:25:45]
 	[VARIABLE_VALUE:FRIENDSHIP:20:40]
 	[VARIABLE_VALUE:POWER:-10:10]
 	[VARIABLE_VALUE:TRUTH:20:40]
@@ -367,7 +365,7 @@ zie symbolen, hier woorden vor definieren en vertalingen.
 	[VARIABLE_VALUE:COMMERCE:0:20]
 	[VARIABLE_VALUE:ROMANCE:-10:10]
 	[VARIABLE_VALUE:NATURE:-25:05]
-	[VARIABLE_VALUE:PEACE:-25:-15]
+	[VARIABLE_VALUE:PEACE:-35:-15]
 
 	[WILL_ACCEPT_TRIBUTE]
 
@@ -487,7 +485,7 @@ zie symbolen, hier woorden vor definieren en vertalingen.
 	// Not: USE_EVIL_WOOD
 
 	// RC economy - no: COMMON_DOMESTIC_PACK
-	// RC economy - no:  COMMON_DOMESTIC_PULL
+	// RC economy - no: COMMON_DOMESTIC_PULL
 	// RC economy - no: COMMON_DOMESTIC_MOUNT
 	// RC economy - no: COMMON_DOMESTIC_PET
 

@@ -4,17 +4,17 @@
 ## General features ##
 Main features (see below for details):
 * **A compact territory centered around a single primary city**
-* **Non-playable in fortress mode**
+* **Non-playable in fortress mode** This entity does not offer any significant or interesting gameplay experience for players, so its only purpose is to exist as a background political entity. Legends mode may be interesting, though.
 * **Isolationists.** Their influence is limited to the plains they live.
 * Group names and positions reinforce the sense that this is a single, unified city.
 * Mechanically, the civilization consists of separate sites rather than one continuous settlement. These sites are tightly clustered: generation may produce a single town or up to three larger towns in close proximity, connected by roads, along with a few scattered monasteries. Politically and culturally, however, these settlements are treated as districts of one unified city-state.
 * The generated state may have a different name; "City-State" refers to the government type, not the in-game entity. 
+* **Special entity mechanics:** Site to Civ succession. The City Warden, who is a landholder (Civ-level), is succeeded by the site-position of Magistrate. This does not work in fortress mode, but as this is a non-playable government type, it is not a problem.
 
 ## State Summary ##
 * **Government type:** City-State
 * **Government head:** Archon
 * **Government structure:** Centralized, with a single city and surrounding suburbs and satellite towns.
-* **Special mechanics:** Site to Civ succession. The City Warden, who is a landholder (Civ-level), is succeeded by the site-position of Magistrate. This does not work in fortress mode, but as this is a non-playable government type, it is not a problem.
   
 ## Government structure ## 
 **The Archon** is the head of state, holding singular authority over law-making, diplomacy and military goals. The position is not elected: when vacant, it is filled by appointment from the City Warden of the capital. Should the Archon die or vacate office, succession passes to the councillors themselves, who succeed to the position. The Archon personally appoints the Herald of the Archon, the Grand Archivist, and the Executioner.
