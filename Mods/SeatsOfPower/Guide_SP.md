@@ -19,11 +19,11 @@ Easier than vanilla:
 ## State Summary ##
 TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Government type:** Confederation of independent sites.
-* **Head of state:** None — no head of state, legislature, or common law; only five envoys with narrow diplomatic briefs.
-* **Government structure:** A loose coalition of independent, sovereign masters, each privately ruling their own fortress.
+* **Head of state:** None
+* **Government structure:** A loose coalition of independent, sovereign masters, each privately ruling their own fortress. No legislature, or common law.
 * **Territorial setup:** Not described in detail; each master controls a separate fortress/domain.
 * **Defining concept:** A slave-based economy with a growing class of labour-exempt Freemen and a culture of decadency.
-* **Foreign relations:** Minimal formal coordination between masters; the five envoys handle diplomacy, trade, and peace on the Pact's behalf.
+* **Foreign relations:** Minimal formal coordination between masters; five envoys handle diplomacy, trade, and peace on the Pact's behalf.
 * **Society and culture:** Hierarchical and slave-based, with a clear distinction between masters, freemen, and slaves. Prestige and personal prosperity are central to social standing, and the culture emphasizes the visible display of wealth and status.
 
 ## Play Guide ##

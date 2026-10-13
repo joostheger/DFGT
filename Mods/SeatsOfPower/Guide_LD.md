@@ -4,7 +4,7 @@
 ## General features ##
 Main features (see below for details):
 * **Independent duchies, ruled by councils and united in a league.**
-* **Elected aldermen for each discipline form the local executive branch.**
+* **Elected aldermen for each workfield (area of responsibility) form the local executive branch.**
 * **The archduke is an elevated landholder position, and acts as head of the league.**
 
 The League of Dukes is a confederation of loosely connected cities, each governed by a council of dukes. Aldermen are elected officials responsible for specific areas of governance within each city. These cities are united in a league that fosters cooperation and mutual support while maintaining autonomy. The League is characterized by its intricate political structure, where power is distributed among various offices, creating a dynamic political landscape.
@@ -33,8 +33,8 @@ TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Head of state:** Archduke (once a Grand Duke's city reaches landholder level 5); before that, the First Aldermen and League Secretary represent the League.
 * **Government structure:** A confederation of independent ducal cities, each ruled by a Council of Dukes and elected Aldermen.
 * **Territorial setup:** Independent cities along the coasts of oceans and great lakes, autonomous but united in the League.
-* **Defining concept:** Elected aldermen scaling through population thresholds, feeding a ducal hierarchy (High Alderman → Duke → High Duke → Grand Duke → Duke-Protector) that culminates in the Archduke.
-* **Foreign relations:** Increased cunning and decreased law values lead to more intrigue and criminal activity.
+* **Defining concept:** Elected aldermen for every responsibility, scaling through population thresholds, feeding a ducal hierarchy (High Alderman → Duke → High Duke → Grand Duke → Duke-Protector) that culminates in the Archduke.
+* **Foreign relations:** Not described in detail; each city manages its own external affairs, with limited coordination at the league level.
 * **Society and culture:** Hierarchical and politically complex, with power concentrated among socially adept individuals and a strong emphasis on civic duty and public service.
 
 ## Play Guide ##

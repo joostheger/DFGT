@@ -16,7 +16,7 @@ TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Government type:** City-State
 * **Head of state:** Archon
 * **Government structure:** Centralized, with a single city and surrounding suburbs and satellite towns, governed by a council of five elected councillors.
-* **Territorial setup:** A compact territory centered on a single primary city; sites are tightly clustered and treated politically as districts of one unified city-state.
+* **Territorial setup:** A compact, agriculturally focused territory centered on a single primary city; sites are tightly clustered and treated politically as districts of one unified city-state.
 * **Defining concept:** Non-expanding civilization, Site-to-civ succession.
 * **Foreign relations:** Isolationist; influence limited to the plains they live on.
 * **Society and culture:** Centered around the primary city, with a strong emphasis on local governance, civic duty, and the maintenance of social order.
