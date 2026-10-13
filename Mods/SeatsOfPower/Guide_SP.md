@@ -7,7 +7,7 @@
 * **Decadency.** The free and privileged class expects to live in luxury and excess.
 
 ### Challenge level: 5/5 ###
-The Slavers' Pact is a very challenging and unique form of government.
+The Slavers' Pact is a very challenging form of government.
 
 Harder than vanilla :
 * Nearly the entire population carries noble-like demands for well-furnished quarters, yet none of them are willing to work for it, making decadency far harder to manage than vanilla's handful of nobles.
@@ -15,6 +15,16 @@ Harder than vanilla :
 
 Easier than vanilla:
 * Trade caravans arrive more frequently and bring a broader range of goods.
+
+## State Summary ##
+TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
+* **Government type:** Confederation of independent sites.
+* **Head of state:** None — no head of state, legislature, or common law; only five envoys with narrow diplomatic briefs.
+* **Government structure:** A loose coalition of independent, sovereign masters, each privately ruling their own fortress.
+* **Territorial setup:** Not described in detail; each master controls a separate fortress/domain.
+* **Defining concept:** A slave-based economy with a growing class of labour-exempt Freemen and a culture of decadency.
+* **Foreign relations:** Minimal formal coordination between masters; the five envoys handle diplomacy, trade, and peace on the Pact's behalf.
+* **Society and culture:** Hierarchical and slave-based, with a clear distinction between masters, freemen, and slaves. Prestige and personal prosperity are central to social standing, and the culture emphasizes the visible display of wealth and status.
 
 ## Play Guide ##
 TODO: add how slaves work

@@ -12,10 +12,15 @@ Main features (see below for details):
 * **Special entity mechanics:** Site to Civ succession. The City Warden, who is a landholder (Civ-level), is succeeded by the site-position of Magistrate. This does not work in fortress mode, but as this is a non-playable government type, it is not a problem.
 
 ## State Summary ##
+TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Government type:** City-State
-* **Government head:** Archon
-* **Government structure:** Centralized, with a single city and surrounding suburbs and satellite towns.
-  
+* **Head of state:** Archon
+* **Government structure:** Centralized, with a single city and surrounding suburbs and satellite towns, governed by a council of five elected councillors.
+* **Territorial setup:** A compact territory centered on a single primary city; sites are tightly clustered and treated politically as districts of one unified city-state.
+* **Defining concept:** Non-expanding civilization, Site-to-civ succession.
+* **Foreign relations:** Isolationist; influence limited to the plains they live on.
+* **Society and culture:** Centered around the primary city, with a strong emphasis on local governance, civic duty, and the maintenance of social order.
+
 ## Government structure ## 
 **The Archon** is the head of state, holding singular authority over law-making, diplomacy and military goals. The position is not elected: when vacant, it is filled by appointment from the City Warden of the capital. Should the Archon die or vacate office, succession passes to the councillors themselves, who succeed to the position. The Archon personally appoints the Herald of the Archon, the Grand Archivist, and the Executioner.
 

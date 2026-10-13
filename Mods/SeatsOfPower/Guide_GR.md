@@ -22,6 +22,16 @@ Easier than vanilla:
 * Trade caravans arrive more frequently and bring a broader range of goods
 * Because of their balanced ethics, they are treated less aggressively by other civilizations.
 
+## State Summary ##
+TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
+* **Government type:** Merchant Republic
+* **Head of state:** Grand Merchant-Master
+* **Government structure:** The Merchants' Guild is the state itself — every executive, judicial, and diplomatic authority flows from the guild's charter via the Guild Council.
+* **Territorial setup:** Towns and hamlets on plains at the feet of mountains; settlements are chartered and rise in status (trade post → market town → merchant city → mercantile city → citadel of commerce) as the guild's investment grows.
+* **Defining concept:** The Freeholder citizenry system — all starting dwarves automatically progress through settler, citizen, burgher, and patrician status.
+* **Foreign relations:** Peaceful and trade-focused; balanced ethics.
+* **Society and culture:** Structured around the guild and citizenry system, with a strong emphasis on commerce, civic duty, and social hierarchy.
+
 ## Play Guide ##
 ### Freeholders ###
 * The main feature of this mod is the extensive **elite citizenry system**, called *Freeholders*. It gives all 7 starting dwarves a special status with extensive rights and demands. They progress from *settler* to *citizen*, *burgher*, and eventually *patrician*. When they reach certain thresholds, they are promoted automatically. When you receive a succession message, check the nobles screen for new demands.

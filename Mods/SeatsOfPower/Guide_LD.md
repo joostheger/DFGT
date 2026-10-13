@@ -26,7 +26,17 @@ Harder:
 Easier:
 * Trade caravans arrive more frequently and bring a wider variety of goods.
 * Additional clerks can be appointed to support aldermen in their duties.
- 
+
+## State Summary ##
+TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
+* **Government type:** Confederation of independent cities. 
+* **Head of state:** Archduke (once a Grand Duke's city reaches landholder level 5); before that, the First Aldermen and League Secretary represent the League.
+* **Government structure:** A confederation of independent ducal cities, each ruled by a Council of Dukes and elected Aldermen.
+* **Territorial setup:** Independent cities along the coasts of oceans and great lakes, autonomous but united in the League.
+* **Defining concept:** Elected aldermen scaling through population thresholds, feeding a ducal hierarchy (High Alderman → Duke → High Duke → Grand Duke → Duke-Protector) that culminates in the Archduke.
+* **Foreign relations:** Increased cunning and decreased law values lead to more intrigue and criminal activity.
+* **Society and culture:** Hierarchical and politically complex, with power concentrated among socially adept individuals and a strong emphasis on civic duty and public service.
+
 ## Play Guide ##
 ### Aldermen and the Council of Dukes ###
 * At certain population levels, citizens can be elected as aldermen.
