@@ -1,5 +1,5 @@
-# Verdant City-State Guide #
-*Verdant City-State* is part of *Seats of Power*: a collection of additional dwarven government types. (No DFHack required)
+# City-State Guide #
+*City-State* is part of *Seats of Power*: a collection of additional dwarven government types. (No DFHack required)
 
 ## General features ##
 Main features (see below for details):
@@ -8,7 +8,7 @@ Main features (see below for details):
 * **Isolationists.** Their influence is limited to the plains they live.
 * Group names and positions reinforce the sense that this is a single, unified city.
 * Mechanically, the civilization consists of separate sites rather than one continuous settlement. These sites are tightly clustered: generation may produce a single town or up to three larger towns in close proximity, connected by roads, along with a few scattered monasteries. Politically and culturally, however, these settlements are treated as districts of one unified city-state.
-* The generated state may have a different name; "Verdant City-State" refers to the government type, not the in-game entity. 
+* The generated state may have a different name; "City-State" refers to the government type, not the in-game entity. 
 
 ## State Summary ##
 * **Government type:** City-State
@@ -44,9 +44,9 @@ The **Executioner**, also an Archon appointment, carries out capital sentences b
 The **Doctor**, appointed by the District Warden, manages health at the local level.
 
 ## Lore ##
-On the green hills, surrounded by lush meadows and winding rivers, lies the Verdant City-State. It stands as an oasis of peace and prosperity, a refuge for those who seek distance from the noise and ambition of larger civilizations. Its people take pride in a self-sufficient way of life, relying on agriculture, craftsmanship, and internal trade to sustain their community.
+On the green hills, surrounded by lush meadows and winding rivers, lies the huge City-State, a huge megalopolis, stretching across the landscape. It stands as an oasis of peace and prosperity, a refuge for those who seek distance from the noise and ambition of larger civilizations. Its people take pride in a self-sufficient way of life, relying on agriculture, craftsmanship, and internal trade to sustain their community.
 
-Though peaceful by nature, the Verdant City-State is resolute in preserving its independence, and its inhabitants are known for their tenacity in defending their lands against any who would encroach upon them.
+Though peaceful by nature, the City-State is resolute in preserving its independence, and its inhabitants are known for their tenacity in defending their lands against any who would encroach upon them.
 
-The state is governed by an Archon, who serves as the central authority, supported by a structured council of councillors. Rather than a loose collection of settlements, the Verdant City-State functions as a unified urban entity: a primary city surrounded by integrated suburbs and satellite towns, governed by wardens. Within these, market overseers and labour overseers manage daily economic and workforce affairs, while magistrates oversee local governance and ensure that the Archon's will is enforced throughout the state.
+The state is governed by an Archon, who serves as the central authority, supported by a structured council of councillors. Rather than a loose collection of settlements, the City-State functions as a unified urban entity: a primary city surrounded by integrated suburbs and satellite towns, governed by wardens. Within these, market overseers and labour overseers manage daily economic and workforce affairs, while magistrates oversee local governance and ensure that the Archon's will is enforced throughout the state.
 
