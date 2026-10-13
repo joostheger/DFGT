@@ -1,7 +1,16 @@
 'Seats of Power - Grand Republic' is part of the Seats of Power mod set. It adds multiple new government types for vanilla dwarves in Dwarf Fortress. Each government introduces its own mechanics and gameplay focus.
 All governments are mutually compatible and designed to work with vanilla dwarves without altering to much of the game's core systems.
 
-The set includes:
+## Design Philosophy ##
+Every government in Seats of Power is built around one or two strong, central mechanics, paired with a fitting theme. All other mechanics are shaped to match that theme, creating a cohesive blend of fantasy and history in every set.
+
+Seats of Power focuses on entity-level modding — government structure, positions, and social mechanics — rather than new creatures, buildings, or reactions.Creature modding is only used where it genuinely reinforces a theme, such as slavery in the Slavers Pact.
+
+The mod set is built entirely on raw-modding possibilities, so DFHack is not required. It does add a nice touch through generic position names, but remains entirely optional.
+
+Finally, Seats of Power deliberately introduces no new races. Every government is designed for the dwarves we all know and love.
+
+## Governments Included ##
 * Grand Republic - An aristocratic government centered on trade, influence, and rigid social hierarchy.
 * Holy Order of the Tree - A tree-venerating military order that aggressively spreads its beliefs.
 * Mountain Monk Republic - A theocratic government focused on religious devotion and communal living.

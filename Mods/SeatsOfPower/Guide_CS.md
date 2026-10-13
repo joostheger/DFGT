@@ -44,7 +44,7 @@ The **Executioner**, also an Archon appointment, carries out capital sentences b
 The **Doctor**, appointed by the District Warden, manages health at the local level.
 
 ## Lore ##
-On the green hills, surrounded by lush meadows and winding rivers, lies the huge City-State, a huge megalopolis, stretching across the landscape. It stands as an oasis of peace and prosperity, a refuge for those who seek distance from the noise and ambition of larger civilizations. Its people take pride in a self-sufficient way of life, relying on agriculture, craftsmanship, and internal trade to sustain their community.
+On the green hills, surrounded by lush meadows and winding rivers, lies the vast City-State, a huge megalopolis, stretching across the region. It stands as an oasis of peace and prosperity, a refuge for those who seek distance from the noise and ambition of larger civilizations. Its people take pride in a self-sufficient way of life, relying on agriculture, craftsmanship, and internal trade to sustain their community.
 
 Though peaceful by nature, the City-State is resolute in preserving its independence, and its inhabitants are known for their tenacity in defending their lands against any who would encroach upon them.
 
