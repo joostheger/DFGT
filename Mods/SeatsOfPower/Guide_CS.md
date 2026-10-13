@@ -18,8 +18,8 @@ TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Government structure:** Centralized, with a single city and surrounding suburbs and satellite towns, governed by a council of five elected councillors.
 * **Territorial setup:** A compact, agriculturally focused territory centered on a single primary city; sites are tightly clustered and treated politically as districts of one unified city-state.
 * **Defining concept:** Non-expanding civilization, Site-to-civ succession.
-* **Foreign relations:** Isolationist; They don't engage in trade or diplomacy beyond their immediate surroundings.
-* **Society and culture:** Centered around the primary city, with a strong emphasis on local governance, civic duty, and the maintenance of social order.
+* **Foreign relations:** Isolationist; They don't engage in trade or diplomacy beyond their immediate surroundings and try to peacefully resolve conflicts with neighboring entities.
+* **Society and culture:** Tradition and family focussed. Community ties are strong, and social norms are strictly observed. Emphasis is placed on the maintenance of social order. Cooperation is economically valued over commerce and competition.
 
 ## Government structure ## 
 **The Archon** is the head of state, holding singular authority over law-making, diplomacy and military goals. The position is not elected: when vacant, it is filled by appointment from the City Warden of the capital. Should the Archon die or vacate office, succession passes to the councillors themselves, who succeed to the position. The Archon personally appoints the Herald of the Archon, the Grand Archivist, and the Executioner.

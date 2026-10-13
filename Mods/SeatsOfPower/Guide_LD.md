@@ -34,8 +34,8 @@ TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Government structure:** A confederation of independent ducal cities, each ruled by a Council of Dukes and elected Aldermen.
 * **Territorial setup:** Independent cities along the coasts of oceans and great lakes, autonomous but united in the League.
 * **Defining concept:** Elected aldermen for every responsibility, scaling through population thresholds, feeding a ducal hierarchy (High Alderman → Duke → High Duke → Grand Duke → Duke-Protector) that culminates in the Archduke.
-* **Foreign relations:** Not described in detail; each city manages its own external affairs, with limited coordination at the league level.
-* **Society and culture:** Hierarchical and politically complex, with power concentrated among socially adept individuals and a strong emphasis on civic duty and public service.
+* **Foreign relations:** Peaceful and focused on trade.
+* **Society and culture:** Hierarchical and politically complex, with influence concentrated among socially adept individuals. Personal ambition and cunning often outweigh respect for the law. Eloquence and decorum are shown in public life, but commerce is valued over craftsmanship.
 
 ## Play Guide ##
 ### Aldermen and the Council of Dukes ###
