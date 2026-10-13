@@ -30,7 +30,7 @@ Easier:
 ## State Summary ##
 TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Government type:** Confederation of independent cities. 
-* **Head of state:** Archduke (once a Grand Duke's city reaches landholder level 5); before that, the First Aldermen and League Secretary represent the League.
+* **Head of state:** Archduke (once a landholder reaches level 5); before that, the First Aldermen.
 * **Government structure:** A confederation of independent ducal cities, each ruled by a Council of Dukes and elected Aldermen.
 * **Territorial setup:** Independent cities along the coasts of oceans and great lakes, autonomous but united in the League.
 * **Defining concept:** Elected aldermen for every responsibility, scaling through population thresholds, feeding a ducal hierarchy (High Alderman → Duke → High Duke → Grand Duke → Duke-Protector) that culminates in the Archduke.

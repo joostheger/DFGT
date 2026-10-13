@@ -6,8 +6,8 @@ c_variation_SOP.txt
     [CV_NEW_TAG:CREATURE_CLASS:SOP_SLAVE]
 	[CV_NEW_TAG:LARGE_ROAMING]
 	[CV_NEW_TAG:CLUSTER_NUMBER:2:4]
-	[CV_NEW_TAG:FREQUENCY:100] TODO: make it 2
-	[CV_NEW_TAG:POPULATION_NUMBER:10:10] TODO: make it 0:10
+	[CV_NEW_TAG:FREQUENCY:2]
+	[CV_NEW_TAG:POPULATION_NUMBER:0:10]
     [CV_NEW_TAG:CURIOUSBEAST_EATER]  // tamed instances wont show this behaviour
     [CV_NEW_TAG:CURIOUSBEAST_GUZZLER]  // tamed instances wont show this behaviour
     [CV_NEW_TAG:CURIOUSBEAST_ITEM]  // tamed instances wont show this behaviour

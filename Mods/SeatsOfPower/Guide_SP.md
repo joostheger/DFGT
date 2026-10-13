@@ -18,7 +18,7 @@ Easier than vanilla:
 
 ## State Summary ##
 TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
-* **Government type:** Confederation of independent sites.
+* **Government type:** Confederation of independent fortresses.
 * **Head of state:** None
 * **Government structure:** A loose coalition of independent, sovereign masters, each privately ruling their own fortress. No legislature, or common law.
 * **Territorial setup:** Not described in detail; each master controls a separate fortress/domain.
