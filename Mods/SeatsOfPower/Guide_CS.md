@@ -12,14 +12,13 @@ Main features (see below for details):
 * **Special entity mechanics:** Site to Civ succession. The City Warden, who is a landholder (Civ-level), is succeeded by the site-position of Magistrate. This does not work in fortress mode, but as this is a non-playable government type, it is not a problem.
 
 ## State Summary ##
-TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
-* **Government type:** City-state republic
+* **Government type:** Autarkic City-state
 * **Head of state:** Archon
-* **Government structure:** Centralized, with a single city and surrounding suburbs and satellite towns, governed by a council of five elected councillors.
+* **Government structure:** Centralized, governed by a council of five elected councillors with delegated authority to magistrates.
 * **Territorial setup:** A compact, agriculturally focused territory centered on a single primary city; sites are tightly clustered and treated politically as districts of one unified city-state.
 * **Defining concept:** Non-expanding civilization, Site-to-civ succession.
 * **Foreign relations:** Isolationist; They don't engage in trade or diplomacy beyond their immediate surroundings and try to peacefully resolve conflicts with neighboring entities.
-* **Society and culture:** Tradition and family focussed. Community ties are strong, and social norms are strictly observed. Emphasis is placed on the maintenance of social order. Cooperation is economically valued over commerce and competition.
+* **Society and culture:** Tradition and family-focused. Community ties are strong, and social norms are strictly observed. Emphasis is placed on the maintenance of social order. Cooperation and agriculture are economically valued over competition and commerce.
 
 ## Government structure ## 
 **The Archon** is the head of state, holding singular authority over law-making, diplomacy and military goals. The position is not elected: when vacant, it is filled by appointment from the City Warden of the capital. Should the Archon die or vacate office, succession passes to the councillors themselves, who succeed to the position. The Archon personally appoints the Herald of the Archon, the Grand Archivist, and the Executioner.
@@ -27,7 +26,7 @@ TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 **The Council** is composed of five elected positions, each independently chosen by the citizenry. All five councillors share in law-making authority and advise the Archon. Their individual portfolios divide the work of governing:
 
 - The **Councillor of War** holds responsibility for military strategy and appoints the Marshal.
-- The **Councillor of Law** oversees the judiciary, directs espionage, and supervises law enforcement.
+- The **Councillor of Justice** oversees the judiciary, directs espionage, and supervises law enforcement.
 - The **Councillor of Coin** manages tax collection, accounting, and the oversight of the Archon's household. Like the Archon, they hold the authority to determine coin design.
 - The **Councillor of Public Works** issues construction permits and oversees road, bridge, fire and building safety.
 - The **Councillor of Markets** is responsible for the food supply and, notably, appoints the City Wardens and District Wardens — giving them considerable influence over who ultimately may one day fill the Archon's seat.

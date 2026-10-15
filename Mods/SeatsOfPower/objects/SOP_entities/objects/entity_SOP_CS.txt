@@ -629,8 +629,8 @@ Ruler
 		[REQUIRED_STANDS:2]
 		[SLEEP_PRETENSION]
 
-	[POSITION:COUNCILLOR_OF_LAW] 	
-		[NAME:councillor of law:councilors] 
+	[POSITION:COUNCILLOR_OF_JUSTICE] 	
+		[NAME:councillor of justice:councilors] 
 		[NUMBER:1]
 		[ELECTED]
 		[PRECEDENCE:6]

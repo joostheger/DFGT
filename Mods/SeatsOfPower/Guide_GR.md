@@ -23,11 +23,10 @@ Easier than vanilla:
 * Because of their balanced ethics, they are treated less aggressively by other civilizations.
 
 ## State Summary ##
-TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
 * **Government type:** Merchant Republic
 * **Head of state:** Grand Merchant-Master
-* **Government structure:** The Merchants' Guild is the state itself — every executive, judicial, and diplomatic authority flows from the guild's charter via the Guild Council.
-* **Territorial setup:** Towns and hamlets on plains at the feet of mountains; settlements are chartered and rise in status (trade post → market town → merchant city → mercantile city → citadel of commerce) as the guild's investment grows.
+* **Government structure:** The Merchants' Guild is the state, ruled by the Guild Council.
+* **Territorial setup:** Towns and hamlets on plains at the feet of mountains; settlements are chartered and rise in status as the guild's investment grows.
 * **Defining concept:** The Freeholder citizenry system — all starting dwarves automatically progress through settler, citizen, burgher, and patrician status.
 * **Foreign relations:** Peaceful and trade-focused; balanced ethics.
 * **Society and culture:** Structured around the guild and citizenry system, with a strong emphasis on commerce, civic duty, and social hierarchy.

@@ -18,22 +18,21 @@ The inspiration of the League of Dukes is drawn from the setting of D&D's *Baldu
 ### Challenge level: 3/5 ###
 'League of Dukes' is designed to be a moderate challenging experience. 
 
-Harder:
+Harder than vanilla :
 * The election system places citizens in positions of power with limited player control.
 * The complex ducal and alderman structure requires careful management of demands and resources.
 * Increased *cunning* and decreased *law* values lead to more intrigue and criminality.
 
-Easier:
+Easier than vanilla :
 * Trade caravans arrive more frequently and bring a wider variety of goods.
 * Additional clerks can be appointed to support aldermen in their duties.
 
 ## State Summary ##
-TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
-* **Government type:** Confederation of independent cities. 
+* **Government type:** Aristocratic Confederation 
 * **Head of state:** Archduke (once a landholder reaches level 5); before that, the First Aldermen.
 * **Government structure:** A confederation of independent ducal cities, each ruled by a Council of Dukes and elected Aldermen.
-* **Territorial setup:** Independent cities along the coasts of oceans and great lakes, autonomous but united in the League.
-* **Defining concept:** Elected aldermen for every responsibility, scaling through population thresholds, feeding a ducal hierarchy (High Alderman → Duke → High Duke → Grand Duke → Duke-Protector) that culminates in the Archduke.
+* **Territorial setup:** Along the coasts of oceans and great lakes, autonomous but united in the League.
+* **Defining concept:** Elected aldermen for every responsibility, scaling through population thresholds, feeding a ducal hierarchy that culminates in the Archduke.
 * **Foreign relations:** Peaceful and focused on trade.
 * **Society and culture:** Hierarchical and politically complex, with influence concentrated among socially adept individuals. Personal ambition and cunning often outweigh respect for the law. Eloquence and decorum are shown in public life, but commerce is valued over craftsmanship.
 

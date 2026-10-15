@@ -17,10 +17,9 @@ Easier than vanilla:
 * Trade caravans arrive more frequently and bring a broader range of goods.
 
 ## State Summary ##
-TODO: dit korter en typerender maken, op basis van meer formele uitdrukkingen
-* **Government type:** Confederation of independent fortresses.
+* **Government type:** Plutocratic League
 * **Head of state:** None
-* **Government structure:** A loose coalition of independent, sovereign masters, each privately ruling their own fortress. No legislature, or common law.
+* **Government structure:** A loose coalition of independent masters, each privately ruling their own fortress without legislature or common legal system.
 * **Territorial setup:** Not described in detail; each master controls a separate fortress/domain.
 * **Defining concept:** A slave-based economy with a growing class of labour-exempt Freemen and a culture of decadency.
 * **Foreign relations:** Minimal formal coordination between masters; five envoys handle diplomacy, trade, and peace on the Pact's behalf.
