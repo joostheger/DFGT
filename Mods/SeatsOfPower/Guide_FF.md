@@ -12,7 +12,6 @@ this dwarf enjoys a good bargain and is willing to handle the trade negotiations
 this dwarf is frustraded by the inefficiency of the current labour and picks up the role of organizer.
 this dwarf likes to inspire others.
 
-this dwarf is skilled in crafting and takes pride in their work.
 
 law-maker: wordkeeper / writer of common law / wordwriter / lawreader / lawkeeper. lawbearer!
 beste: lawspeaker.
