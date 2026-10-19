@@ -41,6 +41,13 @@ no currency.
 	[RELIGION_SPHERE:FAMILY]
 
 ## Play Guide ##
+### Economy ###
+* **Farming and plant-based clothing:** *Planter* and *Thresher* are disabled, while plant *gathering* remains available for brewing booze, which is otherwise unreliable to obtain through raids. 
+* **Clothing:** Raiding is one source of obtaining garments, but leatherworking is also been kept available as alternative means of producing clothing.
+* **Livestock:** Common domesticated animals are unavailable at embark and cannot be traded for, but you can obtain them through trapping (or raiding), then keep and breed them. (so no cats and dogs either)
+* **Fishing:** *Fisherman* and *Fish Cleaner* are disabled to make food less readily available and give raiding a stronger role in the economy; 
+* **Hunting and trapping:** Both jobs remain available as additional ways to find food and animals.
+
 ### The Chieftain and the Council of Elders ###
 * The Chieftain is elected (based on tactician and leader qualities) and leads the clan's raids, enforces the law, and sets military strategy. When a Chieftain falls, one of the Captains succeeds him.
 * The Elders form a council that grows with the hall's population, scaling from a single elder up to ten elders as the population passes roughly 10, 40, 90, 140, and 190. Elders are elected, inherited by heir, and advise on morale, health, and war.
@@ -107,3 +114,7 @@ Ur Urist, the first of all Raiding Kings. Ages ago, he emerges from the mountain
 
 ## My personal opinion ##
 TODO: add personal opinion.
+
+
+
+Consider: remove hunter and trapper
