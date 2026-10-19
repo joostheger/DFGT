@@ -21,6 +21,7 @@ Harder than vanilla :
 * Raiding causes neighboring settlements to become hostile.
 * Limited control over most noble positions; these roles are often inherited or influenced by clan traditions rather than direct player choice.
 * Only one position for handling trade, bookkeeping and labour management (Reeve)
+* Higher nobles demand well-furnished quaters.
 
 Easier than vanilla :
 * Nothing really.
