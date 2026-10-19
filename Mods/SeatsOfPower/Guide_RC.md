@@ -47,6 +47,7 @@ no currency.
 * **Livestock:** Common domesticated animals are unavailable at embark and cannot be traded for, but you can obtain them through trapping (or raiding), then keep and breed them. (so no cats and dogs either)
 * **Fishing:** *Fisherman* and *Fish Cleaner* are disabled to make food less readily available and give raiding a stronger role in the economy; 
 * **Hunting and trapping:** Both jobs remain available as additional ways to find food and animals.
+* Make sure to **raid for livestock** and keep and breed them, as this gives you a renewable source of meat and leather for your clan.
 
 ### The Chieftain and the Council of Elders ###
 * The Chieftain is elected (based on tactician and leader qualities) and leads the clan's raids, enforces the law, and sets military strategy. When a Chieftain falls, one of the Captains succeeds him.
@@ -70,14 +71,14 @@ no currency.
 * The Raider King or Queen is the clan's supreme authority — "feared across the seas" — but TODO: confirm this position is not filled during world-generation or automated world simulation, only through actual play/conquest.
 
 ### Other notes ###
-* No farming, fishing, or river/ocean product industries; the economy centers on raiding, herding, smithing, and crafts instead.
-* Clans favor tundra and taiga biomes.
-* TODO: starting equipment, weapons/armor preferences, and other embark specifics.
 * No DFHack is required.
 * Dwarf-only entity; works with vanilla dwarves.
 * Compatibility with other mods is assumed, not guaranteed.
 
 ### Starting a new fortress ###
+* To find a location for your new fortress, consider the availability of raidable neighboring settlements.
+* Consider the terrain and natural defenses of potential sites, as raiding causes retaliation.
+* Find a location that has enough plant life to support gathering for brewing.
 TODO: fill in once tested — which positions (if any) are available at embark, and what triggers the first elections/appointments.
 
 ## Government structure ##
@@ -105,16 +106,10 @@ TODO: fill in once tested — which positions (if any) are available at embark, 
 - A **Raider King/Queen** (LH5), at the height of conquest, rules a kingdom carved from plunder and war — feared across the seas, their word is law wherever their banners fly.
 
 ## Lore ##
-TODO: write lore section.
-- lack of resources
-- gathering and hunting, which were extended to gather and hunt neighboring settlements.
-- The imfamous raider king.
-- 
-Ur Urist, the first of all Raiding Kings. Ages ago, he emerges from the mountains to dwell in these gracious but lands. Ur led his people with strength and cunning, uniting scattered clans under his banner and forging a legacy of conquest and raiding that would shape the future of the realm.
+Urim Urist was the first of the Raider Kings. Ages ago, Urim led his people as they emerged from the mountains to dwell in these harsh but breathtaking lands. He did so with strength and cunning, uniting scattered clans under his banner and forging a legacy of conquest and raiding that would shape the future of the realm. 
+Now, his story is over and his legacy lives on through you, chieftains of your clan, to follow in his footsteps, continuing the cycle of conquest and raiding that he began. For the last few generations, the raiding has halted, letting the lands beyond restore themselves. Now those lands are ripe for the taking, their people tend their fields in blissful ignorance, gathering what they cannot defend and shall not enjoy. It is your turn to take up the mantle and lead your clan to glory once more.
 
 ## My personal opinion ##
-TODO: add personal opinion.
-
-
-
-Consider: remove hunter and trapper
+I enjoyed writing this entity because it offers a distinctive challenge and encourages players to build their strategy around raiding. Using job restricting mechanics to reinforces that focus, makes the challenge feel more tangible and immersive, rather than just self-implied. 
+The clan structure lets me explore inheritance and succession. Although its noble system is relatively simple, it still feels distinct enought from the other government types so that it deserves its own place in the pack. 
+I experimented with more Viking-inspired terminology, but kept only *Volva*: I wanted to leave players enought room for their imagination.
